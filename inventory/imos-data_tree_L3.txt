@@ -1,0 +1,65 @@
+AIMS/Marine_Monitoring_Program/  ::  CTD_profiles/ FLNTU_timeseries/ SBE37_timeseries/ 
+Bureau_of_Meteorology/WAVE-BUOYS/  ::  DELAYED/ REALTIME/ 
+Bureau_of_Meteorology/Waverider_Buoys/  ::  DELAYED/ 
+CSIRO/Atlas/  ::  Larval_Fish/ Zooplankton/ 
+CSIRO/Climatology/  ::  CARS/ COWCLIP2/ Ocean_Acidification/ SSTAARS/ 
+Charles_Darwin_University/Amy_Kirke/  ::  
+Curtin_University/Fish_Chorus_Catalogue/  ::  Australian_Fish_Chorus_Catalogue_2005-2023_20240703/ 
+Deakin_University/WAVE-BUOYS/  ::  DELAYED/ REALTIME/ 
+Deakin_University/bathymetry/  ::  
+Defence_Technology_Agency-New_Zealand/Waverider_Buoys/  ::  DELAYED/ 
+Defence_Technology_Agency-New_Zealand/Waverider_Buoys_C-20210803T000000Z/  ::  deployment_1/ deployment_2/ deployment_3/ 
+Department_for_Environment_and_Water-South_Australia/WAVE-BUOYS/  ::  DELAYED/ REALTIME/ 
+Department_of_Defence/DSTG/  ::  slocum_glider/ 
+Department_of_Defence/RAN/  ::  CTD/ 
+Department_of_Environment_and_Science-Queensland/WAVE-BUOYS/  ::  DELAYED/ REALTIME/ 
+Department_of_Environment_and_Science-Queensland/Waverider_Buoys/  ::  DELAYED/ 
+Department_of_Planning_and_Environment-New_South_Wales/Manly_Hydraulics_Laboratory/  ::  WAVE-BUOYS/ 
+Department_of_Planning_and_Environment-New_South_Wales/WAVE-BUOYS/  ::  DELAYED/ REALTIME/ 
+Department_of_Transport-Western_Australia/WAVE-BUOYS/  ::  DELAYED/ REALTIME/ 
+Department_of_Transport-Western_Australia/Waverider_Buoys/  ::  DELAYED/ 
+Derwent_Estuary_Program/Ambient_Water_Quality/  ::  AWQ_TEMP_SAL_csv_files/ 
+Derwent_Estuary_Program/Recreational_Water_Quality/  ::  RWQ_TEMP_SAL_csv_files/ 
+Flinders_University/WAVE-BUOYS/  ::  DELAYED/ REALTIME/ 
+Future_Reef_MAP/underway/  ::  RTM-Wakmatha/ 
+Gippsland-Ports-Victoria/WAVE-BUOYS/  ::  REALTIME/ 
+IMOS/AATAMS/  ::  AATAMS_sattag_nrt/ acoustic_detections_QC/ acoustic_detections_QC_summary/ acoustic_tagging/ archival_tagging/ satellite_tagging/ 
+IMOS/ACORN/  ::  gridded_1h-avg-current-map_QC/ gridded_1h-avg-current-map_non-QC/ gridded_1h-avg-wave-site-map_QC/ gridded_1h-avg-wave-spectra_QC/ gridded_1h-avg-wave-station-map_QC/ gridded_1h-avg-wind-map_QC/ radial/ radial_quality_controlled/ vector/ 
+IMOS/ACORN_JCU_historical/  ::  gridded_1h-avg-current-map_QC/ radial_quality_controlled/ 
+IMOS/ANFOG/  ::  REALTIME/ seaglider/ slocum_glider/ 
+IMOS/ANMN/  ::  AM/ Acoustic/ Deep_Water_Waves/ NRS/ NSW/ PA/ QLD/ SA/ WA/ Wave_Buoys/ 
+IMOS/AUV/  ::  AUV_articles/ Apollo202309/ Batemans201011/ Batemans201211/ Batemans201411/ CoralSea202008/ DiscoveryBay202112/ EMR202001/ Forster202006/ GBR200709/ GBR201102/ GBR201107/ GBR201212/ GBR201312/ GBR201509/ GeographeBay201505/ MoretonIs201601/ Ningaloo200705/ Ningaloo201203/ Ningaloo201709/ Ningaloo201904/ PS201012/ PS201211/ PS201502/ SAJosephBanks200806/ SEQueensland201010/ SEQueensland201010Eng/ SEQueensland201111/ SEQueensland201210/ SEQueensland201310/ SEQueensland201510/ SEQueensland201907/ SEQueensland202211/ ScottReef200907/ ScottReef201108/ ScottReef201503/ SolitaryIs201208/ SouthAustralia201805/ SouthAustralia202012/ SouthAustraliaGAB202204/ Sydney201211/ Sydney201303/ Sydney202111/ TasVic201602SS/ Tasmania200810/ Tasmania200903/ Tasmania200906/ Tasmania201006/ Tasmania201106/ Tasmania201205/ Tasmania201306/ Tasmania201406/ Tasmania201502/ Tasmania201610/ Tasmania201707/ Tasmania201808/ Tasmania202001/ Tasmania202104/ Tasmania202208/ Tasmania202302/ WA201004/ WA201104/ WA201204/ WA201304/ WA201403/ WA201705/ WA202103/ WA202205/ WA202303/ WA_SW_202103/ Whyalla200806/ Wilsonsprom201603SS/ Wollongong202201/ auv_viewer_data/ 
+IMOS/Argo/  ::  aggregated_datasets/ dac/ 
+IMOS/BGC_DB/  ::  harvested_from_CSIRO/ 
+IMOS/COASTAL-WAVE-BUOYS/  ::  WAVE-BUOYS/ 
+IMOS/DWM/  ::  ASFS/ DA/ Deployments/ SOTS/ 
+IMOS/ESTUARINE-COASTAL-MOORINGS/  ::  REALTIME/ 
+IMOS/FAIMMS/  ::  Davies_Reef/ Heron_Island/ Lizard_Island/ Myrmidon_Reef/ One_Tree_Island/ Orpheus_Island/ Rib_Reef/ 
+IMOS/NRMN/  ::  
+IMOS/NTP/  ::  Low_Cost_Wave_Buoy_Technology/ Profiling_Moorings/ 
+IMOS/OceanCurrent/  ::  GSLA/ 
+IMOS/SAIMOS/  ::  Biogeochem/ 
+IMOS/SOOP/  ::  SOOP-ASF/ SOOP-BA/ SOOP-CO2/ SOOP-FishSOOP/ SOOP-SST/ SOOP-TMV/ SOOP-TRV/ SOOP-XBT/ 
+IMOS/SRS/  ::  ALTIMETRY/ AusTemp/ OC/ SSS/ SST/ Surface-Waves/ 
+IMOS/eMII/  ::  demos/ test_files/ 
+Macquarie_University/Alex_Ferry/  ::  
+Macquarie_University/Linda_Armbrecht/  ::  
+Macquarie_University/Penelope_Ajani/  ::  
+NSW-OEH/LIDAR-LADS/  ::  2018/ 
+NSW-OEH/Manly_Hydraulics_Laboratory/  ::  SST/ Wave/ 
+NSW-OEH/Multi-beam/  ::  2005/ 2006/ 2007/ 2008/ 2009/ 2010/ 2011/ 2012/ 2013/ 2014/ 2015/ 2016/ 2017/ 2018/ 
+NSW-OEH/Single-beam/  ::  1962/ 1969/ 1975/ 1977/ 1978/ 1979/ 1980/ 1981/ 1985/ 1986/ 1987/ 1988/ 1989/ 1990/ 1991/ 1992/ 1993/ 1994/ 1995/ 1996/ 1997/ 1998/ 1999/ 2000/ 2001/ 2002/ 2003/ 2004/ 2005/ 2006/ 2007/ 2008/ 2009/ 2010/ 2011/ 2012/ 2013/ 2014/ 2015/ 2016/ 2017/ 2018/ 2019/ 2020/ 2021/ 2022/ 2023/ 2024/ 
+Pilbara_Ports_Authority/WAVE-BUOYS/  ::  REALTIME/ 
+SARDI/ESTUARINE-COASTAL-MOORINGS/  ::  REALTIME/ 
+Southern_Cross_University/Ocean_Alkalinity/  ::  
+TERN/ACEF/  ::  Ecology/ Estuaries/ Habitats/ Water_Quality/ Wetlands/ 
+UNSW/NRS_climatology/  ::  Temperature_DataProducts/ Temperature_DataProducts_v2/ 
+UNSW/NRS_extremes/  ::  Temperature_DataProducts/ Temperature_DataProducts_v2/ 
+UNSW/NSW_Glider_climatology/  ::  
+UON/NSW/  ::  sea_level/ 
+UWA/Deep_Sea_Research_Centre/  ::  CTD/ 
+UWA/RV_Falkor/  ::  2015_03_Perth_Canyon/ FK200126/ 
+UWA/Surface_drifters_C-20251117/  ::  
+UWA/WAVE-BUOYS/  ::  DELAYED/ REALTIME/ 
+UWA/slocum_glider/  ::  AdapterNWS20120409/ AdapterNWS20120415/ 
+WAMSI/WAMSI1/  ::  Node3/ 

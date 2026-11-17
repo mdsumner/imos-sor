@@ -1,0 +1,10 @@
+# large or regenerable artefacts
+data/
+*.tif
+*.gpkg
+*.parquet
+!inventory/*.csv
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/

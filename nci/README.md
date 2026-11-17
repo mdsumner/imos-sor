@@ -164,9 +164,39 @@ All products here are BoM/IMOS GHRSST L3S/L3C/L4 (ABOM), not MUR.
   `l2p_flags:flag_masks` → `flag_values`. Arrays and the per-file packing (`add_offset`, `scale_factor`) are unchanged.
 - This is size-based. Per-year table: `nci/imos_vs_qm43_by_year.csv`.
 - **Checking by header.** Each BoM file has its own global `uuid`, and IMOS keeps it, so the qm43 file with the same
-  uuid is the IMOS file's source (`headers.pbs`, `headers_compare.R`). A spot check over HTTPS of 2022-12-31 and
-  2023-01-01, both Continental sensors, agrees with the sizes: IMOS carries the fv02 uuid
-  (`product_version` 02.0) on 2022-12-31 and the fv01 uuid (01.0) on 2023-01-01. The full run covers every file.
+  uuid is the IMOS file's source (`headers.pbs`, `headers_compare.R`).
+  Per-year tables: `nci/imos_vs_qm43_headers_by_year.csv` and `nci/qm43_headers_by_year.csv`.
+
+**Header results** (74,993 headers: 32,138 IMOS, 42,855 qm43; 2026-11-17):
+
+| IMOS file's source | files | notes |
+|---|---|---|
+| qm43 fv02, same uuid | 27,468 | |
+| qm43 fv01, same uuid | 4,272 | never an `RT/` file |
+| no uuid match, same-day qm43 file with the same SST `add_offset` | 31 | same data, a later BoM run (IMOS's copy is created days after qm43's) |
+| no match: a BoM run that qm43 no longer holds | 297 | see below |
+| no qm43 file that day | 70 | mostly 2026-08-11..26 (multi-sensor) and 2025-11 |
+
+- **The seam at 2023-01-01 is confirmed** for all four products.
+  The 31,740 uuid pairs all agree in date and SST `add_offset`, and the size-based guess is right for every one of them.
+  It was wrong for 64 files (the 2014 runs below), where an older run of the same version happened to be close in size.
+- **Before 2023, IMOS is mostly but not purely fv02.** The inclusions:
+  - *Continental AVHRR, 2016-03 → 2016-12*: a patchwork of 134 fv01 days (Mar–Sep), 67 days from runs qm43 doesn't
+    hold (Aug–Dec), and 9 absent from qm43 (Oct). Plus one fv01 day in 2018-10.
+  - *Both AVHRR products, 2014-09 → 2014-12* (about 92 days each): IMOS has BoM's first fv02 run (made 2014-11 → 2015-01);
+    qm43 holds the remake from 2017-09.
+  - *Southern multi-sensor, 2018-11-16 → 12-31* (37 days, the start of IMOS's record): an early run (made 2018-11 → 2019-01);
+    qm43's fv02 for those days was made in 2021-04.
+  - 12 scattered fv01 days in multi-sensor, 2021-04 → 2022-08 (11 Southern, 1 Continental).
+- **BoM made fv02 in batches**, years after the fact (`qm43_headers_by_year.csv`):
+  AVHRR 1992–2013 in 2014-10, 2014–2016 in 2017-09 (some 2019-08), 2017–2018 in 2019-08, 2019–2020 in 2022-06,
+  2021–2022 in 2023-06, and Continental 2023–2025 in 2025-09/10. Multi-sensor follows a similar pattern from 2019-04.
+  IMOS took up each batch for the years before 2023, but not the 2025 batch for 2023 onwards.
+- **qm43 quirks** (BoM's archive):
+  - 8 fv01 files are zero bytes (2018-06-18/20/21 AVHRR, 2019-12-04/05 multi, 2019-12-17/18/19 AVHRR).
+  - 356 fv01 files (2006–2014) have `uuid = "yes"`.
+  - Older files write `product_version` as `1.0` / `2.0`, newer ones as `01.0` / `02.0`.
+  - `v02.0fv01/L3S-01day/dn/2018/L3S-01day/dn/2018/` is a stray nested copy (one zero-byte file).
 
 | IMOS product | fv02 (BoM reprocessing) | fv01 (operational) | not matched |
 |---|---|---|---|

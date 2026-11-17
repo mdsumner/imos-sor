@@ -19,10 +19,18 @@
 args <- commandArgs(TRUE)
 f <- if (length(args)) args[1] else "data/nci/headers-l3s1d.tsv.gz"
 h <- read.delim(gzfile(f), colClasses = "character", quote = "", fill = TRUE, na.strings = "NA")
-err <- is.na(h$id) & h$uuid %in% "ERROR"
-cat("files:", nrow(h), " unreadable:", sum(err), "\n")
-if (any(err)) print(head(h$path[err]))
+err <- h$uuid %in% "ERROR" & (is.na(h$id) | h$id == "")
+cat("files:", nrow(h), " unreadable by ncdump:", sum(err), "\n")
+if (any(err)) print(h$path[err])
 h <- h[!err, ]
+## a few files carry a placeholder (uuid = "yes"): treat anything that is not a uuid as missing
+bad <- !grepl("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$", h$uuid)
+cat("files whose uuid is not a uuid:", sum(bad), "\n")
+if (any(bad)) {
+  w <- ifelse(grepl("/sh74/", h$path[bad]), "imos", sub("^.*/(v02\\.0fv0[12])/.*$", "\\1", h$path[bad]))
+  print(table(paste(w, ifelse(is.na(h$uuid[bad]), "<absent>", h$uuid[bad])), substr(basename(h$path[bad]), 1, 4)))
+}
+h$uuid[bad] <- NA
 
 h$src <- ifelse(grepl("/sh74/", h$path), "imos", "qm43")
 h$file <- basename(h$path)
@@ -39,16 +47,16 @@ cat("IMOS:", nrow(im), " qm43:", nrow(qm), "\n")
 
 ## qm43 by itself: does the directory version agree with product_version?
 cat("\nqm43 file version vs header product_version:\n"); print(table(qm$version, qm$product_version, useNA = "ifany"))
-du <- qm$uuid[duplicated(qm$uuid)]
+du <- qm$uuid[duplicated(qm$uuid) & !is.na(qm$uuid)]
 cat("qm43 uuids held by more than one file:", length(unique(du)), "\n")
 if (length(du)) print(head(qm[qm$uuid %in% du, c("path", "uuid")][order(qm$uuid[qm$uuid %in% du]), ], 10), row.names = FALSE)
 
 ## IMOS -> qm43 by uuid, else by same day + same SST add_offset
 key <- function(d) paste(d$domain, d$sensor, d$date)
-by_uuid <- split(qm[c("version", "date", "sst_add_offset")], qm$uuid)
+by_uuid <- split(qm[c("version", "date", "sst_add_offset")], qm$uuid)   # split drops NA uuids
 by_day <- split(qm[c("version", "sst_add_offset")], key(qm))
 im$source <- vapply(seq_len(nrow(im)), function(i) {
-  q <- by_uuid[[im$uuid[i]]]
+  q <- if (is.na(im$uuid[i])) NULL else by_uuid[[im$uuid[i]]]
   if (!is.null(q)) return(paste(sort(unique(q$version)), collapse = "+"))
   q <- by_day[[key(im[i, ])]]
   if (is.null(q)) return("absent_from_qm43")
@@ -57,7 +65,7 @@ im$source <- vapply(seq_len(nrow(im)), function(i) {
 }, character(1))
 ## uuid matches should also agree in date and data fingerprint
 ok <- vapply(seq_len(nrow(im)), function(i) {
-  q <- by_uuid[[im$uuid[i]]]; if (is.null(q)) return(NA)
+  q <- if (is.na(im$uuid[i])) NULL else by_uuid[[im$uuid[i]]]; if (is.null(q)) return(NA)
   all(q$date == im$date[i]) && all(q$sst_add_offset == im$sst_add_offset[i])
 }, logical(1))
 cat("\nuuid matches with a different date or SST add_offset:", sum(!ok, na.rm = TRUE), "of", sum(!is.na(ok)), "\n")

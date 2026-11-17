@@ -60,8 +60,16 @@ confirmed.
     - BoM's fv02 runs further (Continental to mid-2025), but IMOS has not taken it up.
     - The Southern multi-sensor record 2012-01 → 2018-11 exists in BoM fv02 but not at IMOS.
     - Trend work needs to handle the seam or use qm43 fv02.
+    - Confirmed by uuid for every file (`nci/headers_compare.R`). Before 2023 IMOS is mostly fv02, with inclusions:
+      Continental AVHRR 2016-03..12 is a patchwork (fv01, unarchived runs); both AVHRR products 2014-09..12 are BoM's
+      first fv02 run, which qm43 has since replaced; the first 37 days of Southern multi (2018-11..12) are an early run.
 14. **The NCI mirror (sh74) doesn't replace files changed in place on S3.**
     - 1,178 SST files (all in 2026 folders) were rewritten on S3 on 2026-10-28; sh74 still holds the 6–22 October versions (sizes differ).
     - New files arrive 1.5–2 days after S3.
 15. **S3 ETags mix three upload styles** (single PUT, 15 MiB s3cmd parts, 8 MiB aws-cli parts), so a byte-identity check must try all three (`nci/s3etag.py`).
     - With all three tried, the sh74 sample (3,713 files, 275 GB, first and last of every directory) is byte-identical to S3. The only differences are issue 14's stale files and the lag.
+16. **BoM's qm43 GHRSST archive has its own quirks** (L3S 1-day day+night, both versions; `nci/README.md`, "Header results"):
+    - 8 zero-byte fv01 files (2018-06, 2019-12) and a stray nested directory, `v02.0fv01/L3S-01day/dn/2018/L3S-01day/dn/2018/`.
+    - 356 fv01 files (2006–2014) with `uuid = "yes"`.
+    - `product_version` is written both ways: `1.0`/`2.0` (older files) and `01.0`/`02.0` (newer).
+    - qm43 lacks 70 days that IMOS has, mostly multi-sensor 2026-08-11..26.

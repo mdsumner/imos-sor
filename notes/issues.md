@@ -64,3 +64,4 @@ confirmed.
     - 1,178 SST files (all in 2026 folders) were rewritten on S3 on 2026-10-28; sh74 still holds the 6–22 October versions (sizes differ).
     - New files arrive 1.5–2 days after S3.
 15. **S3 ETags mix three upload styles** (single PUT, 15 MiB s3cmd parts, 8 MiB aws-cli parts), so a byte-identity check must try all three (`nci/s3etag.py`).
+    - With all three tried, the sh74 sample (3,713 files, 275 GB, first and last of every directory) is byte-identical to S3. The only differences are issue 14's stale files and the lag.

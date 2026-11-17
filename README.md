@@ -217,6 +217,7 @@ approach:
 5. Add L3S-SO (with `sea_ice_fraction`) and GAMSSA to the S2 L5 registry
    next to OISST/MUR, joining trend.sst and trend.ice.
 6. **NCI** (`nci/README.md`): join sh74 (IMOS/AODN mirror, `/g/data/sh74/IMOS_AODN`, not on THREDDS) and qm43 (BoM SST).
-   Run the probe and inventory, and test byte identity with S3. Then compute in situ, and choose between IMOS fv01 and the BoM fv02 reprocessing for the long SST record.
+   Probe, inventories and byte identity done: sh74 is byte-identical to S3 apart from mirror lag and 1,178 stale 2026 files.
+   Next: compute in situ, and choose between IMOS (fv02 to 2022, fv01 after) and the BoM fv02 reprocessing for the long SST record.
 7. Biology refresh from the BGC_DB CSVs via planktonr. This is cheap and
    covers about half of the report's series.

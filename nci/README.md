@@ -30,7 +30,8 @@ Checked 2026-11-17 from outside NCI (public THREDDS and GeoNetwork only). Everyt
     `IMOS_<Facility>_<Data-Code>_…_FV<nn>_…_C-<created>.nc` file-naming convention. The GHRSST files keep their GDS2
     names (`<time>-ABOM-L3S_GHRSST-…`), not that convention.
 - **Remaining questions** (answered by `inventory.pbs` and `block_read.pbs`; jobs 184300275/76/78 submitted 2026-11-17):
-  1. Is it complete, and byte-identical to S3? `inventory.pbs` computes S3-style multipart ETags (8 MiB parts, checked against a real object) so files can be matched without downloading anything.
+  1. Is it complete, and byte-identical to S3? Answered below ("sh74 vs S3"): yes, apart from 8 files of mirror lag
+     and 1,178 stale 2026 files; the 3,713-file ETag sample is byte-identical.
 
 ### qm43: Bureau of Meteorology satellite SST (the upstream of the IMOS L3S)
 
@@ -114,7 +115,7 @@ these scripts write goes to jk72:
    `qsub -P jk72 -l storage=gdata/qm43+gdata/sh74+gdata/jk72 block_read.pbs`
 5. ETags with all upload styles (md5, 8/15/16 MiB) for the same sample: `qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 etags.pbs`, which writes `etags2-…tsv`.
 6. Copy `/g/data/jk72/$USER/imos-sor-probe/*` back into `data/nci/` here. Then run
-   `Rscript nci/compare_inventory.R data/nci/inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz data/nci/etags-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv IMOS/SRS/SST/ghrsst`
+   `Rscript nci/compare_inventory.R data/nci/inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz data/nci/etags2-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv IMOS/SRS/SST/ghrsst data/nci/s3-IMOS_SRS_SST_ghrsst.tsv.gz`
    for presence and size per directory against S3, plus byte identity for the sample.
 
 Then compute in situ with the container you use for trend.ice
@@ -138,11 +139,20 @@ All products here are BoM/IMOS GHRSST L3S/L3C/L4 (ABOM), not MUR.
 - The 1,178 were rewritten on S3 on 2026-10-28, while the sh74 copies date from 6–22 October.
   **The mirror brings in new files but has not replaced files changed in place on S3.**
   Per-file list: `nci/compare-IMOS_SRS_SST_ghrsst-files.csv`.
-- **Byte identity is still to be settled.** In the first ETag sample (3,713 files: first and last of every directory),
-  2,052 match and 1,661 don't. The mismatches come from how the objects were uploaded, not from content:
-  every multipart mismatch fits **15 MiB parts** (s3cmd's default), and 335 are single-PUT objects
-  (ETag = plain md5). `s3etag.py` now computes md5, 8, 15 and 16 MiB ETags in one pass; checked against
-  three real objects, one of each kind. Rerun with `etags.pbs`.
+- **Where sizes match, the bytes match.** The ETag sample is the first and last file of every directory
+  plus the three block files: 3,713 files, 275 GB, data years 1992–2026. **All 3,713 are byte-identical to S3**
+  (`etags.pbs`, job 184319648, 41 min on one CPU; `nci/compare-IMOS_SRS_SST_ghrsst-etags.csv`).
+  - The first attempt matched only 2,052, because it computed 8 MiB-part ETags only.
+    The objects were uploaded three ways, and the S3 `LastModified` year tracks the style:
+
+    | upload style | sample files | S3 LastModified |
+    |---|---|---|
+    | single PUT (ETag = md5) | 859 | 2016–2026 |
+    | 15 MiB parts (s3cmd) | 1,326 | 2017–2018 |
+    | 8 MiB parts (aws cli) | 1,528 | 2018–2026 |
+
+  - So sh74 is a faithful copy of S3, except for the 8 lagging files and the 1,178 stale ones. Anything that
+    treats sh74 as S3 (the remap below) must check sizes against an S3 listing first.
 
 **Which BoM version IMOS holds** (`imos_vs_qm43.R`):
 - Each IMOS 1-day day+night file is matched to the same-day qm43 file nearest in size.
@@ -194,7 +204,7 @@ BoM/IMOS GHRSST L3S (0.02° clear-sky composites), not MUR. In situ = `block_rea
 
 - **sh74 = qm43 fv01 for all four products on all five days:** identical valid counts, q ≥ 4 counts and means.
   S3 also equals fv01 (identical values checked earlier), so all three hold the same data for this block.
-  The inventory ETags will test byte identity across the whole tree.
+  The ETag sample (above) confirms the files are byte-identical across the tree, not just this block.
 - **In situ is 3.7–7.4× faster.** About 2–3 s per file for 3 variables; at that speed decoding, not I/O, sets the pace.
 - sh74 has the complete AVHRR Southern NetCDF (`L3S-1dS`) for these dates, which its AODN Zarr lacks.
 - **fv02 multi-sensor keeps 16 % more q ≥ 4 pixels than fv01**, and its mean is 0.10 °C warmer (different pixel sets).
@@ -206,11 +216,13 @@ raad.virtualize harvests byte references from sources either over THREDDS
 in the published forms (as for BRAN). Public forms therefore need the data
 to be reachable publicly. sh74 is not on THREDDS, so:
 
-- **sh74 → S3 remap.** If the ETag check shows sh74 files are byte-identical to
-  `s3://imos-data`, harvest in situ on Gadi (fast, local Lustre) with remap
+- **sh74 → S3 remap.** sh74 files are byte-identical to `s3://imos-data` where sizes agree
+  (ETag sample, above), so harvest in situ on Gadi (fast, local Lustre) with remap
   `/g/data/sh74/IMOS_AODN/` → `https://imos-data.s3.ap-southeast-2.amazonaws.com/`.
   The published store then points at AWS. That uses the store's remap rule exactly
   as designed, and avoids THREDDS altogether.
+  - Guard: before harvesting, drop or re-harvest from S3 any file whose sh74 size differs from the S3 listing
+    (the 1,178 stale 2026 files). Their byte offsets would not fit the S3 objects.
 
 Candidates, most interesting first:
 

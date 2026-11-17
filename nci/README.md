@@ -13,8 +13,17 @@ Checked 2026-11-17 from outside NCI (public THREDDS and GeoNetwork only). Everyt
   - Format NetCDF, CC BY 4.0, extent 45–168°E, 80–9°S, from 2007.
 - **Path:** `/g/data/sh74/IMOS_AODN`.
 - **Not on THREDDS:** `thredds.nci.org.au/thredds/catalog/sh74/...` is 404, and sh74 isn't in the root catalogue. Access is through Gadi or ARE only, and needs sh74 membership.
-- **Open questions** (answered by `probe_login.sh` and `inventory.pbs`):
-  1. Is it the NetCDF archive `s3://imos-data` only, or also the cloud-optimised Zarr/Parquet?
+- **What the probe found** (2026-11-17, 19:42 AEDT):
+  - `IMOS_AODN/` holds `IMOS/`, `wave_buoy_data/`, `IMOS_AODN_README.txt` and `license.txt`.
+    It mirrors only the `IMOS/` prefix of `s3://imos-data`, not the AIMS, BoM, CSIRO, TERN, UNSW, … prefixes.
+    `wave_buoy_data/` gathers the wave buoys of 11 providers.
+  - `IMOS/` has the same facilities as S3 apart from `eMII` (S3's demos and test files), plus an extra `CO`.
+    `CO` holds at least `diver_photoquadrat_qc_DwC.parquet`, one of the AODN cloud-optimised datasets.
+  - **The daily L3S day+night file counts equal S3** for every year checked (L3S-1d, L3S-1dS, L3SM-1d, L3SM-1dS; 2010–2026), gaps included.
+  - **Freshness:** the newest files are the same dates as on S3 (2026-11-10 Australia, 2026-11-09 Southern).
+    They arrived about 1.5–2 days after their S3 `LastModified`: S3 2026-11-12 10:48 UTC, sh74 2026-11-15 01:17 AEDT.
+- **Remaining questions** (answered by `inventory.pbs` and `block_read.pbs`):
+  1. What exactly is in `IMOS/CO` (the next `probe_login.sh` lists it and prints the mirror's README)?
   2. Is it complete, and byte-identical to S3? `inventory.pbs` computes S3-style multipart ETags (8 MiB parts, checked against a real object) so files can be matched without downloading anything.
   3. How fresh is it?
 

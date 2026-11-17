@@ -40,6 +40,10 @@ if ls "$M" >/dev/null 2>&1; then
   find "$M" -maxdepth 3 \( -name '*.zarr' -o -name '*.parquet' \) -print 2>/dev/null | head -20
   echo "### README / manifest files at the top"
   ls "$M" | grep -i -E 'readme|manifest|licen|sync|log' || echo "  (none)"
+  echo "### IMOS_AODN_README.txt"
+  sed 's/^/  | /' "$M/IMOS_AODN_README.txt" 2>/dev/null | head -150
+  echo "### IMOS/CO (cloud-optimised?) and wave_buoy_data, two levels"
+  for d in "$M/IMOS/CO" "$M/wave_buoy_data/IMOS"; do echo "$d:"; ls "$d" 2>/dev/null | head -40 | sed 's/^/  /'; done
   G=$M/IMOS/SRS/SST/ghrsst
   echo "### $G"
   ls "$G" 2>/dev/null | tr '\n' ' '; echo

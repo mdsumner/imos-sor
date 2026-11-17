@@ -117,6 +117,9 @@ these scripts write goes to jk72:
 6. Copy `/g/data/jk72/$USER/imos-sor-probe/*` back into `data/nci/` here. Then run
    `Rscript nci/compare_inventory.R data/nci/inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz data/nci/etags2-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv IMOS/SRS/SST/ghrsst data/nci/s3-IMOS_SRS_SST_ghrsst.tsv.gz`
    for presence and size per directory against S3, plus byte identity for the sample.
+7. Headers of every 1-day day+night L3S file in sh74 and qm43 (about 75,000; `ncdump -h` only):
+   `qsub -P jk72 -l storage=gdata/sh74+gdata/qm43+gdata/jk72 headers.pbs`, which writes `headers-l3s1d.tsv.gz`.
+   Copy it back, then `Rscript nci/headers_compare.R` pairs each IMOS file with its BoM source by `uuid`.
 
 Then compute in situ with the container you use for trend.ice
 (`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`): the 5-day block sums (R/07)
@@ -156,8 +159,14 @@ All products here are BoM/IMOS GHRSST L3S/L3C/L4 (ABOM), not MUR.
 
 **Which BoM version IMOS holds** (`imos_vs_qm43.R`):
 - Each IMOS 1-day day+night file is matched to the same-day qm43 file nearest in size.
-- IMOS only edits headers (`Conventions`, `acknowledgment`, a `time` attribute), so the median difference is +1.15 KB, while fv01 and fv02 files differ by megabytes.
-- This is size-based; confirm with headers before relying on it. Per-year table: `nci/imos_vs_qm43_by_year.csv`.
+- IMOS only edits attributes, so the median difference is +1.15 KB, while fv01 and fv02 files differ by megabytes.
+  The edits: `Conventions`, `acknowledgment` wording, some variable comments, `quality_level:units`,
+  `l2p_flags:flag_masks` → `flag_values`. Arrays and the per-file packing (`add_offset`, `scale_factor`) are unchanged.
+- This is size-based. Per-year table: `nci/imos_vs_qm43_by_year.csv`.
+- **Checking by header.** Each BoM file has its own global `uuid`, and IMOS keeps it, so the qm43 file with the same
+  uuid is the IMOS file's source (`headers.pbs`, `headers_compare.R`). A spot check over HTTPS of 2022-12-31 and
+  2023-01-01, both Continental sensors, agrees with the sizes: IMOS carries the fv02 uuid
+  (`product_version` 02.0) on 2022-12-31 and the fv01 uuid (01.0) on 2023-01-01. The full run covers every file.
 
 | IMOS product | fv02 (BoM reprocessing) | fv01 (operational) | not matched |
 |---|---|---|---|

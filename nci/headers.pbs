@@ -1,0 +1,69 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -l ncpus=8
+#PBS -l mem=16GB
+#PBS -l walltime=02:00:00
+#PBS -l jobfs=2GB
+#PBS -l wd
+#PBS -j oe
+#PBS -N imos-sor-hdr
+## Global attributes (uuid, id, product_version, date_created, ...) of every
+## 1-day day+night L3S file (BoM/IMOS ABOM GHRSST L3S, not MUR), in both the
+## IMOS copy (sh74) and BoM's archive (qm43, v02.0fv01 incl. RT/, and v02.0fv02).
+## IMOS keeps BoM's uuid, so this pairs each IMOS file with the BoM file
+## and version it came from (nci/headers_compare.R), replacing the size-based
+## guess in nci/imos_vs_qm43.R. Header reads only (ncdump -h): about 75,000 files.
+##
+##   qsub -P jk72 -l storage=gdata/sh74+gdata/qm43+gdata/jk72 headers.pbs
+##
+## Needs the inventories from inventory.pbs in $OUTDIR. To read another set of
+## files, pass LIST=<file of absolute paths> and TAG=<name>.
+## Output: $OUTDIR/headers-$TAG.tsv.gz (default TAG l3s1d), one row per file;
+## columns in the header line; "ERROR" rows for files ncdump could not read.
+set -euo pipefail
+OUTDIR=${OUTDIR:-/g/data/jk72/$USER/imos-sor-probe}
+TAG=${TAG:-l3s1d}
+NCPU=${PBS_NCPUS:-8}
+SH74=/g/data/sh74/IMOS_AODN
+QM43=/g/data/qm43/ghrsst
+work=${PBS_JOBFS:-$(mktemp -d)}
+mkdir -p "$work/parts"
+
+if [ -n "${LIST:-}" ]; then
+  cp "$LIST" "$work/list.txt"
+else
+  inv_imos=$OUTDIR/inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz
+  inv_qm43=$OUTDIR/inventory-qm43_ghrsst.tsv.gz
+  for f in "$inv_imos" "$inv_qm43"; do [ -f "$f" ] || { echo "missing $f (run inventory.pbs)" >&2; exit 1; }; done
+  { zcat "$inv_imos" | cut -f1 | grep -E '^IMOS/SRS/SST/ghrsst/(L3S-1d|L3SM-1d|L3S-1dS|L3SM-1dS)/dn/[0-9]{4}/[^/]*\.nc$' | sed "s|^|$SH74/|"
+    zcat "$inv_qm43" | cut -f1 | grep -E '/dn/.*-ABOM-L3S_GHRSST-SSTfnd-.*-1d_dn(_Southern)?-v02\.0-fv0[12]\.0\.nc$' | sed "s|^|$QM43/|"
+  } > "$work/list.txt"
+fi
+echo "files: $(wc -l < "$work/list.txt")  ($(grep -c "^$SH74/" "$work/list.txt" || true) sh74, $(grep -c "^$QM43/" "$work/list.txt" || true) qm43)"
+
+## ncdump: Gadi's netcdf module, else the container
+RUN=()
+module load netcdf 2>/dev/null || true
+if ! command -v ncdump >/dev/null 2>&1; then
+  module load singularity
+  SIF=${SIF:-/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif}
+  RUN=(singularity exec -B /g/data -B "$work" "$SIF")
+  ${RUN[@]+"${RUN[@]}"} which ncdump >/dev/null || { echo "no ncdump on the host or in $SIF" >&2; exit 1; }
+fi
+echo "ncdump: ${RUN[*]:-host} $(${RUN[@]+"${RUN[@]}"} ncdump 2>&1 | grep -m1 -i 'netcdf library version' || true)"
+
+export AWKF="$PBS_O_WORKDIR/nc_globals.awk" PARTS="$work/parts"
+## smoke test on the first file
+${RUN[@]+"${RUN[@]}"} bash -c 'ncdump -h "$1" | awk -v p="$1" -f "$AWKF"' _ "$(head -1 "$work/list.txt")" | cut -c1-300 || echo "smoke test failed"
+
+## each xargs batch appends to its own part file (no interleaved lines)
+time ${RUN[@]+"${RUN[@]}"} xargs -a "$work/list.txt" -d '\n' -P "$NCPU" -n 200 bash -c '
+  for f; do
+    if h=$(ncdump -h "$f" 2>/dev/null); then printf "%s\n" "$h" | awk -v p="$f" -f "$AWKF"
+    else printf "%s\tERROR\n" "$f"; fi
+  done >> "$PARTS/part-$$.tsv"' _ || echo "xargs exit status $?"
+
+{ printf 'path\tuuid\tid\tproduct_version\tdate_created\tnetcdf_version_id\tConventions\tstart_time\tstop_time\tfile_quality_level\tsource\tsst_add_offset\n'
+  cat "$work/parts"/part-*.tsv | sort; } | gzip > "$OUTDIR/headers-$TAG.tsv.gz"
+n=$(zcat "$OUTDIR/headers-$TAG.tsv.gz" | tail -n +2 | wc -l); e=$(zcat "$OUTDIR/headers-$TAG.tsv.gz" | grep -c $'\tERROR$' || true)
+echo "done $(date -Is): $n rows, $e errors -> $OUTDIR/headers-$TAG.tsv.gz"

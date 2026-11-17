@@ -3,12 +3,13 @@
 # IMOS's 1-day day+night L3S files (BoM ABOM GHRSST L3S, not MUR) are renamed
 # copies of BoM files. qm43 holds both BoM versions: v02.0fv01 (operational)
 # and v02.0fv02 (reprocessing). Compressed netCDF sizes almost never
-# coincide, and IMOS only edits headers in place (Conventions, acknowledgment,
-# one time attribute: about +1 KB, with arrays, chunking and compression
-# unchanged). So the nearest-sized qm43 file of the same day, within TOL
-# bytes, identifies the version of each IMOS day. That needs both inventories
-# from Gadi and no file reads. fv01 and fv02 files of one day differ by MBs.
-# Confirm with headers (product_version, date_created) before relying on it.
+# coincide, and IMOS only edits attributes (Conventions, acknowledgment, some
+# variable comments and units, l2p_flags flag_masks -> flag_values: about
+# +1 KB, with arrays, chunking and compression unchanged). So the
+# nearest-sized qm43 file of the same day, within TOL bytes, identifies the
+# version of each IMOS day. That needs both inventories from Gadi and no file
+# reads. fv01 and fv02 files of one day differ by MBs.
+# headers.pbs + headers_compare.R check this file by file, by uuid.
 #
 # Writes nci/imos_vs_qm43_by_year.csv (committed): per IMOS product and year,
 # days matching fv02, fv01, fv01 real-time (RT/), both, neither, and IMOS days
@@ -54,6 +55,8 @@ imos$delta <- vapply(seq_len(nrow(imos)), function(i) {
   dd <- imos$size[i] - q$size; dd[which.min(abs(dd))]
 }, numeric(1))
 cat("size delta IMOS - nearest qm43 (bytes), matched files:\n"); print(summary(imos$delta[imos$match != "neither" & imos$match != "absent_from_qm43"]))
+## per file, for nci/headers_compare.R (not committed: data/ is ignored)
+write.csv(imos[c("path", "size", "match", "delta")], gzfile("data/nci/imos_vs_qm43_files.csv.gz"), row.names = FALSE)
 imos$year <- format(imos$date, "%Y")
 tab <- as.data.frame.matrix(table(paste(imos$dir, imos$year, sep = "|"), imos$match))
 tab <- cbind(do.call(rbind, strsplit(rownames(tab), "|", fixed = TRUE)), tab)

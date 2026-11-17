@@ -22,10 +22,16 @@ Checked 2026-11-17 from outside NCI (public THREDDS and GeoNetwork only). Everyt
   - **The daily L3S day+night file counts equal S3** for every year checked (L3S-1d, L3S-1dS, L3SM-1d, L3SM-1dS; 2010–2026), gaps included.
   - **Freshness:** the newest files are the same dates as on S3 (2026-11-10 Australia, 2026-11-09 Southern).
     They arrived about 1.5–2 days after their S3 `LastModified`: S3 2026-11-12 10:48 UTC, sh74 2026-11-15 01:17 AEDT.
-- **Remaining questions** (answered by `inventory.pbs` and `block_read.pbs`):
-  1. What exactly is in `IMOS/CO` (the next `probe_login.sh` lists it and prints the mirror's README)?
-  2. Is it complete, and byte-identical to S3? `inventory.pbs` computes S3-style multipart ETags (8 MiB parts, checked against a real object) so files can be matched without downloading anything.
-  3. How fresh is it?
+  - **`IMOS/CO` holds a single dataset, `diver_photoquadrat_qc_DwC.parquet`**, although the README says
+    data come "increasingly [in] cloud-optimised formats such as Parquet and Zarr". So for gridded work sh74
+    is the NetCDF archive. `wave_buoy_data/IMOS/` holds `WAVE-BUOYS`.
+  - **`IMOS_AODN_README.txt`** is v1.0, 01/07/26, by AODN. It gives licence and citation text, and says sh74 also has
+    `admin/`, `mirror/` and `testing/` folders (outside `IMOS_AODN`; not user data). It describes the
+    `IMOS_<Facility>_<Data-Code>_…_FV<nn>_…_C-<created>.nc` file-naming convention. The GHRSST files keep their GDS2
+    names (`<time>-ABOM-L3S_GHRSST-…`), not that convention.
+- **Remaining questions** (answered by `inventory.pbs` and `block_read.pbs`; jobs 184300275/76/78 submitted 2026-11-17):
+  1. Is it complete, and byte-identical to S3? `inventory.pbs` computes S3-style multipart ETags (8 MiB parts, checked against a real object) so files can be matched without downloading anything.
+  2. How fast are in-situ reads, compared with THREDDS and S3?
 
 ### qm43: Bureau of Meteorology satellite SST (the upstream of the IMOS L3S)
 

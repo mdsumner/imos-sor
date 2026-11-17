@@ -120,6 +120,12 @@ these scripts write goes to jk72:
 7. Headers of every 1-day day+night L3S file in sh74 and qm43 (about 75,000; `ncdump -h` only):
    `qsub -P jk72 -l storage=gdata/sh74+gdata/qm43+gdata/jk72 headers.pbs`, which writes `headers-l3s1d.tsv.gz`.
    Copy it back, then `Rscript nci/headers_compare.R` pairs each IMOS file with its BoM source by `uuid`.
+8. fv01 vs fv02 offset in qm43, on every day both versions exist (about 7,900 day pairs over 4 products).
+   First build the geometry kit here (`Rscript nci/offset_kit.R` → `data/nci/offset_kit.rds`, 3.6 MB) and copy it to
+   `/g/data/jk72/$USER/imos-sor-probe/`. Then `qsub -P jk72 -l storage=gdata/qm43+gdata/jk72 offset.pbs`.
+   - Outputs: one file per product-month in `offset/`. The job is resumable, so rerun the same command if it hits walltime.
+   - Cost: tested here at about 25 s per day per worker (19 s compute). With 12 workers that's roughly 4.5 h and about 150 SU.
+   - Copy back, then run `Rscript nci/offset_summary.R`.
 
 Then compute in situ with the container you use for trend.ice
 (`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`): the 5-day block sums (R/07)
@@ -197,6 +203,17 @@ All products here are BoM/IMOS GHRSST L3S/L3C/L4 (ABOM), not MUR.
   - 356 fv01 files (2006–2014) have `uuid = "yes"`.
   - Older files write `product_version` as `1.0` / `2.0`, newer ones as `01.0` / `02.0`.
   - `v02.0fv01/L3S-01day/dn/2018/L3S-01day/dn/2018/` is a stray nested copy (one zero-byte file).
+  - fv01 Continental files store `lon` wrapped (70.01 … 179.99, −179.99 … −170.01); fv02 runs on to 189.99.
+    GDAL reads the fv01 origin as −290 (= 70 modulo 360). IMOS's copies of fv01 files have `lon` unwrapped (to 189.99),
+    so for fv01-era files IMOS also rewrites a coordinate array, not only attributes.
+
+**fv01 vs fv02 offset** (`offset.R`, `offset.pbs`, `offset_summary.R`). For each day both versions exist,
+d = fv01 − fv02 on the pixels valid in both, under each quality variant (all / q4 / q4b, each version with its
+own `quality_level` and `sses_bias`). Exact sums are kept for the whole window, the region sets and S2 L5 cells,
+together with each version's own-pixel sums. That separates the paired offset (calibration) from the
+difference in which pixels each version keeps (selection), which together make up what a naive splice of the two
+records would see. A 6-day test already shows the pattern to look for: paired offsets of a few thousandths of a degree,
+while the own-pixel means differ by 0.1–0.3 °C because fv02 keeps different pixels.
 
 | IMOS product | fv02 (BoM reprocessing) | fv01 (operational) | not matched |
 |---|---|---|---|

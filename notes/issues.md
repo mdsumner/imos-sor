@@ -73,3 +73,4 @@ confirmed.
     - 356 fv01 files (2006–2014) with `uuid = "yes"`.
     - `product_version` is written both ways: `1.0`/`2.0` (older files) and `01.0`/`02.0` (newer).
     - qm43 lacks 70 days that IMOS has, mostly multi-sensor 2026-08-11..26.
+    - fv01 Continental files store `lon` wrapped at the antimeridian (70.01 … 179.99, −179.99 … −170.01), so the coordinate is not monotonic. fv02 and IMOS's copies run 70.01 … 189.99. GDAL gives the fv01 origin as −290.

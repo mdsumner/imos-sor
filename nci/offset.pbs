@@ -1,0 +1,41 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -l ncpus=16
+#PBS -l mem=64GB
+#PBS -l walltime=10:00:00
+#PBS -l jobfs=1GB
+#PBS -l wd
+#PBS -j oe
+#PBS -N imos-sor-offset
+## fv01 vs fv02 offset of BoM's L3S SST in qm43 (BoM ABOM GHRSST L3S 1-day
+## day+night, not MUR): exact sums of fv01 - fv02 on every day both versions
+## exist, per region set, whole domain and S2 L5 cell (nci/offset.R).
+## About 7,900 day pairs; ~25 s per day per worker; resumable (finished
+## product-months are skipped), so rerun the same command if it hits walltime.
+##
+##   qsub -P jk72 -l storage=gdata/qm43+gdata/jk72 offset.pbs
+##   qsub -P jk72 -l storage=gdata/qm43+gdata/jk72 -v PRODUCTS=cont_multi,YEARS=2024 offset.pbs   (a subset)
+##
+## Needs in $OUTDIR: inventory-qm43_ghrsst.tsv.gz (inventory.pbs) and
+## offset_kit.rds (made by nci/offset_kit.R off Gadi; copy it up).
+## Output: $OUTDIR/offset/<product>/<YYYY-MM>.rds
+## Memory: ~4.5 GB per worker plus ~1.5 GB shared, so NWORK=12 for 64 GB.
+set -euo pipefail
+module load singularity
+SIF=${SIF:-/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif}
+[ -f "$SIF" ] || { echo "no image at $SIF" >&2; exit 1; }
+OUTDIR=${OUTDIR:-/g/data/jk72/$USER/imos-sor-probe}
+for f in inventory-qm43_ghrsst.tsv.gz offset_kit.rds; do
+  [ -f "$OUTDIR/$f" ] || { echo "missing $OUTDIR/$f" >&2; exit 1; }
+done
+mkdir -p "$OUTDIR/offset"
+## keep host R/Python libraries out of the container (as in raad.virtualize); pass the job settings in
+export SINGULARITYENV_R_LIBS_USER=/nonexistent SINGULARITYENV_R_LIBS= SINGULARITYENV_PYTHONNOUSERSITE=1
+export SINGULARITYENV_NWORK=${NWORK:-12}
+for v in PRODUCTS YEARS MONTHS MAXDAYS; do
+  [ -n "${!v:-}" ] && export "SINGULARITYENV_$v=${!v}"
+done
+echo "start $(date -Is) NWORK=$SINGULARITYENV_NWORK PRODUCTS=${PRODUCTS:-all} YEARS=${YEARS:-all} MONTHS=${MONTHS:-all}"
+singularity exec -B /g/data "$SIF" Rscript "$PBS_O_WORKDIR/offset.R" \
+  "$OUTDIR/inventory-qm43_ghrsst.tsv.gz" "$OUTDIR/offset_kit.rds" "$OUTDIR/offset" /g/data/qm43/ghrsst
+echo "done $(date -Is): $(find "$OUTDIR/offset" -name '*.rds' | wc -l) product-month files in $OUTDIR/offset"

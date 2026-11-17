@@ -80,7 +80,7 @@ fv02 and fv01 (2022/2023 Southern, 2025 Continental) needs handling.
 ## Steps
 
 1. Join **sh74** (and qm43). Approval can take a little while.
-2. Copy this directory to Gadi, e.g. `rsync -a nci/ gadi.nci.org.au:imos-sor-nci/`. The repo has no remote yet.
+2. On Gadi: `git clone https://github.com/mdsumner/imos-sor.git` (a private repo: use a token or `gh auth login`), then `cd imos-sor/nci`.
 3. On a login node: `bash probe_login.sh`, which writes `~/imos-sor-probe/login-<date>.txt`.
 4. `qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 inventory.pbs`. The default is `SUBDIR=IMOS/SRS/SST/ghrsst`; `-v SUBDIR=IMOS` does the whole IMOS tree.
 5. Copy `/g/data/jk72/$USER/imos-sor-probe/*` back into `data/nci/` here, then run

@@ -1,0 +1,6 @@
+built 2026-11-17 04:52 UTC
+eez_legal, eez: GA AMB2020 https://d28rz98at9flks.cloudfront.net/144571/144571_01_0.zip (Perth Treaty EEZ + Territorial Sea areas)
+star: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/ Commonwealth_Marine_Regions/MapServer/0
+imcra: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/ IMCRA_Provincial/MapServer/0
+amp: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/ Australian_Marine_Parks/FeatureServer/0
+GDAL GDAL 3.14.0dev-9bb42f5a7b-dirty, released 2026/11/11 | sf 1.1.3

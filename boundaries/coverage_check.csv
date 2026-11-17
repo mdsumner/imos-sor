@@ -1,0 +1,291 @@
+"set","region_id","region","cells","coverage_km2","geod_km2","rel_diff"
+"eez_legal",1,"MLD",1401673,5962719.19,5962719.31,-2.13e-08
+"eez_legal",2,"TST",647,2630.29,2630.29,-5.99e-08
+"eez_legal",3,"CI",57455,274081.61,274081.62,-3.76e-08
+"eez_legal",4,"CKI",96957,463244.21,463244.22,-1.68e-08
+"eez_legal",5,"NI",100066,428353.4,428353.41,-1.72e-08
+"eez_legal",6,"MAC",165907,470840.8,470840.83,-4.66e-08
+"eez_legal",7,"HIMI",140221,410738.17,410738.19,-7.02e-08
+"eez_legal",8,"AATW",840697,1766895.76,1766895.41,1.99e-07
+"eez_legal",9,"AATE",149630,296440.75,296440.69,1.79e-07
+"eez",1,"MLD",3337101,14557576.08,14557577.14,-7.28e-08
+"eez",2,"TST",889,3931.17,3931.17,6.3e-07
+"eez",3,"CI",58037,277177.94,277177.95,-3.76e-08
+"eez",4,"CKI",97695,467128.7,467128.7,-1.68e-08
+"eez",5,"NI",100588,430831.94,430831.94,-1.73e-08
+"eez",6,"MAC",167730,476412.84,476412.86,-4.49e-08
+"eez",7,"HIMI",142279,417327.19,417327.22,-7.08e-08
+"eez",8,"AATW",916169,1912661.51,1912661.56,-2.37e-08
+"eez",9,"AATE",165064,324676.77,324676.96,-5.84e-07
+"star",1,"Coral Sea",212518,989835.93,989836.08,-1.5e-07
+"star",2,"North",131949,625689.2,625689.23,-4.02e-08
+"star",3,"North-west",230696,1067576.31,1067576.41,-9.86e-08
+"star",4,"South-east",480344,1632246.73,1632246.64,5.5e-08
+"star",5,"South-west",318084,1291634.59,1291634.6,-8.49e-09
+"star",6,"Temperate East",346051,1466754.59,1466754.62,-2.08e-08
+"star",7,"outside regions: MLD",1902018,8390097.05,8390097.92,-1.03e-07
+"star",8,"outside regions: TST",889,3931.17,3931.17,6.3e-07
+"star",9,"outside regions: CI",58037,277177.94,277177.95,-3.76e-08
+"star",10,"outside regions: CKI",97695,467128.7,467128.7,-1.68e-08
+"star",11,"outside regions: NI",463,38.73,38.7,0.000808
+"star",12,"outside regions: MAC",904,947.73,947.74,-1.35e-05
+"star",13,"outside regions: HIMI",142279,417327.19,417327.22,-7.08e-08
+"star",14,"outside regions: AATW",916169,1912661.51,1912661.56,-2.37e-08
+"star",15,"outside regions: AATE",165064,324676.77,324676.96,-5.84e-07
+"imcra",1,"Southwest Transition",25211,101054.89,101054.9,-3.8e-08
+"imcra",2,"Southwest Shelf Province",19001,73771.74,73771.87,-1.7e-06
+"imcra",3,"Spencer Gulf Shelf Province",34204,133160.2,133160.31,-8.3e-07
+"imcra",4,"Southern Province",195033,770270.71,770270.36,4.47e-07
+"imcra",5,"Southeast Shelf Transition",16323,59612.61,59612.71,-1.79e-06
+"imcra",6,"Southeast Transition",64025,241909.65,241909.57,3.3e-07
+"imcra",7,"Western Bass Strait Shelf Transition",10302,37272.4,37272.49,-2.42e-06
+"imcra",8,"West Tasmania Transition",78969,289809.63,289809.48,5.11e-07
+"imcra",9,"Bass Strait Shelf Province",17559,64457.26,64457.26,-1.19e-08
+"imcra",10,"Tasmanian Shelf Province",9869,32372.14,32372.25,-3.43e-06
+"imcra",11,"Tasmania Province",85628,299560.57,299560.39,6.16e-07
+"imcra",12,"Macquarie Island Province",167710,476289.15,476289.1,1.19e-07
+"imcra",13,"Cocos (Keeling) Island Province",97695,467114.79,467114.8,-1.56e-08
+"imcra",14,"Christmas Island Province",68519,327997.04,327997.02,4.19e-08
+"imcra",15,"Timor Transition",5607,24090.05,24090.05,3.1e-07
+"imcra",16,"Northern Shelf Province",118679,555763.49,555763.45,6.83e-08
+"imcra",17,"Northeast Shelf Transition",21255,97859.57,97859.57,8.02e-09
+"imcra",18,"Cape Province",23219,109342.58,109342.6,-1.44e-07
+"imcra",19,"Northwest Shelf Transition",67091,308445.85,308445.81,1.32e-07
+"imcra",20,"Timor Province",46147,217092.26,217092.31,-2.56e-07
+"imcra",21,"Northeast Transition",31809,148701.39,148701.43,-2.68e-07
+"imcra",22,"Northwest Shelf Province",52321,238758.84,238758.71,5.13e-07
+"imcra",23,"Kenn Transition",83127,377131.66,377131.68,-4.67e-08
+"imcra",24,"Northeast Province",95285,442871.34,442871.37,-8.8e-08
+"imcra",25,"Northwest Transition",39717,184424.05,184424.08,-2.05e-07
+"imcra",26,"Northeast Shelf Province",41449,183914.8,183914.7,5.46e-07
+"imcra",27,"Northwest Province",39007,178651.35,178651.4,-2.83e-07
+"imcra",28,"Kenn Province",12898,57419.08,57419.09,-1.06e-07
+"imcra",29,"Central Western Transition",36545,162890.85,162890.91,-3.54e-07
+"imcra",30,"Central Western Shelf Transition",2350,9697.67,9697.64,2.66e-06
+"imcra",31,"Central Eastern Transition",15357,67148.54,67148.56,-2.42e-07
+"imcra",32,"Central Western Shelf Province",11995,50515.97,50515.99,-3.92e-07
+"imcra",33,"Central Eastern Shelf Transition",10515,43033.91,43033.9,3.32e-07
+"imcra",34,"Central Western Province",63199,268459.87,268459.77,3.85e-07
+"imcra",35,"Norfolk Island Province",100587,430793.27,430793.3,-6.14e-08
+"imcra",36,"Lord Howe Province",114922,485348.46,485348.48,-4.78e-08
+"imcra",37,"Tasman Basin Province",37778,156415.49,156415.47,9.15e-08
+"imcra",38,"Central Eastern Province",65222,266589.31,266589.25,2.07e-07
+"imcra",39,"Southwest Shelf Transition",7994,32809.11,32809.17,-1.93e-06
+"imcra",40,"Central Eastern Shelf Province",4805,18222.34,18222.41,-4e-06
+"imcra",41,"Great Australian Bight Shelf Transition",36010,146547.09,146547.32,-1.53e-06
+"amp",1,"Coral Sea | Habitat Protection Zone",139191,643165.54,643165.56,-1.8e-08
+"amp",2,"Coral Sea | Habitat Protection Zone",2629,11963.74,11963.75,-1.15e-07
+"amp",3,"Coral Sea | Habitat Protection Zone (Reefs)",2105,9510.59,9510.59,8.54e-08
+"amp",4,"Coral Sea | Habitat Protection Zone (Reefs)",760,3371.78,3371.78,-9.65e-08
+"amp",5,"Coral Sea | Habitat Protection Zone (Reefs)",247,1006.63,1006.63,-9.02e-07
+"amp",6,"Coral Sea | Habitat Protection Zone (Reefs)",460,1938.42,1938.42,4.87e-07
+"amp",7,"Coral Sea | Habitat Protection Zone (Reefs)",77,298.78,298.78,-5.05e-07
+"amp",8,"Coral Sea | Habitat Protection Zone (Reefs)",168,611.58,611.58,-8.93e-07
+"amp",9,"Coral Sea | Habitat Protection Zone (Reefs)",126,485.8,485.81,-1.52e-06
+"amp",10,"Coral Sea | Habitat Protection Zone (Reefs)",200,724.02,724.02,3.22e-07
+"amp",11,"Coral Sea | Habitat Protection Zone (Reefs)",114,417.56,417.56,3.62e-07
+"amp",12,"Coral Sea | Habitat Protection Zone (Reefs)",6,8.56,8.56,-2.3e-07
+"amp",13,"Coral Sea | Habitat Protection Zone (Reefs)",216,896.15,896.15,1.14e-07
+"amp",14,"Coral Sea | Habitat Protection Zone (Reefs)",2352,10556.69,10556.69,1.08e-07
+"amp",15,"Coral Sea | National Park Zone",264,1036.36,1036.36,-1.6e-07
+"amp",16,"Coral Sea | National Park Zone",7192,33808.7,33808.7,-4.59e-08
+"amp",17,"Coral Sea | National Park Zone",18,35.11,35.11,-5.92e-08
+"amp",18,"Coral Sea | National Park Zone",13070,60489.04,60489.04,-3.01e-08
+"amp",19,"Coral Sea | National Park Zone",240,928.64,928.64,-1.11e-06
+"amp",20,"Coral Sea | National Park Zone",1133,4388.28,4388.28,-5.83e-07
+"amp",21,"Coral Sea | National Park Zone",209,764.71,764.71,-5.92e-07
+"amp",22,"Coral Sea | National Park Zone",592,2242.88,2242.88,-7.6e-07
+"amp",23,"Coral Sea | National Park Zone",112,440,440,9.54e-07
+"amp",24,"Coral Sea | National Park Zone",660,2491.35,2491.36,-5.08e-07
+"amp",25,"Coral Sea | National Park Zone",28360,131774.68,131774.68,-2.12e-08
+"amp",26,"Coral Sea | Special Purpose Zone (Trawl)",399,1695.99,1696,-4.23e-07
+"amp",27,"Coral Sea | Special Purpose Zone (Trawl)",180,710.87,710.86,9.66e-07
+"amp",28,"Coral Sea | Special Purpose Zone (Trawl)",14420,64073.53,64073.53,1.38e-08
+"amp",29,"Heard Island and McDonald Islands | Habitat Protection Zone",58779,169964.82,169964.85,-1.6e-07
+"amp",30,"Heard Island and McDonald Islands | National Park Zone",4416,12577.87,12577.87,-3.62e-07
+"amp",31,"Heard Island and McDonald Islands | National Park Zone",42267,118709.17,118709.16,9.01e-08
+"amp",32,"Heard Island and McDonald Islands | National Park Zone",2552,7361,7361,3.12e-07
+"amp",33,"Heard Island and McDonald Islands | National Park Zone",411,1089.48,1089.48,5.67e-07
+"amp",34,"Heard Island and McDonald Islands | Sanctuary Zone",8592,25143.41,25143.4,4e-07
+"amp",35,"Heard Island and McDonald Islands | Sanctuary Zone",13368,40768.52,40768.51,1.53e-07
+"amp",36,"Heard Island and McDonald Islands | Sanctuary Zone",129,308.37,308.37,4.8e-06
+"amp",37,"Heard Island and McDonald Islands | Sanctuary Zone",1679,4732.26,4732.26,2.06e-08
+"amp",38,"Christmas Island | Habitat Protection Zone",854,3829.69,3829.69,2.35e-08
+"amp",39,"Christmas Island | National Park Zone",57282,273186.31,273186.32,-3.8e-08
+"amp",40,"Cocos (Keeling) Islands | Habitat Protection Zone",309,1208.18,1208.18,2.66e-07
+"amp",41,"Cocos (Keeling) Islands | National Park Zone",1,0.05,0.05,-3.17e-05
+"amp",42,"Cocos (Keeling) Islands | National Park Zone",1,0.06,0.06,1.49e-05
+"amp",43,"Cocos (Keeling) Islands | National Park Zone",97455,465845.59,465845.6,-1.75e-08
+"amp",44,"Arafura | Multiple Use Zone",2649,12421.9,12421.9,8.48e-09
+"amp",45,"Arafura | Special Purpose Zone",22,41.63,41.63,-9.79e-07
+"amp",46,"Arafura | Special Purpose Zone (Trawl)",2266,10460.56,10460.56,3.06e-08
+"amp",47,"Arnhem | Special Purpose Zone",1605,7124.87,7124.87,-1.68e-07
+"amp",48,"Gulf of Carpentaria | National Park Zone",869,3623.08,3623.08,-1.21e-07
+"amp",49,"Gulf of Carpentaria | Special Purpose Zone (Trawl)",1559,6875.52,6875.52,-4.63e-08
+"amp",50,"Gulf of Carpentaria | Special Purpose Zone (Trawl)",2882,13272.33,13272.33,1.84e-08
+"amp",51,"Joseph Bonaparte Gulf | Multiple Use Zone",1485,6345.6,6345.6,-3.76e-07
+"amp",52,"Joseph Bonaparte Gulf | Special Purpose Zone",512,2251.46,2251.46,5.63e-07
+"amp",53,"Limmen | Habitat Protection Zone",373,1399.2,1399.2,-6.12e-07
+"amp",54,"Oceanic Shoals | Habitat Protection Zone",1570,6928.77,6928.77,3.96e-08
+"amp",55,"Oceanic Shoals | Multiple Use Zone",6881,32486.31,32486.31,7.74e-08
+"amp",56,"Oceanic Shoals | Multiple Use Zone",1693,7477.58,7477.58,8.32e-08
+"amp",57,"Oceanic Shoals | National Park Zone",110,406.19,406.19,-5.08e-07
+"amp",58,"Oceanic Shoals | Special Purpose Zone (Trawl)",5223,24444.3,24444.3,-3.69e-08
+"amp",59,"Wessel | Habitat Protection Zone",892,3810.92,3810.92,-6.86e-08
+"amp",60,"Wessel | Special Purpose Zone (Trawl)",493,2097.15,2097.15,1e-07
+"amp",61,"West Cape York | Habitat Protection Zone",2238,10114.41,10114.41,6.77e-08
+"amp",62,"West Cape York | National Park Zone",568,2422.1,2422.1,-2.62e-07
+"amp",63,"West Cape York | National Park Zone",222,907.03,907.03,-5.32e-07
+"amp",64,"West Cape York | Special Purpose Zone",560,2568.62,2568.62,2.09e-07
+"amp",65,"Argo-Rowley Terrace | Multiple Use Zone",1070,4480.95,4480.95,-2.27e-07
+"amp",66,"Argo-Rowley Terrace | Multiple Use Zone",22321,104331.09,104331.09,-2e-08
+"amp",67,"Argo-Rowley Terrace | National Park Zone",7796,36050.12,36050.12,4.68e-08
+"amp",68,"Argo-Rowley Terrace | Special Purpose Zone (Trawl)",327,1140.77,1140.77,-3.16e-07
+"amp",69,"Ashmore Reef | Recreational Use Zone",20,33.55,33.55,8.76e-07
+"amp",70,"Ashmore Reef | Sanctuary Zone",145,549.92,549.92,5.45e-07
+"amp",71,"Carnarvon Canyon | Habitat Protection Zone",1435,6176.7,6176.7,2.97e-07
+"amp",72,"Cartier Island | Sanctuary Zone",49,172.37,172.37,8.18e-08
+"amp",73,"Dampier | Habitat Protection Zone",42,104.44,104.44,-3.94e-06
+"amp",74,"Dampier | Multiple Use Zone",275,1074.43,1074.44,-1.17e-06
+"amp",75,"Dampier | National Park Zone",26,72.71,72.71,-1.37e-06
+"amp",76,"Eighty Mile Beach | Multiple Use Zone",2555,10785.22,10785.22,-8.74e-08
+"amp",77,"Gascoyne | Habitat Protection Zone",8809,38810.39,38810.4,-1.97e-07
+"amp",78,"Gascoyne | Habitat Protection Zone",57,172.01,172.01,5.43e-07
+"amp",79,"Gascoyne | Multiple Use Zone",7720,33651.84,33651.84,-1.64e-07
+"amp",80,"Gascoyne | National Park Zone",2073,9131.86,9131.86,4.38e-07
+"amp",81,"Kimberley | Habitat Protection Zone",421,1682.86,1682.86,-2.55e-07
+"amp",82,"Kimberley | Habitat Protection Zone",934,3982.26,3982.26,-3.35e-07
+"amp",83,"Kimberley | Multiple Use Zone",13685,62411.14,62411.15,-8.48e-08
+"amp",84,"Kimberley | National Park Zone",1481,6392.29,6392.29,2.67e-07
+"amp",85,"Mermaid Reef | National Park Zone",130,539.87,539.87,3.29e-07
+"amp",86,"Montebello | Multiple Use Zone",843,3412.8,3412.8,-3.8e-07
+"amp",87,"Ningaloo | National Park Zone",41,115.95,115.95,-5.65e-07
+"amp",88,"Ningaloo | Recreational Use Zone",276,1043.67,1043.67,7.12e-08
+"amp",89,"Ningaloo | Recreational Use Zone",368,1275.58,1275.58,2.86e-07
+"amp",90,"Roebuck | Multiple Use Zone",83,303.71,303.7,5.49e-07
+"amp",91,"Shark Bay | Multiple Use Zone",1731,7442.54,7442.54,-1.09e-07
+"amp",92,"Apollo | Multiple Use Zone",360,1183.6,1183.6,-1.42e-06
+"amp",93,"Beagle | Multiple Use Zone",799,2448.76,2448.76,9.66e-07
+"amp",94,"Beagle | National Park Zone",150,478.81,478.81,-1.76e-06
+"amp",95,"Boags | Multiple Use Zone",153,537.48,537.48,-1.06e-06
+"amp",96,"East Gippsland | Multiple Use Zone",1149,4136.63,4136.63,9.22e-07
+"amp",97,"Flinders | Habitat Protection Zone",3028,10891.54,10891.54,-1.12e-08
+"amp",98,"Flinders | Multiple Use Zone",355,1129.45,1129.45,-6.1e-07
+"amp",99,"Flinders | National Park Zone",3522,12721.1,12721.1,-3.79e-08
+"amp",100,"Flinders | National Park Zone",36,101.66,101.66,5.27e-06
+"amp",101,"Flinders | National Park Zone",655,2202.09,2202.09,5.99e-08
+"amp",102,"Franklin | Multiple Use Zone",176,547.66,547.66,1.07e-07
+"amp",103,"Franklin | National Park Zone",43,123.11,123.11,3.01e-06
+"amp",104,"Freycinet | Habitat Protection Zone",29,67.68,67.68,1.17e-05
+"amp",105,"Freycinet | Multiple Use Zone",242,725.11,725.11,-1.41e-06
+"amp",106,"Freycinet | National Park Zone",15813,56792.65,56792.66,-2.03e-08
+"amp",107,"Freycinet | National Park Zone",12,32.54,32.54,3.26e-06
+"amp",108,"Freycinet | Recreational Use Zone",105,322.73,322.73,6.06e-07
+"amp",109,"Huon | Multiple Use Zone",2611,8558.64,8558.64,-4.36e-08
+"amp",110,"Huon | National Park Zone",440,1432.15,1432.15,7e-07
+"amp",111,"Macquarie Island | Habitat Protection Zone (Macquarie)",11894,33195.55,33195.54,2.34e-07
+"amp",112,"Macquarie Island | National Park Zone",136326,385132.55,385132.56,-2.62e-08
+"amp",113,"Macquarie Island | Sanctuary Zone",20624,57137.11,57137.11,-7.41e-08
+"amp",114,"Murray | Habitat Protection Zone",594,2141.24,2141.24,-6.87e-08
+"amp",115,"Murray | Habitat Protection Zone",446,1537.41,1537.41,-1.21e-07
+"amp",116,"Murray | Multiple Use Zone",1309,4624.63,4624.63,-3.61e-08
+"amp",117,"Murray | Multiple Use Zone",117,332.85,332.85,-8.74e-08
+"amp",118,"Murray | National Park Zone",4591,17167.6,17167.59,1.7e-07
+"amp",119,"Nelson | National Park Zone",1709,6123.08,6123.08,-9.22e-08
+"amp",120,"South Tasman Rise | National Park Zone",8355,27704.35,27704.35,-3.17e-08
+"amp",121,"Tasman Fracture | Multiple Use Zone",5737,19965.02,19965.02,2.89e-07
+"amp",122,"Tasman Fracture | National Park Zone",415,1222.81,1222.81,-1.26e-07
+"amp",123,"Tasman Fracture | National Park Zone",6344,21312.71,21312.72,-4.64e-07
+"amp",124,"Zeehan | Multiple Use Zone",288,932.98,932.98,2.02e-07
+"amp",125,"Zeehan | National Park Zone",5122,18662.7,18662.7,2e-07
+"amp",126,"Zeehan | Special Purpose Zone",106,301.28,301.28,7.7e-08
+"amp",127,"Abrolhos | Habitat Protection Zone",5406,23238.61,23238.61,5.24e-08
+"amp",128,"Abrolhos | Multiple Use Zone",1400,5730.46,5730.46,-2.86e-07
+"amp",129,"Abrolhos | Multiple Use Zone",10616,45021.22,45021.22,-5.68e-08
+"amp",130,"Abrolhos | Multiple Use Zone",1460,5792.92,5792.92,3.28e-07
+"amp",131,"Abrolhos | National Park Zone",549,2107.98,2107.98,1.5e-07
+"amp",132,"Abrolhos | National Park Zone",68,233.61,233.61,6e-06
+"amp",133,"Abrolhos | National Park Zone",70,205.98,205.98,4.78e-07
+"amp",134,"Abrolhos | Special Purpose Zone",544,2167.58,2167.58,-2.54e-07
+"amp",135,"Abrolhos | Special Purpose Zone",967,3561.9,3561.9,-1.44e-07
+"amp",136,"Bremer | National Park Zone",869,3172.43,3172.43,6.02e-07
+"amp",137,"Bremer | Special Purpose Zone (Mining Exclusion)",171,539.27,539.27,-2.1e-06
+"amp",138,"Bremer | Special Purpose Zone (Mining Exclusion)",216,760.6,760.6,1.3e-07
+"amp",139,"Eastern Recherche | National Park Zone",394,1333.69,1333.69,3.45e-08
+"amp",140,"Eastern Recherche | National Park Zone",3788,14231.15,14231.15,1.2e-07
+"amp",141,"Eastern Recherche | Special Purpose Zone",1408,5010.37,5010.37,-1.5e-07
+"amp",142,"Geographe | Habitat Protection Zone",10,21.07,21.07,2.04e-06
+"amp",143,"Geographe | Multiple Use Zone",100,290.73,290.73,2.86e-07
+"amp",144,"Geographe | National Park Zone",9,15.27,15.27,-1.68e-07
+"amp",145,"Geographe | Special Purpose Zone (Mining Exclusion)",197,649.58,649.58,2.04e-06
+"amp",146,"Great Australian Bight | Multiple Use Zone",5890,22578.39,22578.39,-2.62e-07
+"amp",147,"Great Australian Bight | National Park Zone",1928,7727.84,7727.84,-2.69e-07
+"amp",148,"Great Australian Bight | Special Purpose Zone",987,3861.44,3861.43,5.15e-07
+"amp",149,"Great Australian Bight | Special Purpose Zone (Mining Exclusion)",1872,7596.39,7596.39,4.93e-07
+"amp",150,"Great Australian Bight | Special Purpose Zone (Mining Exclusion)",1035,4058.06,4058.06,6.44e-07
+"amp",151,"Jurien | National Park Zone",12,30.61,30.61,5.58e-06
+"amp",152,"Jurien | Special Purpose Zone",475,1820.29,1820.29,5.75e-08
+"amp",153,"Murat | National Park Zone",256,937.77,937.77,-1.4e-08
+"amp",154,"Perth Canyon | Habitat Protection Zone",935,3665.33,3665.33,-5.62e-10
+"amp",155,"Perth Canyon | Habitat Protection Zone",185,628.57,628.57,9.53e-07
+"amp",156,"Perth Canyon | Habitat Protection Zone",25,58.24,58.24,1.71e-08
+"amp",157,"Perth Canyon | Multiple Use Zone",252,884.52,884.52,-1.01e-06
+"amp",158,"Perth Canyon | Multiple Use Zone",255,931.77,931.77,-3.99e-07
+"amp",159,"Perth Canyon | National Park Zone",273,1048.92,1048.92,-2.16e-09
+"amp",160,"Perth Canyon | National Park Zone",60,191.87,191.87,2.09e-08
+"amp",161,"South-west Corner | Habitat Protection Zone",24459,95087.99,95088,-7.57e-08
+"amp",162,"South-west Corner | Multiple Use Zone",7465,29628.59,29628.6,-1.59e-07
+"amp",163,"South-west Corner | Multiple Use Zone",550,2017.34,2017.34,-1.45e-07
+"amp",164,"South-west Corner | Multiple Use Zone",18465,70744.5,70744.52,-3.11e-07
+"amp",165,"South-west Corner | Multiple Use Zone",1119,4211.15,4211.15,-7.41e-09
+"amp",166,"South-west Corner | National Park Zone",164,547.13,547.13,-1.47e-07
+"amp",167,"South-west Corner | National Park Zone",5829,22493.12,22493.11,2.44e-07
+"amp",168,"South-west Corner | National Park Zone",41,120.99,120.99,3.64e-06
+"amp",169,"South-west Corner | National Park Zone",304,1112.46,1112.46,7.66e-07
+"amp",170,"South-west Corner | National Park Zone",3828,14448.05,14448.05,3.53e-08
+"amp",171,"South-west Corner | National Park Zone",4125,15707.54,15707.55,-3.11e-07
+"amp",172,"South-west Corner | National Park Zone",120,411.79,411.79,-6.41e-08
+"amp",173,"South-west Corner | Special Purpose Zone",556,2033.29,2033.29,-4.94e-07
+"amp",174,"South-west Corner | Special Purpose Zone",1048,3719.63,3719.63,-4.48e-08
+"amp",175,"South-west Corner | Special Purpose Zone (Mining Exclusion)",1549,5897.16,5897.17,-1.04e-06
+"amp",176,"South-west Corner | Special Purpose Zone (Mining Exclusion)",945,3652.5,3652.5,1.37e-06
+"amp",177,"Southern Kangaroo Island | Special Purpose Zone (Mining Exclusion)",202,629.94,629.94,2.71e-07
+"amp",178,"Twilight | National Park Zone",923,3604.89,3604.89,3.28e-08
+"amp",179,"Twilight | Special Purpose Zone (Mining Exclusion)",144,472.89,472.89,-5.11e-07
+"amp",180,"Twilight | Special Purpose Zone (Mining Exclusion)",171,563.53,563.53,-2.85e-07
+"amp",181,"Two Rocks | Multiple Use Zone",259,866.97,866.97,-1.2e-06
+"amp",182,"Two Rocks | National Park Zone",12,15.28,15.28,-8.57e-06
+"amp",183,"Western Eyre | Multiple Use Zone",4188,16106.79,16106.79,1.3e-07
+"amp",184,"Western Eyre | National Park Zone",195,645.42,645.42,-2.25e-06
+"amp",185,"Western Eyre | National Park Zone",4204,15676.51,15676.52,-1.4e-07
+"amp",186,"Western Eyre | National Park Zone",312,1115.42,1115.42,-2.35e-07
+"amp",187,"Western Eyre | Special Purpose Zone",6146,24196.25,24196.24,2.27e-07
+"amp",188,"Western Eyre | Special Purpose Zone (Trawl)",55,203.94,203.94,4.04e-06
+"amp",189,"Western Kangaroo Island | National Park Zone",44,120,120,2.58e-06
+"amp",190,"Western Kangaroo Island | Special Purpose Zone",220,780.65,780.65,4.57e-07
+"amp",191,"Western Kangaroo Island | Special Purpose Zone (Mining Exclusion)",429,1434.68,1434.68,2.89e-07
+"amp",192,"Central Eastern | Habitat Protection Zone",9773,40628.98,40628.98,1.1e-07
+"amp",193,"Central Eastern | Habitat Protection Zone",5082,20707.09,20707.09,-7.15e-08
+"amp",194,"Central Eastern | Multiple Use Zone",156,608.23,608.23,5.11e-07
+"amp",195,"Central Eastern | National Park Zone",1932,8109.76,8109.75,3.01e-07
+"amp",196,"Cod Grounds | National Park Zone",6,4.07,4.07,-1.08e-06
+"amp",197,"Gifford | Habitat Protection Zone",1397,5828.5,5828.5,-5.9e-08
+"amp",198,"Hunter | Habitat Protection Zone",1196,4518.53,4518.53,4.71e-08
+"amp",199,"Hunter | Special Purpose Zone (Trawl)",493,1738.84,1738.84,2.76e-07
+"amp",200,"Jervis | Habitat Protection Zone",544,1965.2,1965.2,1.88e-07
+"amp",201,"Jervis | Special Purpose Zone (Trawl)",158,508.22,508.22,1.29e-06
+"amp",202,"Lord Howe | Habitat Protection Zone",13597,54884.34,54884.34,1.32e-08
+"amp",203,"Lord Howe | Habitat Protection Zone (Lord Howe)",1342,5136.48,5136.48,4.39e-07
+"amp",204,"Lord Howe | Multiple Use Zone",9518,39661.61,39661.61,-9.21e-09
+"amp",205,"Lord Howe | National Park Zone",1559,6302.22,6302.23,-7.17e-07
+"amp",206,"Lord Howe | National Park Zone",65,203.06,203.06,1.03e-06
+"amp",207,"Lord Howe | National Park Zone",728,2767.49,2767.49,3.94e-07
+"amp",208,"Lord Howe | Recreational Use Zone",312,1170.38,1170.38,-9.83e-07
+"amp",209,"Norfolk | Habitat Protection Zone",33280,138796.39,138796.4,-1.02e-07
+"amp",210,"Norfolk | National Park Zone",9612,41660.67,41660.67,1.58e-07
+"amp",211,"Norfolk | Special Purpose Zone (Norfolk)",1937,7986.49,7986.49,-6.39e-08
+"amp",212,"Solitary Islands | Multiple Use Zone",18,36.65,36.65,8.09e-07
+"amp",213,"Solitary Islands | National Park Zone",4,1.59,1.59,1.57e-05
+"amp",214,"Solitary Islands | Special Purpose Zone (Trawl)",22,41.57,41.57,9.38e-07
+"amp",215,"Solitary Islands | Special Purpose Zone (Trawl)",12,18.1,18.1,-3.96e-06
+"amp",216,"Solitary Islands | Special Purpose Zone (Trawl)",30,54.41,54.41,-9.48e-07

@@ -12,8 +12,20 @@ Two aims:
    (GHRSST first of all), use that overlap to connect to global, Antarctic
    and sub-Antarctic records.
 
-Status (2026-11-17): survey only, no pipeline yet. All listings below were
-made on 2026-11-17 by the scripts in `scripts/` and can be re-run.
+Status (2026-11-17): survey done; region sets and coverage tables built
+(steps 1–2 of section 7). No statistics pipeline yet. Everything below can be
+re-run with the scripts in `scripts/` (Python harvesters, `python3 -I`) and
+`R/` (boundaries and coverage, `Rscript R/0N_*.R` from the repo root, about 2 minutes).
+Large or regenerable outputs go to `data/` (gitignored); checks are committed in
+`boundaries/`.
+
+Decisions so far:
+- EEZ = GA AMB2020 **as amended by the Perth Treaty 1997** (GA's recommendation).
+- The STAR regions (six + fill-ins) and IMCRA provincial are kept as **separate region sets**.
+- The long-term frame is **Australia + AAT**: every territory including HIMI and
+  the AAT, to match the reach of GA DEA plus Antarctica.
+- Tools: the hypertidy suite (gdalraster with mdim, zaro, tabularberg,
+  controlledburn) plus the usual spatial R set.
 
 | path | what |
 |---|---|
@@ -21,6 +33,11 @@ made on 2026-11-17 by the scripts in `scripts/` and can be re-run.
 | `notes/zarr_stores.md` | all 100 Zarr stores in `s3://aodn-cloud-optimised`: grid, extent, step, time span, chunks, catalogue UUID |
 | `notes/parquet_datasets.md` | all 70 Parquet datasets there (158 GB): files, size, partitions |
 | `notes/boundaries.md` | EEZ, marine parks, bioregions and terrestrial sources (endpoints checked) |
+| `notes/regions.md` | the five region sets, the shared 0.02° lattice, coverage tables and their checks |
+| `notes/product_coverage.md` | every gridded store × EEZ territory and AMP network: % inside the product domain (Heard, AAT gaps) |
+| `notes/issues.md` | data issues found (a partial Zarr append, Zarr lagging the NetCDF, ...) |
+| `R/01_boundaries.R` … `R/04_product_coverage.R` | region sets → lattice → coverage tables → product coverage |
+| `boundaries/` | committed checks: `regions.csv`, `lattice.csv`, `coverage_check.csv`, `product_coverage.csv`, `SOURCES.txt` |
 | `inventory/*.jsonl, *.csv` | raw harvests: `zarr_inventory`, `parquet_inventory`, `cloud_optimised_provenance` (config → source NetCDF prefix + catalogue UUID), `imos-data_tree_L3.txt` |
 | `scripts/` | `zarr_inventory.py`, `parquet_inventory.py`, `config_provenance.py`, `summarise_inventory.py` (run with `python3 -I`) |
 
@@ -152,7 +169,8 @@ approach:
   IMCRA provincial bioregions, MEASO for the Southern Ocean), compute a sparse
   pixel → (region, coverage fraction) table once. controlledburn's coverage
   mode does this in O(perimeter) without a dense matrix. Accumulate per
-  (region, date) `n, sumw, sumwx, sumwx2` with `w = cos(lat) × coverage`.
+  (region, date) `n, sumw, sumwx, sumwx2` with `w = cell area × coverage`
+  (WGS84 cell area, which `R/03_coverage.R` computes per row; trend.* uses cos(lat), its spherical proportional form).
   The sums stay associative, and the daily run still needs no geometry.
 - Boundary picks (details in `notes/boundaries.md`): GA AMB2020 EEZ (has the
   AAT and HIMI); the AMP layer (216 park-zones, current HIMI and Macquarie);
@@ -173,12 +191,13 @@ approach:
   2.1 (EEZ chl −0.5 %/yr, 2003–2019, MODIS OCI),
   2.2 (EEZ NPP −0.6 %/yr), and 3.1 (Secchi: no trend).
 
-## 7. Next steps (proposed)
+## 7. Next steps
 
-1. Boundaries: fetch and version EEZ / AMP + zones / bioregion regions /
-   IMCRA into `boundaries/` as GeoParquet (see `notes/boundaries.md`).
-2. Coverage tables for the L3S Australia grid (6000 × 4500) × {EEZ, AMP
-   parks, 6 regions}. Check summed areas against the official figures.
+1. ~~Boundaries into GeoParquet~~ done: `eez_legal`, `eez`, `star`, `imcra`,
+   `amp` (`R/01_boundaries.R`, `notes/regions.md`). CAPAD 2024 is still to add.
+2. ~~Coverage tables and area checks~~ done, on the **union** 0.02° lattice
+   (L3S Australia ∪ Southern Ocean, 10000 × 4875), not just the Australia
+   grid. Coverage areas match geodesic areas to < 1e-7 per set.
 3. Run one 5-day chunk block end to end into region sums. Compare with
    trend.sst L5 cells for the same dates.
 4. Reproduce STAR 1.2 and 2.1, then extend them to 2026 with the sensor seams

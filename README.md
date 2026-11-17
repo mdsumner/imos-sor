@@ -129,6 +129,12 @@ Notes:
 
 ## 4. GHRSST crossover: Australia, global, Southern Ocean
 
+**Which GHRSST?** Every mention names the product, measured against the MUR
+v4.1 COGs (<https://source.coop/ausantarctic/ghrsst-mur-v2>: JPL L4, 0.01°, global,
+which is trend.sst's `ghrsst`). The IMOS/BoM products here are L3S clear-sky composites (0.02°,
+regional) and BoM L4 analyses (RAMSSA, GAMSSA); see the table in `nci/README.md`. MUR pixels don't
+nest in the 0.02° L3S lattice.
+
 The IMOS L3S/L4 products are Bureau of Meteorology GHRSST (GDS2) products,
 the same family as MUR (ghrsst-cogger) and OISST (trend.sst). So one
 SST quantity can be compared nested from global to EEZ to park:

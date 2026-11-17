@@ -7,42 +7,66 @@
 #PBS -l wd
 #PBS -j oe
 #PBS -N imos-sor-inv
-## Inventory of the IMOS/AODN mirror on NCI (sh74), plus S3-style ETags for
-## a sample, so imos-sor can test whether the mirror is byte-identical to
-## s3://imos-data. No internet needed (compute nodes have none): the
-## comparison runs afterwards, off Gadi, with compare_inventory.R.
+## File inventory of an NCI holding, with per-directory counts, and for the
+## IMOS/AODN mirror (sh74) S3-style ETags for a sample, so imos-sor can test
+## whether the mirror is byte-identical to s3://imos-data. No internet needed
+## (compute nodes have none); the S3 comparison runs afterwards, off Gadi, with
+## compare_inventory.R.
 ##
-## Submit from this directory (it needs s3etag.py beside it):
+## Submit from this directory (s3etag.py must sit beside it); jk72 holds the
+## outputs:
+##   ## sh74, the SST tree (default), with ETags
 ##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 inventory.pbs
-##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v SUBDIR=IMOS inventory.pbs   # a whole facility tree
-## SUBDIR is relative to /g/data/sh74/IMOS_AODN (default IMOS/SRS/SST/ghrsst).
-## Output in $OUTDIR (default /g/data/jk72/$USER/imos-sor-probe):
-##   inventory-<subdir>.tsv.gz  relpath, size, mtime (epoch)
-##   etags-<subdir>.tsv          relpath, size, s3-style etag (sample: 2 files per
-##                               product-year directory under SUBDIR, plus the 2024-01-04 L3S files)
+##   ## sh74, all of IMOS/
+##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v SUBDIR=IMOS inventory.pbs
+##   ## qm43 BoM GHRSST, L3S/L3C/AusTemp trees only (L2P, L3U and work dirs pruned), no ETags
+##   qsub -P jk72 -l storage=gdata/qm43+gdata/jk72 -v ROOT=/g/data/qm43/ghrsst,SUBDIR=.,ETAGS=0,PRUNE=qm43 inventory.pbs
+##
+## Outputs in $OUTDIR (default /g/data/jk72/$USER/imos-sor-probe), tag from ROOT and SUBDIR:
+##   inventory-<tag>.tsv.gz  relpath, size, mtime (epoch)
+##   counts-<tag>.tsv         directory, year, .nc files, bytes (dirs whose last component is a year)
+##   etags-<tag>.tsv          relpath, size, s3-style etag (ETAGS=1: first and last file of every
+##                            directory holding .nc files, plus the 2024-01-04 L3S files)
 set -euo pipefail
-ROOT=/g/data/sh74/IMOS_AODN
+ROOT=${ROOT:-/g/data/sh74/IMOS_AODN}
 SUBDIR=${SUBDIR:-IMOS/SRS/SST/ghrsst}
+ETAGS=${ETAGS:-1}
+PRUNE=${PRUNE:-none}
 OUTDIR=${OUTDIR:-/g/data/jk72/$USER/imos-sor-probe}
 mkdir -p "$OUTDIR"
-tag=$(echo "$SUBDIR" | tr '/' '_')
+tag=$(echo "${ROOT#/g/data/}/${SUBDIR}" | sed 's|/\.$||; s|/\./|/|g' | tr '/' '_')
 cd "$ROOT"
 
-echo "inventory of $ROOT/$SUBDIR at $(date -Is)"
-time find "$SUBDIR" -type f -printf '%p\t%s\t%T@\n' | gzip > "$OUTDIR/inventory-$tag.tsv.gz"
+case "$PRUNE" in
+  qm43) prune=( \( -name L2P -o -name 'L3U*' -o -name MDB -o -name cache -o -name html -o -name Faults \
+                 -o -name BT -o -name insitu -o -name qc -o -name Validation -o -name ancillary \
+                 -o -name sathistory -o -name invalid_sats \) -prune -o ) ;;
+  *) prune=() ;;
+esac
+echo "inventory of $ROOT/$SUBDIR (prune: $PRUNE) at $(date -Is)"
+## paths relative to ROOT (find %p keeps the starting point; strip a leading ./)
+time find "$SUBDIR" ${prune[@]+"${prune[@]}"} -type f -printf '%p\t%s\t%T@\n' 2>/dev/null | sed 's|^\./||' | \
+  gzip > "$OUTDIR/inventory-$tag.tsv.gz"
 echo "files: $(zcat "$OUTDIR/inventory-$tag.tsv.gz" | wc -l)"
 
-## sample: the first and last file of every directory holding .nc files, plus fixed checks
-zcat "$OUTDIR/inventory-$tag.tsv.gz" | cut -f1 | grep '\.nc$' | sort | \
-  awk -F/ '{d=$0; sub(/\/[^\/]*$/, "", d); if (d != last) { if (prev != "") print prev; print $0; last = d } prev = $0} END {print prev}' | \
-  sort -u > "$PBS_JOBFS/sample.txt"
-for f in IMOS/SRS/SST/ghrsst/L3S-1d/dn/2024/20240104092000-ABOM-L3S_GHRSST-SSTfnd-AVHRR_D-1d_dn.nc \
-         IMOS/SRS/SST/ghrsst/L3SM-1dS/dn/2024/20240104111000-ABOM-L3S_GHRSST-SSTfnd-MultiSensor-1d_dn_Southern.nc \
-         IMOS/SRS/SST/ghrsst/L3S-1dS/dn/2024/20240104111000-ABOM-L3S_GHRSST-SSTfnd-AVHRR_D-1d_dn_Southern.nc; do
-  [ -f "$f" ] && echo "$f" >> "$PBS_JOBFS/sample.txt"
-done
-sort -u "$PBS_JOBFS/sample.txt" -o "$PBS_JOBFS/sample.txt"
-echo "etag sample: $(wc -l < "$PBS_JOBFS/sample.txt") files"
-module load python3 2>/dev/null || true
-time python3 -I "$PBS_O_WORKDIR/s3etag.py" < "$PBS_JOBFS/sample.txt" > "$OUTDIR/etags-$tag.tsv"
+zcat "$OUTDIR/inventory-$tag.tsv.gz" | awk -F'\t' '$1 ~ /\.nc$/ {
+    n = split($1, a, "/"); y = a[n-1]; if (y !~ /^[0-9][0-9][0-9][0-9]$/) next
+    d = $1; sub(/\/[^\/]*\/[^\/]*$/, "", d); k = d "\t" y; c[k]++; s[k] += $2 }
+  END { for (k in c) print k "\t" c[k] "\t" s[k] }' | sort > "$OUTDIR/counts-$tag.tsv"
+echo "directory-years: $(wc -l < "$OUTDIR/counts-$tag.tsv")"
+
+if [ "$ETAGS" = 1 ]; then
+  zcat "$OUTDIR/inventory-$tag.tsv.gz" | cut -f1 | grep '\.nc$' | sort | \
+    awk -F/ '{d=$0; sub(/\/[^\/]*$/, "", d); if (d != last) { if (prev != "") print prev; print $0; last = d } prev = $0} END {print prev}' | \
+    sort -u > "$PBS_JOBFS/sample.txt"
+  for f in IMOS/SRS/SST/ghrsst/L3S-1d/dn/2024/20240104092000-ABOM-L3S_GHRSST-SSTfnd-AVHRR_D-1d_dn.nc \
+           IMOS/SRS/SST/ghrsst/L3SM-1dS/dn/2024/20240104111000-ABOM-L3S_GHRSST-SSTfnd-MultiSensor-1d_dn_Southern.nc \
+           IMOS/SRS/SST/ghrsst/L3S-1dS/dn/2024/20240104111000-ABOM-L3S_GHRSST-SSTfnd-AVHRR_D-1d_dn_Southern.nc; do
+    [ -f "$f" ] && echo "$f" >> "$PBS_JOBFS/sample.txt"
+  done
+  sort -u "$PBS_JOBFS/sample.txt" -o "$PBS_JOBFS/sample.txt"
+  echo "etag sample: $(wc -l < "$PBS_JOBFS/sample.txt") files"
+  module load python3 2>/dev/null || true
+  time python3 -I "$PBS_O_WORKDIR/s3etag.py" < "$PBS_JOBFS/sample.txt" > "$OUTDIR/etags-$tag.tsv"
+fi
 echo "done $(date -Is): $OUTDIR"

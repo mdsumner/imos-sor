@@ -1,0 +1,27 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -l ncpus=4
+#PBS -l mem=32GB
+#PBS -l walltime=01:00:00
+#PBS -l jobfs=1GB
+#PBS -l wd
+#PBS -j oe
+#PBS -N imos-sor-block
+## In-situ timing and summary of the 2024-01-04..08 L3S block (BoM/IMOS
+## GHRSST L3S, not MUR) from /g/data: qm43 fv01 + fv02 and, if readable, the
+## sh74 IMOS mirror. Compare with the THREDDS and S3 runs in nci/README.md.
+##
+##   qsub -P jk72 -l storage=gdata/qm43+gdata/sh74+gdata/jk72 block_read.pbs
+##
+## Runs block_read.R in the gdal-r-python-extras container (needs gdalraster).
+## Output: $OUTDIR/block_read_gdata.csv (default /g/data/jk72/$USER/imos-sor-probe).
+set -euo pipefail
+module load singularity
+SIF=${SIF:-/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif}
+[ -f "$SIF" ] || { echo "no image at $SIF" >&2; exit 1; }
+OUTDIR=${OUTDIR:-/g/data/jk72/$USER/imos-sor-probe}
+mkdir -p "$OUTDIR"
+## keep host R/Python libraries out of the container (as in raad.virtualize)
+export SINGULARITYENV_R_LIBS_USER=/nonexistent SINGULARITYENV_R_LIBS= SINGULARITYENV_PYTHONNOUSERSITE=1
+singularity exec -B /g/data "$SIF" Rscript "$PBS_O_WORKDIR/block_read.R" \
+  /g/data/qm43/ghrsst /g/data/sh74/IMOS_AODN/IMOS/SRS/SST/ghrsst "$OUTDIR/block_read_gdata.csv"

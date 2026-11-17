@@ -65,32 +65,65 @@ fv02 and fv01 (2022/2023 Southern, 2025 Continental) needs handling.
 
 | project | what | why for imos-sor | status |
 |---|---|---|---|
-| **sh74** | IMOS/AODN Data Mirror | in-situ access to the whole IMOS archive | join (needed) |
-| **qm43** | BoM satellite SST (GHRSST L2P–L3S, fv01 + fv02) | reprocessed L3S in situ; THREDDS works without membership | join (recommended) |
-| gb6 | BRAN / OFAM | already used by raad.virtualize and bluelink | probably held |
-| jk72 | your compute and storage project | jobs, `/g/data/jk72/$USER`, the container | held |
-| zv2, gh70 | AGCD, ANUClimate 2.0 | terrestrial climate for the "Australia + AAT" footprint | later |
-| xu18, ka08, jw04 | GA Landsat / Sentinel-2 ARD and derivatives (DEA on NCI) | terrestrial and coastal (DEA) | later |
-| rr1 | GA elevation and bathymetry | AusBathyTopo etc. in situ | later |
-| ob53, fx3 | BARRA2 reanalysis, eReefs (GBR models) | drivers (wind, heat flux); the GBRMP gap in the STAR regions | later |
-| xp65 | ACCESS-NRI analysis environment (I believe; not verified here) | ACCESS-NRI tooling and catalogues | check |
+| **sh74** | IMOS/AODN Data Mirror | in-situ access to the whole IMOS archive | joined 2026-11-17 (log in again to pick up the group) |
+| **qm43** | BoM satellite SST (GHRSST L2P–L3S, fv01 + fv02) | reprocessed L3S in situ; THREDDS works without membership | readable |
+| gb6 | BRAN / OFAM | already used by raad.virtualize and bluelink | readable |
+| jk72 | compute, scratch and storage | jobs (`-P jk72`), outputs in `/g/data/jk72/$USER`, temporary files in `/scratch/jk72/$USER`, the container | readable |
+| zv2, gh70 | AGCD, ANUClimate 2.0 | terrestrial climate for the "Australia + AAT" footprint | not joined (later) |
+| xu18, ka08, jw04 | GA Landsat / Sentinel-2 ARD and derivatives (DEA on NCI) | terrestrial and coastal (DEA) | readable |
+| rr1 | GA elevation and bathymetry | AusBathyTopo etc. in situ | not joined (later) |
+| ob53, fx3 | BARRA2 reanalysis, eReefs (GBR models) | drivers (wind, heat flux); the GBRMP gap in the STAR regions | ob53 readable; fx3 not joined |
+| xp65 | ACCESS-NRI analysis environment (I believe; not verified here) | ACCESS-NRI tooling and catalogues | readable |
 
-`probe_login.sh` reports which of these you can already read.
+Status from `probe_login.sh`, 2026-11-17. ra22 (BoM satellite observations) is also readable; rv74 is not.
+
+## Where things go on Gadi
+
+Gadi `$HOME` is small, so keep the clone in `~` code-only (the repo is about 2 MB). Everything
+these scripts write goes to jk72:
+
+- **Persistent outputs:** `/g/data/jk72/$USER/imos-sor-probe/` (the default `OUTDIR` of all jobs).
+- **Temporary job files:** `$PBS_JOBFS` and `/scratch/jk72/$USER/imos-sor` (scratch is purged when unused).
+- **The R/ pipeline on Gadi:** make `data/` a symlink before running anything, e.g.
+  `mkdir -p /g/data/jk72/$USER/imos-sor/data && ln -s /g/data/jk72/$USER/imos-sor/data ~/imos-sor/data`.
+  This is the trend.* layout: clone in persistent software space, gitignored outputs elsewhere.
+- **PBS logs** (`*.o<jobid>`) land in the submission directory. They're small.
 
 ## Steps
 
-1. Join **sh74** (and qm43). Approval can take a little while.
-2. On Gadi: `git clone https://github.com/mdsumner/imos-sor.git`, then `cd imos-sor/nci`.
-3. On a login node: `bash probe_login.sh`, which writes `~/imos-sor-probe/login-<date>.txt`.
-4. `qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 inventory.pbs`. The default is `SUBDIR=IMOS/SRS/SST/ghrsst`; `-v SUBDIR=IMOS` does the whole IMOS tree.
-5. Copy `/g/data/jk72/$USER/imos-sor-probe/*` back into `data/nci/` here, then run
-   `Rscript nci/compare_inventory.R data/nci/inventory-IMOS_SRS_SST_ghrsst.tsv.gz data/nci/etags-IMOS_SRS_SST_ghrsst.tsv IMOS/SRS/SST/ghrsst`.
-   This gives presence and size per directory against S3, plus byte identity for the sample.
+1. Log in to Gadi again so the new sh74 membership is active, then `bash probe_login.sh` (it should now list the sh74 tree).
+2. sh74 inventory, SST tree, with ETags: `qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 inventory.pbs`.
+   `-v SUBDIR=IMOS` does the whole IMOS tree.
+3. qm43 inventory, L3S/L3C/AusTemp, giving per-year counts by version (for the fv01/fv02 seams):
+   `qsub -P jk72 -l storage=gdata/qm43+gdata/jk72 -v ROOT=/g/data/qm43/ghrsst,SUBDIR=.,ETAGS=0,PRUNE=qm43 inventory.pbs`
+4. In-situ block read (qm43 fv01 + fv02 and the sh74 copy; timings and stats):
+   `qsub -P jk72 -l storage=gdata/qm43+gdata/sh74+gdata/jk72 block_read.pbs`
+5. Copy `/g/data/jk72/$USER/imos-sor-probe/*` back into `data/nci/` here. Then run
+   `Rscript nci/compare_inventory.R data/nci/inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz data/nci/etags-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv IMOS/SRS/SST/ghrsst`
+   for presence and size per directory against S3, plus byte identity for the sample.
 
-Then compute in situ, using the container you already use for trend.ice
-(`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`):
-- rerun the 5-day block (R/07) against `/g/data/sh74` NetCDF and `/g/data/qm43` fv02;
-- then whole records.
+Then compute in situ with the container you use for trend.ice
+(`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`): the 5-day block sums (R/07)
+from `/g/data`, then whole records.
+
+## Block read, off Gadi, for reference (`block_read.R`, 2024-01-04..08)
+
+These are the same five days read from this machine: SST, quality and bias per file, decoded
+by GDAL's netCDF driver. All are BoM/IMOS GHRSST L3S, not MUR.
+
+| product | source | s per file (3 vars) | q ≥ 4 pixels / day | mean SST q ≥ 4 (°C) |
+|---|---|---|---|---|
+| Continental AVHRR, fv01 | qm43 THREDDS | 8.4 | 1,103,275 | 19.522 |
+| Continental AVHRR | IMOS S3 | 9.8 | 1,103,275 | 19.522 |
+| Continental AVHRR, fv02 | qm43 THREDDS | 9.3 | 1,101,583 | 19.577 |
+| Continental multi, fv01 | qm43 THREDDS | 22.4 | 10,659,282 | 21.427 |
+| Continental multi, fv02 | qm43 THREDDS | 21.7 | 12,369,203 | 21.532 |
+| Southern AVHRR, fv01 | qm43 THREDDS | 8.7 | 559,182 | 12.243 |
+| Southern multi, fv01 | qm43 THREDDS | 17.1 | 6,855,781 | 11.855 |
+| Southern multi | IMOS S3 | 12.4 | 6,855,781 | 11.855 |
+
+- **fv01 equals the IMOS copy** for both products checked: identical counts and means, and earlier, identical values.
+- **fv02 multi-sensor keeps 16 % more q ≥ 4 pixels than fv01**, and its mean is 0.10 °C warmer. The pixel sets differ, so that's not yet a like-for-like bias.
 
 ## Virtualising through THREDDS (raad.virtualize)
 
@@ -122,4 +155,22 @@ Candidates, most interesting first:
 5. **eReefs (fx3/rr6)**: GBR hydrodynamic and biogeochemical model output. The GBRMP is the largest gap in the STAR regions, and the most heavily zoned marine park.
 6. BARRA2 (ob53) surface fields, as marine-heatwave drivers.
 
-(BRAN, gb6, is already done.)
+Already done elsewhere:
+- **BRAN (gb6)** is indexed at <https://source.coop/ausantarctic/ausantarctic-scratch/bluelink> (not its final home).
+- **MUR** is COGged at <https://source.coop/ausantarctic/ghrsst-mur-v2>.
+
+## GHRSST: which product, compared with the MUR COGs
+
+"GHRSST" here always means a specific product. The MUR COGs are the reference point:
+
+| product | maker, level | grid | coverage | notes |
+|---|---|---|---|---|
+| **MUR v4.1 (our COGs)** | JPL, **L4** gap-free analysis | 0.01°, 36000 × 17999, edges at x.xx5 (origin −179.995, 89.995) | global, 2002-06-01 → | foundation SST. Int16 COGs, scale 0.001, offset 25 → °C. trend.sst's `ghrsst` source |
+| IMOS / BoM L3S (fv01) | BoM (ABOM), **L3S** clear-sky composite, gappy | 0.02°, edges on even hundredths | Australia 70–190°E, 70°S–20°N; Southern 2.5–202.5°E, 77.5–27.5°S | AVHRR 1992 →, multi-sensor 2012 → (Southern 2018 → at IMOS). On S3, sh74, qm43 `v02.0fv01` |
+| BoM L3S (fv02) | BoM reprocessing, product 02.0, L3S | as fv01 | as fv01; Southern multi-sensor from 2012 | qm43 `v02.0fv02` only |
+| RAMSSA / GAMSSA | BoM, **L4** analyses | 1/12° regional / 0.25° global | 60–190°E, 70°S–20°N / global | IMOS S3 L4/ and Zarr |
+
+MUR pixels do **not** nest in the 0.02° L3S lattice. A 0.02° cell holds one whole MUR pixel and
+halves of its neighbours, so comparing pixel for pixel needs resampling. The S2 and region sums
+are unaffected, because every pixel goes in by its own centre or coverage.
+

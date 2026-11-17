@@ -74,3 +74,5 @@ confirmed.
     - `product_version` is written both ways: `1.0`/`2.0` (older files) and `01.0`/`02.0` (newer).
     - qm43 lacks 70 days that IMOS has, mostly multi-sensor 2026-08-11..26.
     - fv01 Continental files store `lon` wrapped at the antimeridian (70.01 … 179.99, −179.99 … −170.01), so the coordinate is not monotonic. fv02 and IMOS's copies run 70.01 … 189.99. GDAL gives the fv01 origin as −290.
+    - The fv01 AVHRR files for 2021-06-25 (Continental and Southern) are 29 KB, header only, rewritten 2021-07-20. GDAL can't open the SST in them.
+17. **BoM's fv02 is not one reprocessing.** All files say `product_version = 02.0`, but Continental 2023–2025 was made in 2025-09/10 and earlier years in batches back to 2014 (`nci/qm43_headers_by_year.csv`). In Continental AVHRR the batch boundary at 2023-01-01 shows as a step in `sses_bias` relative to fv01 (about −0.15 °C between late 2022 and early 2023, on paired pixels; `nci/README.md`, "Offset results"). Multi-sensor has no step there. Nothing in the files or the docs marks the boundary.

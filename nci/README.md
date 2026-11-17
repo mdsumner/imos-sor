@@ -124,8 +124,9 @@ these scripts write goes to jk72:
    First build the geometry kit here (`Rscript nci/offset_kit.R` → `data/nci/offset_kit.rds`, 3.6 MB) and copy it to
    `/g/data/jk72/$USER/imos-sor-probe/`. Then `qsub -P jk72 -l storage=gdata/qm43+gdata/jk72 offset.pbs`.
    - Outputs: one file per product-month in `offset/`. The job is resumable, so rerun the same command if it hits walltime.
-   - Cost: tested here at about 25 s per day per worker (19 s compute). With 12 workers that's roughly 4.5 h and about 150 SU.
-   - Copy back, then run `Rscript nci/offset_summary.R`.
+   - Cost: job 184384481 took 2 h 23 min with 12 workers (27 CPU-hours, about 13 s per day per worker, 76 SU).
+     PBS reported 64 GB used, which counts file cache; no worker died (all 291 product-months written).
+   - Copy back, then run `Rscript nci/offset_summary.R` (12 s).
 
 Then compute in situ with the container you use for trend.ice
 (`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`): the 5-day block sums (R/07)
@@ -212,8 +213,48 @@ d = fv01 − fv02 on the pixels valid in both, under each quality variant (all /
 own `quality_level` and `sses_bias`). Exact sums are kept for the whole window, the region sets and S2 L5 cells,
 together with each version's own-pixel sums. That separates the paired offset (calibration) from the
 difference in which pixels each version keeps (selection), which together make up what a naive splice of the two
-records would see. A 6-day test already shows the pattern to look for: paired offsets of a few thousandths of a degree,
-while the own-pixel means differ by 0.1–0.3 °C because fv02 keeps different pixels.
+records would see.
+
+**Offset results** (job 184384481, 7,876 of 7,878 day pairs; BoM ABOM L3S 1-day day+night, not MUR).
+Tables: `nci/offset_by_region.csv` (every region set), `nci/offset_by_year.csv` (window, `eez_legal`, `star`),
+`nci/offset_domain_monthly.csv`; per S2 L5 cell in `data/nci/offset_s2l5.csv` (not committed).
+Whole window, q4b (the variant the trend record uses), d = fv01 − fv02 in °C:
+
+| product | overlap in qm43 | days | paired offset | per year | day-to-day sd | pixel sd | naive splice | of which selection | fv01 pixels per fv02 pixel |
+|---|---|---|---|---|---|---|---|---|---|
+| Continental AVHRR | 2006-10 → 2025-06-06 (full from 2014) | 3,664 | +0.025 | −0.022 … +0.081 (2014–2025) | 0.058 | 0.31 | +0.117 | +0.093 | 0.96 |
+| Continental multi | 2018-11-16 → 2025-06-29 | 2,177 | −0.000 | −0.013 … +0.024 | 0.018 | 0.17 | −0.038 | −0.038 | 0.89 |
+| Southern AVHRR | 2020-01-01 → 2022-12-31 | 1,005 | +0.015 | +0.008 … +0.022 | 0.052 | 0.21 | +0.200 | +0.185 | 0.71 |
+| Southern multi | 2020-01-01 → 2022-12-31 | 1,030 | +0.016 | +0.006 … +0.027 | 0.023 | 0.17 | +0.081 | +0.065 | 1.01 |
+
+- **On the same pixels the two versions agree to a few hundredths of a degree.** The pooled q4b offset is within
+  ±0.025 °C for every product, and in the six STAR regions for every product except Southern AVHRR Temperate East
+  (−0.047). Without the bias correction (q4) Continental AVHRR is −0.056; every other product and variant is within ±0.031.
+- **What a naive splice sees is mostly selection.** The two versions keep different pixels, and the own-pixel means
+  differ by much more than the paired offset. Per year the naive difference reaches −0.25 °C (Continental multi
+  2022), +0.36 °C (Southern multi 2020) and +0.27 °C (Southern AVHRR 2021, where fv01 keeps only 65% of fv02's
+  pixels). Region means and domain means built from each version's own pixels would step by that much.
+- **At S2 L5 most of the selection goes away.** Weighted by paired pixels, the middle 90% of cells have selection
+  within −0.06 … +0.03 °C (Continental multi) and −0.003 … +0.05 °C (Continental AVHRR). The Southern products keep
+  more: 10% of their paired pixels lie in cells where selection exceeds 0.1 °C. Paired offsets per cell, middle 90%:
+  −0.018 … +0.014 (Continental multi), −0.027 … +0.106 (Continental AVHRR), −0.049 … +0.124 (Southern AVHRR),
+  +0.001 … +0.041 (Southern multi).
+- **Near Antarctica fv01 runs warm.** AATW and AATE (STAR outside regions) have q4b offsets of +0.02 to +0.15 °C in
+  every product, largest in AVHRR, with naive differences up to +0.23 °C. For Heard Island (HIMI) the Continental
+  AVHRR fv01 keeps only 7% of fv02's pixels, on 282 days.
+- **The fv02 batch boundary at 2023-01-01 shows in Continental AVHRR.** fv02 for 2021–2022 was made in 2023-06 and
+  for 2023–2025 in 2025-09/10. Across that boundary the mean `sses_bias` difference (fv01 − fv02, on paired pixels)
+  flips from +0.07 … +0.08 °C (Oct–Dec 2022) to −0.05 … −0.16 °C (Jan–Jun 2023). The q4 offset goes from +0.030
+  (2022 H2) to −0.083 (2023 H1), and the q4b offset from −0.026 to +0.016. fv01 is one continuous operational stream,
+  so the change is most likely in fv02. Continental multi shows no such step (`sses_bias` difference +0.013 on both
+  sides; q4b −0.014 → −0.008).
+- **The IMOS seam** (fv02 to 2022-12-31, then fv01) on paired pixels, from the last six months of 2022, q4b:
+  −0.026 °C Continental AVHRR, −0.014 Continental multi, −0.012 Southern AVHRR, −0.006 Southern multi. The larger
+  ones equal one to three years of a 0.1 °C per decade trend. At region scale, the change in which pixels are kept
+  is the bigger effect.
+- Early Continental AVHRR overlap (2006, 2012–2013, 159 days) pairs poorly: fv01 has 4–78% of fv02's pixels there.
+- 2 day pairs failed: the fv01 AVHRR files for 2021-06-25 (Continental and Southern) are 29 KB, header only
+  (rewritten 2021-07-20). IMOS holds fv02 for that day.
 
 | IMOS product | fv02 (BoM reprocessing) | fv01 (operational) | not matched |
 |---|---|---|---|
@@ -223,7 +264,8 @@ while the own-pixel means differ by 0.1–0.3 °C because fv02 keeps different p
 | L3SM-1dS (Southern multi) | 2019-01-01 → 2022-12-31 | 2023-01-01 → 2026-11 | 37 (Nov–Dec 2018) |
 
 - **The IMOS record switches processing version at 2023-01-01**, from BoM fv02 to fv01, for all four products. A trend over
-  the last few years crosses it. The overlap periods in qm43 (1,000–3,700 days with both versions) can measure the offset.
+  the last few years crosses it. Measured on the qm43 overlap periods (above), the paired step is about −0.01 to
+  −0.03 °C (q4b), and the change of pixel selection is larger.
 - **qm43 fv02 runs further than IMOS for Continental:** AVHRR to 2025-06-06 and multi-sensor to 2025-06-30.
   A single-version Continental record from 1992 (AVHRR) or 2012 (multi-sensor) to mid-2025 exists only in qm43.
 - **qm43 fv02 has the Southern multi-sensor record from 2012-01-02, which IMOS lacks before 2018-11-16.**

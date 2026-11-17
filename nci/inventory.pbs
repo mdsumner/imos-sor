@@ -1,0 +1,48 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -l ncpus=1
+#PBS -l mem=8GB
+#PBS -l walltime=04:00:00
+#PBS -l jobfs=10GB
+#PBS -l wd
+#PBS -j oe
+#PBS -N imos-sor-inv
+## Inventory of the IMOS/AODN mirror on NCI (sh74), plus S3-style ETags for
+## a sample, so imos-sor can test whether the mirror is byte-identical to
+## s3://imos-data. No internet needed (compute nodes have none): the
+## comparison runs afterwards, off Gadi, with compare_inventory.R.
+##
+## Submit from this directory (it needs s3etag.py beside it):
+##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 inventory.pbs
+##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v SUBDIR=IMOS inventory.pbs   # a whole facility tree
+## SUBDIR is relative to /g/data/sh74/IMOS_AODN (default IMOS/SRS/SST/ghrsst).
+## Output in $OUTDIR (default /g/data/jk72/$USER/imos-sor-probe):
+##   inventory-<subdir>.tsv.gz  relpath, size, mtime (epoch)
+##   etags-<subdir>.tsv          relpath, size, s3-style etag (sample: 2 files per
+##                               product-year directory under SUBDIR, plus the 2024-01-04 L3S files)
+set -euo pipefail
+ROOT=/g/data/sh74/IMOS_AODN
+SUBDIR=${SUBDIR:-IMOS/SRS/SST/ghrsst}
+OUTDIR=${OUTDIR:-/g/data/jk72/$USER/imos-sor-probe}
+mkdir -p "$OUTDIR"
+tag=$(echo "$SUBDIR" | tr '/' '_')
+cd "$ROOT"
+
+echo "inventory of $ROOT/$SUBDIR at $(date -Is)"
+time find "$SUBDIR" -type f -printf '%p\t%s\t%T@\n' | gzip > "$OUTDIR/inventory-$tag.tsv.gz"
+echo "files: $(zcat "$OUTDIR/inventory-$tag.tsv.gz" | wc -l)"
+
+## sample: the first and last file of every directory holding .nc files, plus fixed checks
+zcat "$OUTDIR/inventory-$tag.tsv.gz" | cut -f1 | grep '\.nc$' | sort | \
+  awk -F/ '{d=$0; sub(/\/[^\/]*$/, "", d); if (d != last) { if (prev != "") print prev; print $0; last = d } prev = $0} END {print prev}' | \
+  sort -u > "$PBS_JOBFS/sample.txt"
+for f in IMOS/SRS/SST/ghrsst/L3S-1d/dn/2024/20240104092000-ABOM-L3S_GHRSST-SSTfnd-AVHRR_D-1d_dn.nc \
+         IMOS/SRS/SST/ghrsst/L3SM-1dS/dn/2024/20240104111000-ABOM-L3S_GHRSST-SSTfnd-MultiSensor-1d_dn_Southern.nc \
+         IMOS/SRS/SST/ghrsst/L3S-1dS/dn/2024/20240104111000-ABOM-L3S_GHRSST-SSTfnd-AVHRR_D-1d_dn_Southern.nc; do
+  [ -f "$f" ] && echo "$f" >> "$PBS_JOBFS/sample.txt"
+done
+sort -u "$PBS_JOBFS/sample.txt" -o "$PBS_JOBFS/sample.txt"
+echo "etag sample: $(wc -l < "$PBS_JOBFS/sample.txt") files"
+module load python3 2>/dev/null || true
+time python3 -I "$PBS_O_WORKDIR/s3etag.py" < "$PBS_JOBFS/sample.txt" > "$OUTDIR/etags-$tag.tsv"
+echo "done $(date -Is): $OUTDIR"

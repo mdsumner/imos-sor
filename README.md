@@ -38,6 +38,7 @@ Decisions so far:
 | `notes/issues.md` | data issues found (a partial Zarr append, Zarr lagging the NetCDF, ...) |
 | `R/01_boundaries.R` … `R/04_product_coverage.R` | region sets → lattice → coverage tables → product coverage |
 | `R/05_time_axes.R` … `R/08_compare.R` | time-axis audit → S2 L5 mapping → 5-day block sums (S2 + regions) → comparison with trend.sst |
+| `nci/` | IMOS on NCI: the sh74 IMOS/AODN mirror and BoM's qm43 SST archive (fv01 = IMOS operational, fv02 = BoM reprocessing), projects to join, the Gadi probe and inventory job, and raad.virtualize candidates (`nci/README.md`) |
 | `notes/block_2024-01-04.md` | first 5-day block: IMOS L3S vs OISST/MUR on S2 L5; exact EEZ means vs L5 cell selections |
 | `boundaries/` | committed checks: `regions.csv`, `lattice.csv`, `coverage_check.csv`, `product_coverage.csv`, `SOURCES.txt` |
 | `inventory/*.jsonl, *.csv` | raw harvests: `zarr_inventory`, `parquet_inventory`, `cloud_optimised_provenance` (config → source NetCDF prefix + catalogue UUID), `imos-data_tree_L3.txt` |
@@ -209,5 +210,7 @@ approach:
    handled explicitly.
 5. Add L3S-SO (with `sea_ice_fraction`) and GAMSSA to the S2 L5 registry
    next to OISST/MUR, joining trend.sst and trend.ice.
-6. Biology refresh from the BGC_DB CSVs via planktonr. This is cheap and
+6. **NCI** (`nci/README.md`): join sh74 (IMOS/AODN mirror, `/g/data/sh74/IMOS_AODN`, not on THREDDS) and qm43 (BoM SST).
+   Run the probe and inventory, and test byte identity with S3. Then compute in situ, and choose between IMOS fv01 and the BoM fv02 reprocessing for the long SST record.
+7. Biology refresh from the BGC_DB CSVs via planktonr. This is cheap and
    covers about half of the report's series.

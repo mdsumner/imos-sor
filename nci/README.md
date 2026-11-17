@@ -127,10 +127,28 @@ these scripts write goes to jk72:
    - Cost: job 184384481 took 2 h 23 min with 12 workers (27 CPU-hours, about 13 s per day per worker, 76 SU).
      PBS reported 64 GB used, which counts file cache; no worker died (all 291 product-months written).
    - Copy back, then run `Rscript nci/offset_summary.R` (12 s).
+9. The IMOS L3S record as exact daily sums, in situ from sh74 (`sums.R`; R/07 for whole records):
+   `qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 sums.pbs`.
+   - Covers multi-sensor (L3SM-1d + L3SM-1dS, 2012-01 → 2026-11) and single-sensor (L3S-1d + L3S-1dS,
+     1992-03 → 2025-06), all / q4 / q4b, per S2 L5 cell (trend.sst schema), region set and whole domain.
+     That's about 17,400 product-days in 579 product-months. It reuses `offset_kit.rds`, which is already in the probe directory.
+   - Each day is composited on the union lattice as in R/07: the Continental file wins wherever it covers a pixel,
+     and the Southern file fills the rest. Days with only one of the two files are kept, and the log says which.
+   - The 20 sh74 files that S3 has since replaced (2026-09/10, multi-sensor) are computed but flagged. The S3 versions
+     are 0.45–7 MB larger.
+   - Tested here on 2024-01-04/05, with the files fetched from S3:
+     - Multi-sensor matches R/07 (from the AODN Zarr) in every S2 cell and region: the same pixel counts, and means
+       within 1.5e-5 °C (the Zarr's float32 rounding).
+     - Single-sensor matches too, except for one 500 × 500 chunk that the Zarr lacks (`notes/issues.md` 18).
+     - 11.6 s per day for multi, 5.2 for single, and about 3.5 GB per worker. At that pace it takes about 3 h with 12 workers
+       (about 100 SU), probably less: the offset job ran about twice as fast on Gadi as here.
+   - Output: `sums/<product>/<YYYY-MM>.rds`, about 1.2 GB in all. Copy back with the usual rsync, then
+     `Rscript nci/sums_to_parquet.R` writes R/07's per-day layout under `data/sums_imos/`
+     (`s2l5/<product>_<variant>/<date>.parquet`, `regions/...`, and `days-<product>.csv`).
+     It leaves out stale and failed days. To fill the stale ones, run `sums.R` here on those files fetched
+     from S3 and pass that output directory second: `Rscript nci/sums_to_parquet.R data/sums_imos data/nci/sums <s3 run>`.
 
-Then compute in situ with the container you use for trend.ice
-(`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`): the 5-day block sums (R/07)
-from `/g/data`, then whole records.
+All of these use the container you use for trend.ice (`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`).
 
 ## sh74 vs S3, and IMOS vs BoM versions (inventories from jobs 184300275/76)
 

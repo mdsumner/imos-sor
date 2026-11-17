@@ -220,6 +220,7 @@ approach:
    Probe, inventories and byte identity done: sh74 is byte-identical to S3 apart from mirror lag and 1,178 stale 2026 files.
    Headers confirm IMOS switches from BoM fv02 to fv01 at 2023-01-01. On paired pixels fv01 − fv02 is −0.01 to −0.03 °C
    there (q4b), but the versions keep different pixels, which moves whole-window means by up to 0.25–0.36 °C in some years.
-   Next: compute in situ, and choose between IMOS (fv02 to 2022, fv01 after) and the BoM fv02 reprocessing for the long SST record.
+   Working choice: IMOS's record (fv02 to 2022, fv01 after) as the base, with 2023-01-01 as a documented seam.
+   The in-situ daily sums of the whole L3S record (`nci/sums.pbs`) are written and tested, matching R/07; next, run them on Gadi.
 7. Biology refresh from the BGC_DB CSVs via planktonr. This is cheap and
    covers about half of the report's series.

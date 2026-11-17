@@ -51,6 +51,11 @@ Area checks (`boundaries/regions.csv`):
 All are stored north-up. One set of coverage tables on the union grid
 serves every product on the lattice: subtract the offsets.
 
+Every other 0.02° store in the bucket (all L3S/L3C variants, AusTemp DHD and SSTA)
+sits on the same lattice. **One exception: `satellite_austemp_heatwave_14day`**
+(96–174°E, 48–8°S) has centres at whole hundredths, half a cell off. It
+needs its own burn, or resampling, before it can share the tables.
+
 ## Coverage tables
 
 `data/coverage/<set>.parquet`: `region_id, row, col_start, col_end, fraction`.

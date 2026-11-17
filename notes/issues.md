@@ -13,7 +13,8 @@ confirmed.
    - For complete records, read the NetCDF tail.
 3. **Typos in store names that are now fixed identifiers:** `satellite_diffuse_attenuation_coefficent_*`, `station_wireless_sensor_network_delayec_qc`.
 4. **The AWS default region in this environment is not ap-southeast-2.** Pass `--region ap-southeast-2` or set `AWS_REGION` explicitly for `aws`, GDAL `/vsis3/` and s3fs.
-5. **Chunking:** most satellite stores are chunked 5 × 500 × 500 (time, lat, lon), so a one-day read fetches 5 days. Walk time in chunk-aligned 5-step blocks.
-6. **DCCEEW ArcGIS services:**
+5. **Grid registration:** `satellite_austemp_heatwave_14day` is half a cell (0.01°) off the 0.02° lattice that every other 0.02° IMOS store shares (centres at whole rather than odd hundredths).
+6. **Chunking:** most satellite stores are chunked 5 × 500 × 500 (time, lat, lon), so a one-day read fetches 5 days. Walk time in chunk-aligned 5-step blocks.
+7. **DCCEEW ArcGIS services:**
    - Published `AREA_KM2` collides with an added `area_km2`, because OGR field names are case-insensitive. `st_write()` then fails with "Field count reached: duplicate names present?" (GPKG too, not just Parquet).
    - `services.ga.gov.au/gis/rest` returns 403 to this client; the GA OGC services and the cloudfront zips work.

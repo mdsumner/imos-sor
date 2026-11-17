@@ -12,8 +12,8 @@ Two aims:
    (GHRSST first of all), use that overlap to connect to global, Antarctic
    and sub-Antarctic records.
 
-Status (2026-11-17): survey done; region sets and coverage tables built
-(steps 1–2 of section 7). No statistics pipeline yet. Everything below can be
+Status (2026-11-17): survey done; region sets and coverage tables built; first
+5-day block compared with trend.sst (steps 1–3 of section 7). No statistics pipeline yet. Everything below can be
 re-run with the scripts in `scripts/` (Python harvesters, `python3 -I`) and
 `R/` (boundaries and coverage, `Rscript R/0N_*.R` from the repo root, about 2 minutes).
 Large or regenerable outputs go to `data/` (gitignored); checks are committed in
@@ -37,6 +37,8 @@ Decisions so far:
 | `notes/product_coverage.md` | every gridded store × EEZ territory and AMP network: % inside the product domain (Heard, AAT gaps) |
 | `notes/issues.md` | data issues found (a partial Zarr append, Zarr lagging the NetCDF, ...) |
 | `R/01_boundaries.R` … `R/04_product_coverage.R` | region sets → lattice → coverage tables → product coverage |
+| `R/05_time_axes.R` … `R/08_compare.R` | time-axis audit → S2 L5 mapping → 5-day block sums (S2 + regions) → comparison with trend.sst |
+| `notes/block_2024-01-04.md` | first 5-day block: IMOS L3S vs OISST/MUR on S2 L5; exact EEZ means vs L5 cell selections |
 | `boundaries/` | committed checks: `regions.csv`, `lattice.csv`, `coverage_check.csv`, `product_coverage.csv`, `SOURCES.txt` |
 | `inventory/*.jsonl, *.csv` | raw harvests: `zarr_inventory`, `parquet_inventory`, `cloud_optimised_provenance` (config → source NetCDF prefix + catalogue UUID), `imos-data_tree_L3.txt` |
 | `scripts/` | `zarr_inventory.py`, `parquet_inventory.py`, `config_provenance.py`, `summarise_inventory.py` (run with `python3 -I`) |
@@ -198,8 +200,11 @@ approach:
 2. ~~Coverage tables and area checks~~ done, on the **union** 0.02° lattice
    (L3S Australia ∪ Southern Ocean, 10000 × 4875), not just the Australia
    grid. Coverage areas match geodesic areas to < 1e-7 per set.
-3. Run one 5-day chunk block end to end into region sums. Compare with
-   trend.sst L5 cells for the same dates.
+3. ~~One 5-day chunk block end to end~~ done for 2024-01-04..08
+   (`R/05`–`R/08`, `notes/block_2024-01-04.md`).
+   - Quality-filtered multi-sensor L3S agrees with MUR and OISST at S2 L5 about as well as they agree with each other (RMS ≈ 0.25–0.28 °C), with a warm offset of about +0.18 °C.
+   - At L5, the choice of cells shifts an EEZ territory's mean by 0.1–0.5 °C. Next: a finer S2 level for EEZ work, alongside the exact region tables.
+   - Read the NetCDF for the AVHRR Southern Ocean record (its Zarr is mostly empty), and mask by `sea_ice_fraction` before comparing with the L4s south of the ice edge.
 4. Reproduce STAR 1.2 and 2.1, then extend them to 2026 with the sensor seams
    handled explicitly.
 5. Add L3S-SO (with `sea_ice_fraction`) and GAMSSA to the S2 L5 registry

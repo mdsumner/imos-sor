@@ -31,7 +31,6 @@ Checked 2026-11-17 from outside NCI (public THREDDS and GeoNetwork only). Everyt
     names (`<time>-ABOM-L3S_GHRSST-…`), not that convention.
 - **Remaining questions** (answered by `inventory.pbs` and `block_read.pbs`; jobs 184300275/76/78 submitted 2026-11-17):
   1. Is it complete, and byte-identical to S3? `inventory.pbs` computes S3-style multipart ETags (8 MiB parts, checked against a real object) so files can be matched without downloading anything.
-  2. How fast are in-situ reads, compared with THREDDS and S3?
 
 ### qm43: Bureau of Meteorology satellite SST (the upstream of the IMOS L3S)
 
@@ -121,24 +120,31 @@ Then compute in situ with the container you use for trend.ice
 (`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`): the 5-day block sums (R/07)
 from `/g/data`, then whole records.
 
-## Block read, off Gadi, for reference (`block_read.R`, 2024-01-04..08)
+## Block read: in situ on Gadi vs off site (`block_read.R`, 2024-01-04..08)
 
-These are the same five days read from this machine: SST, quality and bias per file, decoded
-by GDAL's netCDF driver. All are BoM/IMOS GHRSST L3S, not MUR.
+These are the same five days, with SST, quality and bias decoded per file by GDAL's netCDF driver. All products are
+BoM/IMOS GHRSST L3S (0.02° clear-sky composites), not MUR. In situ = `block_read.pbs`
+(job 184300278, 4 cpus, `/g/data`); off site = this machine over qm43 THREDDS or IMOS S3.
 
-| product | source | s per file (3 vars) | q ≥ 4 pixels / day | mean SST q ≥ 4 (°C) |
-|---|---|---|---|---|
-| Continental AVHRR, fv01 | qm43 THREDDS | 8.4 | 1,103,275 | 19.522 |
-| Continental AVHRR | IMOS S3 | 9.8 | 1,103,275 | 19.522 |
-| Continental AVHRR, fv02 | qm43 THREDDS | 9.3 | 1,101,583 | 19.577 |
-| Continental multi, fv01 | qm43 THREDDS | 22.4 | 10,659,282 | 21.427 |
-| Continental multi, fv02 | qm43 THREDDS | 21.7 | 12,369,203 | 21.532 |
-| Southern AVHRR, fv01 | qm43 THREDDS | 8.7 | 559,182 | 12.243 |
-| Southern multi, fv01 | qm43 THREDDS | 17.1 | 6,855,781 | 11.855 |
-| Southern multi | IMOS S3 | 12.4 | 6,855,781 | 11.855 |
+| product | in situ, s/file | off site, s/file | speed-up | q ≥ 4 px/day | mean q ≥ 4 (°C) |
+|---|---|---|---|---|---|
+| qm43 Continental AVHRR fv01 | 2.29 | 8.44 (THREDDS) | 3.7× | 1,103,275 | 19.52176 |
+| qm43 Continental AVHRR fv02 | 2.51 | 9.30 (THREDDS) | 3.7× | 1,101,583 | 19.57722 |
+| qm43 Continental multi fv01 | 3.01 | 22.37 (THREDDS) | 7.4× | 10,659,282 | 21.42668 |
+| qm43 Continental multi fv02 | 3.07 | 21.67 (THREDDS) | 7.1× | 12,369,203 | 21.53157 |
+| qm43 Southern AVHRR fv01 | 2.19 | 8.65 (THREDDS) | 3.9× | 559,182 | 12.24328 |
+| qm43 Southern multi fv01 | 2.55 | 17.11 (THREDDS) | 6.7× | 6,855,781 | 11.85548 |
+| sh74 L3S-1d (Continental AVHRR) | 2.38 | 9.79 (S3) | 4.1× | 1,103,275 | 19.52176 |
+| sh74 L3SM-1d (Continental multi) | 3.16 | – | – | 10,659,282 | 21.42668 |
+| sh74 L3S-1dS (Southern AVHRR) | 2.15 | – | – | 559,182 | 12.24328 |
+| sh74 L3SM-1dS (Southern multi) | 2.66 | 12.39 (S3) | 4.7× | 6,855,781 | 11.85548 |
 
-- **fv01 equals the IMOS copy** for both products checked: identical counts and means, and earlier, identical values.
-- **fv02 multi-sensor keeps 16 % more q ≥ 4 pixels than fv01**, and its mean is 0.10 °C warmer. The pixel sets differ, so that's not yet a like-for-like bias.
+- **sh74 = qm43 fv01 for all four products on all five days:** identical valid counts, q ≥ 4 counts and means.
+  S3 also equals fv01 (identical values checked earlier), so all three hold the same data for this block.
+  The inventory ETags will test byte identity across the whole tree.
+- **In situ is 3.7–7.4× faster.** About 2–3 s per file for 3 variables; at that speed decoding, not I/O, sets the pace.
+- sh74 has the complete AVHRR Southern NetCDF (`L3S-1dS`) for these dates, which its AODN Zarr lacks.
+- **fv02 multi-sensor keeps 16 % more q ≥ 4 pixels than fv01**, and its mean is 0.10 °C warmer (different pixel sets).
 
 ## Virtualising through THREDDS (raad.virtualize)
 

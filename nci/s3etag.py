@@ -1,37 +1,52 @@
-"""S3-style ETag of local files, to match NCI copies against s3://imos-data
+"""S3-style ETags of local files, to match NCI copies against s3://imos-data
 without downloading anything.
 
-The imos-data objects were uploaded in 8 MiB parts, so their ETag is
-md5(concat(md5(part_i))) + "-" + nparts (a plain md5 for single-part
-objects). Prints: path<TAB>size<TAB>etag
+The imos-data objects were uploaded three ways, so one file can carry any of
+these ETags:
+  - single PUT: md5 of the file (no "-N")
+  - 15 MiB multipart parts (s3cmd's default chunk), older objects
+  - 8 MiB multipart parts (aws cli default), newer objects
+A multipart ETag is md5(concat(md5(part_i))) + "-" + nparts. One pass over each
+file computes them all.
+Prints: path<TAB>size<TAB>md5<TAB>etag_8MiB<TAB>etag_15MiB<TAB>etag_16MiB
 
-usage: python3 -I s3etag.py [--part-mib 8] < paths.txt > etags.tsv
+usage: python3 -I s3etag.py < paths.txt > etags.tsv
 """
 import sys, hashlib, os
 
-def etag(path, part=8 * 1024 * 1024):
-    digests = []
+MiB = 1024 * 1024
+PARTS = (8, 15, 16)          # MiB; all multiples of the 1 MiB read block
+
+def etags(path):
+    whole = hashlib.md5()
+    cur = {p: hashlib.md5() for p in PARTS}
+    fill = {p: 0 for p in PARTS}
+    digests = {p: [] for p in PARTS}
     with open(path, "rb") as f:
         while True:
-            b = f.read(part)
+            b = f.read(MiB)
             if not b:
                 break
-            digests.append(hashlib.md5(b).digest())
-    if len(digests) <= 1:          # single-part upload: the ETag is the file's md5
-        with open(path, "rb") as f:
-            return hashlib.md5(f.read()).hexdigest()
-    return hashlib.md5(b"".join(digests)).hexdigest() + "-" + str(len(digests))
+            whole.update(b)
+            for p in PARTS:
+                cur[p].update(b)
+                fill[p] += len(b)
+                if fill[p] == p * MiB:
+                    digests[p].append(cur[p].digest())
+                    cur[p] = hashlib.md5(); fill[p] = 0
+    out = [whole.hexdigest()]
+    for p in PARTS:
+        d = digests[p] + ([cur[p].digest()] if fill[p] else [])
+        out.append(whole.hexdigest() if len(d) <= 1 else hashlib.md5(b"".join(d)).hexdigest() + "-" + str(len(d)))
+    return out
 
 def main():
-    part = 8
-    if len(sys.argv) > 2 and sys.argv[1] == "--part-mib":
-        part = int(sys.argv[2])
     for line in sys.stdin:
-        p = line.strip()
+        p = line.strip().split("\t")[0]
         if not p:
             continue
         try:
-            print(f"{p}\t{os.path.getsize(p)}\t{etag(p, part * 1024 * 1024)}", flush=True)
+            print("\t".join([p, str(os.path.getsize(p))] + etags(p)), flush=True)
         except OSError as e:
             print(f"{p}\tNA\tERROR {e}", flush=True)
 

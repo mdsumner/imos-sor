@@ -1,0 +1,27 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -l ncpus=1
+#PBS -l mem=4GB
+#PBS -l walltime=02:00:00
+#PBS -l wd
+#PBS -j oe
+#PBS -N imos-sor-etags
+## Recompute S3-style ETags (md5 + 8/15/16 MiB parts) for a list of files,
+## without redoing the inventory. Default list: the files of an earlier
+## etags-<tag>.tsv (first column), e.g. the sample from inventory.pbs.
+##
+##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 etags.pbs
+##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v LIST=/path/to/paths.txt,TAG=mine etags.pbs
+## Paths in the list are relative to ROOT (default /g/data/sh74/IMOS_AODN).
+## Output: $OUTDIR/etags2-<TAG>.tsv (default TAG sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst)
+set -euo pipefail
+ROOT=${ROOT:-/g/data/sh74/IMOS_AODN}
+OUTDIR=${OUTDIR:-/g/data/jk72/$USER/imos-sor-probe}
+TAG=${TAG:-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst}
+LIST=${LIST:-$OUTDIR/etags-$TAG.tsv}
+cd "$ROOT"
+cut -f1 "$LIST" > "$PBS_JOBFS/list.txt"
+echo "etags for $(wc -l < "$PBS_JOBFS/list.txt") files under $ROOT at $(date -Is)"
+module load python3 2>/dev/null || true
+time python3 -I "$PBS_O_WORKDIR/s3etag.py" < "$PBS_JOBFS/list.txt" > "$OUTDIR/etags2-$TAG.tsv"
+echo "done $(date -Is): $OUTDIR/etags2-$TAG.tsv"

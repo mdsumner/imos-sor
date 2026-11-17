@@ -44,9 +44,14 @@ case "$PRUNE" in
   *) prune=() ;;
 esac
 echo "inventory of $ROOT/$SUBDIR (prune: $PRUNE) at $(date -Is)"
-## paths relative to ROOT (find %p keeps the starting point; strip a leading ./)
-time find "$SUBDIR" ${prune[@]+"${prune[@]}"} -type f -printf '%p\t%s\t%T@\n' 2>/dev/null | sed 's|^\./||' | \
-  gzip > "$OUTDIR/inventory-$tag.tsv.gz"
+## paths relative to ROOT (find %p keeps the starting point; strip a leading ./).
+## find exits non-zero on any unreadable directory; under pipefail that used to
+## end the job before the counts (qm43, job 184300276), so record and carry on.
+set +o pipefail
+time find "$SUBDIR" ${prune[@]+"${prune[@]}"} -type f -printf '%p\t%s\t%T@\n' 2> "$OUTDIR/find-errors-$tag.txt" | \
+  sed 's|^\./||' | gzip > "$OUTDIR/inventory-$tag.tsv.gz"
+set -o pipefail
+echo "find errors (unreadable paths): $(wc -l < "$OUTDIR/find-errors-$tag.txt")"
 echo "files: $(zcat "$OUTDIR/inventory-$tag.tsv.gz" | wc -l)"
 
 zcat "$OUTDIR/inventory-$tag.tsv.gz" | awk -F'\t' '$1 ~ /\.nc$/ {

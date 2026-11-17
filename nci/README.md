@@ -112,13 +112,66 @@ these scripts write goes to jk72:
    `qsub -P jk72 -l storage=gdata/qm43+gdata/jk72 -v ROOT=/g/data/qm43/ghrsst,SUBDIR=.,ETAGS=0,PRUNE=qm43 inventory.pbs`
 4. In-situ block read (qm43 fv01 + fv02 and the sh74 copy; timings and stats):
    `qsub -P jk72 -l storage=gdata/qm43+gdata/sh74+gdata/jk72 block_read.pbs`
-5. Copy `/g/data/jk72/$USER/imos-sor-probe/*` back into `data/nci/` here. Then run
+5. ETags with all upload styles (md5, 8/15/16 MiB) for the same sample: `qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 etags.pbs`, which writes `etags2-…tsv`.
+6. Copy `/g/data/jk72/$USER/imos-sor-probe/*` back into `data/nci/` here. Then run
    `Rscript nci/compare_inventory.R data/nci/inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz data/nci/etags-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv IMOS/SRS/SST/ghrsst`
    for presence and size per directory against S3, plus byte identity for the sample.
 
 Then compute in situ with the container you use for trend.ice
 (`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`): the 5-day block sums (R/07)
 from `/g/data`, then whole records.
+
+## sh74 vs S3, and IMOS vs BoM versions (inventories from jobs 184300275/76)
+
+All products here are BoM/IMOS GHRSST L3S/L3C/L4 (ABOM), not MUR.
+
+**sh74 against `s3://imos-data/IMOS/SRS/SST/ghrsst`** (`compare_inventory.R`; listing made here 2026-11-17):
+
+| | files |
+|---|---|
+| on S3 | 1,334,236 |
+| on sh74 | 1,334,228 |
+| same path, same size | 1,333,050 |
+| S3 only | 8 (all added to S3 on 2026-11-17: the mirror's 1.5–2 day lag) |
+| size differs | 1,178, **all in 2026 folders** (L3C/L3U VIIRS, L3SM 1/3/6-day, GAMSSA, RAMSSA) |
+
+- The 1,178 were rewritten on S3 on 2026-10-28, while the sh74 copies date from 6–22 October.
+  **The mirror brings in new files but has not replaced files changed in place on S3.**
+  Per-file list: `nci/compare-IMOS_SRS_SST_ghrsst-files.csv`.
+- **Byte identity is still to be settled.** In the first ETag sample (3,713 files: first and last of every directory),
+  2,052 match and 1,661 don't. The mismatches come from how the objects were uploaded, not from content:
+  every multipart mismatch fits **15 MiB parts** (s3cmd's default), and 335 are single-PUT objects
+  (ETag = plain md5). `s3etag.py` now computes md5, 8, 15 and 16 MiB ETags in one pass; checked against
+  three real objects, one of each kind. Rerun with `etags.pbs`.
+
+**Which BoM version IMOS holds** (`imos_vs_qm43.R`):
+- Each IMOS 1-day day+night file is matched to the same-day qm43 file nearest in size.
+- IMOS only edits headers (`Conventions`, `acknowledgment`, a `time` attribute), so the median difference is +1.15 KB, while fv01 and fv02 files differ by megabytes.
+- This is size-based; confirm with headers before relying on it. Per-year table: `nci/imos_vs_qm43_by_year.csv`.
+
+| IMOS product | fv02 (BoM reprocessing) | fv01 (operational) | not matched |
+|---|---|---|---|
+| L3S-1d (Continental AVHRR) | 1992-03-21 → 2022-12-31 | 2023-01-01 → 2025-06-06 (plus 134 days in 2016) | 153 (2014, 2016) |
+| L3S-1dS (Southern AVHRR) | 1992-03-21 → 2022-12-31 | 2023-01-01 → 2025-06-06 | 47 (2014) |
+| L3SM-1d (Continental multi) | 2012-01-01 → 2022-12-31 | 2023-01-01 → 2026-11-10 | 6 |
+| L3SM-1dS (Southern multi) | 2019-01-01 → 2022-12-31 | 2023-01-01 → 2026-11 | 37 (Nov–Dec 2018) |
+
+- **The IMOS record switches processing version at 2023-01-01**, from BoM fv02 to fv01, for all four products. A trend over
+  the last few years crosses it. The overlap periods in qm43 (1,000–3,700 days with both versions) can measure the offset.
+- **qm43 fv02 runs further than IMOS for Continental:** AVHRR to 2025-06-06 and multi-sensor to 2025-06-30.
+  A single-version Continental record from 1992 (AVHRR) or 2012 (multi-sensor) to mid-2025 exists only in qm43.
+- **qm43 fv02 has the Southern multi-sensor record from 2012-01-02, which IMOS lacks before 2018-11-16.**
+
+**qm43 fv01/fv02 spans** (`qm43_seams.R` → `nci/qm43_l3s_seams.csv`; 1-day day+night):
+
+| domain, sensor | fv02 | fv01 | days in both |
+|---|---|---|---|
+| Continental AVHRR | 1992-03-21 → 2025-06-06 (41 missing) | 2006 → 2025-06-06, sparse before 2014 | 3,691 |
+| Continental multi | 2012-01-01 → 2025-06-30 (3 missing) | 2018-11-16 → 2026-11-10 (264 missing) | 2,208 |
+| Southern AVHRR | 1992-03-21 → 2022-12-31 (41 missing) | 2020-01-01 → 2025-06-06 | 1,006 |
+| Southern multi | 2012-01-02 → 2022-12-31 (18 missing) | 2020-01-01 → 2026-10-21 | 1,030 |
+
+`v02.0fv01/L3S-01day/dn/RT/` holds a handful of real-time duplicates (2023–2025).
 
 ## Block read: in situ on Gadi vs off site (`block_read.R`, 2024-01-04..08)
 

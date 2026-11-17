@@ -55,3 +55,12 @@ confirmed.
   The same read alone succeeds, both with 1 thread and with all CPUs. Possibly R's error/warning path entered from a GDAL worker thread. Not yet reduced to a reprex.
 - **GDAL Zarr driver:** `GDAL FAILURE 1: Invalid or unsupported format for dtype: |O` on opening stores with an object-dtype (vlen string) `filename` array. Harmless for numeric reads, but noisy.
 - **GDAL Zarr driver:** it warns `Size of _ARRAY_DIMENSIONS[0] different from the one of shape` for the multi-sensor Australia store (issue 1), on every open.
+13. **The IMOS L3S record changes BoM processing version at 2023-01-01.**
+    - Matching sizes to BoM's qm43 archive (`nci/imos_vs_qm43.R`): IMOS's 1-day day+night files are BoM fv02 (reprocessing, product 2.0) to 2022-12-31 and fv01 (operational, product 01.0) from 2023-01-01.
+    - BoM's fv02 runs further (Continental to mid-2025), but IMOS has not taken it up.
+    - The Southern multi-sensor record 2012-01 → 2018-11 exists in BoM fv02 but not at IMOS.
+    - Trend work needs to handle the seam or use qm43 fv02.
+14. **The NCI mirror (sh74) doesn't replace files changed in place on S3.**
+    - 1,178 SST files (all in 2026 folders) were rewritten on S3 on 2026-10-28; sh74 still holds the 6–22 October versions (sizes differ).
+    - New files arrive 1.5–2 days after S3.
+15. **S3 ETags mix three upload styles** (single PUT, 15 MiB s3cmd parts, 8 MiB aws-cli parts), so a byte-identity check must try all three (`nci/s3etag.py`).

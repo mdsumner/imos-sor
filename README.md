@@ -12,8 +12,9 @@ Two aims:
    (GHRSST first of all), use that overlap to connect to global, Antarctic
    and sub-Antarctic records.
 
-Status (2026-11-17): survey done; region sets and coverage tables built; first
-5-day block compared with trend.sst (steps 1–3 of section 7). No statistics pipeline yet. Everything below can be
+Status (2026-11-18): survey done; region sets and coverage tables built; first
+5-day block compared with trend.sst (steps 1–3 of section 7). The whole IMOS L3S record is now exact daily sums
+(`nci/`), with first trends and status from them (`R/09`, `notes/trends.md`). Everything below can be
 re-run with the scripts in `scripts/` (Python harvesters, `python3 -I`) and
 `R/` (boundaries and coverage, `Rscript R/0N_*.R` from the repo root, about 2 minutes).
 Large or regenerable outputs go to `data/` (gitignored); checks are committed in
@@ -38,6 +39,8 @@ Decisions so far:
 | `notes/issues.md` | data issues found (a partial Zarr append, Zarr lagging the NetCDF, ...) |
 | `R/01_boundaries.R` … `R/04_product_coverage.R` | region sets → lattice → coverage tables → product coverage |
 | `R/05_time_axes.R` … `R/08_compare.R` | time-axis audit → S2 L5 mapping → 5-day block sums (S2 + regions) → comparison with trend.sst |
+| `R/09_trends.R`, `notes/trends.md` | monthly anomalies (anomalies first, per S2 L5 cell), trends and 2024 status for every region, from the in-situ L3S sums |
+| `trends/` | committed outputs of `R/09`: `region_trends.csv`, `cell_trends_q4.csv`, `region_status.csv`, `region_monthly_q4.csv.gz` |
 | `nci/` | IMOS on NCI: the sh74 IMOS/AODN mirror and BoM's qm43 SST archive (fv01 = IMOS operational, fv02 = BoM reprocessing), projects to join, the Gadi probe and inventory job, and raad.virtualize candidates (`nci/README.md`) |
 | `notes/block_2024-01-04.md` | first 5-day block: IMOS L3S vs OISST/MUR on S2 L5; exact EEZ means vs L5 cell selections |
 | `boundaries/` | committed checks: `regions.csv`, `lattice.csv`, `coverage_check.csv`, `product_coverage.csv`, `SOURCES.txt` |
@@ -214,6 +217,16 @@ approach:
    - Read the NetCDF for the AVHRR Southern Ocean record (its Zarr is mostly empty), and mask by `sea_ice_fraction` before comparing with the L4s south of the ice edge.
 4. Reproduce STAR 1.2 and 2.1, then extend them to 2026 with the sensor seams
    handled explicitly.
+   - STAR 1.2, day+night first (`R/09_trends.R`, `notes/trends.md`): anomalies first per S2 L5 cell, then region means of them.
+     A region's own mean is ruled out for trends: cloud cover moves it (South-east 1993–2016 −0.31 direct vs +0.21 °C/decade).
+   - Single-sensor q4, 1993–2016: South-east +0.21 [+0.06, +0.37] °C/decade, South-west +0.11 [−0.15, +0.38]. That's
+     "none on the west coast", as STAR says.
+   - STAR's "~1 °C per decade in the SE" isn't reached at L5: the fastest cells, east of Tasmania, are +0.43 to +0.49.
+   - The 2023 seam is small (2022 paired offsets within ±0.045 °C).
+   - From 2022 single-sensor runs cooler than multi-sensor, by up to 0.2 °C (Coral Sea, Temperate East).
+   - 2024 is the warmest year in the whole domain in both products.
+   - Next: the night-only product (`L3S-1d/ngt`), a finer S2 level in the south-east, and MUR/OISST from trend.sst as a
+     reference for the 2022 drift.
 5. Add L3S-SO (with `sea_ice_fraction`) and GAMSSA to the S2 L5 registry
    next to OISST/MUR, joining trend.sst and trend.ice.
 6. **NCI** (`nci/README.md`): join sh74 (IMOS/AODN mirror, `/g/data/sh74/IMOS_AODN`, not on THREDDS) and qm43 (BoM SST).

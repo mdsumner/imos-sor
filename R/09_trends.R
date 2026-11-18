@@ -48,36 +48,24 @@
 #
 # Inputs: data/sums_imos/{s2l5,regions}/<product>_<variant>/<date>.parquet,
 # data/mapping/union_s2l5.rds (R/06), data/coverage/<set>.parquet (R/03),
-# boundaries/lattice.csv, boundaries/regions.csv, nci/offset_by_year.csv.
+# boundaries/lattice.csv, boundaries/regions.csv, nci/offset_by_year.csv;
+# settings and functions in R/trend_fns.R (shared with R/10_fine_trends.R).
 # Writes data/trends/{cell,region}_monthly.parquet and, committed,
 # trends/region_trends.csv, trends/cell_trends_q4.csv, trends/region_status.csv,
 # trends/region_monthly_q4.csv.gz (STAR, EEZ and the domain, q4 only).
 #
-# usage (from the repo root): Rscript R/09_trends.R   (about 2 minutes, 16 cores)
+# usage (from the repo root): Rscript R/09_trends.R   (about 3 minutes, 16 cores)
 suppressPackageStartupMessages({ library(data.table); library(parallel) })
 CORES <- 16
 src <- "data/sums_imos"
-base <- list(single = 1993:2022, multi = 2013:2022, single_night = 1993:2022)
-min_clim_years <- list(single = 15, multi = 7, single_night = 15)   # per calendar month
-periods <- data.frame(period = c("1993-2016", "1993-2024", "2013-2024"), from = c(1993, 1993, 2013), to = c(2016, 2024, 2024))
+source("R/trend_fns.R")   # settings (base years, coverage rules, periods) and the fit
 products <- c("single", "multi", "single_night"); variants <- c("all", "q4", "q4b")
 products <- products[dir.exists(file.path(src, "s2l5", paste0(products, "_q4")))]   # single_night once converted
 cat("products:", products, "\n")
-rel_cov <- 0.2           # a cell- or region-month counts if its coverage is >= 20% of its own median
-min_npix <- 30           # ... and (cells) it has >= 30 pixel-days
-min_area_frac <- 0.5     # cell method: cells with a valid anomaly cover >= half the region's observable ocean
-min_period_frac <- 0.8   # a trend needs >= 80% of the period's months
-status_year <- 2024
 dir.create("data/trends", showWarnings = FALSE); dir.create("trends", showWarnings = FALSE)
 
 ## ---- geometry: union lattice, the composite domain, pixel -> S2 L5 cell --------
 lat <- read.csv("boundaries/lattice.csv"); u <- lat[lat$grid == "union", ]; NC <- u$ncol; NR <- u$nrow
-cell_km2 <- function(nrow, ymax, res) {
-  a <- 6378137; f <- 1 / 298.257223563; e2 <- f * (2 - f); e <- sqrt(e2); b <- a * (1 - f)
-  g <- function(phi) { s <- sin(phi); s / (1 - e2 * s^2) + atanh(e * s) / e }
-  top <- (ymax - (seq_len(nrow) - 1) * res) * pi / 180
-  (b^2 / 2) * (g(top) - g(top - res * pi / 180)) * (res * pi / 180) / 1e6
-}
 rowarea <- cell_km2(NR, u$ymax, 0.02)
 win_pix <- function(g) { w <- lat[lat$grid == g, ]; as.vector(outer(w$col_offset + seq_len(w$ncol), (w$row_offset + seq_len(w$nrow) - 1) * NC, "+")) }
 dom <- rep(FALSE, NC * NR); dom[win_pix("aus")] <- TRUE; dom[win_pix("so")] <- TRUE
@@ -103,19 +91,9 @@ ice <- ov[, .(ice_zone = sum(km2[reg$lat[cell] < -60]) / sum(km2) > 0.5), by = .
 cat("cell x region overlaps:", nrow(ov), " regions:", nrow(unique(ov[, .(set, region_id)])), "\n")
 
 ## ---- monthly sums ---------------------------------------------------------------
-ym_of <- function(d) as.integer(format(d, "%Y")) * 12L + as.integer(format(d, "%m")) - 1L
-days_in <- function(ym) { y <- ym %/% 12L; m <- ym %% 12L + 1L
-  as.integer(as.Date(sprintf("%d-%02d-01", y + (m == 12L), m %% 12L + 1L)) - as.Date(sprintf("%d-%02d-01", y, m))) }
 read_kind <- function(kind, p, v) {
   f <- list.files(file.path(src, kind, paste0(p, "_", v)), full.names = TRUE, pattern = "parquet$")
   rbindlist(mclapply(f, function(x) as.data.table(nanoparquet::read_parquet(x)), mc.cores = CORES))
-}
-clim_anom <- function(x, key, p) {   # x: key cols + ym + mean + ok; adds clim and anom
-  x[, `:=`(year = ym %/% 12L, mon = ym %% 12L + 1L)]
-  cl <- x[ok == TRUE & year %in% base[[p]], .(clim = mean(mean), clim_years = .N), by = c(key, "mon")][clim_years >= min_clim_years[[p]]]
-  x <- merge(x, cl[, c(key, "mon", "clim"), with = FALSE], by = c(key, "mon"), all.x = TRUE)
-  x[, anom := fifelse(ok, mean - clim, NA_real_)]
-  x
 }
 ## pass 1: monthly sums, means, climatologies and anomalies for cells and regions
 cells_m <- list(); regs_m <- list()
@@ -151,12 +129,7 @@ ov <- ov[w > 0]
 ## pass 2: anomalies first, then region means of them
 for (k in names(cells_m)) {
   cm <- cells_m[[k]]
-  a <- merge(ov, cm[is.finite(anom), .(cell, ym, anom)], by = "cell", allow.cartesian = TRUE)
-  ca <- a[, .(anom_cell = sum(w * anom) / sum(w), w_valid = sum(w)), by = .(set, region_id, ym)]
-  ob <- merge(ov, unique(cm[is.finite(clim), .(cell, mon)]), by = "cell", allow.cartesian = TRUE)[, .(w_obs = sum(w)), by = .(set, region_id, mon)]
-  ca[, mon := ym %% 12L + 1L]
-  ca <- merge(ca, ob, by = c("set", "region_id", "mon"))[, area_frac := w_valid / w_obs]
-  ca[area_frac < min_area_frac, anom_cell := NA_real_]
+  ca <- anom_cell_regions(ov, cm)
   x <- merge(regs_m[[k]], ca[, .(set, region_id, ym, anom_cell, area_frac)], by = c("set", "region_id", "ym"), all = TRUE)
   x[, `:=`(product = cm$product[1], variant = cm$variant[1])]
   regs_m[[k]] <- x
@@ -169,27 +142,8 @@ nanoparquet::write_parquet(as.data.frame(regs_m[, .(product, variant, set, regio
                                                     anom_direct = anom, anom_cell, area_frac)]), "data/trends/region_monthly.parquet")
 
 ## ---- trends -------------------------------------------------------------------------
-fit <- function(t, y) {
-  k <- is.finite(y); n <- as.numeric(sum(k))
-  if (n < 24) return(c(n = n, slope = NA_real_, se = NA_real_, r1 = NA_real_, n_eff = NA_real_, lo = NA_real_, hi = NA_real_))
-  m <- lm.fit(cbind(1, t[k]), y[k]); cf <- unname(m$coefficients); res <- y - (cf[1] + cf[2] * t)
-  r1 <- { a <- res[-length(res)]; b <- res[-1]; j <- is.finite(a) & is.finite(b); if (sum(j) > 10) cor(a[j], b[j]) else NA }
-  s2 <- sum(m$residuals^2) / (n - 2); se <- sqrt(s2 / sum((t[k] - mean(t[k]))^2))
-  n_eff <- if (is.finite(r1) && r1 > 0) n * (1 - r1) / (1 + r1) else n
-  se_a <- se * sqrt((n - 2) / max(n_eff - 2, 1)); q <- qt(0.975, max(n_eff - 2, 1))
-  c(n = n, slope = cf[2] * 10, se = se_a * 10, r1 = as.numeric(r1), n_eff = n_eff, lo = (cf[2] - q * se_a) * 10, hi = (cf[2] + q * se_a) * 10)
-}
 long <- melt(regs_m[, .(product, variant, set, region_id, ym, year, direct = anom, cell = anom_cell)],
              measure.vars = c("direct", "cell"), variable.name = "method", value.name = "anom")
-trends_of <- function(d, key) rbindlist(lapply(seq_len(nrow(periods)), function(i) {
-  P <- periods[i, ]; months <- (P$from * 12L):(P$to * 12L + 11L)
-  x <- d[year >= P$from & year <= P$to]
-  x <- x[, .SD[match(months, ym)][, ym := months], by = key]   # complete monthly axis, gaps as NA
-  f <- x[, as.list(fit(ym / 12 + 1 / 24, anom)), by = key]
-  f[, `:=`(period = P$period, months_frac = n / length(months))]
-  f[months_frac < min_period_frac, c("slope", "se", "lo", "hi") := NA_real_]
-  f
-}))
 tr <- trends_of(long, c("product", "variant", "set", "region_id", "method"))
 ## the fv02 -> fv01 seam: fv01 - fv02 on paired pixels in 2022 (nci/offset.R); Continental window if it has the region
 off <- as.data.table(read.csv("nci/offset_by_year.csv"))[as.character(year) == "2022" & is.finite(offset)]

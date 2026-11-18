@@ -189,6 +189,20 @@ these scripts write goes to jk72:
      `Rscript nci/sums_to_parquet.R data/sums_imos data/nci/sums-v2 <s3 run>`.
    - `nci/sums_check.R` compared `sums-v2/` with the first run and wrote `nci/sums_check.csv`.
      The first run has since been deleted, so the CSV is the record; rerunning the check would mean rerunning job 184407123.
+10. Finer S2 cells over the STAR South-east region (`sums_fine.R`, kit from `fine_kit.R`):
+    `qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 sums_fine.pbs`.
+    - The box is the 45 S2 L5 cells that touch the South-east region (130–169°E, 33–61°S, 1938 × 1380 pixels).
+      Every pixel in them gets its S2 L8 cell (about 33 km at 42°S; 2,880 cells), so each L5 cell is complete.
+    - The box is inside the Continental window, where step 9's composite is always the Continental file. So only that
+      file is read, and only the box (4 of its 9 chunks). The products (multi, single, single_night), screen and
+      variants are step 9's.
+    - The kit is `nci/fine_kit_star_4_l8.rds` (133 KB, committed, so `git pull` brings it). For another region or level,
+      run `Rscript nci/fine_kit.R <set> <region_id> <level>` here, then pass `-v KIT=<kit>,SUMS=<new dir>`.
+    - Tested here on 8 files fetched from S3 (nights in 1992, 1994, 2004, 2013, 2018 and 2024; single and multi on
+      2024-07-15). Summed over children, the L8 sums give step 9's L5 sums: the same pixel counts in every cell and
+      variant, and sums within 5e-15 relative. About 1 s a file, so expect about 1 h with 16 workers (~32 SU).
+    - Output: `$OUTDIR/sums-fine-se-l8/<product>/<YYYY-MM>.rds` (an estimated 4–5 GB), `screen.rds` and `kit.rds`.
+      A different kit or screen is refused. Copy back to `data/nci/`, then run `Rscript R/10_fine_trends.R`.
 
 ### In-situ sums results (sums-v2, job 184447215)
 

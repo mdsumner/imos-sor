@@ -1,0 +1,50 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -l ncpus=16
+#PBS -l mem=32GB
+#PBS -l walltime=04:00:00
+#PBS -l jobfs=1GB
+#PBS -l wd
+#PBS -j oe
+#PBS -N imos-sor-fine
+## Exact daily sums on S2 L8 cells (about 33 km) over the STAR South-east
+## region's 45 S2 L5 cells (nci/sums_fine.R; kit from nci/fine_kit.R, kept in
+## this directory). BoM/IMOS ABOM GHRSST L3S 1-day (not MUR), the Continental
+## file only and only the box (1938 x 1380 pixels), for the all / q4 / q4b
+## variants after nci/sums.R's screen. Products (PRODUCTS, default all):
+##   multi         L3SM-1d/dn   day+night SSTfnd   5,323 days
+##   single        L3S-1d/dn    day+night SSTfnd  12,076 days
+##   single_night  L3S-1d/ngt   night SSTskin     12,068 days
+## About 1 s per file per worker here (off Gadi), so expect about 1 h with 16
+## workers (~32 SU). Memory is about 0.3 GB per worker.
+## Resumable (finished product-months are skipped); REDO_FAILED=1 redoes
+## months whose file logs a failed day.
+##
+##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 sums_fine.pbs
+##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v PRODUCTS=single_night sums_fine.pbs   (one product)
+##
+## Needs $OUTDIR/inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz (inventory.pbs).
+## Output: $OUTDIR/sums-fine-se-l8/<product>/<YYYY-MM>.rds, screen.rds and kit.rds.
+set -euo pipefail
+module load singularity
+SIF=${SIF:-/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif}
+[ -f "$SIF" ] || { echo "no image at $SIF" >&2; exit 1; }
+OUTDIR=${OUTDIR:-/g/data/jk72/$USER/imos-sor-probe}
+INV=inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz
+KIT=${KIT:-$PBS_O_WORKDIR/fine_kit_star_4_l8.rds}
+for f in "$OUTDIR/$INV" "$KIT"; do
+  [ -f "$f" ] || { echo "missing $f" >&2; exit 1; }
+done
+SUMS=${SUMS:-$OUTDIR/sums-fine-se-l8}
+mkdir -p "$SUMS"
+## keep host R/Python libraries out of the container (as in raad.virtualize); pass the job settings in
+export SINGULARITYENV_R_LIBS_USER=/nonexistent SINGULARITYENV_R_LIBS= SINGULARITYENV_PYTHONNOUSERSITE=1
+export SINGULARITYENV_NWORK=${NWORK:-16}
+for v in PRODUCTS YEARS MONTHS MAXDAYS REDO_FAILED; do
+  [ -n "${!v:-}" ] && export "SINGULARITYENV_$v=${!v}"
+done
+echo "start $(date -Is) NWORK=$SINGULARITYENV_NWORK PRODUCTS=${PRODUCTS:-all} YEARS=${YEARS:-all} MONTHS=${MONTHS:-all} KIT=$KIT"
+singularity exec -B /g/data "$SIF" Rscript "$PBS_O_WORKDIR/sums_fine.R" \
+  "$OUTDIR/$INV" "$KIT" "$SUMS" /g/data/sh74/IMOS_AODN \
+  "$PBS_O_WORKDIR/compare-IMOS_SRS_SST_ghrsst-files.csv"
+echo "done $(date -Is): $(find "$SUMS" -mindepth 2 -name '*.rds' | wc -l) product-month files in $SUMS"

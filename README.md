@@ -40,6 +40,7 @@ Decisions so far:
 | `R/01_boundaries.R` … `R/04_product_coverage.R` | region sets → lattice → coverage tables → product coverage |
 | `R/05_time_axes.R` … `R/08_compare.R` | time-axis audit → S2 L5 mapping → 5-day block sums (S2 + regions) → comparison with trend.sst |
 | `R/09_trends.R`, `notes/trends.md` | monthly anomalies (anomalies first, per S2 L5 cell), trends and 2024 status for every region, from the in-situ L3S sums |
+| `R/10_fine_trends.R` | the same on S2 L8 → L5 cells over the STAR South-east region, from `nci/sums_fine.R`; settings and fit shared with R/09 in `R/trend_fns.R` |
 | `trends/` | committed outputs of `R/09`: `region_trends.csv`, `cell_trends_q4.csv`, `region_status.csv`, `region_monthly_q4.csv.gz` |
 | `nci/` | IMOS on NCI: the sh74 IMOS/AODN mirror and BoM's qm43 SST archive (fv01 = IMOS operational, fv02 = BoM reprocessing), projects to join, the Gadi probe and inventory job, and raad.virtualize candidates (`nci/README.md`) |
 | `notes/block_2024-01-04.md` | first 5-day block: IMOS L3S vs OISST/MUR on S2 L5; exact EEZ means vs L5 cell selections |
@@ -230,7 +231,10 @@ approach:
      fastest cell, east of Tasmania, is +0.53. So the night record doesn't reach "~1 °C per decade" at L5 either.
    - Night steps up against day+night by 0.08–0.18 °C between 2017 and 2019, so after 2017 all three products disagree
      by 0.1–0.2 °C, each in its own way.
-   - Next: a finer S2 level in the south-east, and MUR/OISST from trend.sst as a reference for the post-2017 drifts.
+   - A finer S2 level in the south-east is set up. `nci/sums_fine.pbs` makes L8 sums (about 33 km) over the South-east
+     region's 45 L5 cells, and `R/10_fine_trends.R` rolls them up to L7–L5. Tested end to end: R/10's L5 reproduces
+     R/09 exactly. It is waiting for the Gadi run.
+   - Next: MUR/OISST from trend.sst as a reference for the post-2017 drifts.
 5. Add L3S-SO (with `sea_ice_fraction`) and GAMSSA to the S2 L5 registry
    next to OISST/MUR, joining trend.sst and trend.ice.
 6. **NCI** (`nci/README.md`): join sh74 (IMOS/AODN mirror, `/g/data/sh74/IMOS_AODN`, not on THREDDS) and qm43 (BoM SST).

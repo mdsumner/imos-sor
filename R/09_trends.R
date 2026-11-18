@@ -1,5 +1,6 @@
 # Monthly SST anomalies, trends and status from the in-situ daily sums of the
-# IMOS L3S record (BoM/IMOS ABOM GHRSST L3S 1-day day+night, 0.02 deg; not
+# IMOS L3S record (BoM/IMOS ABOM GHRSST L3S 1-day day+night, and the AVHRR
+# night-only skin SST as single_night when it has been converted; 0.02 deg; not
 # MUR): nci/sums.R -> nci/sums_to_parquet.R -> data/sums_imos/.
 #
 # Everything starts from exact sums: daily sums add to monthly sums; a mean
@@ -16,11 +17,12 @@
 #           cloud-free changes the mean from month to month.
 # Climatology: calendar-month means over each product's base years, each
 # year weighted equally: single-sensor 1993-2022 (>= 15 of the 30 years),
-# multi-sensor 2013-2022 (>= 7 of 10); all BoM fv02. Single-sensor coverage
-# collapses after 2012 in parts of the south (west of ~90 E, and the
-# Southern file outside the overlap), so a 2013-2022 base would drop those
-# cells' whole record (HIMI among them). Trends don't depend on the base;
-# compare the two products' anomalies after re-centring on common years.
+# multi-sensor 2013-2022 (>= 7 of 10), single_night as single-sensor; all
+# BoM fv02. Single-sensor coverage collapses after 2012 in parts of the
+# south (west of ~90 E, and the Southern file outside the overlap), so a
+# 2013-2022 base would drop those cells' whole record (HIMI among them).
+# Trends don't depend on the base; compare products' anomalies after
+# re-centring on common years.
 # A month counts if its coverage is at least a fifth of that cell's (or
 # region's) median, so cells and regions that are partly land, and the
 # sparser early AVHRR years, aren't dropped by a fixed cutoff. In the cell
@@ -32,10 +34,12 @@
 # Trends: OLS on monthly anomalies, with the standard error inflated for
 # lag-1 autocorrelation of the residuals (effective n = n (1 - r1) / (1 + r1)).
 # Periods: 1993-2016 (STAR 1.2), 1993-2024 (single-sensor in full years),
-# 2013-2024 (both products). The fv02 -> fv01 seam at 2023-01-01 is inside
+# 2013-2024 (every product). The fv02 -> fv01 seam at 2023-01-01 is inside
 # the last two; its size on paired pixels in 2022 (fv01 - fv02, from
 # nci/offset_by_year.csv: the domain, eez_legal and star sets only) is joined
-# for comparison. Per-cell trends too (q4), for maps and local maxima.
+# for comparison. It was measured for day+night only, so single_night has
+# none. single_night has no Southern file: its "whole domain" is the
+# Continental window. Per-cell trends too (q4), for maps and local maxima.
 # Status: each region's 2024 anomaly and its rank among the years.
 #
 # Regions whose area is mostly in cells south of 60 S are marked ice_zone:
@@ -53,10 +57,12 @@
 suppressPackageStartupMessages({ library(data.table); library(parallel) })
 CORES <- 16
 src <- "data/sums_imos"
-base <- list(single = 1993:2022, multi = 2013:2022)
-min_clim_years <- list(single = 15, multi = 7)   # per calendar month
+base <- list(single = 1993:2022, multi = 2013:2022, single_night = 1993:2022)
+min_clim_years <- list(single = 15, multi = 7, single_night = 15)   # per calendar month
 periods <- data.frame(period = c("1993-2016", "1993-2024", "2013-2024"), from = c(1993, 1993, 2013), to = c(2016, 2024, 2024))
-products <- c("single", "multi"); variants <- c("all", "q4", "q4b")
+products <- c("single", "multi", "single_night"); variants <- c("all", "q4", "q4b")
+products <- products[dir.exists(file.path(src, "s2l5", paste0(products, "_q4")))]   # single_night once converted
+cat("products:", products, "\n")
 rel_cov <- 0.2           # a cell- or region-month counts if its coverage is >= 20% of its own median
 min_npix <- 30           # ... and (cells) it has >= 30 pixel-days
 min_area_frac <- 0.5     # cell method: cells with a valid anomaly cover >= half the region's observable ocean
@@ -224,6 +230,8 @@ show <- tr[set %in% c("star", "domain") & variant == "q4" & !(set == "star" & re
 print(dcast(show, region + product ~ method + period, value.var = "slope"), row.names = FALSE)
 cat("\ncell-method 95% intervals, q4:\n")
 print(show[method == "cell" & is.finite(slope), .(region, product, period, slope, lo, hi, n, r1 = round(r1, 2), seam_2022)], row.names = FALSE)
-cat("\nfastest-warming cells mostly in the South-east region, single q4, 1993-2016:\n")
 se_cells <- ov[set == "star" & region_id == 4L & w > 0.5 * cell_dkm2[cell] * ocean[cell], reg$cell[cell]]
-print(head(ct[product == "single" & period == "1993-2016" & cell %in% se_cells][order(-slope)], 8), row.names = FALSE)
+for (p in intersect(c("single", "single_night"), products)) {
+  cat("\nfastest-warming cells mostly in the South-east region,", p, "q4, 1993-2016:\n")
+  print(head(ct[product == p & period == "1993-2016" & cell %in% se_cells][order(-slope)], 8), row.names = FALSE)
+}

@@ -16,14 +16,16 @@
 ##   single        day+night SSTfnd, Continental + Southern, 1992-03 ->  12,077 days
 ##   single_night  night SSTskin, Continental only (STAR 1.2), 1992-03 -> 12,068 days
 ## Day+night: ~10 s per day per worker on Gadi (job 184447215: 3 h 56 min with
-## NWORK=12, 126 SU). Night reads one window, so expect about 6 s a day:
-## ~1.7 h and ~55 SU for single_night alone.
+## NWORK=12, 126 SU). Night reads one window: ~4 s a day (job 184505429,
+## single_night alone: 1 h 36 min, 51 SU).
 ## Resumable (finished product-months are skipped), so rerun the same command
-## if it hits walltime.
+## if it hits walltime. REDO_FAILED=1 also redoes months whose file logs a
+## failed day (job 184505429 lost 23 nights to a bug since fixed in sums.R).
 ##
 ##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 sums.pbs
 ##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v PRODUCTS=single_night sums.pbs   (one product)
 ##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v PRODUCTS=multi,YEARS=2024 sums.pbs   (a subset)
+##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -l walltime=00:30:00 -v PRODUCTS=single_night,REDO_FAILED=1 sums.pbs
 ##
 ## Needs in $OUTDIR: inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz
 ## (inventory.pbs) and offset_kit.rds (nci/offset_kit.R, already copied for
@@ -46,7 +48,7 @@ mkdir -p "$SUMS"
 ## keep host R/Python libraries out of the container (as in raad.virtualize); pass the job settings in
 export SINGULARITYENV_R_LIBS_USER=/nonexistent SINGULARITYENV_R_LIBS= SINGULARITYENV_PYTHONNOUSERSITE=1
 export SINGULARITYENV_NWORK=${NWORK:-12}
-for v in PRODUCTS YEARS MONTHS MAXDAYS; do
+for v in PRODUCTS YEARS MONTHS MAXDAYS REDO_FAILED; do
   [ -n "${!v:-}" ] && export "SINGULARITYENV_$v=${!v}"
 done
 echo "start $(date -Is) NWORK=$SINGULARITYENV_NWORK PRODUCTS=${PRODUCTS:-all} YEARS=${YEARS:-all} MONTHS=${MONTHS:-all}"

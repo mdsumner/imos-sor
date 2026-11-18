@@ -32,7 +32,7 @@
 # The sums are exact (rowsum over stretches of one row in one S2 cell, as in
 # offset.R), so they add across days, cells and regions.
 #
-# Output, one file per product-month (resumable: existing files are skipped):
+# Output, one file per product-month (resumable: existing files are skipped, unless REDO_FAILED=1 and the file logs a failed day):
 #   OUT/<product>/<YYYY-MM>.rds = list(
 #     s2       date, variant, cell (index into kit$cells), n, sumw, sumwx, sumwx2   (cells with n > 0)
 #     regions  date, variant, set, region_id, n, sumw, sumwx, sumwx2               (incl. set "domain")
@@ -54,6 +54,7 @@
 #   SH74_ROOT default /g/data/sh74/IMOS_AODN; stale.csv = nci/compare-IMOS_SRS_SST_ghrsst-files.csv
 # env:   PRODUCTS=multi,single  YEARS=2020,2021  MONTHS=2024-01  NWORK=4
 #        MAXDAYS=n (first n days of each month: for testing)
+#        REDO_FAILED=1 (also redo months whose file logs a failed day)
 suppressPackageStartupMessages({ library(gdalraster); library(parallel) })
 args <- commandArgs(TRUE)
 inv_f <- args[1]; kit_f <- args[2]; out <- args[3]
@@ -166,7 +167,13 @@ if (file.exists(sf)) {
   saveRDS(screen, sf)
 }
 saveRDS(dkm2, file.path(out, "domain_km2.rds"))
-tasks <- tasks[!file.exists(tasks$file), ]
+done <- file.exists(tasks$file)
+if (env("REDO_FAILED") == "1") {   # also redo months whose file logs a failed day
+  failed <- vapply(seq_along(done), function(i) done[i] && any(readRDS(tasks$file[i])$days$error != ""), logical(1))
+  cat("months with failed days, redone:", sum(failed), "\n")
+  done <- done & !failed
+}
+tasks <- tasks[!done, ]
 if (!nrow(tasks)) quit(save = "no")
 
 ## ---- reading (as offset.R) ---------------------------------------------------
@@ -242,7 +249,10 @@ one_day <- function(d) {
     R <- Reduce(`+`, lapply(parts, function(p) p$res[[v]]$R))
     D <- Reduce(`+`, lapply(parts, function(p) p$res[[v]]$D))
     ks <- which(S[, 1] > 0)
-    s2[[v]] <- data.frame(date = d$date, variant = v, cell = ks, `colnames<-`(S[ks, , drop = FALSE], s4))
+    ## rep(): a variant can have no cells at all (a near-empty night file with no
+    ## quality-4 pixel), and data.frame() won't recycle a date over zero rows
+    s2[[v]] <- data.frame(date = rep(d$date, length(ks)), variant = rep(v, length(ks)), cell = ks,
+                          `colnames<-`(S[ks, , drop = FALSE], s4))
     reg[[v]] <- rbind(data.frame(date = d$date, variant = v, set = gid_set[in_dom], region_id = gid_region[in_dom],
                                  `colnames<-`(R[in_dom, , drop = FALSE], s4)),
                       data.frame(date = d$date, variant = v, set = "domain", region_id = 1L, `names<-`(as.list(D), s4)))

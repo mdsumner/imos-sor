@@ -3411,3 +3411,1672 @@ single,q4b,star,12,outside regions: MAC,cell,2024,-0.004,15,27,1995,2024,2017,0.
 single,q4b,star,13,outside regions: HIMI,cell,2024,,,12,1999,2011,2011,0.232,FALSE
 single,q4b,star,14,outside regions: AATW,cell,2024,,,11,2001,2016,2010,0.221,TRUE
 single,q4b,star,15,outside regions: AATE,cell,2024,,,16,2001,2022,2010,0.487,TRUE
+single_night,all,amp,1,Coral Sea | Habitat Protection Zone,direct,2024,0.425,7,32,1993,2024,2022,0.747,FALSE
+single_night,all,amp,1,Coral Sea | Habitat Protection Zone,cell,2024,0.494,6,32,1993,2024,2022,0.743,FALSE
+single_night,all,amp,2,Coral Sea | Habitat Protection Zone,direct,2024,0.68,5,32,1993,2024,2022,1,FALSE
+single_night,all,amp,2,Coral Sea | Habitat Protection Zone,cell,2024,,,31,1993,2023,2022,0.997,FALSE
+single_night,all,amp,3,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.541,4,32,1993,2024,2022,0.754,FALSE
+single_night,all,amp,3,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.448,7,32,1993,2024,2022,0.702,FALSE
+single_night,all,amp,4,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.467,6,32,1993,2024,2022,0.805,FALSE
+single_night,all,amp,4,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.446,6,32,1993,2024,2022,0.73,FALSE
+single_night,all,amp,5,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.516,5,32,1993,2024,1998,0.621,FALSE
+single_night,all,amp,5,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.474,7,32,1993,2024,2022,0.699,FALSE
+single_night,all,amp,6,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.39,7,32,1993,2024,1998,0.635,FALSE
+single_night,all,amp,6,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.464,4,32,1993,2024,1998,0.63,FALSE
+single_night,all,amp,7,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.353,7,32,1993,2024,2016,0.636,FALSE
+single_night,all,amp,7,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.462,3,32,1993,2024,1998,0.698,FALSE
+single_night,all,amp,8,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.403,7,32,1993,2024,1998,0.763,FALSE
+single_night,all,amp,8,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.461,4,32,1993,2024,1998,0.721,FALSE
+single_night,all,amp,9,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.674,2,32,1993,2024,1998,0.794,FALSE
+single_night,all,amp,9,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.461,4,32,1993,2024,1998,0.721,FALSE
+single_night,all,amp,10,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.299,8,32,1993,2024,1998,0.619,FALSE
+single_night,all,amp,10,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.461,4,32,1993,2024,1998,0.721,FALSE
+single_night,all,amp,11,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.509,6,32,1993,2024,2022,1.096,FALSE
+single_night,all,amp,11,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.483,6,32,1993,2024,2022,1.02,FALSE
+single_night,all,amp,12,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.439,7,32,1993,2024,2022,1.074,FALSE
+single_night,all,amp,12,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.483,6,32,1993,2024,2022,1.02,FALSE
+single_night,all,amp,13,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.438,6,32,1993,2024,2022,0.857,FALSE
+single_night,all,amp,13,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.483,6,32,1993,2024,2022,1.02,FALSE
+single_night,all,amp,14,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.422,7,32,1993,2024,2022,1.032,FALSE
+single_night,all,amp,14,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.477,6,32,1993,2024,2022,0.985,FALSE
+single_night,all,amp,15,Coral Sea | National Park Zone,direct,2024,0.513,5,32,1993,2024,2022,1.077,FALSE
+single_night,all,amp,15,Coral Sea | National Park Zone,cell,2024,0.504,6,32,1993,2024,2022,1.118,FALSE
+single_night,all,amp,16,Coral Sea | National Park Zone,direct,2024,0.604,5,32,1993,2024,2022,1.073,FALSE
+single_night,all,amp,16,Coral Sea | National Park Zone,cell,2024,0.56,5,32,1993,2024,2022,1.125,FALSE
+single_night,all,amp,17,Coral Sea | National Park Zone,direct,2024,0.399,8,32,1993,2024,2022,1.091,FALSE
+single_night,all,amp,17,Coral Sea | National Park Zone,cell,2024,0.483,6,32,1993,2024,2022,1.02,FALSE
+single_night,all,amp,18,Coral Sea | National Park Zone,direct,2024,0.49,5,32,1993,2024,2022,0.996,FALSE
+single_night,all,amp,18,Coral Sea | National Park Zone,cell,2024,0.473,7,32,1993,2024,2022,0.896,FALSE
+single_night,all,amp,19,Coral Sea | National Park Zone,direct,2024,0.274,8,32,1993,2024,1998,0.633,FALSE
+single_night,all,amp,19,Coral Sea | National Park Zone,cell,2024,0.461,4,32,1993,2024,1998,0.721,FALSE
+single_night,all,amp,20,Coral Sea | National Park Zone,direct,2024,0.436,7,32,1993,2024,2022,0.834,FALSE
+single_night,all,amp,20,Coral Sea | National Park Zone,cell,2024,0.447,7,32,1993,2024,2022,0.711,FALSE
+single_night,all,amp,21,Coral Sea | National Park Zone,direct,2024,0.374,8,32,1993,2024,2022,0.797,FALSE
+single_night,all,amp,21,Coral Sea | National Park Zone,cell,2024,0.448,7,32,1993,2024,2022,0.702,FALSE
+single_night,all,amp,22,Coral Sea | National Park Zone,direct,2024,0.381,9,32,1993,2024,2022,0.616,FALSE
+single_night,all,amp,22,Coral Sea | National Park Zone,cell,2024,0.464,4,32,1993,2024,1998,0.63,FALSE
+single_night,all,amp,23,Coral Sea | National Park Zone,direct,2024,0.517,5,32,1993,2024,2022,0.67,FALSE
+single_night,all,amp,23,Coral Sea | National Park Zone,cell,2024,0.474,7,32,1993,2024,2022,0.699,FALSE
+single_night,all,amp,24,Coral Sea | National Park Zone,direct,2024,0.546,1,32,1993,2024,2024,0.546,FALSE
+single_night,all,amp,24,Coral Sea | National Park Zone,cell,2024,0.585,1,32,1993,2024,2024,0.585,FALSE
+single_night,all,amp,25,Coral Sea | National Park Zone,direct,2024,0.494,4,32,1993,2024,2022,0.81,FALSE
+single_night,all,amp,25,Coral Sea | National Park Zone,cell,2024,0.456,4,32,1993,2024,2022,0.954,FALSE
+single_night,all,amp,26,Coral Sea | Special Purpose Zone (Trawl),direct,2024,0.468,4,32,1993,2024,2022,0.865,FALSE
+single_night,all,amp,26,Coral Sea | Special Purpose Zone (Trawl),cell,2024,0.461,4,32,1993,2024,1998,0.721,FALSE
+single_night,all,amp,27,Coral Sea | Special Purpose Zone (Trawl),direct,2024,0.567,3,32,1993,2024,2020,0.696,FALSE
+single_night,all,amp,27,Coral Sea | Special Purpose Zone (Trawl),cell,2024,0.581,1,32,1993,2024,2024,0.581,FALSE
+single_night,all,amp,28,Coral Sea | Special Purpose Zone (Trawl),direct,2024,0.458,6,32,1993,2024,1998,0.638,FALSE
+single_night,all,amp,28,Coral Sea | Special Purpose Zone (Trawl),cell,2024,0.479,4,32,1993,2024,1998,0.607,FALSE
+single_night,all,amp,29,Heard Island and McDonald Islands | Habitat Protection Zone,direct,2024,,,9,1998,2010,1998,0.219,FALSE
+single_night,all,amp,29,Heard Island and McDonald Islands | Habitat Protection Zone,cell,2024,,,15,1996,2012,2012,0.263,FALSE
+single_night,all,amp,30,Heard Island and McDonald Islands | National Park Zone,cell,2024,,,8,1998,2010,2004,0.297,FALSE
+single_night,all,amp,31,Heard Island and McDonald Islands | National Park Zone,direct,2024,,,11,1996,2010,1998,0.226,FALSE
+single_night,all,amp,31,Heard Island and McDonald Islands | National Park Zone,cell,2024,,,14,1996,2012,2012,0.298,FALSE
+single_night,all,amp,32,Heard Island and McDonald Islands | National Park Zone,cell,2024,,,11,1996,2011,2011,0.178,FALSE
+single_night,all,amp,33,Heard Island and McDonald Islands | National Park Zone,cell,2024,,,11,1996,2011,2011,0.178,FALSE
+single_night,all,amp,34,Heard Island and McDonald Islands | Sanctuary Zone,cell,2024,,,15,1996,2011,2004,0.179,FALSE
+single_night,all,amp,35,Heard Island and McDonald Islands | Sanctuary Zone,cell,2024,,,17,1995,2012,2012,0.149,FALSE
+single_night,all,amp,37,Heard Island and McDonald Islands | Sanctuary Zone,cell,2024,,,11,1996,2011,2002,0.384,FALSE
+single_night,all,amp,38,Christmas Island | Habitat Protection Zone,direct,2024,0.373,8,32,1993,2024,2016,1.124,FALSE
+single_night,all,amp,38,Christmas Island | Habitat Protection Zone,cell,2024,0.455,6,32,1993,2024,2016,0.953,FALSE
+single_night,all,amp,39,Christmas Island | National Park Zone,direct,2024,0.489,5,32,1993,2024,2016,0.963,FALSE
+single_night,all,amp,39,Christmas Island | National Park Zone,cell,2024,0.495,5,32,1993,2024,2016,0.968,FALSE
+single_night,all,amp,40,Cocos (Keeling) Islands | Habitat Protection Zone,direct,2024,0.584,1,29,1994,2024,2024,0.584,FALSE
+single_night,all,amp,40,Cocos (Keeling) Islands | Habitat Protection Zone,cell,2024,0.571,1,30,1994,2024,2024,0.571,FALSE
+single_night,all,amp,41,Cocos (Keeling) Islands | National Park Zone,cell,2024,0.571,1,30,1994,2024,2024,0.571,FALSE
+single_night,all,amp,42,Cocos (Keeling) Islands | National Park Zone,direct,2024,0.613,1,29,1994,2024,2024,0.613,FALSE
+single_night,all,amp,42,Cocos (Keeling) Islands | National Park Zone,cell,2024,0.571,1,30,1994,2024,2024,0.571,FALSE
+single_night,all,amp,43,Cocos (Keeling) Islands | National Park Zone,direct,2024,0.624,1,30,1994,2024,2024,0.624,FALSE
+single_night,all,amp,43,Cocos (Keeling) Islands | National Park Zone,cell,2024,0.58,1,30,1994,2024,2024,0.58,FALSE
+single_night,all,amp,44,Arafura | Multiple Use Zone,direct,2024,0.327,8,32,1993,2024,2016,0.939,FALSE
+single_night,all,amp,44,Arafura | Multiple Use Zone,cell,2024,0.419,6,32,1993,2024,2016,0.935,FALSE
+single_night,all,amp,45,Arafura | Special Purpose Zone,direct,2024,0.225,11,32,1993,2024,2022,1.066,FALSE
+single_night,all,amp,45,Arafura | Special Purpose Zone,cell,2024,0.289,9,32,1993,2024,2016,0.988,FALSE
+single_night,all,amp,46,Arafura | Special Purpose Zone (Trawl),direct,2024,0.428,6,32,1993,2024,2016,0.912,FALSE
+single_night,all,amp,46,Arafura | Special Purpose Zone (Trawl),cell,2024,0.447,6,32,1993,2024,2016,0.911,FALSE
+single_night,all,amp,47,Arnhem | Special Purpose Zone,direct,2024,0.251,11,32,1993,2024,2016,0.982,FALSE
+single_night,all,amp,47,Arnhem | Special Purpose Zone,cell,2024,0.289,9,32,1993,2024,2016,0.988,FALSE
+single_night,all,amp,48,Gulf of Carpentaria | National Park Zone,direct,2024,0.556,2,32,1993,2024,2016,0.835,FALSE
+single_night,all,amp,48,Gulf of Carpentaria | National Park Zone,cell,2024,0.571,2,32,1993,2024,2016,0.821,FALSE
+single_night,all,amp,49,Gulf of Carpentaria | Special Purpose Zone (Trawl),direct,2024,0.595,2,32,1993,2024,2016,0.86,FALSE
+single_night,all,amp,49,Gulf of Carpentaria | Special Purpose Zone (Trawl),cell,2024,0.569,2,32,1993,2024,2016,0.82,FALSE
+single_night,all,amp,50,Gulf of Carpentaria | Special Purpose Zone (Trawl),direct,2024,0.547,2,32,1993,2024,2016,0.836,FALSE
+single_night,all,amp,50,Gulf of Carpentaria | Special Purpose Zone (Trawl),cell,2024,0.584,2,32,1993,2024,2016,0.783,FALSE
+single_night,all,amp,51,Joseph Bonaparte Gulf | Multiple Use Zone,direct,2024,0.41,8,32,1993,2024,2016,1.36,FALSE
+single_night,all,amp,51,Joseph Bonaparte Gulf | Multiple Use Zone,cell,2024,0.413,8,30,1993,2024,2016,1.205,FALSE
+single_night,all,amp,52,Joseph Bonaparte Gulf | Special Purpose Zone,direct,2024,,,28,1993,2023,2016,1.198,FALSE
+single_night,all,amp,52,Joseph Bonaparte Gulf | Special Purpose Zone,cell,2024,0.413,8,30,1993,2024,2016,1.205,FALSE
+single_night,all,amp,53,Limmen | Habitat Protection Zone,direct,2024,0.538,6,32,1993,2024,2016,1.069,FALSE
+single_night,all,amp,53,Limmen | Habitat Protection Zone,cell,2024,0.538,4,32,1993,2024,2016,1,FALSE
+single_night,all,amp,54,Oceanic Shoals | Habitat Protection Zone,direct,2024,0.337,7,32,1993,2024,2016,1.031,FALSE
+single_night,all,amp,54,Oceanic Shoals | Habitat Protection Zone,cell,2024,0.31,9,32,1993,2024,2016,1.084,FALSE
+single_night,all,amp,55,Oceanic Shoals | Multiple Use Zone,direct,2024,0.278,10,32,1993,2024,2016,1.155,FALSE
+single_night,all,amp,55,Oceanic Shoals | Multiple Use Zone,cell,2024,0.376,8,32,1993,2024,2016,1.161,FALSE
+single_night,all,amp,56,Oceanic Shoals | Multiple Use Zone,direct,2024,0.331,7,32,1993,2024,2016,1.009,FALSE
+single_night,all,amp,56,Oceanic Shoals | Multiple Use Zone,cell,2024,0.328,9,32,1993,2024,2016,1.033,FALSE
+single_night,all,amp,57,Oceanic Shoals | National Park Zone,direct,2024,0.348,7,32,1993,2024,2016,0.968,FALSE
+single_night,all,amp,57,Oceanic Shoals | National Park Zone,cell,2024,0.311,9,32,1993,2024,2016,1.086,FALSE
+single_night,all,amp,58,Oceanic Shoals | Special Purpose Zone (Trawl),direct,2024,0.438,7,32,1993,2024,2016,1.064,FALSE
+single_night,all,amp,58,Oceanic Shoals | Special Purpose Zone (Trawl),cell,2024,0.326,8,32,1993,2024,2016,1.074,FALSE
+single_night,all,amp,59,Wessel | Habitat Protection Zone,direct,2024,0.46,6,32,1993,2024,2016,1,FALSE
+single_night,all,amp,59,Wessel | Habitat Protection Zone,cell,2024,0.413,7,32,1993,2024,2016,0.983,FALSE
+single_night,all,amp,60,Wessel | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,2016,0.974,FALSE
+single_night,all,amp,60,Wessel | Special Purpose Zone (Trawl),cell,2024,0.41,7,32,1993,2024,2016,0.981,FALSE
+single_night,all,amp,61,West Cape York | Habitat Protection Zone,direct,2024,0.418,7,32,1993,2024,2022,1.028,FALSE
+single_night,all,amp,61,West Cape York | Habitat Protection Zone,cell,2024,,,31,1993,2023,2022,0.927,FALSE
+single_night,all,amp,62,West Cape York | National Park Zone,direct,2024,0.411,7,32,1993,2024,2022,1.067,FALSE
+single_night,all,amp,62,West Cape York | National Park Zone,cell,2024,0.466,7,32,1993,2024,2022,1.055,FALSE
+single_night,all,amp,63,West Cape York | National Park Zone,direct,2024,,,31,1993,2023,2022,1.104,FALSE
+single_night,all,amp,63,West Cape York | National Park Zone,cell,2024,,,31,1993,2023,2022,0.927,FALSE
+single_night,all,amp,64,West Cape York | Special Purpose Zone,direct,2024,0.37,7,32,1993,2024,2010,0.954,FALSE
+single_night,all,amp,64,West Cape York | Special Purpose Zone,cell,2024,,,31,1993,2023,2022,0.927,FALSE
+single_night,all,amp,65,Argo-Rowley Terrace | Multiple Use Zone,direct,2024,0.358,7,32,1993,2024,2016,0.88,FALSE
+single_night,all,amp,65,Argo-Rowley Terrace | Multiple Use Zone,cell,2024,0.364,6,32,1993,2024,2016,0.715,FALSE
+single_night,all,amp,66,Argo-Rowley Terrace | Multiple Use Zone,direct,2024,0.382,7,32,1993,2024,2016,0.975,FALSE
+single_night,all,amp,66,Argo-Rowley Terrace | Multiple Use Zone,cell,2024,0.39,7,32,1993,2024,2016,0.96,FALSE
+single_night,all,amp,67,Argo-Rowley Terrace | National Park Zone,direct,2024,0.451,6,32,1993,2024,2016,1.082,FALSE
+single_night,all,amp,67,Argo-Rowley Terrace | National Park Zone,cell,2024,0.469,6,32,1993,2024,2016,1.079,FALSE
+single_night,all,amp,68,Argo-Rowley Terrace | Special Purpose Zone (Trawl),direct,2024,0.344,7,32,1993,2024,2016,0.94,FALSE
+single_night,all,amp,68,Argo-Rowley Terrace | Special Purpose Zone (Trawl),cell,2024,0.393,6,32,1993,2024,2016,0.953,FALSE
+single_night,all,amp,69,Ashmore Reef | Recreational Use Zone,direct,2024,0.485,6,32,1993,2024,2016,1.165,FALSE
+single_night,all,amp,69,Ashmore Reef | Recreational Use Zone,cell,2024,0.497,6,32,1993,2024,2016,1.17,FALSE
+single_night,all,amp,70,Ashmore Reef | Sanctuary Zone,direct,2024,0.607,3,32,1993,2024,2016,1.143,FALSE
+single_night,all,amp,70,Ashmore Reef | Sanctuary Zone,cell,2024,0.497,6,32,1993,2024,2016,1.17,FALSE
+single_night,all,amp,71,Carnarvon Canyon | Habitat Protection Zone,direct,2024,0.626,1,32,1993,2024,2024,0.626,FALSE
+single_night,all,amp,71,Carnarvon Canyon | Habitat Protection Zone,cell,2024,0.573,1,32,1993,2024,2024,0.573,FALSE
+single_night,all,amp,72,Cartier Island | Sanctuary Zone,direct,2024,0.592,3,32,1993,2024,2016,1.219,FALSE
+single_night,all,amp,72,Cartier Island | Sanctuary Zone,cell,2024,0.497,6,32,1993,2024,2016,1.17,FALSE
+single_night,all,amp,73,Dampier | Habitat Protection Zone,direct,2024,0.275,8,32,1993,2024,2020,0.672,FALSE
+single_night,all,amp,73,Dampier | Habitat Protection Zone,cell,2024,0.245,10,32,1993,2024,2020,0.564,FALSE
+single_night,all,amp,74,Dampier | Multiple Use Zone,direct,2024,0.323,5,32,1993,2024,2020,0.692,FALSE
+single_night,all,amp,74,Dampier | Multiple Use Zone,cell,2024,0.382,5,32,1993,2024,2020,0.653,FALSE
+single_night,all,amp,75,Dampier | National Park Zone,direct,2024,0.275,7,32,1993,2024,2020,0.657,FALSE
+single_night,all,amp,75,Dampier | National Park Zone,cell,2024,0.277,7,32,1993,2024,2020,0.585,FALSE
+single_night,all,amp,76,Eighty Mile Beach | Multiple Use Zone,direct,2024,0.38,6,32,1993,2024,2020,0.597,FALSE
+single_night,all,amp,76,Eighty Mile Beach | Multiple Use Zone,cell,2024,0.365,6,32,1993,2024,2016,0.682,FALSE
+single_night,all,amp,77,Gascoyne | Habitat Protection Zone,direct,2024,0.477,3,32,1993,2024,2011,0.634,FALSE
+single_night,all,amp,77,Gascoyne | Habitat Protection Zone,cell,2024,0.545,2,32,1993,2024,1999,0.56,FALSE
+single_night,all,amp,78,Gascoyne | Habitat Protection Zone,direct,2024,0.226,9,32,1993,2024,2011,0.927,FALSE
+single_night,all,amp,78,Gascoyne | Habitat Protection Zone,cell,2024,0.32,6,32,1993,2024,2011,1.001,FALSE
+single_night,all,amp,79,Gascoyne | Multiple Use Zone,direct,2024,0.357,8,32,1993,2024,1999,0.697,FALSE
+single_night,all,amp,79,Gascoyne | Multiple Use Zone,cell,2024,0.4,4,32,1993,2024,1999,0.605,FALSE
+single_night,all,amp,80,Gascoyne | National Park Zone,direct,2024,0.479,3,32,1993,2024,2011,0.682,FALSE
+single_night,all,amp,80,Gascoyne | National Park Zone,cell,2024,0.503,2,32,1993,2024,1999,0.506,FALSE
+single_night,all,amp,81,Kimberley | Habitat Protection Zone,direct,2024,0.318,10,32,1993,2024,2016,0.905,FALSE
+single_night,all,amp,81,Kimberley | Habitat Protection Zone,cell,2024,0.436,7,32,1993,2024,2016,1.065,FALSE
+single_night,all,amp,82,Kimberley | Habitat Protection Zone,direct,2024,0.363,8,32,1993,2024,2016,0.818,FALSE
+single_night,all,amp,82,Kimberley | Habitat Protection Zone,cell,2024,0.436,7,32,1993,2024,2016,1.065,FALSE
+single_night,all,amp,83,Kimberley | Multiple Use Zone,direct,2024,0.413,7,32,1993,2024,2016,1.074,FALSE
+single_night,all,amp,83,Kimberley | Multiple Use Zone,cell,2024,0.421,7,32,1993,2024,2016,1.103,FALSE
+single_night,all,amp,84,Kimberley | National Park Zone,direct,2024,0.28,11,32,1993,2024,2016,0.979,FALSE
+single_night,all,amp,84,Kimberley | National Park Zone,cell,2024,0.436,7,32,1993,2024,2016,1.065,FALSE
+single_night,all,amp,85,Mermaid Reef | National Park Zone,direct,2024,0.393,6,32,1993,2024,2016,0.943,FALSE
+single_night,all,amp,85,Mermaid Reef | National Park Zone,cell,2024,0.4,7,32,1993,2024,2016,1.006,FALSE
+single_night,all,amp,86,Montebello | Multiple Use Zone,direct,2024,0.175,10,32,1993,2024,1999,0.648,FALSE
+single_night,all,amp,86,Montebello | Multiple Use Zone,cell,2024,0.291,7,32,1993,2024,2020,0.497,FALSE
+single_night,all,amp,87,Ningaloo | National Park Zone,direct,2024,0.328,7,32,1993,2024,1999,0.799,FALSE
+single_night,all,amp,87,Ningaloo | National Park Zone,cell,2024,0.359,6,32,1993,2024,1999,0.692,FALSE
+single_night,all,amp,88,Ningaloo | Recreational Use Zone,direct,2024,0.275,8,32,1993,2024,1999,0.843,FALSE
+single_night,all,amp,88,Ningaloo | Recreational Use Zone,cell,2024,0.359,6,32,1993,2024,1999,0.692,FALSE
+single_night,all,amp,89,Ningaloo | Recreational Use Zone,direct,2024,0.294,9,32,1993,2024,1999,0.775,FALSE
+single_night,all,amp,89,Ningaloo | Recreational Use Zone,cell,2024,0.359,6,32,1993,2024,1999,0.692,FALSE
+single_night,all,amp,90,Roebuck | Multiple Use Zone,direct,2024,0.588,2,32,1993,2024,2016,0.904,FALSE
+single_night,all,amp,90,Roebuck | Multiple Use Zone,cell,2024,0.489,5,32,1993,2024,2016,0.989,FALSE
+single_night,all,amp,91,Shark Bay | Multiple Use Zone,direct,2024,0.227,10,32,1993,2024,2011,1.061,FALSE
+single_night,all,amp,91,Shark Bay | Multiple Use Zone,cell,2024,0.341,6,32,1993,2024,2011,0.967,FALSE
+single_night,all,amp,92,Apollo | Multiple Use Zone,direct,2024,0.433,4,32,1993,2024,2013,0.792,FALSE
+single_night,all,amp,92,Apollo | Multiple Use Zone,cell,2024,0.32,8,32,1993,2024,2013,0.785,FALSE
+single_night,all,amp,93,Beagle | Multiple Use Zone,direct,2024,0.357,6,32,1993,2024,2013,0.578,FALSE
+single_night,all,amp,93,Beagle | Multiple Use Zone,cell,2024,0.449,4,32,1993,2024,2017,0.49,FALSE
+single_night,all,amp,94,Beagle | National Park Zone,direct,2024,0.412,4,32,1993,2024,2013,0.598,FALSE
+single_night,all,amp,94,Beagle | National Park Zone,cell,2024,0.449,4,32,1993,2024,2017,0.49,FALSE
+single_night,all,amp,95,Boags | Multiple Use Zone,direct,2024,0.542,4,32,1993,2024,2023,0.608,FALSE
+single_night,all,amp,95,Boags | Multiple Use Zone,cell,2024,0.534,1,32,1993,2024,2024,0.534,FALSE
+single_night,all,amp,96,East Gippsland | Multiple Use Zone,direct,2024,0.513,7,32,1993,2024,2017,1.033,FALSE
+single_night,all,amp,96,East Gippsland | Multiple Use Zone,cell,2024,0.407,8,32,1993,2024,2016,0.87,FALSE
+single_night,all,amp,97,Flinders | Habitat Protection Zone,direct,2024,0.552,7,32,1993,2024,2017,1.245,FALSE
+single_night,all,amp,97,Flinders | Habitat Protection Zone,cell,2024,0.568,6,32,1993,2024,2017,1.155,FALSE
+single_night,all,amp,98,Flinders | Multiple Use Zone,direct,2024,0.764,3,32,1993,2024,2023,0.788,FALSE
+single_night,all,amp,98,Flinders | Multiple Use Zone,cell,2024,0.783,2,32,1993,2024,2023,0.812,FALSE
+single_night,all,amp,99,Flinders | National Park Zone,direct,2024,0.361,10,32,1993,2024,2017,1.387,FALSE
+single_night,all,amp,99,Flinders | National Park Zone,cell,2024,0.515,7,32,1993,2024,2017,1.229,FALSE
+single_night,all,amp,100,Flinders | National Park Zone,direct,2024,0.84,1,32,1993,2024,2024,0.84,FALSE
+single_night,all,amp,100,Flinders | National Park Zone,cell,2024,0.886,1,32,1993,2024,2024,0.886,FALSE
+single_night,all,amp,101,Flinders | National Park Zone,direct,2024,0.741,5,32,1993,2024,2017,1.03,FALSE
+single_night,all,amp,101,Flinders | National Park Zone,cell,2024,0.636,5,32,1993,2024,2017,1.021,FALSE
+single_night,all,amp,102,Franklin | Multiple Use Zone,direct,2024,0.431,6,32,1993,2024,2013,0.84,FALSE
+single_night,all,amp,102,Franklin | Multiple Use Zone,cell,2024,0.534,1,32,1993,2024,2024,0.534,FALSE
+single_night,all,amp,103,Franklin | National Park Zone,direct,2024,0.499,5,32,1993,2024,2013,0.824,FALSE
+single_night,all,amp,103,Franklin | National Park Zone,cell,2024,0.534,1,32,1993,2024,2024,0.534,FALSE
+single_night,all,amp,104,Freycinet | Habitat Protection Zone,direct,2024,0.698,1,32,1993,2024,2024,0.698,FALSE
+single_night,all,amp,104,Freycinet | Habitat Protection Zone,cell,2024,0.898,1,32,1993,2024,2024,0.898,FALSE
+single_night,all,amp,105,Freycinet | Multiple Use Zone,direct,2024,0.855,1,32,1993,2024,2024,0.855,FALSE
+single_night,all,amp,105,Freycinet | Multiple Use Zone,cell,2024,0.898,1,32,1993,2024,2024,0.898,FALSE
+single_night,all,amp,106,Freycinet | National Park Zone,direct,2024,1.126,1,32,1993,2024,2024,1.126,FALSE
+single_night,all,amp,106,Freycinet | National Park Zone,cell,2024,0.96,1,32,1993,2024,2024,0.96,FALSE
+single_night,all,amp,107,Freycinet | National Park Zone,direct,2024,0.613,2,32,1993,2024,2007,0.658,FALSE
+single_night,all,amp,107,Freycinet | National Park Zone,cell,2024,0.898,1,32,1993,2024,2024,0.898,FALSE
+single_night,all,amp,108,Freycinet | Recreational Use Zone,direct,2024,0.771,1,32,1993,2024,2024,0.771,FALSE
+single_night,all,amp,108,Freycinet | Recreational Use Zone,cell,2024,0.898,1,32,1993,2024,2024,0.898,FALSE
+single_night,all,amp,109,Huon | Multiple Use Zone,direct,2024,0.797,2,32,1993,2024,2016,0.862,FALSE
+single_night,all,amp,109,Huon | Multiple Use Zone,cell,2024,0.73,4,32,1993,2024,2023,0.818,FALSE
+single_night,all,amp,110,Huon | National Park Zone,direct,2024,0.893,1,32,1993,2024,2024,0.893,FALSE
+single_night,all,amp,110,Huon | National Park Zone,cell,2024,0.478,8,32,1993,2024,2023,0.71,FALSE
+single_night,all,amp,111,Macquarie Island | Habitat Protection Zone (Macquarie),direct,2024,0.025,16,31,1993,2024,2017,0.585,FALSE
+single_night,all,amp,111,Macquarie Island | Habitat Protection Zone (Macquarie),cell,2024,-0.021,16,31,1993,2024,2017,0.537,FALSE
+single_night,all,amp,112,Macquarie Island | National Park Zone,direct,2024,-0.028,16,31,1993,2024,1993,0.541,FALSE
+single_night,all,amp,112,Macquarie Island | National Park Zone,cell,2024,0.012,15,31,1993,2024,2019,0.519,FALSE
+single_night,all,amp,113,Macquarie Island | Sanctuary Zone,direct,2024,0.02,14,31,1993,2024,2017,0.726,FALSE
+single_night,all,amp,113,Macquarie Island | Sanctuary Zone,cell,2024,-0.016,14,31,1993,2024,2017,0.673,FALSE
+single_night,all,amp,114,Murray | Habitat Protection Zone,direct,2024,0.2,9,32,1993,2024,2013,0.804,FALSE
+single_night,all,amp,114,Murray | Habitat Protection Zone,cell,2024,0.16,9,32,1993,2024,2013,0.772,FALSE
+single_night,all,amp,115,Murray | Habitat Protection Zone,direct,2024,0.155,11,32,1993,2024,2013,0.826,FALSE
+single_night,all,amp,115,Murray | Habitat Protection Zone,cell,2024,0.159,9,32,1993,2024,2013,0.769,FALSE
+single_night,all,amp,116,Murray | Multiple Use Zone,direct,2024,-0.383,29,32,1993,2024,2013,0.899,FALSE
+single_night,all,amp,116,Murray | Multiple Use Zone,cell,2024,-0.154,22,32,1993,2024,2013,0.768,FALSE
+single_night,all,amp,117,Murray | Multiple Use Zone,direct,2024,-0.01,15,32,1993,2024,2013,1.034,FALSE
+single_night,all,amp,117,Murray | Multiple Use Zone,cell,2024,0.164,9,32,1993,2024,2013,0.791,FALSE
+single_night,all,amp,118,Murray | National Park Zone,direct,2024,0.329,3,32,1993,2024,2013,0.667,FALSE
+single_night,all,amp,118,Murray | National Park Zone,cell,2024,0.208,6,32,1993,2024,2013,0.689,FALSE
+single_night,all,amp,119,Nelson | National Park Zone,direct,2024,0.201,12,32,1993,2024,2013,0.91,FALSE
+single_night,all,amp,119,Nelson | National Park Zone,cell,2024,0.152,11,32,1993,2024,2013,0.826,FALSE
+single_night,all,amp,120,South Tasman Rise | National Park Zone,direct,2024,0.514,7,32,1993,2024,2022,0.947,FALSE
+single_night,all,amp,120,South Tasman Rise | National Park Zone,cell,2024,0.572,5,32,1993,2024,2022,0.789,FALSE
+single_night,all,amp,121,Tasman Fracture | Multiple Use Zone,direct,2024,0.262,12,32,1993,2024,2022,0.887,FALSE
+single_night,all,amp,121,Tasman Fracture | Multiple Use Zone,cell,2024,0.39,9,32,1993,2024,2023,0.719,FALSE
+single_night,all,amp,122,Tasman Fracture | National Park Zone,direct,2024,0.208,14,32,1993,2024,2023,0.723,FALSE
+single_night,all,amp,122,Tasman Fracture | National Park Zone,cell,2024,0.472,8,32,1993,2024,2023,0.707,FALSE
+single_night,all,amp,123,Tasman Fracture | National Park Zone,direct,2024,0.315,11,32,1993,2024,2023,0.985,FALSE
+single_night,all,amp,123,Tasman Fracture | National Park Zone,cell,2024,0.199,13,32,1993,2024,2017,0.809,FALSE
+single_night,all,amp,124,Zeehan | Multiple Use Zone,direct,2024,0.353,6,32,1993,2024,2013,0.894,FALSE
+single_night,all,amp,124,Zeehan | Multiple Use Zone,cell,2024,0.32,8,32,1993,2024,2013,0.785,FALSE
+single_night,all,amp,125,Zeehan | National Park Zone,direct,2024,0.069,15,32,1993,2024,2013,0.616,FALSE
+single_night,all,amp,125,Zeehan | National Park Zone,cell,2024,0.144,14,32,1993,2024,2013,0.65,FALSE
+single_night,all,amp,126,Zeehan | Special Purpose Zone,direct,2024,0.104,17,32,1993,2024,2013,1.004,FALSE
+single_night,all,amp,126,Zeehan | Special Purpose Zone,cell,2024,0.32,8,32,1993,2024,2013,0.785,FALSE
+single_night,all,amp,127,Abrolhos | Habitat Protection Zone,direct,2024,0.453,4,32,1993,2024,2012,0.84,FALSE
+single_night,all,amp,127,Abrolhos | Habitat Protection Zone,cell,2024,0.444,4,32,1993,2024,2011,0.848,FALSE
+single_night,all,amp,128,Abrolhos | Multiple Use Zone,direct,2024,0.236,11,32,1993,2024,2011,1.254,FALSE
+single_night,all,amp,128,Abrolhos | Multiple Use Zone,cell,2024,0.24,11,32,1993,2024,2011,1.188,FALSE
+single_night,all,amp,129,Abrolhos | Multiple Use Zone,direct,2024,0.372,5,32,1993,2024,2011,1.166,FALSE
+single_night,all,amp,129,Abrolhos | Multiple Use Zone,cell,2024,0.385,6,32,1993,2024,2011,1.077,FALSE
+single_night,all,amp,130,Abrolhos | Multiple Use Zone,direct,2024,0.286,9,32,1993,2024,2011,1.189,FALSE
+single_night,all,amp,130,Abrolhos | Multiple Use Zone,cell,2024,0.24,11,32,1993,2024,2011,1.188,FALSE
+single_night,all,amp,131,Abrolhos | National Park Zone,direct,2024,0.313,10,32,1993,2024,2011,1.252,FALSE
+single_night,all,amp,131,Abrolhos | National Park Zone,cell,2024,0.291,9,32,1993,2024,2011,1.18,FALSE
+single_night,all,amp,132,Abrolhos | National Park Zone,direct,2024,0.247,11,32,1993,2024,2011,1.242,FALSE
+single_night,all,amp,132,Abrolhos | National Park Zone,cell,2024,0.24,11,32,1993,2024,2011,1.189,FALSE
+single_night,all,amp,133,Abrolhos | National Park Zone,direct,2024,0.304,9,32,1993,2024,2011,1.229,FALSE
+single_night,all,amp,133,Abrolhos | National Park Zone,cell,2024,0.24,11,32,1993,2024,2011,1.189,FALSE
+single_night,all,amp,134,Abrolhos | Special Purpose Zone,direct,2024,0.248,11,32,1993,2024,2011,1.244,FALSE
+single_night,all,amp,134,Abrolhos | Special Purpose Zone,cell,2024,0.24,11,32,1993,2024,2011,1.189,FALSE
+single_night,all,amp,135,Abrolhos | Special Purpose Zone,direct,2024,0.264,10,32,1993,2024,2011,1.095,FALSE
+single_night,all,amp,135,Abrolhos | Special Purpose Zone,cell,2024,0.24,11,32,1993,2024,2011,1.189,FALSE
+single_night,all,amp,136,Bremer | National Park Zone,direct,2024,0.156,10,32,1993,2024,2012,0.679,FALSE
+single_night,all,amp,136,Bremer | National Park Zone,cell,2024,0.193,9,32,1993,2024,2011,0.646,FALSE
+single_night,all,amp,137,Bremer | Special Purpose Zone (Mining Exclusion),direct,2024,0.028,17,32,1993,2024,2011,0.576,FALSE
+single_night,all,amp,137,Bremer | Special Purpose Zone (Mining Exclusion),cell,2024,0.193,9,32,1993,2024,2011,0.646,FALSE
+single_night,all,amp,138,Bremer | Special Purpose Zone (Mining Exclusion),direct,2024,-0.024,19,32,1993,2024,2011,0.589,FALSE
+single_night,all,amp,138,Bremer | Special Purpose Zone (Mining Exclusion),cell,2024,0.193,9,32,1993,2024,2011,0.646,FALSE
+single_night,all,amp,139,Eastern Recherche | National Park Zone,direct,2024,0.074,14,32,1993,2024,2013,0.611,FALSE
+single_night,all,amp,139,Eastern Recherche | National Park Zone,cell,2024,0.11,11,32,1993,2024,2013,0.552,FALSE
+single_night,all,amp,140,Eastern Recherche | National Park Zone,direct,2024,0.521,3,32,1993,2024,2011,0.554,FALSE
+single_night,all,amp,140,Eastern Recherche | National Park Zone,cell,2024,0.423,2,32,1993,2024,2011,0.482,FALSE
+single_night,all,amp,141,Eastern Recherche | Special Purpose Zone,direct,2024,0.117,11,32,1993,2024,2013,0.584,FALSE
+single_night,all,amp,141,Eastern Recherche | Special Purpose Zone,cell,2024,0.11,11,32,1993,2024,2013,0.552,FALSE
+single_night,all,amp,142,Geographe | Habitat Protection Zone,direct,2024,0.372,5,32,1993,2024,2011,0.998,FALSE
+single_night,all,amp,142,Geographe | Habitat Protection Zone,cell,2024,0.325,6,32,1993,2024,2011,0.969,FALSE
+single_night,all,amp,143,Geographe | Multiple Use Zone,direct,2024,0.425,4,32,1993,2024,2011,0.997,FALSE
+single_night,all,amp,143,Geographe | Multiple Use Zone,cell,2024,0.325,6,32,1993,2024,2011,0.969,FALSE
+single_night,all,amp,144,Geographe | National Park Zone,direct,2024,0.529,3,32,1993,2024,2011,0.861,FALSE
+single_night,all,amp,144,Geographe | National Park Zone,cell,2024,0.325,6,32,1993,2024,2011,0.969,FALSE
+single_night,all,amp,145,Geographe | Special Purpose Zone (Mining Exclusion),direct,2024,0.375,5,32,1993,2024,2011,1.029,FALSE
+single_night,all,amp,145,Geographe | Special Purpose Zone (Mining Exclusion),cell,2024,0.325,6,32,1993,2024,2011,0.969,FALSE
+single_night,all,amp,146,Great Australian Bight | Multiple Use Zone,direct,2024,0.275,5,32,1993,2024,2013,0.59,FALSE
+single_night,all,amp,146,Great Australian Bight | Multiple Use Zone,cell,2024,0.175,9,32,1993,2024,2013,0.609,FALSE
+single_night,all,amp,147,Great Australian Bight | National Park Zone,direct,2024,-0.497,31,32,1993,2024,2013,0.828,FALSE
+single_night,all,amp,147,Great Australian Bight | National Park Zone,cell,2024,-0.491,31,32,1993,2024,2013,0.822,FALSE
+single_night,all,amp,148,Great Australian Bight | Special Purpose Zone,direct,2024,-0.058,19,32,1993,2024,2013,0.705,FALSE
+single_night,all,amp,148,Great Australian Bight | Special Purpose Zone,cell,2024,-0.092,20,32,1993,2024,2013,0.686,FALSE
+single_night,all,amp,149,Great Australian Bight | Special Purpose Zone (Mining Exclusion),direct,2024,-0.431,31,32,1993,2024,2013,0.833,FALSE
+single_night,all,amp,149,Great Australian Bight | Special Purpose Zone (Mining Exclusion),cell,2024,-0.244,26,32,1993,2024,2013,0.765,FALSE
+single_night,all,amp,150,Great Australian Bight | Special Purpose Zone (Mining Exclusion),direct,2024,-0.687,32,32,1993,2024,2013,0.855,FALSE
+single_night,all,amp,150,Great Australian Bight | Special Purpose Zone (Mining Exclusion),cell,2024,-0.403,29,32,1993,2024,2013,0.792,FALSE
+single_night,all,amp,151,Jurien | National Park Zone,direct,2024,0.198,11,32,1993,2024,2011,0.963,FALSE
+single_night,all,amp,151,Jurien | National Park Zone,cell,2024,0.322,9,32,1993,2024,2011,1.158,FALSE
+single_night,all,amp,152,Jurien | Special Purpose Zone,direct,2024,0.1,12,32,1993,2024,2011,1.065,FALSE
+single_night,all,amp,152,Jurien | Special Purpose Zone,cell,2024,0.322,9,32,1993,2024,2011,1.158,FALSE
+single_night,all,amp,153,Murat | National Park Zone,direct,2024,-0.649,32,32,1993,2024,2013,0.832,FALSE
+single_night,all,amp,153,Murat | National Park Zone,cell,2024,-0.584,32,32,1993,2024,2013,0.823,FALSE
+single_night,all,amp,154,Perth Canyon | Habitat Protection Zone,direct,2024,0.291,6,32,1993,2024,2011,1.357,FALSE
+single_night,all,amp,154,Perth Canyon | Habitat Protection Zone,cell,2024,0.324,7,32,1993,2024,2011,1.072,FALSE
+single_night,all,amp,155,Perth Canyon | Habitat Protection Zone,direct,2024,0.281,7,32,1993,2024,2011,1.16,FALSE
+single_night,all,amp,155,Perth Canyon | Habitat Protection Zone,cell,2024,0.324,7,32,1993,2024,2011,1.046,FALSE
+single_night,all,amp,156,Perth Canyon | Habitat Protection Zone,direct,2024,0.331,8,32,1993,2024,2011,1.003,FALSE
+single_night,all,amp,156,Perth Canyon | Habitat Protection Zone,cell,2024,0.325,6,32,1993,2024,2011,0.972,FALSE
+single_night,all,amp,157,Perth Canyon | Multiple Use Zone,direct,2024,0.34,6,32,1993,2024,2011,1.027,FALSE
+single_night,all,amp,157,Perth Canyon | Multiple Use Zone,cell,2024,0.325,6,32,1993,2024,2011,0.98,FALSE
+single_night,all,amp,158,Perth Canyon | Multiple Use Zone,direct,2024,0.342,6,32,1993,2024,2011,1.2,FALSE
+single_night,all,amp,158,Perth Canyon | Multiple Use Zone,cell,2024,0.325,6,32,1993,2024,2011,0.969,FALSE
+single_night,all,amp,159,Perth Canyon | National Park Zone,direct,2024,0.17,9,32,1993,2024,2011,1.3,FALSE
+single_night,all,amp,159,Perth Canyon | National Park Zone,cell,2024,0.323,7,32,1993,2024,2011,1.112,FALSE
+single_night,all,amp,160,Perth Canyon | National Park Zone,direct,2024,0.396,5,32,1993,2024,2011,1.119,FALSE
+single_night,all,amp,160,Perth Canyon | National Park Zone,cell,2024,0.325,6,32,1993,2024,2011,0.969,FALSE
+single_night,all,amp,161,South-west Corner | Habitat Protection Zone,direct,2024,0.385,8,31,1994,2024,2013,1.076,FALSE
+single_night,all,amp,161,South-west Corner | Habitat Protection Zone,cell,2024,0.422,7,32,1993,2024,2011,0.946,FALSE
+single_night,all,amp,162,South-west Corner | Multiple Use Zone,direct,2024,0.189,12,32,1993,2024,2011,1.207,FALSE
+single_night,all,amp,162,South-west Corner | Multiple Use Zone,cell,2024,0.401,5,32,1993,2024,2011,1.01,FALSE
+single_night,all,amp,163,South-west Corner | Multiple Use Zone,direct,2024,0.501,2,32,1993,2024,2011,0.719,FALSE
+single_night,all,amp,163,South-west Corner | Multiple Use Zone,cell,2024,0.193,9,32,1993,2024,2011,0.646,FALSE
+single_night,all,amp,164,South-west Corner | Multiple Use Zone,direct,2024,0.741,2,32,1993,2024,2012,0.767,FALSE
+single_night,all,amp,164,South-west Corner | Multiple Use Zone,cell,2024,0.648,2,32,1993,2024,2012,0.764,FALSE
+single_night,all,amp,165,South-west Corner | Multiple Use Zone,direct,2024,0.465,2,32,1993,2024,2011,0.843,FALSE
+single_night,all,amp,165,South-west Corner | Multiple Use Zone,cell,2024,0.18,9,32,1993,2024,2011,0.627,FALSE
+single_night,all,amp,166,South-west Corner | National Park Zone,direct,2024,0.085,13,32,1993,2024,2011,1.126,FALSE
+single_night,all,amp,166,South-west Corner | National Park Zone,cell,2024,0.325,6,32,1993,2024,2011,0.969,FALSE
+single_night,all,amp,167,South-west Corner | National Park Zone,direct,2024,0.305,6,32,1993,2024,2011,0.827,FALSE
+single_night,all,amp,167,South-west Corner | National Park Zone,cell,2024,0.423,4,32,1993,2024,2011,0.519,FALSE
+single_night,all,amp,168,South-west Corner | National Park Zone,direct,2024,0.001,16,32,1993,2024,2011,0.851,FALSE
+single_night,all,amp,168,South-west Corner | National Park Zone,cell,2024,0.268,11,32,1993,2024,2011,1.112,FALSE
+single_night,all,amp,169,South-west Corner | National Park Zone,direct,2024,-0.164,25,32,1993,2024,2013,0.54,FALSE
+single_night,all,amp,169,South-west Corner | National Park Zone,cell,2024,0.193,9,32,1993,2024,2011,0.646,FALSE
+single_night,all,amp,170,South-west Corner | National Park Zone,direct,2024,0.493,6,32,1993,2024,2000,0.892,FALSE
+single_night,all,amp,170,South-west Corner | National Park Zone,cell,2024,0.465,6,32,1993,2024,2012,0.852,FALSE
+single_night,all,amp,171,South-west Corner | National Park Zone,direct,2024,0.355,5,31,1994,2024,2012,1.216,FALSE
+single_night,all,amp,171,South-west Corner | National Park Zone,cell,2024,0.478,4,32,1993,2024,2011,1.078,FALSE
+single_night,all,amp,172,South-west Corner | National Park Zone,direct,2024,0.143,12,32,1993,2024,2011,1.041,FALSE
+single_night,all,amp,172,South-west Corner | National Park Zone,cell,2024,0.325,6,32,1993,2024,2011,0.969,FALSE
+single_night,all,amp,173,South-west Corner | Special Purpose Zone,direct,2024,-0.014,15,32,1993,2024,2011,0.764,FALSE
+single_night,all,amp,173,South-west Corner | Special Purpose Zone,cell,2024,0.146,11,32,1993,2024,2011,0.831,FALSE
+single_night,all,amp,174,South-west Corner | Special Purpose Zone,direct,2024,-0.01,18,32,1993,2024,2011,0.533,FALSE
+single_night,all,amp,174,South-west Corner | Special Purpose Zone,cell,2024,0.193,9,32,1993,2024,2011,0.646,FALSE
+single_night,all,amp,175,South-west Corner | Special Purpose Zone (Mining Exclusion),direct,2024,0.211,11,32,1993,2024,2011,1.11,FALSE
+single_night,all,amp,175,South-west Corner | Special Purpose Zone (Mining Exclusion),cell,2024,0.325,6,32,1993,2024,2011,0.969,FALSE
+single_night,all,amp,176,South-west Corner | Special Purpose Zone (Mining Exclusion),direct,2024,0.09,13,32,1993,2024,2011,1.1,FALSE
+single_night,all,amp,176,South-west Corner | Special Purpose Zone (Mining Exclusion),cell,2024,0.322,7,32,1993,2024,2011,0.982,FALSE
+single_night,all,amp,177,Southern Kangaroo Island | Special Purpose Zone (Mining Exclusion),direct,2024,-0.514,30,32,1993,2024,2013,0.896,FALSE
+single_night,all,amp,177,Southern Kangaroo Island | Special Purpose Zone (Mining Exclusion),cell,2024,-0.274,29,32,1993,2024,2013,0.772,FALSE
+single_night,all,amp,178,Twilight | National Park Zone,direct,2024,0.042,12,32,1993,2024,2013,0.747,FALSE
+single_night,all,amp,178,Twilight | National Park Zone,cell,2024,0.068,12,32,1993,2024,2013,0.654,FALSE
+single_night,all,amp,179,Twilight | Special Purpose Zone (Mining Exclusion),direct,2024,-0.072,21,32,1993,2024,2013,0.791,FALSE
+single_night,all,amp,179,Twilight | Special Purpose Zone (Mining Exclusion),cell,2024,0.068,12,32,1993,2024,2013,0.654,FALSE
+single_night,all,amp,180,Twilight | Special Purpose Zone (Mining Exclusion),direct,2024,-0.053,18,32,1993,2024,2013,0.776,FALSE
+single_night,all,amp,180,Twilight | Special Purpose Zone (Mining Exclusion),cell,2024,0.068,12,32,1993,2024,2013,0.654,FALSE
+single_night,all,amp,181,Two Rocks | Multiple Use Zone,direct,2024,0.158,12,32,1993,2024,2011,0.901,FALSE
+single_night,all,amp,181,Two Rocks | Multiple Use Zone,cell,2024,0.322,9,32,1993,2024,2011,1.158,FALSE
+single_night,all,amp,182,Two Rocks | National Park Zone,direct,2024,0.129,12,32,1993,2024,2011,0.869,FALSE
+single_night,all,amp,182,Two Rocks | National Park Zone,cell,2024,0.322,9,32,1993,2024,2011,1.158,FALSE
+single_night,all,amp,183,Western Eyre | Multiple Use Zone,direct,2024,0.276,8,32,1993,2024,2013,0.876,FALSE
+single_night,all,amp,183,Western Eyre | Multiple Use Zone,cell,2024,0.095,12,32,1993,2024,2013,0.822,FALSE
+single_night,all,amp,184,Western Eyre | National Park Zone,direct,2024,-0.713,32,32,1993,2024,2013,0.891,FALSE
+single_night,all,amp,184,Western Eyre | National Park Zone,cell,2024,-0.709,32,32,1993,2024,2013,0.858,FALSE
+single_night,all,amp,185,Western Eyre | National Park Zone,direct,2024,0.366,4,32,1993,2024,2013,0.621,FALSE
+single_night,all,amp,185,Western Eyre | National Park Zone,cell,2024,0.38,3,32,1993,2024,2013,0.541,FALSE
+single_night,all,amp,186,Western Eyre | National Park Zone,direct,2024,-0.583,30,32,1993,2024,2013,0.913,FALSE
+single_night,all,amp,186,Western Eyre | National Park Zone,cell,2024,-0.249,27,32,1993,2024,2013,0.843,FALSE
+single_night,all,amp,187,Western Eyre | Special Purpose Zone,direct,2024,-0.564,31,32,1993,2024,2013,0.864,FALSE
+single_night,all,amp,187,Western Eyre | Special Purpose Zone,cell,2024,-0.446,30,32,1993,2024,2013,0.849,FALSE
+single_night,all,amp,188,Western Eyre | Special Purpose Zone (Trawl),direct,2024,-0.024,17,32,1993,2024,2013,0.786,FALSE
+single_night,all,amp,188,Western Eyre | Special Purpose Zone (Trawl),cell,2024,-0.249,27,32,1993,2024,2013,0.843,FALSE
+single_night,all,amp,189,Western Kangaroo Island | National Park Zone,direct,2024,-0.322,28,32,1993,2024,2013,0.957,FALSE
+single_night,all,amp,189,Western Kangaroo Island | National Park Zone,cell,2024,-0.271,29,32,1993,2024,2013,0.778,FALSE
+single_night,all,amp,190,Western Kangaroo Island | Special Purpose Zone,direct,2024,-0.228,26,32,1993,2024,2013,1.025,FALSE
+single_night,all,amp,190,Western Kangaroo Island | Special Purpose Zone,cell,2024,0.171,11,32,1993,2024,2013,0.818,FALSE
+single_night,all,amp,191,Western Kangaroo Island | Special Purpose Zone (Mining Exclusion),direct,2024,-0.377,29,32,1993,2024,2013,1.02,FALSE
+single_night,all,amp,191,Western Kangaroo Island | Special Purpose Zone (Mining Exclusion),cell,2024,0.062,12,32,1993,2024,2013,0.808,FALSE
+single_night,all,amp,192,Central Eastern | Habitat Protection Zone,direct,2024,0.79,1,32,1993,2024,2024,0.79,FALSE
+single_night,all,amp,192,Central Eastern | Habitat Protection Zone,cell,2024,0.764,1,32,1993,2024,2024,0.764,FALSE
+single_night,all,amp,193,Central Eastern | Habitat Protection Zone,direct,2024,0.837,1,32,1993,2024,2024,0.837,FALSE
+single_night,all,amp,193,Central Eastern | Habitat Protection Zone,cell,2024,0.68,1,32,1993,2024,2024,0.68,FALSE
+single_night,all,amp,194,Central Eastern | Multiple Use Zone,direct,2024,0.401,6,32,1993,2024,1998,0.614,FALSE
+single_night,all,amp,194,Central Eastern | Multiple Use Zone,cell,2024,0.574,1,32,1993,2024,2024,0.574,FALSE
+single_night,all,amp,195,Central Eastern | National Park Zone,direct,2024,0.919,1,32,1993,2024,2024,0.919,FALSE
+single_night,all,amp,195,Central Eastern | National Park Zone,cell,2024,0.843,1,32,1993,2024,2024,0.843,FALSE
+single_night,all,amp,196,Cod Grounds | National Park Zone,direct,2024,0.641,1,32,1993,2024,2024,0.641,FALSE
+single_night,all,amp,196,Cod Grounds | National Park Zone,cell,2024,0.517,3,32,1993,2024,2016,0.716,FALSE
+single_night,all,amp,197,Gifford | Habitat Protection Zone,direct,2024,0.615,2,32,1993,2024,2017,0.654,FALSE
+single_night,all,amp,197,Gifford | Habitat Protection Zone,cell,2024,0.524,3,32,1993,2024,2017,0.564,FALSE
+single_night,all,amp,198,Hunter | Habitat Protection Zone,direct,2024,0.503,2,32,1993,2024,2016,0.919,FALSE
+single_night,all,amp,198,Hunter | Habitat Protection Zone,cell,2024,0.517,3,32,1993,2024,2016,0.716,FALSE
+single_night,all,amp,199,Hunter | Special Purpose Zone (Trawl),direct,2024,0.364,6,32,1993,2024,2016,0.641,FALSE
+single_night,all,amp,199,Hunter | Special Purpose Zone (Trawl),cell,2024,0.517,3,32,1993,2024,2016,0.716,FALSE
+single_night,all,amp,200,Jervis | Habitat Protection Zone,direct,2024,0.377,10,32,1993,2024,2016,1.092,FALSE
+single_night,all,amp,200,Jervis | Habitat Protection Zone,cell,2024,0.446,7,32,1993,2024,2016,0.897,FALSE
+single_night,all,amp,201,Jervis | Special Purpose Zone (Trawl),direct,2024,0.457,11,32,1993,2024,2016,1.046,FALSE
+single_night,all,amp,201,Jervis | Special Purpose Zone (Trawl),cell,2024,0.431,10,32,1993,2024,2016,0.946,FALSE
+single_night,all,amp,202,Lord Howe | Habitat Protection Zone,direct,2024,0.719,1,32,1993,2024,2024,0.719,FALSE
+single_night,all,amp,202,Lord Howe | Habitat Protection Zone,cell,2024,0.583,2,32,1993,2024,2010,0.59,FALSE
+single_night,all,amp,203,Lord Howe | Habitat Protection Zone (Lord Howe),direct,2024,0.731,1,32,1993,2024,2024,0.731,FALSE
+single_night,all,amp,203,Lord Howe | Habitat Protection Zone (Lord Howe),cell,2024,0.722,1,32,1993,2024,2024,0.722,FALSE
+single_night,all,amp,204,Lord Howe | Multiple Use Zone,direct,2024,0.635,1,32,1993,2024,2024,0.635,FALSE
+single_night,all,amp,204,Lord Howe | Multiple Use Zone,cell,2024,0.731,1,32,1993,2024,2024,0.731,FALSE
+single_night,all,amp,205,Lord Howe | National Park Zone,direct,2024,0.821,1,32,1993,2024,2024,0.821,FALSE
+single_night,all,amp,205,Lord Howe | National Park Zone,cell,2024,0.722,1,32,1993,2024,2024,0.722,FALSE
+single_night,all,amp,206,Lord Howe | National Park Zone,direct,2024,0.727,1,32,1993,2024,2024,0.727,FALSE
+single_night,all,amp,206,Lord Howe | National Park Zone,cell,2024,0.722,1,32,1993,2024,2024,0.722,FALSE
+single_night,all,amp,207,Lord Howe | National Park Zone,direct,2024,0.696,1,32,1993,2024,2024,0.696,FALSE
+single_night,all,amp,207,Lord Howe | National Park Zone,cell,2024,0.745,1,32,1993,2024,2024,0.745,FALSE
+single_night,all,amp,208,Lord Howe | Recreational Use Zone,direct,2024,0.67,1,32,1993,2024,2024,0.67,FALSE
+single_night,all,amp,208,Lord Howe | Recreational Use Zone,cell,2024,0.726,1,32,1993,2024,2024,0.726,FALSE
+single_night,all,amp,209,Norfolk | Habitat Protection Zone,direct,2024,0.587,2,32,1993,2024,1998,0.66,FALSE
+single_night,all,amp,209,Norfolk | Habitat Protection Zone,cell,2024,0.566,2,32,1993,2024,1998,0.671,FALSE
+single_night,all,amp,210,Norfolk | National Park Zone,direct,2024,0.478,2,32,1993,2024,1998,0.866,FALSE
+single_night,all,amp,210,Norfolk | National Park Zone,cell,2024,0.427,3,32,1993,2024,1998,0.874,FALSE
+single_night,all,amp,211,Norfolk | Special Purpose Zone (Norfolk),direct,2024,0.755,1,32,1993,2024,2024,0.755,FALSE
+single_night,all,amp,211,Norfolk | Special Purpose Zone (Norfolk),cell,2024,0.616,2,32,1993,2024,1998,0.617,FALSE
+single_night,all,amp,212,Solitary Islands | Multiple Use Zone,direct,2024,0.61,1,32,1993,2024,2024,0.61,FALSE
+single_night,all,amp,212,Solitary Islands | Multiple Use Zone,cell,2024,0.574,1,32,1993,2024,2024,0.574,FALSE
+single_night,all,amp,213,Solitary Islands | National Park Zone,direct,2024,0.677,1,32,1993,2024,2024,0.677,FALSE
+single_night,all,amp,213,Solitary Islands | National Park Zone,cell,2024,0.574,1,32,1993,2024,2024,0.574,FALSE
+single_night,all,amp,214,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,0.611,2,32,1993,2024,1998,0.625,FALSE
+single_night,all,amp,214,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.574,1,32,1993,2024,2024,0.574,FALSE
+single_night,all,amp,215,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,0.451,3,32,1993,2024,1998,0.522,FALSE
+single_night,all,amp,215,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.574,1,32,1993,2024,2024,0.574,FALSE
+single_night,all,amp,216,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,0.32,4,32,1993,2024,1998,0.528,FALSE
+single_night,all,amp,216,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.574,1,32,1993,2024,2024,0.574,FALSE
+single_night,all,domain,1,whole domain,direct,2024,1.19,3,32,1993,2024,2023,1.385,FALSE
+single_night,all,domain,1,whole domain,cell,2024,0.508,1,32,1993,2024,2024,0.508,FALSE
+single_night,all,eez,1,MLD,direct,2024,0.288,7,32,1993,2024,2020,0.711,FALSE
+single_night,all,eez,1,MLD,cell,2024,0.417,1,32,1993,2024,2024,0.417,FALSE
+single_night,all,eez,2,TST,direct,2024,,,31,1993,2023,2022,1.09,FALSE
+single_night,all,eez,2,TST,cell,2024,0.485,7,32,1993,2024,2022,1.079,FALSE
+single_night,all,eez,3,CI,direct,2024,0.488,5,32,1993,2024,2016,0.965,FALSE
+single_night,all,eez,3,CI,cell,2024,0.495,5,32,1993,2024,2016,0.968,FALSE
+single_night,all,eez,4,CKI,direct,2024,0.624,1,30,1994,2024,2024,0.624,FALSE
+single_night,all,eez,4,CKI,cell,2024,0.58,1,30,1994,2024,2024,0.58,FALSE
+single_night,all,eez,5,NI,direct,2024,0.527,3,32,1993,2024,1998,0.751,FALSE
+single_night,all,eez,5,NI,cell,2024,0.518,3,32,1993,2024,1998,0.73,FALSE
+single_night,all,eez,6,MAC,direct,2024,-0.022,16,31,1993,2024,2017,0.566,FALSE
+single_night,all,eez,6,MAC,cell,2024,0.006,15,31,1993,2024,2019,0.53,FALSE
+single_night,all,eez,7,HIMI,direct,2024,,,12,1996,2011,2004,0.293,FALSE
+single_night,all,eez,7,HIMI,cell,2024,,,16,1996,2012,2012,0.271,FALSE
+single_night,all,eez,8,AATW,cell,2024,,,12,1995,2010,2001,0.349,TRUE
+single_night,all,eez,9,AATE,cell,2024,,,18,2001,2022,2010,0.421,TRUE
+single_night,all,eez_legal,1,MLD,direct,2024,0.341,6,32,1993,2024,2020,0.74,FALSE
+single_night,all,eez_legal,1,MLD,cell,2024,0.426,1,32,1993,2024,2024,0.426,FALSE
+single_night,all,eez_legal,2,TST,direct,2024,,,31,1993,2023,2022,1.091,FALSE
+single_night,all,eez_legal,2,TST,cell,2024,0.485,7,32,1993,2024,2022,1.08,FALSE
+single_night,all,eez_legal,3,CI,direct,2024,0.489,5,32,1993,2024,2016,0.964,FALSE
+single_night,all,eez_legal,3,CI,cell,2024,0.495,5,32,1993,2024,2016,0.968,FALSE
+single_night,all,eez_legal,4,CKI,direct,2024,0.624,1,30,1994,2024,2024,0.624,FALSE
+single_night,all,eez_legal,4,CKI,cell,2024,0.58,1,30,1994,2024,2024,0.58,FALSE
+single_night,all,eez_legal,5,NI,direct,2024,0.525,3,32,1993,2024,1998,0.752,FALSE
+single_night,all,eez_legal,5,NI,cell,2024,0.517,3,32,1993,2024,1998,0.731,FALSE
+single_night,all,eez_legal,6,MAC,direct,2024,-0.024,16,31,1993,2024,2017,0.566,FALSE
+single_night,all,eez_legal,6,MAC,cell,2024,0.007,15,31,1993,2024,2019,0.53,FALSE
+single_night,all,eez_legal,7,HIMI,direct,2024,,,12,1996,2011,2004,0.294,FALSE
+single_night,all,eez_legal,7,HIMI,cell,2024,,,16,1996,2012,2012,0.27,FALSE
+single_night,all,eez_legal,8,AATW,cell,2024,,,12,1995,2010,2001,0.349,TRUE
+single_night,all,eez_legal,9,AATE,cell,2024,,,18,2001,2022,2010,0.422,TRUE
+single_night,all,imcra,1,Southwest Transition,direct,2024,0.296,8,32,1993,2024,2011,1.029,FALSE
+single_night,all,imcra,1,Southwest Transition,cell,2024,0.369,6,32,1993,2024,2011,1.018,FALSE
+single_night,all,imcra,2,Southwest Shelf Province,direct,2024,0.077,12,32,1993,2024,2011,0.843,FALSE
+single_night,all,imcra,2,Southwest Shelf Province,cell,2024,0.206,7,32,1993,2024,2011,0.763,FALSE
+single_night,all,imcra,3,Spencer Gulf Shelf Province,direct,2024,-0.319,29,32,1993,2024,2013,0.814,FALSE
+single_night,all,imcra,3,Spencer Gulf Shelf Province,cell,2024,-0.212,26,32,1993,2024,2013,0.785,FALSE
+single_night,all,imcra,4,Southern Province,direct,2024,0.352,4,32,1993,2024,2013,0.556,FALSE
+single_night,all,imcra,4,Southern Province,cell,2024,0.322,6,32,1993,2024,2013,0.564,FALSE
+single_night,all,imcra,5,Southeast Shelf Transition,direct,2024,0.454,3,32,1993,2024,2017,0.583,FALSE
+single_night,all,imcra,5,Southeast Shelf Transition,cell,2024,0.463,4,32,1993,2024,2017,0.616,FALSE
+single_night,all,imcra,6,Southeast Transition,direct,2024,0.589,5,32,1993,2024,2016,0.911,FALSE
+single_night,all,imcra,6,Southeast Transition,cell,2024,0.523,5,32,1993,2024,2017,0.904,FALSE
+single_night,all,imcra,7,Western Bass Strait Shelf Transition,direct,2024,0.216,9,32,1993,2024,2013,0.913,FALSE
+single_night,all,imcra,7,Western Bass Strait Shelf Transition,cell,2024,0.278,8,32,1993,2024,2013,0.769,FALSE
+single_night,all,imcra,8,West Tasmania Transition,direct,2024,0.215,9,32,1993,2024,2013,0.647,FALSE
+single_night,all,imcra,8,West Tasmania Transition,cell,2024,0.142,14,32,1993,2024,2013,0.591,FALSE
+single_night,all,imcra,9,Bass Strait Shelf Province,direct,2024,0.526,2,32,1993,2024,2013,0.533,FALSE
+single_night,all,imcra,9,Bass Strait Shelf Province,cell,2024,0.468,3,32,1993,2024,2013,0.559,FALSE
+single_night,all,imcra,10,Tasmanian Shelf Province,direct,2024,0.545,3,32,1993,2024,2023,0.659,FALSE
+single_night,all,imcra,10,Tasmanian Shelf Province,cell,2024,0.508,4,32,1993,2024,2023,0.69,FALSE
+single_night,all,imcra,11,Tasmania Province,direct,2024,0.711,2,32,1993,2024,2023,0.982,FALSE
+single_night,all,imcra,11,Tasmania Province,cell,2024,0.581,5,32,1993,2024,2023,0.769,FALSE
+single_night,all,imcra,12,Macquarie Island Province,direct,2024,-0.022,16,31,1993,2024,2017,0.566,FALSE
+single_night,all,imcra,12,Macquarie Island Province,cell,2024,0.006,15,31,1993,2024,2019,0.53,FALSE
+single_night,all,imcra,13,Cocos (Keeling) Island Province,direct,2024,0.624,1,30,1994,2024,2024,0.624,FALSE
+single_night,all,imcra,13,Cocos (Keeling) Island Province,cell,2024,0.58,1,30,1994,2024,2024,0.58,FALSE
+single_night,all,imcra,14,Christmas Island Province,direct,2024,0.483,5,32,1993,2024,2016,1.004,FALSE
+single_night,all,imcra,14,Christmas Island Province,cell,2024,0.498,5,32,1993,2024,2016,1.019,FALSE
+single_night,all,imcra,15,Timor Transition,direct,2024,0.396,6,32,1993,2024,2016,0.943,FALSE
+single_night,all,imcra,15,Timor Transition,cell,2024,0.425,6,32,1993,2024,2016,0.936,FALSE
+single_night,all,imcra,16,Northern Shelf Province,direct,2024,0.443,6,32,1993,2024,2016,0.926,FALSE
+single_night,all,imcra,16,Northern Shelf Province,cell,2024,0.449,6,32,1993,2024,2016,0.93,FALSE
+single_night,all,imcra,17,Northeast Shelf Transition,direct,2024,0.445,6,32,1993,2024,2022,0.982,FALSE
+single_night,all,imcra,17,Northeast Shelf Transition,cell,2024,0.489,6,32,1993,2024,2022,1.005,FALSE
+single_night,all,imcra,18,Cape Province,direct,2024,0.565,5,32,1993,2024,2022,1.055,FALSE
+single_night,all,imcra,18,Cape Province,cell,2024,0.533,6,32,1993,2024,2022,1.034,FALSE
+single_night,all,imcra,19,Northwest Shelf Transition,direct,2024,0.297,10,32,1993,2024,2016,1.155,FALSE
+single_night,all,imcra,19,Northwest Shelf Transition,cell,2024,0.317,10,32,1993,2024,2016,1.137,FALSE
+single_night,all,imcra,20,Timor Province,direct,2024,0.457,6,32,1993,2024,2016,1.138,FALSE
+single_night,all,imcra,20,Timor Province,cell,2024,0.463,6,32,1993,2024,2016,1.123,FALSE
+single_night,all,imcra,21,Northeast Transition,direct,2024,0.478,7,32,1993,2024,2022,1.004,FALSE
+single_night,all,imcra,21,Northeast Transition,cell,2024,0.509,6,32,1993,2024,2022,1.015,FALSE
+single_night,all,imcra,22,Northwest Shelf Province,direct,2024,0.315,6,32,1993,2024,2016,0.62,FALSE
+single_night,all,imcra,22,Northwest Shelf Province,cell,2024,0.36,6,32,1993,2024,2016,0.668,FALSE
+single_night,all,imcra,23,Kenn Transition,direct,2024,0.322,6,32,1993,2024,1998,0.684,FALSE
+single_night,all,imcra,23,Kenn Transition,cell,2024,0.455,4,32,1993,2024,1998,0.523,FALSE
+single_night,all,imcra,24,Northeast Province,direct,2024,0.415,7,32,1993,2024,2022,0.732,FALSE
+single_night,all,imcra,24,Northeast Province,cell,2024,0.488,7,32,1993,2024,2022,0.751,FALSE
+single_night,all,imcra,25,Northwest Transition,direct,2024,0.333,7,32,1993,2024,2016,0.857,FALSE
+single_night,all,imcra,25,Northwest Transition,cell,2024,0.347,7,32,1993,2024,2016,0.801,FALSE
+single_night,all,imcra,26,Northeast Shelf Province,direct,2024,0.498,3,32,1993,2024,2016,0.684,FALSE
+single_night,all,imcra,26,Northeast Shelf Province,cell,2024,0.492,3,32,1993,2024,2016,0.641,FALSE
+single_night,all,imcra,27,Northwest Province,direct,2024,0.37,6,32,1993,2024,1999,0.477,FALSE
+single_night,all,imcra,27,Northwest Province,cell,2024,0.379,6,32,1993,2024,2020,0.466,FALSE
+single_night,all,imcra,28,Kenn Province,direct,2024,0.352,7,32,1993,2024,1998,0.729,FALSE
+single_night,all,imcra,28,Kenn Province,cell,2024,0.464,4,32,1993,2024,1998,0.701,FALSE
+single_night,all,imcra,29,Central Western Transition,direct,2024,0.545,2,32,1993,2024,1999,0.601,FALSE
+single_night,all,imcra,29,Central Western Transition,cell,2024,0.495,4,32,1993,2024,2011,0.597,FALSE
+single_night,all,imcra,30,Central Western Shelf Transition,direct,2024,0.283,8,32,1993,2024,1999,0.822,FALSE
+single_night,all,imcra,30,Central Western Shelf Transition,cell,2024,0.353,5,32,1993,2024,1999,0.685,FALSE
+single_night,all,imcra,31,Central Eastern Transition,direct,2024,0.568,1,32,1993,2024,2024,0.568,FALSE
+single_night,all,imcra,31,Central Eastern Transition,cell,2024,0.575,1,32,1993,2024,2024,0.575,FALSE
+single_night,all,imcra,32,Central Western Shelf Province,direct,2024,0.301,7,32,1993,2024,2011,1.054,FALSE
+single_night,all,imcra,32,Central Western Shelf Province,cell,2024,0.316,6,32,1993,2024,2011,1.021,FALSE
+single_night,all,imcra,33,Central Eastern Shelf Transition,direct,2024,0.675,1,32,1993,2024,2024,0.675,FALSE
+single_night,all,imcra,33,Central Eastern Shelf Transition,cell,2024,0.634,1,32,1993,2024,2024,0.634,FALSE
+single_night,all,imcra,34,Central Western Province,direct,2024,0.412,7,32,1993,2024,2011,1.105,FALSE
+single_night,all,imcra,34,Central Western Province,cell,2024,0.403,6,32,1993,2024,2011,1.078,FALSE
+single_night,all,imcra,35,Norfolk Island Province,direct,2024,0.527,3,32,1993,2024,1998,0.751,FALSE
+single_night,all,imcra,35,Norfolk Island Province,cell,2024,0.518,3,32,1993,2024,1998,0.73,FALSE
+single_night,all,imcra,36,Lord Howe Province,direct,2024,0.711,1,32,1993,2024,2024,0.711,FALSE
+single_night,all,imcra,36,Lord Howe Province,cell,2024,0.673,1,32,1993,2024,2024,0.673,FALSE
+single_night,all,imcra,37,Tasman Basin Province,direct,2024,0.67,1,32,1993,2024,2024,0.67,FALSE
+single_night,all,imcra,37,Tasman Basin Province,cell,2024,0.688,1,32,1993,2024,2024,0.688,FALSE
+single_night,all,imcra,38,Central Eastern Province,direct,2024,0.584,2,32,1993,2024,2016,0.601,FALSE
+single_night,all,imcra,38,Central Eastern Province,cell,2024,0.565,2,32,1993,2024,2016,0.567,FALSE
+single_night,all,imcra,39,Southwest Shelf Transition,direct,2024,0.169,11,32,1993,2024,2011,1.076,FALSE
+single_night,all,imcra,39,Southwest Shelf Transition,cell,2024,0.281,11,32,1993,2024,2011,1.167,FALSE
+single_night,all,imcra,40,Central Eastern Shelf Province,direct,2024,0.444,3,32,1993,2024,2001,0.634,FALSE
+single_night,all,imcra,40,Central Eastern Shelf Province,cell,2024,0.511,3,32,1993,2024,2016,0.721,FALSE
+single_night,all,imcra,41,Great Australian Bight Shelf Transition,direct,2024,-0.256,26,32,1993,2024,2013,0.753,FALSE
+single_night,all,imcra,41,Great Australian Bight Shelf Transition,cell,2024,-0.166,22,32,1993,2024,2013,0.722,FALSE
+single_night,all,star,1,Coral Sea,direct,2024,0.417,7,32,1993,2024,2022,0.74,FALSE
+single_night,all,star,1,Coral Sea,cell,2024,0.455,7,32,1993,2024,2022,0.764,FALSE
+single_night,all,star,2,North,direct,2024,0.439,6,32,1993,2024,2016,0.946,FALSE
+single_night,all,star,2,North,cell,2024,0.437,6,32,1993,2024,2016,0.954,FALSE
+single_night,all,star,3,North-west,direct,2024,0.339,7,32,1993,2024,2016,0.766,FALSE
+single_night,all,star,3,North-west,cell,2024,0.403,4,32,1993,2024,2016,0.595,FALSE
+single_night,all,star,4,South-east,direct,2024,0.809,4,32,1993,2024,1994,0.951,FALSE
+single_night,all,star,4,South-east,cell,2024,0.284,7,32,1993,2024,2017,0.565,FALSE
+single_night,all,star,5,South-west,direct,2024,0.271,6,32,1993,2024,2011,0.883,FALSE
+single_night,all,star,5,South-west,cell,2024,0.267,6,32,1993,2024,2011,0.626,FALSE
+single_night,all,star,6,Temperate East,direct,2024,0.679,1,32,1993,2024,2024,0.679,FALSE
+single_night,all,star,6,Temperate East,cell,2024,0.613,1,32,1993,2024,2024,0.613,FALSE
+single_night,all,star,7,outside regions: MLD,direct,2024,-0.093,20,32,1993,2024,2016,0.721,FALSE
+single_night,all,star,7,outside regions: MLD,cell,2024,0.341,2,32,1993,2024,2016,0.413,FALSE
+single_night,all,star,8,outside regions: TST,direct,2024,,,31,1993,2023,2022,1.09,FALSE
+single_night,all,star,8,outside regions: TST,cell,2024,0.485,7,32,1993,2024,2022,1.079,FALSE
+single_night,all,star,9,outside regions: CI,direct,2024,0.488,5,32,1993,2024,2016,0.965,FALSE
+single_night,all,star,9,outside regions: CI,cell,2024,0.495,5,32,1993,2024,2016,0.968,FALSE
+single_night,all,star,10,outside regions: CKI,direct,2024,0.624,1,30,1994,2024,2024,0.624,FALSE
+single_night,all,star,10,outside regions: CKI,cell,2024,0.58,1,30,1994,2024,2024,0.58,FALSE
+single_night,all,star,11,outside regions: NI,direct,2024,0.505,5,32,1993,2024,1998,0.902,FALSE
+single_night,all,star,11,outside regions: NI,cell,2024,0.616,2,32,1993,2024,1998,0.617,FALSE
+single_night,all,star,12,outside regions: MAC,direct,2024,0.194,11,31,1993,2024,2010,0.589,FALSE
+single_night,all,star,12,outside regions: MAC,cell,2024,-0.068,15,31,1993,2024,2017,0.626,FALSE
+single_night,all,star,13,outside regions: HIMI,direct,2024,,,12,1996,2011,2004,0.293,FALSE
+single_night,all,star,13,outside regions: HIMI,cell,2024,,,16,1996,2012,2012,0.271,FALSE
+single_night,all,star,14,outside regions: AATW,cell,2024,,,12,1995,2010,2001,0.349,TRUE
+single_night,all,star,15,outside regions: AATE,cell,2024,,,18,2001,2022,2010,0.421,TRUE
+single_night,q4,amp,1,Coral Sea | Habitat Protection Zone,direct,2024,0.424,7,32,1993,2024,2022,0.744,FALSE
+single_night,q4,amp,1,Coral Sea | Habitat Protection Zone,cell,2024,0.437,7,32,1993,2024,2022,0.725,FALSE
+single_night,q4,amp,2,Coral Sea | Habitat Protection Zone,direct,2024,,,30,1993,2023,2022,0.957,FALSE
+single_night,q4,amp,2,Coral Sea | Habitat Protection Zone,cell,2024,0.595,5,32,1993,2024,2022,0.961,FALSE
+single_night,q4,amp,3,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.53,5,32,1993,2024,2010,0.751,FALSE
+single_night,q4,amp,3,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.458,7,32,1993,2024,2022,0.685,FALSE
+single_night,q4,amp,4,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.431,5,32,1993,2024,2022,0.778,FALSE
+single_night,q4,amp,4,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.454,5,32,1993,2024,2022,0.715,FALSE
+single_night,q4,amp,5,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.495,6,32,1993,2024,2022,0.633,FALSE
+single_night,q4,amp,5,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.427,7,32,1993,2024,2022,0.705,FALSE
+single_night,q4,amp,6,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.37,8,32,1993,2024,1998,0.64,FALSE
+single_night,q4,amp,6,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.421,6,32,1993,2024,1998,0.655,FALSE
+single_night,q4,amp,7,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.355,7,32,1993,2024,2016,0.622,FALSE
+single_night,q4,amp,7,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.387,7,32,1993,2024,1998,0.72,FALSE
+single_night,q4,amp,8,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.295,10,32,1993,2024,1998,0.721,FALSE
+single_night,q4,amp,8,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.375,7,32,1993,2024,1998,0.742,FALSE
+single_night,q4,amp,9,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.57,3,32,1993,2024,1998,0.874,FALSE
+single_night,q4,amp,9,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.375,7,32,1993,2024,1998,0.742,FALSE
+single_night,q4,amp,10,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.306,8,32,1993,2024,1998,0.637,FALSE
+single_night,q4,amp,10,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.375,7,32,1993,2024,1998,0.742,FALSE
+single_night,q4,amp,11,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,,,31,1993,2023,2022,1.077,FALSE
+single_night,q4,amp,11,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.404,7,32,1993,2024,2022,0.97,FALSE
+single_night,q4,amp,12,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,,,31,1993,2023,2022,1.001,FALSE
+single_night,q4,amp,12,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.404,7,32,1993,2024,2022,0.97,FALSE
+single_night,q4,amp,13,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.409,8,32,1993,2024,2022,0.835,FALSE
+single_night,q4,amp,13,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.404,7,32,1993,2024,2022,0.97,FALSE
+single_night,q4,amp,14,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.385,6,31,1993,2024,2021,0.709,FALSE
+single_night,q4,amp,14,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.456,6,32,1993,2024,2022,1.038,FALSE
+single_night,q4,amp,15,Coral Sea | National Park Zone,direct,2024,0.48,5,32,1993,2024,2022,1.106,FALSE
+single_night,q4,amp,15,Coral Sea | National Park Zone,cell,2024,,,31,1993,2023,2022,1.101,FALSE
+single_night,q4,amp,16,Coral Sea | National Park Zone,direct,2024,0.692,4,32,1993,2024,2022,1.069,FALSE
+single_night,q4,amp,16,Coral Sea | National Park Zone,cell,2024,,,31,1993,2023,2022,1.109,FALSE
+single_night,q4,amp,17,Coral Sea | National Park Zone,direct,2024,0.339,8,32,1993,2024,2022,1.058,FALSE
+single_night,q4,amp,17,Coral Sea | National Park Zone,cell,2024,0.404,7,32,1993,2024,2022,0.97,FALSE
+single_night,q4,amp,18,Coral Sea | National Park Zone,direct,2024,0.487,4,32,1993,2024,2022,0.984,FALSE
+single_night,q4,amp,18,Coral Sea | National Park Zone,cell,2024,0.452,7,32,1993,2024,2022,0.968,FALSE
+single_night,q4,amp,19,Coral Sea | National Park Zone,direct,2024,0.326,8,32,1993,2024,1998,0.626,FALSE
+single_night,q4,amp,19,Coral Sea | National Park Zone,cell,2024,0.375,7,32,1993,2024,1998,0.742,FALSE
+single_night,q4,amp,20,Coral Sea | National Park Zone,direct,2024,0.436,8,32,1993,2024,2022,0.839,FALSE
+single_night,q4,amp,20,Coral Sea | National Park Zone,cell,2024,0.457,7,32,1993,2024,2022,0.695,FALSE
+single_night,q4,amp,21,Coral Sea | National Park Zone,direct,2024,0.374,8,32,1993,2024,2022,0.819,FALSE
+single_night,q4,amp,21,Coral Sea | National Park Zone,cell,2024,0.458,7,32,1993,2024,2022,0.685,FALSE
+single_night,q4,amp,22,Coral Sea | National Park Zone,direct,2024,0.374,9,32,1993,2024,2022,0.621,FALSE
+single_night,q4,amp,22,Coral Sea | National Park Zone,cell,2024,0.421,6,32,1993,2024,1998,0.655,FALSE
+single_night,q4,amp,23,Coral Sea | National Park Zone,direct,2024,0.507,5,32,1993,2024,2022,0.683,FALSE
+single_night,q4,amp,23,Coral Sea | National Park Zone,cell,2024,0.427,7,32,1993,2024,2022,0.705,FALSE
+single_night,q4,amp,24,Coral Sea | National Park Zone,direct,2024,0.478,4,32,1993,2024,2010,0.571,FALSE
+single_night,q4,amp,24,Coral Sea | National Park Zone,cell,2024,0.528,1,32,1993,2024,2024,0.528,FALSE
+single_night,q4,amp,25,Coral Sea | National Park Zone,direct,2024,0.489,3,31,1993,2024,2021,0.675,FALSE
+single_night,q4,amp,25,Coral Sea | National Park Zone,cell,2024,0.437,4,31,1993,2024,2021,0.625,FALSE
+single_night,q4,amp,26,Coral Sea | Special Purpose Zone (Trawl),direct,2024,0.432,5,32,1993,2024,2022,0.91,FALSE
+single_night,q4,amp,26,Coral Sea | Special Purpose Zone (Trawl),cell,2024,0.375,7,32,1993,2024,1998,0.742,FALSE
+single_night,q4,amp,27,Coral Sea | Special Purpose Zone (Trawl),direct,2024,0.511,4,32,1993,2024,2020,0.742,FALSE
+single_night,q4,amp,27,Coral Sea | Special Purpose Zone (Trawl),cell,2024,0.497,4,32,1993,2024,2020,0.553,FALSE
+single_night,q4,amp,28,Coral Sea | Special Purpose Zone (Trawl),direct,2024,0.414,7,32,1993,2024,1998,0.654,FALSE
+single_night,q4,amp,28,Coral Sea | Special Purpose Zone (Trawl),cell,2024,0.431,6,32,1993,2024,1998,0.622,FALSE
+single_night,q4,amp,38,Christmas Island | Habitat Protection Zone,direct,2024,0.26,9,30,1993,2024,1998,0.956,FALSE
+single_night,q4,amp,38,Christmas Island | Habitat Protection Zone,cell,2024,0.363,6,31,1994,2024,2016,1.003,FALSE
+single_night,q4,amp,39,Christmas Island | National Park Zone,direct,2024,0.413,6,32,1993,2024,2016,1.022,FALSE
+single_night,q4,amp,39,Christmas Island | National Park Zone,cell,2024,0.416,6,31,1994,2024,2016,1.019,FALSE
+single_night,q4,amp,40,Cocos (Keeling) Islands | Habitat Protection Zone,direct,2024,0.492,3,29,1995,2024,2021,0.551,FALSE
+single_night,q4,amp,40,Cocos (Keeling) Islands | Habitat Protection Zone,cell,2024,0.515,3,29,1994,2024,2021,0.528,FALSE
+single_night,q4,amp,41,Cocos (Keeling) Islands | National Park Zone,cell,2024,0.515,3,29,1994,2024,2021,0.528,FALSE
+single_night,q4,amp,42,Cocos (Keeling) Islands | National Park Zone,direct,2024,,,3,1996,2003,1996,0.417,FALSE
+single_night,q4,amp,42,Cocos (Keeling) Islands | National Park Zone,cell,2024,0.515,3,29,1994,2024,2021,0.528,FALSE
+single_night,q4,amp,43,Cocos (Keeling) Islands | National Park Zone,direct,2024,0.559,2,29,1994,2024,2010,0.563,FALSE
+single_night,q4,amp,43,Cocos (Keeling) Islands | National Park Zone,cell,2024,0.526,1,28,1995,2024,2024,0.526,FALSE
+single_night,q4,amp,44,Arafura | Multiple Use Zone,direct,2024,0.189,12,30,1994,2024,2016,0.964,FALSE
+single_night,q4,amp,44,Arafura | Multiple Use Zone,cell,2024,0.347,7,32,1993,2024,2016,0.948,FALSE
+single_night,q4,amp,45,Arafura | Special Purpose Zone,direct,2024,,,25,1996,2023,2016,1.004,FALSE
+single_night,q4,amp,45,Arafura | Special Purpose Zone,cell,2024,0.159,11,30,1994,2024,2016,1.001,FALSE
+single_night,q4,amp,46,Arafura | Special Purpose Zone (Trawl),direct,2024,0.355,5,30,1994,2024,2016,0.918,FALSE
+single_night,q4,amp,46,Arafura | Special Purpose Zone (Trawl),cell,2024,0.393,7,32,1993,2024,2016,0.924,FALSE
+single_night,q4,amp,47,Arnhem | Special Purpose Zone,direct,2024,0.112,12,26,1994,2024,2016,0.975,FALSE
+single_night,q4,amp,47,Arnhem | Special Purpose Zone,cell,2024,0.159,11,30,1994,2024,2016,1.001,FALSE
+single_night,q4,amp,48,Gulf of Carpentaria | National Park Zone,direct,2024,,,31,1993,2023,2016,0.796,FALSE
+single_night,q4,amp,48,Gulf of Carpentaria | National Park Zone,cell,2024,0.501,2,32,1993,2024,2016,0.763,FALSE
+single_night,q4,amp,49,Gulf of Carpentaria | Special Purpose Zone (Trawl),direct,2024,0.512,2,32,1993,2024,2016,0.787,FALSE
+single_night,q4,amp,49,Gulf of Carpentaria | Special Purpose Zone (Trawl),cell,2024,0.49,2,32,1993,2024,2016,0.757,FALSE
+single_night,q4,amp,50,Gulf of Carpentaria | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,2016,0.797,FALSE
+single_night,q4,amp,50,Gulf of Carpentaria | Special Purpose Zone (Trawl),cell,2024,0.523,2,32,1993,2024,2016,0.734,FALSE
+single_night,q4,amp,51,Joseph Bonaparte Gulf | Multiple Use Zone,direct,2024,,,20,1993,2023,2016,1.412,FALSE
+single_night,q4,amp,51,Joseph Bonaparte Gulf | Multiple Use Zone,cell,2024,,,19,1993,2023,2005,0.57,FALSE
+single_night,q4,amp,52,Joseph Bonaparte Gulf | Special Purpose Zone,direct,2024,,,12,1997,2019,2005,0.626,FALSE
+single_night,q4,amp,52,Joseph Bonaparte Gulf | Special Purpose Zone,cell,2024,,,19,1993,2023,2005,0.57,FALSE
+single_night,q4,amp,53,Limmen | Habitat Protection Zone,direct,2024,,,30,1993,2023,2016,0.958,FALSE
+single_night,q4,amp,53,Limmen | Habitat Protection Zone,cell,2024,,,31,1993,2023,2016,0.906,FALSE
+single_night,q4,amp,54,Oceanic Shoals | Habitat Protection Zone,direct,2024,,,13,1994,2023,2022,0.689,FALSE
+single_night,q4,amp,54,Oceanic Shoals | Habitat Protection Zone,cell,2024,,,24,1994,2023,2016,1.145,FALSE
+single_night,q4,amp,55,Oceanic Shoals | Multiple Use Zone,direct,2024,,,25,1993,2023,2016,1.173,FALSE
+single_night,q4,amp,55,Oceanic Shoals | Multiple Use Zone,cell,2024,0.195,10,26,1993,2024,2016,1.187,FALSE
+single_night,q4,amp,56,Oceanic Shoals | Multiple Use Zone,direct,2024,,,25,1994,2023,2016,1.022,FALSE
+single_night,q4,amp,56,Oceanic Shoals | Multiple Use Zone,cell,2024,0.275,8,28,1993,2024,2016,1.021,FALSE
+single_night,q4,amp,57,Oceanic Shoals | National Park Zone,direct,2024,,,13,1997,2023,2022,0.711,FALSE
+single_night,q4,amp,57,Oceanic Shoals | National Park Zone,cell,2024,,,15,1994,2023,2009,0.396,FALSE
+single_night,q4,amp,58,Oceanic Shoals | Special Purpose Zone (Trawl),direct,2024,,,23,1994,2023,2016,1.06,FALSE
+single_night,q4,amp,58,Oceanic Shoals | Special Purpose Zone (Trawl),cell,2024,0.3,7,29,1993,2024,2016,1.08,FALSE
+single_night,q4,amp,59,Wessel | Habitat Protection Zone,direct,2024,,,30,1993,2023,2016,0.973,FALSE
+single_night,q4,amp,59,Wessel | Habitat Protection Zone,cell,2024,,,29,1993,2023,2016,0.958,FALSE
+single_night,q4,amp,60,Wessel | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,2021,0.95,FALSE
+single_night,q4,amp,60,Wessel | Special Purpose Zone (Trawl),cell,2024,,,29,1993,2023,2016,0.956,FALSE
+single_night,q4,amp,61,West Cape York | Habitat Protection Zone,direct,2024,,,28,1993,2022,2010,0.942,FALSE
+single_night,q4,amp,61,West Cape York | Habitat Protection Zone,cell,2024,,,29,1993,2023,2022,0.912,FALSE
+single_night,q4,amp,62,West Cape York | National Park Zone,direct,2024,,,30,1993,2023,2010,0.992,FALSE
+single_night,q4,amp,62,West Cape York | National Park Zone,cell,2024,0.415,7,31,1993,2024,2022,1.015,FALSE
+single_night,q4,amp,63,West Cape York | National Park Zone,direct,2024,,,29,1993,2023,2022,1.046,FALSE
+single_night,q4,amp,63,West Cape York | National Park Zone,cell,2024,,,29,1993,2023,2022,0.912,FALSE
+single_night,q4,amp,64,West Cape York | Special Purpose Zone,direct,2024,,,26,1993,2023,2010,1.017,FALSE
+single_night,q4,amp,64,West Cape York | Special Purpose Zone,cell,2024,,,29,1993,2023,2022,0.912,FALSE
+single_night,q4,amp,65,Argo-Rowley Terrace | Multiple Use Zone,direct,2024,0.294,7,32,1993,2024,2016,0.855,FALSE
+single_night,q4,amp,65,Argo-Rowley Terrace | Multiple Use Zone,cell,2024,0.301,6,32,1993,2024,2016,0.672,FALSE
+single_night,q4,amp,66,Argo-Rowley Terrace | Multiple Use Zone,direct,2024,0.329,7,32,1993,2024,2016,0.953,FALSE
+single_night,q4,amp,66,Argo-Rowley Terrace | Multiple Use Zone,cell,2024,0.343,7,32,1993,2024,2016,0.935,FALSE
+single_night,q4,amp,67,Argo-Rowley Terrace | National Park Zone,direct,2024,0.351,7,32,1993,2024,2016,1.1,FALSE
+single_night,q4,amp,67,Argo-Rowley Terrace | National Park Zone,cell,2024,0.346,7,32,1993,2024,2016,1.081,FALSE
+single_night,q4,amp,68,Argo-Rowley Terrace | Special Purpose Zone (Trawl),direct,2024,0.293,7,32,1993,2024,2016,0.915,FALSE
+single_night,q4,amp,68,Argo-Rowley Terrace | Special Purpose Zone (Trawl),cell,2024,0.219,9,32,1993,2024,2016,0.926,FALSE
+single_night,q4,amp,69,Ashmore Reef | Recreational Use Zone,direct,2024,0.326,7,27,1993,2024,2016,1.161,FALSE
+single_night,q4,amp,69,Ashmore Reef | Recreational Use Zone,cell,2024,0.349,7,29,1993,2024,2016,1.156,FALSE
+single_night,q4,amp,70,Ashmore Reef | Sanctuary Zone,direct,2024,0.399,6,30,1993,2024,2016,1.123,FALSE
+single_night,q4,amp,70,Ashmore Reef | Sanctuary Zone,cell,2024,0.349,7,29,1993,2024,2016,1.156,FALSE
+single_night,q4,amp,71,Carnarvon Canyon | Habitat Protection Zone,direct,2024,0.606,2,31,1994,2024,1999,0.644,FALSE
+single_night,q4,amp,71,Carnarvon Canyon | Habitat Protection Zone,cell,2024,0.547,2,32,1993,2024,1999,0.615,FALSE
+single_night,q4,amp,72,Cartier Island | Sanctuary Zone,direct,2024,0.376,7,25,1993,2024,2016,1.181,FALSE
+single_night,q4,amp,72,Cartier Island | Sanctuary Zone,cell,2024,0.349,7,29,1993,2024,2016,1.156,FALSE
+single_night,q4,amp,73,Dampier | Habitat Protection Zone,direct,2024,0.239,8,32,1993,2024,2020,0.67,FALSE
+single_night,q4,amp,73,Dampier | Habitat Protection Zone,cell,2024,0.197,10,32,1993,2024,2020,0.554,FALSE
+single_night,q4,amp,74,Dampier | Multiple Use Zone,direct,2024,0.288,6,32,1993,2024,2020,0.677,FALSE
+single_night,q4,amp,74,Dampier | Multiple Use Zone,cell,2024,0.324,6,32,1993,2024,2020,0.637,FALSE
+single_night,q4,amp,75,Dampier | National Park Zone,direct,2024,0.254,7,32,1993,2024,2020,0.652,FALSE
+single_night,q4,amp,75,Dampier | National Park Zone,cell,2024,0.227,9,32,1993,2024,2020,0.573,FALSE
+single_night,q4,amp,76,Eighty Mile Beach | Multiple Use Zone,direct,2024,0.318,6,31,1993,2024,1998,0.554,FALSE
+single_night,q4,amp,76,Eighty Mile Beach | Multiple Use Zone,cell,2024,0.301,6,32,1993,2024,2016,0.637,FALSE
+single_night,q4,amp,77,Gascoyne | Habitat Protection Zone,direct,2024,0.457,3,32,1993,2024,1999,0.694,FALSE
+single_night,q4,amp,77,Gascoyne | Habitat Protection Zone,cell,2024,0.516,2,32,1993,2024,1999,0.627,FALSE
+single_night,q4,amp,78,Gascoyne | Habitat Protection Zone,direct,2024,0.206,10,32,1993,2024,2011,1.01,FALSE
+single_night,q4,amp,78,Gascoyne | Habitat Protection Zone,cell,2024,0.287,6,32,1993,2024,2011,1.014,FALSE
+single_night,q4,amp,79,Gascoyne | Multiple Use Zone,direct,2024,0.322,8,32,1993,2024,1999,0.746,FALSE
+single_night,q4,amp,79,Gascoyne | Multiple Use Zone,cell,2024,0.368,6,32,1993,2024,1999,0.634,FALSE
+single_night,q4,amp,80,Gascoyne | National Park Zone,direct,2024,0.484,4,31,1994,2024,2011,0.714,FALSE
+single_night,q4,amp,80,Gascoyne | National Park Zone,cell,2024,0.492,2,31,1994,2024,1999,0.561,FALSE
+single_night,q4,amp,81,Kimberley | Habitat Protection Zone,direct,2024,0.228,11,26,1993,2024,2016,0.986,FALSE
+single_night,q4,amp,81,Kimberley | Habitat Protection Zone,cell,2024,0.243,11,30,1993,2024,2016,1.1,FALSE
+single_night,q4,amp,82,Kimberley | Habitat Protection Zone,direct,2024,0.295,11,31,1993,2024,2016,0.812,FALSE
+single_night,q4,amp,82,Kimberley | Habitat Protection Zone,cell,2024,0.243,11,30,1993,2024,2016,1.1,FALSE
+single_night,q4,amp,83,Kimberley | Multiple Use Zone,direct,2024,0.222,11,31,1993,2024,2016,1.034,FALSE
+single_night,q4,amp,83,Kimberley | Multiple Use Zone,cell,2024,0.205,11,31,1993,2024,2016,1.063,FALSE
+single_night,q4,amp,84,Kimberley | National Park Zone,direct,2024,,,27,1993,2023,2016,1.061,FALSE
+single_night,q4,amp,84,Kimberley | National Park Zone,cell,2024,0.243,11,30,1993,2024,2016,1.1,FALSE
+single_night,q4,amp,85,Mermaid Reef | National Park Zone,direct,2024,0.324,7,32,1993,2024,2016,0.919,FALSE
+single_night,q4,amp,85,Mermaid Reef | National Park Zone,cell,2024,0.232,9,32,1993,2024,2016,0.983,FALSE
+single_night,q4,amp,86,Montebello | Multiple Use Zone,direct,2024,0.156,10,32,1993,2024,1999,0.675,FALSE
+single_night,q4,amp,86,Montebello | Multiple Use Zone,cell,2024,0.252,8,32,1993,2024,2013,0.516,FALSE
+single_night,q4,amp,87,Ningaloo | National Park Zone,direct,2024,0.306,7,32,1993,2024,1999,0.833,FALSE
+single_night,q4,amp,87,Ningaloo | National Park Zone,cell,2024,0.315,7,32,1993,2024,1999,0.704,FALSE
+single_night,q4,amp,88,Ningaloo | Recreational Use Zone,direct,2024,0.257,8,32,1993,2024,1999,0.869,FALSE
+single_night,q4,amp,88,Ningaloo | Recreational Use Zone,cell,2024,0.315,7,32,1993,2024,1999,0.704,FALSE
+single_night,q4,amp,89,Ningaloo | Recreational Use Zone,direct,2024,0.301,8,32,1993,2024,1999,0.792,FALSE
+single_night,q4,amp,89,Ningaloo | Recreational Use Zone,cell,2024,0.315,7,32,1993,2024,1999,0.704,FALSE
+single_night,q4,amp,90,Roebuck | Multiple Use Zone,direct,2024,0.497,3,27,1995,2024,2016,0.831,FALSE
+single_night,q4,amp,90,Roebuck | Multiple Use Zone,cell,2024,0.443,4,30,1993,2024,2016,0.906,FALSE
+single_night,q4,amp,91,Shark Bay | Multiple Use Zone,direct,2024,0.214,10,32,1993,2024,2011,1.082,FALSE
+single_night,q4,amp,91,Shark Bay | Multiple Use Zone,cell,2024,0.306,6,32,1993,2024,2011,0.975,FALSE
+single_night,q4,amp,92,Apollo | Multiple Use Zone,direct,2024,0.365,5,30,1995,2024,2013,0.768,FALSE
+single_night,q4,amp,92,Apollo | Multiple Use Zone,cell,2024,0.269,9,30,1995,2024,2013,0.748,FALSE
+single_night,q4,amp,93,Beagle | Multiple Use Zone,direct,2024,0.295,7,30,1995,2024,2013,0.579,FALSE
+single_night,q4,amp,93,Beagle | Multiple Use Zone,cell,2024,0.41,6,31,1993,2024,2013,0.465,FALSE
+single_night,q4,amp,94,Beagle | National Park Zone,direct,2024,0.352,6,30,1995,2024,2013,0.6,FALSE
+single_night,q4,amp,94,Beagle | National Park Zone,cell,2024,0.41,6,31,1993,2024,2013,0.465,FALSE
+single_night,q4,amp,95,Boags | Multiple Use Zone,direct,2024,0.489,6,30,1995,2024,2000,0.556,FALSE
+single_night,q4,amp,95,Boags | Multiple Use Zone,cell,2024,0.517,2,31,1993,2024,2000,0.598,FALSE
+single_night,q4,amp,96,East Gippsland | Multiple Use Zone,direct,2024,0.496,7,31,1993,2024,2017,0.997,FALSE
+single_night,q4,amp,96,East Gippsland | Multiple Use Zone,cell,2024,0.358,8,31,1993,2024,2016,0.809,FALSE
+single_night,q4,amp,97,Flinders | Habitat Protection Zone,direct,2024,0.545,8,31,1993,2024,2017,1.149,FALSE
+single_night,q4,amp,97,Flinders | Habitat Protection Zone,cell,2024,0.536,5,31,1993,2024,2017,1.082,FALSE
+single_night,q4,amp,98,Flinders | Multiple Use Zone,direct,2024,0.689,3,30,1995,2024,2014,0.728,FALSE
+single_night,q4,amp,98,Flinders | Multiple Use Zone,cell,2024,0.732,2,31,1993,2024,2023,0.74,FALSE
+single_night,q4,amp,99,Flinders | National Park Zone,direct,2024,0.362,9,31,1993,2024,2017,1.4,FALSE
+single_night,q4,amp,99,Flinders | National Park Zone,cell,2024,0.437,8,31,1993,2024,2017,1.141,FALSE
+single_night,q4,amp,100,Flinders | National Park Zone,direct,2024,0.741,3,31,1993,2024,2014,0.807,FALSE
+single_night,q4,amp,100,Flinders | National Park Zone,cell,2024,0.841,1,31,1993,2024,2024,0.841,FALSE
+single_night,q4,amp,101,Flinders | National Park Zone,direct,2024,0.705,5,30,1995,2024,2017,0.94,FALSE
+single_night,q4,amp,101,Flinders | National Park Zone,cell,2024,0.615,5,31,1993,2024,2017,0.946,FALSE
+single_night,q4,amp,102,Franklin | Multiple Use Zone,direct,2024,0.43,6,29,1995,2024,2013,0.817,FALSE
+single_night,q4,amp,102,Franklin | Multiple Use Zone,cell,2024,0.517,2,31,1993,2024,2000,0.598,FALSE
+single_night,q4,amp,103,Franklin | National Park Zone,direct,2024,0.464,6,29,1995,2024,2013,0.778,FALSE
+single_night,q4,amp,103,Franklin | National Park Zone,cell,2024,0.517,2,31,1993,2024,2000,0.598,FALSE
+single_night,q4,amp,104,Freycinet | Habitat Protection Zone,direct,2024,0.691,1,31,1993,2024,2024,0.691,FALSE
+single_night,q4,amp,104,Freycinet | Habitat Protection Zone,cell,2024,0.853,1,31,1993,2024,2024,0.853,FALSE
+single_night,q4,amp,105,Freycinet | Multiple Use Zone,direct,2024,0.803,1,30,1995,2024,2024,0.803,FALSE
+single_night,q4,amp,105,Freycinet | Multiple Use Zone,cell,2024,0.853,1,31,1993,2024,2024,0.853,FALSE
+single_night,q4,amp,106,Freycinet | National Park Zone,direct,2024,1.154,1,30,1995,2024,2024,1.154,FALSE
+single_night,q4,amp,106,Freycinet | National Park Zone,cell,2024,0.919,1,30,1995,2024,2024,0.919,FALSE
+single_night,q4,amp,107,Freycinet | National Park Zone,direct,2024,0.537,3,31,1993,2024,2007,0.633,FALSE
+single_night,q4,amp,107,Freycinet | National Park Zone,cell,2024,0.853,1,31,1993,2024,2024,0.853,FALSE
+single_night,q4,amp,108,Freycinet | Recreational Use Zone,direct,2024,0.736,1,30,1995,2024,2024,0.736,FALSE
+single_night,q4,amp,108,Freycinet | Recreational Use Zone,cell,2024,0.853,1,31,1993,2024,2024,0.853,FALSE
+single_night,q4,amp,109,Huon | Multiple Use Zone,direct,2024,0.822,1,29,1995,2024,2024,0.822,FALSE
+single_night,q4,amp,109,Huon | Multiple Use Zone,cell,2024,0.769,2,29,1995,2024,2023,0.8,FALSE
+single_night,q4,amp,110,Huon | National Park Zone,direct,2024,1.021,1,30,1995,2024,2024,1.021,FALSE
+single_night,q4,amp,110,Huon | National Park Zone,cell,2024,0.528,6,30,1995,2024,2023,0.641,FALSE
+single_night,q4,amp,111,Macquarie Island | Habitat Protection Zone (Macquarie),direct,2024,-0.106,17,25,1999,2024,2017,0.381,FALSE
+single_night,q4,amp,111,Macquarie Island | Habitat Protection Zone (Macquarie),cell,2024,-0.074,18,25,1999,2024,2017,0.33,FALSE
+single_night,q4,amp,112,Macquarie Island | National Park Zone,direct,2024,-0.221,19,25,1999,2024,2019,0.288,FALSE
+single_night,q4,amp,112,Macquarie Island | National Park Zone,cell,2024,-0.099,19,25,1999,2024,2019,0.384,FALSE
+single_night,q4,amp,113,Macquarie Island | Sanctuary Zone,direct,2024,-0.058,12,25,1999,2024,2017,0.51,FALSE
+single_night,q4,amp,113,Macquarie Island | Sanctuary Zone,cell,2024,-0.199,18,25,1999,2024,2019,0.463,FALSE
+single_night,q4,amp,114,Murray | Habitat Protection Zone,direct,2024,0.168,11,31,1993,2024,2013,0.836,FALSE
+single_night,q4,amp,114,Murray | Habitat Protection Zone,cell,2024,0.122,10,31,1993,2024,2013,0.752,FALSE
+single_night,q4,amp,115,Murray | Habitat Protection Zone,direct,2024,0.146,12,30,1995,2024,2013,0.779,FALSE
+single_night,q4,amp,115,Murray | Habitat Protection Zone,cell,2024,0.119,10,31,1993,2024,2013,0.751,FALSE
+single_night,q4,amp,116,Murray | Multiple Use Zone,direct,2024,-0.465,29,31,1993,2024,2013,0.897,FALSE
+single_night,q4,amp,116,Murray | Multiple Use Zone,cell,2024,-0.246,26,31,1993,2024,2013,0.753,FALSE
+single_night,q4,amp,117,Murray | Multiple Use Zone,direct,2024,0.046,13,31,1993,2024,2013,1.059,FALSE
+single_night,q4,amp,117,Murray | Multiple Use Zone,cell,2024,0.145,9,31,1993,2024,2013,0.763,FALSE
+single_night,q4,amp,118,Murray | National Park Zone,direct,2024,0.272,7,31,1993,2024,2013,0.634,FALSE
+single_night,q4,amp,118,Murray | National Park Zone,cell,2024,0.174,7,31,1993,2024,2013,0.671,FALSE
+single_night,q4,amp,119,Nelson | National Park Zone,direct,2024,0.164,11,30,1995,2024,2013,0.917,FALSE
+single_night,q4,amp,119,Nelson | National Park Zone,cell,2024,0.121,10,30,1995,2024,2013,0.816,FALSE
+single_night,q4,amp,120,South Tasman Rise | National Park Zone,direct,2024,,,28,1995,2023,2022,0.931,FALSE
+single_night,q4,amp,120,South Tasman Rise | National Park Zone,cell,2024,0.792,1,29,1995,2024,2024,0.792,FALSE
+single_night,q4,amp,121,Tasman Fracture | Multiple Use Zone,direct,2024,0.338,11,30,1995,2024,2022,0.787,FALSE
+single_night,q4,amp,121,Tasman Fracture | Multiple Use Zone,cell,2024,0.449,7,30,1995,2024,2023,0.66,FALSE
+single_night,q4,amp,122,Tasman Fracture | National Park Zone,direct,2024,0.442,6,29,1995,2024,2023,0.646,FALSE
+single_night,q4,amp,122,Tasman Fracture | National Park Zone,cell,2024,0.523,6,30,1995,2024,2023,0.639,FALSE
+single_night,q4,amp,123,Tasman Fracture | National Park Zone,direct,2024,0.406,8,28,1995,2024,2017,0.994,FALSE
+single_night,q4,amp,123,Tasman Fracture | National Park Zone,cell,2024,0.297,10,28,1995,2024,2017,0.812,FALSE
+single_night,q4,amp,124,Zeehan | Multiple Use Zone,direct,2024,0.277,9,30,1995,2024,2013,0.86,FALSE
+single_night,q4,amp,124,Zeehan | Multiple Use Zone,cell,2024,0.269,9,30,1995,2024,2013,0.748,FALSE
+single_night,q4,amp,125,Zeehan | National Park Zone,direct,2024,-0.018,19,30,1995,2024,2000,0.794,FALSE
+single_night,q4,amp,125,Zeehan | National Park Zone,cell,2024,0.133,13,30,1995,2024,2000,0.599,FALSE
+single_night,q4,amp,126,Zeehan | Special Purpose Zone,direct,2024,0.093,14,30,1995,2024,2013,0.94,FALSE
+single_night,q4,amp,126,Zeehan | Special Purpose Zone,cell,2024,0.269,9,30,1995,2024,2013,0.748,FALSE
+single_night,q4,amp,127,Abrolhos | Habitat Protection Zone,direct,2024,0.398,5,31,1994,2024,2012,0.808,FALSE
+single_night,q4,amp,127,Abrolhos | Habitat Protection Zone,cell,2024,0.402,4,32,1993,2024,2011,0.833,FALSE
+single_night,q4,amp,128,Abrolhos | Multiple Use Zone,direct,2024,0.212,11,32,1993,2024,2011,1.258,FALSE
+single_night,q4,amp,128,Abrolhos | Multiple Use Zone,cell,2024,0.23,11,32,1993,2024,2011,1.195,FALSE
+single_night,q4,amp,129,Abrolhos | Multiple Use Zone,direct,2024,0.326,6,31,1994,2024,2011,1.137,FALSE
+single_night,q4,amp,129,Abrolhos | Multiple Use Zone,cell,2024,0.327,7,31,1994,2024,2011,1.052,FALSE
+single_night,q4,amp,130,Abrolhos | Multiple Use Zone,direct,2024,0.264,9,32,1993,2024,2011,1.2,FALSE
+single_night,q4,amp,130,Abrolhos | Multiple Use Zone,cell,2024,0.23,11,32,1993,2024,2011,1.195,FALSE
+single_night,q4,amp,131,Abrolhos | National Park Zone,direct,2024,0.275,9,31,1994,2024,2011,1.262,FALSE
+single_night,q4,amp,131,Abrolhos | National Park Zone,cell,2024,0.259,9,32,1993,2024,2011,1.171,FALSE
+single_night,q4,amp,132,Abrolhos | National Park Zone,direct,2024,0.241,11,32,1993,2024,2011,1.247,FALSE
+single_night,q4,amp,132,Abrolhos | National Park Zone,cell,2024,0.23,11,32,1993,2024,2011,1.195,FALSE
+single_night,q4,amp,133,Abrolhos | National Park Zone,direct,2024,0.284,10,32,1993,2024,2011,1.276,FALSE
+single_night,q4,amp,133,Abrolhos | National Park Zone,cell,2024,0.23,11,32,1993,2024,2011,1.195,FALSE
+single_night,q4,amp,134,Abrolhos | Special Purpose Zone,direct,2024,0.243,11,32,1993,2024,2011,1.256,FALSE
+single_night,q4,amp,134,Abrolhos | Special Purpose Zone,cell,2024,0.23,11,32,1993,2024,2011,1.195,FALSE
+single_night,q4,amp,135,Abrolhos | Special Purpose Zone,direct,2024,0.224,10,32,1993,2024,2011,1.116,FALSE
+single_night,q4,amp,135,Abrolhos | Special Purpose Zone,cell,2024,0.23,11,32,1993,2024,2011,1.195,FALSE
+single_night,q4,amp,136,Bremer | National Park Zone,direct,2024,0.099,12,31,1994,2024,2012,0.675,FALSE
+single_night,q4,amp,136,Bremer | National Park Zone,cell,2024,0.132,10,31,1994,2024,2011,0.677,FALSE
+single_night,q4,amp,137,Bremer | Special Purpose Zone (Mining Exclusion),direct,2024,-0.005,18,32,1993,2024,1999,0.64,FALSE
+single_night,q4,amp,137,Bremer | Special Purpose Zone (Mining Exclusion),cell,2024,0.132,10,31,1994,2024,2011,0.677,FALSE
+single_night,q4,amp,138,Bremer | Special Purpose Zone (Mining Exclusion),direct,2024,-0.035,19,31,1994,2024,2011,0.635,FALSE
+single_night,q4,amp,138,Bremer | Special Purpose Zone (Mining Exclusion),cell,2024,0.132,10,31,1994,2024,2011,0.677,FALSE
+single_night,q4,amp,139,Eastern Recherche | National Park Zone,direct,2024,0.124,8,32,1993,2024,2013,0.624,FALSE
+single_night,q4,amp,139,Eastern Recherche | National Park Zone,cell,2024,0.088,10,32,1993,2024,2011,0.55,FALSE
+single_night,q4,amp,140,Eastern Recherche | National Park Zone,direct,2024,0.462,4,30,1995,2024,2011,0.583,FALSE
+single_night,q4,amp,140,Eastern Recherche | National Park Zone,cell,2024,0.367,4,30,1995,2024,2011,0.533,FALSE
+single_night,q4,amp,141,Eastern Recherche | Special Purpose Zone,direct,2024,0.148,9,31,1994,2024,2013,0.58,FALSE
+single_night,q4,amp,141,Eastern Recherche | Special Purpose Zone,cell,2024,0.088,10,32,1993,2024,2011,0.55,FALSE
+single_night,q4,amp,142,Geographe | Habitat Protection Zone,direct,2024,0.34,5,30,1995,2024,2011,1.07,FALSE
+single_night,q4,amp,142,Geographe | Habitat Protection Zone,cell,2024,0.298,6,31,1994,2024,2011,0.975,FALSE
+single_night,q4,amp,143,Geographe | Multiple Use Zone,direct,2024,0.358,5,31,1994,2024,2011,1.059,FALSE
+single_night,q4,amp,143,Geographe | Multiple Use Zone,cell,2024,0.298,6,31,1994,2024,2011,0.975,FALSE
+single_night,q4,amp,144,Geographe | National Park Zone,direct,2024,0.437,4,31,1994,2024,2011,0.92,FALSE
+single_night,q4,amp,144,Geographe | National Park Zone,cell,2024,0.298,6,31,1994,2024,2011,0.975,FALSE
+single_night,q4,amp,145,Geographe | Special Purpose Zone (Mining Exclusion),direct,2024,0.326,5,31,1994,2024,2011,1.077,FALSE
+single_night,q4,amp,145,Geographe | Special Purpose Zone (Mining Exclusion),cell,2024,0.298,6,31,1994,2024,2011,0.975,FALSE
+single_night,q4,amp,146,Great Australian Bight | Multiple Use Zone,direct,2024,0.245,6,31,1993,2024,2013,0.58,FALSE
+single_night,q4,amp,146,Great Australian Bight | Multiple Use Zone,cell,2024,0.131,12,31,1993,2024,2013,0.603,FALSE
+single_night,q4,amp,147,Great Australian Bight | National Park Zone,direct,2024,-0.515,31,31,1993,2024,2013,0.811,FALSE
+single_night,q4,amp,147,Great Australian Bight | National Park Zone,cell,2024,-0.504,31,32,1993,2024,2013,0.809,FALSE
+single_night,q4,amp,148,Great Australian Bight | Special Purpose Zone,direct,2024,-0.072,18,31,1993,2024,2013,0.686,FALSE
+single_night,q4,amp,148,Great Australian Bight | Special Purpose Zone,cell,2024,-0.146,21,31,1993,2024,2013,0.672,FALSE
+single_night,q4,amp,149,Great Australian Bight | Special Purpose Zone (Mining Exclusion),direct,2024,-0.428,30,32,1993,2024,2013,0.824,FALSE
+single_night,q4,amp,149,Great Australian Bight | Special Purpose Zone (Mining Exclusion),cell,2024,-0.256,25,31,1993,2024,2013,0.753,FALSE
+single_night,q4,amp,150,Great Australian Bight | Special Purpose Zone (Mining Exclusion),direct,2024,-0.711,31,31,1993,2024,2013,0.841,FALSE
+single_night,q4,amp,150,Great Australian Bight | Special Purpose Zone (Mining Exclusion),cell,2024,-0.425,31,32,1993,2024,2013,0.779,FALSE
+single_night,q4,amp,151,Jurien | National Park Zone,direct,2024,0.188,11,32,1993,2024,2011,0.95,FALSE
+single_night,q4,amp,151,Jurien | National Park Zone,cell,2024,0.294,10,32,1993,2024,2011,1.145,FALSE
+single_night,q4,amp,152,Jurien | Special Purpose Zone,direct,2024,0.071,12,32,1993,2024,2011,1.07,FALSE
+single_night,q4,amp,152,Jurien | Special Purpose Zone,cell,2024,0.294,10,32,1993,2024,2011,1.145,FALSE
+single_night,q4,amp,153,Murat | National Park Zone,direct,2024,-0.697,31,31,1993,2024,2013,0.825,FALSE
+single_night,q4,amp,153,Murat | National Park Zone,cell,2024,-0.639,31,31,1993,2024,2013,0.832,FALSE
+single_night,q4,amp,154,Perth Canyon | Habitat Protection Zone,direct,2024,0.183,9,32,1993,2024,2011,1.342,FALSE
+single_night,q4,amp,154,Perth Canyon | Habitat Protection Zone,cell,2024,0.296,8,32,1993,2024,2011,1.068,FALSE
+single_night,q4,amp,155,Perth Canyon | Habitat Protection Zone,direct,2024,0.249,7,32,1993,2024,2011,1.201,FALSE
+single_night,q4,amp,155,Perth Canyon | Habitat Protection Zone,cell,2024,0.296,6,31,1994,2024,2011,1.045,FALSE
+single_night,q4,amp,156,Perth Canyon | Habitat Protection Zone,direct,2024,0.363,7,32,1993,2024,2011,1.018,FALSE
+single_night,q4,amp,156,Perth Canyon | Habitat Protection Zone,cell,2024,0.298,6,31,1994,2024,2011,0.978,FALSE
+single_night,q4,amp,157,Perth Canyon | Multiple Use Zone,direct,2024,0.366,6,32,1993,2024,2011,1.065,FALSE
+single_night,q4,amp,157,Perth Canyon | Multiple Use Zone,cell,2024,0.298,6,31,1994,2024,2011,0.985,FALSE
+single_night,q4,amp,158,Perth Canyon | Multiple Use Zone,direct,2024,0.226,9,32,1993,2024,2011,1.224,FALSE
+single_night,q4,amp,158,Perth Canyon | Multiple Use Zone,cell,2024,0.298,6,31,1994,2024,2011,0.975,FALSE
+single_night,q4,amp,159,Perth Canyon | National Park Zone,direct,2024,0.131,10,32,1993,2024,2011,1.317,FALSE
+single_night,q4,amp,159,Perth Canyon | National Park Zone,cell,2024,0.295,9,32,1993,2024,2011,1.105,FALSE
+single_night,q4,amp,160,Perth Canyon | National Park Zone,direct,2024,0.267,6,32,1993,2024,2011,1.173,FALSE
+single_night,q4,amp,160,Perth Canyon | National Park Zone,cell,2024,0.298,6,31,1994,2024,2011,0.975,FALSE
+single_night,q4,amp,161,South-west Corner | Habitat Protection Zone,direct,2024,0.324,8,30,1995,2024,2013,1.106,FALSE
+single_night,q4,amp,161,South-west Corner | Habitat Protection Zone,cell,2024,0.329,9,30,1995,2024,2011,0.947,FALSE
+single_night,q4,amp,162,South-west Corner | Multiple Use Zone,direct,2024,0.188,10,30,1995,2024,2011,1.209,FALSE
+single_night,q4,amp,162,South-west Corner | Multiple Use Zone,cell,2024,0.378,5,31,1994,2024,2011,0.989,FALSE
+single_night,q4,amp,163,South-west Corner | Multiple Use Zone,direct,2024,0.448,4,30,1995,2024,2011,0.751,FALSE
+single_night,q4,amp,163,South-west Corner | Multiple Use Zone,cell,2024,0.132,10,31,1994,2024,2011,0.677,FALSE
+single_night,q4,amp,164,South-west Corner | Multiple Use Zone,direct,2024,0.673,2,30,1995,2024,1999,0.695,FALSE
+single_night,q4,amp,164,South-west Corner | Multiple Use Zone,cell,2024,0.572,3,30,1995,2024,2012,0.679,FALSE
+single_night,q4,amp,165,South-west Corner | Multiple Use Zone,direct,2024,0.416,3,31,1994,2024,2011,0.906,FALSE
+single_night,q4,amp,165,South-west Corner | Multiple Use Zone,cell,2024,0.125,10,31,1994,2024,2011,0.658,FALSE
+single_night,q4,amp,166,South-west Corner | National Park Zone,direct,2024,0.027,13,31,1994,2024,2011,1.122,FALSE
+single_night,q4,amp,166,South-west Corner | National Park Zone,cell,2024,0.298,6,31,1994,2024,2011,0.975,FALSE
+single_night,q4,amp,167,South-west Corner | National Park Zone,direct,2024,0.23,7,30,1995,2024,2011,0.859,FALSE
+single_night,q4,amp,167,South-west Corner | National Park Zone,cell,2024,0.365,5,30,1995,2024,2011,0.565,FALSE
+single_night,q4,amp,168,South-west Corner | National Park Zone,direct,2024,-0.063,18,31,1994,2024,2011,0.828,FALSE
+single_night,q4,amp,168,South-west Corner | National Park Zone,cell,2024,0.183,10,30,1995,2024,2011,1.124,FALSE
+single_night,q4,amp,169,South-west Corner | National Park Zone,direct,2024,-0.148,25,32,1993,2024,2013,0.527,FALSE
+single_night,q4,amp,169,South-west Corner | National Park Zone,cell,2024,0.132,10,31,1994,2024,2011,0.677,FALSE
+single_night,q4,amp,170,South-west Corner | National Park Zone,direct,2024,0.367,6,30,1995,2024,2000,1.051,FALSE
+single_night,q4,amp,170,South-west Corner | National Park Zone,cell,2024,0.376,6,30,1995,2024,2000,1.074,FALSE
+single_night,q4,amp,171,South-west Corner | National Park Zone,direct,2024,0.359,6,30,1995,2024,2012,1.241,FALSE
+single_night,q4,amp,171,South-west Corner | National Park Zone,cell,2024,0.45,4,31,1994,2024,2011,1.044,FALSE
+single_night,q4,amp,172,South-west Corner | National Park Zone,direct,2024,0.091,13,31,1994,2024,2011,1.061,FALSE
+single_night,q4,amp,172,South-west Corner | National Park Zone,cell,2024,0.298,6,31,1994,2024,2011,0.975,FALSE
+single_night,q4,amp,173,South-west Corner | Special Purpose Zone,direct,2024,-0.115,21,31,1994,2024,2011,0.808,FALSE
+single_night,q4,amp,173,South-west Corner | Special Purpose Zone,cell,2024,0.062,14,31,1994,2024,2011,0.919,FALSE
+single_night,q4,amp,174,South-west Corner | Special Purpose Zone,direct,2024,-0.023,19,32,1993,2024,2011,0.556,FALSE
+single_night,q4,amp,174,South-west Corner | Special Purpose Zone,cell,2024,0.132,10,31,1994,2024,2011,0.677,FALSE
+single_night,q4,amp,175,South-west Corner | Special Purpose Zone (Mining Exclusion),direct,2024,0.187,12,31,1994,2024,2011,1.129,FALSE
+single_night,q4,amp,175,South-west Corner | Special Purpose Zone (Mining Exclusion),cell,2024,0.298,6,31,1994,2024,2011,0.975,FALSE
+single_night,q4,amp,176,South-west Corner | Special Purpose Zone (Mining Exclusion),direct,2024,0.071,12,31,1994,2024,2011,1.086,FALSE
+single_night,q4,amp,176,South-west Corner | Special Purpose Zone (Mining Exclusion),cell,2024,0.291,6,31,1994,2024,2011,0.988,FALSE
+single_night,q4,amp,177,Southern Kangaroo Island | Special Purpose Zone (Mining Exclusion),direct,2024,-0.575,30,31,1993,2024,2013,0.909,FALSE
+single_night,q4,amp,177,Southern Kangaroo Island | Special Purpose Zone (Mining Exclusion),cell,2024,-0.313,29,31,1993,2024,2013,0.754,FALSE
+single_night,q4,amp,178,Twilight | National Park Zone,direct,2024,0.05,14,31,1993,2024,2013,0.731,FALSE
+single_night,q4,amp,178,Twilight | National Park Zone,cell,2024,0.081,12,31,1993,2024,2013,0.633,FALSE
+single_night,q4,amp,179,Twilight | Special Purpose Zone (Mining Exclusion),direct,2024,-0.056,20,32,1993,2024,2013,0.774,FALSE
+single_night,q4,amp,179,Twilight | Special Purpose Zone (Mining Exclusion),cell,2024,0.081,12,31,1993,2024,2013,0.633,FALSE
+single_night,q4,amp,180,Twilight | Special Purpose Zone (Mining Exclusion),direct,2024,-0.071,19,31,1993,2024,2013,0.763,FALSE
+single_night,q4,amp,180,Twilight | Special Purpose Zone (Mining Exclusion),cell,2024,0.081,12,31,1993,2024,2013,0.633,FALSE
+single_night,q4,amp,181,Two Rocks | Multiple Use Zone,direct,2024,0.174,10,32,1993,2024,2011,0.904,FALSE
+single_night,q4,amp,181,Two Rocks | Multiple Use Zone,cell,2024,0.294,10,32,1993,2024,2011,1.145,FALSE
+single_night,q4,amp,182,Two Rocks | National Park Zone,direct,2024,0.168,12,32,1993,2024,2011,0.894,FALSE
+single_night,q4,amp,182,Two Rocks | National Park Zone,cell,2024,0.294,10,32,1993,2024,2011,1.145,FALSE
+single_night,q4,amp,183,Western Eyre | Multiple Use Zone,direct,2024,0.248,8,31,1993,2024,2013,0.853,FALSE
+single_night,q4,amp,183,Western Eyre | Multiple Use Zone,cell,2024,0.043,13,31,1993,2024,2013,0.789,FALSE
+single_night,q4,amp,184,Western Eyre | National Park Zone,direct,2024,-0.762,31,31,1993,2024,2013,0.884,FALSE
+single_night,q4,amp,184,Western Eyre | National Park Zone,cell,2024,-0.765,31,31,1993,2024,2013,0.872,FALSE
+single_night,q4,amp,185,Western Eyre | National Park Zone,direct,2024,0.309,5,30,1995,2024,2013,0.644,FALSE
+single_night,q4,amp,185,Western Eyre | National Park Zone,cell,2024,0.324,5,30,1995,2024,2013,0.54,FALSE
+single_night,q4,amp,186,Western Eyre | National Park Zone,direct,2024,-0.639,30,31,1993,2024,2013,0.921,FALSE
+single_night,q4,amp,186,Western Eyre | National Park Zone,cell,2024,-0.36,29,31,1993,2024,2013,0.841,FALSE
+single_night,q4,amp,187,Western Eyre | Special Purpose Zone,direct,2024,-0.636,31,31,1993,2024,2013,0.884,FALSE
+single_night,q4,amp,187,Western Eyre | Special Purpose Zone,cell,2024,-0.533,31,31,1993,2024,2013,0.854,FALSE
+single_night,q4,amp,188,Western Eyre | Special Purpose Zone (Trawl),direct,2024,-0.04,16,31,1993,2024,2013,0.766,FALSE
+single_night,q4,amp,188,Western Eyre | Special Purpose Zone (Trawl),cell,2024,-0.36,29,31,1993,2024,2013,0.841,FALSE
+single_night,q4,amp,189,Western Kangaroo Island | National Park Zone,direct,2024,-0.347,28,31,1993,2024,2013,0.969,FALSE
+single_night,q4,amp,189,Western Kangaroo Island | National Park Zone,cell,2024,-0.274,28,31,1993,2024,2013,0.754,FALSE
+single_night,q4,amp,190,Western Kangaroo Island | Special Purpose Zone,direct,2024,-0.272,26,31,1993,2024,2013,0.989,FALSE
+single_night,q4,amp,190,Western Kangaroo Island | Special Purpose Zone,cell,2024,0.132,11,31,1993,2024,2013,0.778,FALSE
+single_night,q4,amp,191,Western Kangaroo Island | Special Purpose Zone (Mining Exclusion),direct,2024,-0.426,29,31,1993,2024,2013,0.992,FALSE
+single_night,q4,amp,191,Western Kangaroo Island | Special Purpose Zone (Mining Exclusion),cell,2024,0.032,13,31,1993,2024,2013,0.772,FALSE
+single_night,q4,amp,192,Central Eastern | Habitat Protection Zone,direct,2024,0.689,1,32,1993,2024,2024,0.689,FALSE
+single_night,q4,amp,192,Central Eastern | Habitat Protection Zone,cell,2024,0.723,1,32,1993,2024,2024,0.723,FALSE
+single_night,q4,amp,193,Central Eastern | Habitat Protection Zone,direct,2024,0.769,1,32,1993,2024,2024,0.769,FALSE
+single_night,q4,amp,193,Central Eastern | Habitat Protection Zone,cell,2024,0.637,1,32,1993,2024,2024,0.637,FALSE
+single_night,q4,amp,194,Central Eastern | Multiple Use Zone,direct,2024,0.452,4,32,1993,2024,1998,0.635,FALSE
+single_night,q4,amp,194,Central Eastern | Multiple Use Zone,cell,2024,0.59,1,32,1993,2024,2024,0.59,FALSE
+single_night,q4,amp,195,Central Eastern | National Park Zone,direct,2024,0.886,1,32,1993,2024,2024,0.886,FALSE
+single_night,q4,amp,195,Central Eastern | National Park Zone,cell,2024,0.794,1,32,1993,2024,2024,0.794,FALSE
+single_night,q4,amp,196,Cod Grounds | National Park Zone,direct,2024,0.867,1,31,1993,2024,2024,0.867,FALSE
+single_night,q4,amp,196,Cod Grounds | National Park Zone,cell,2024,0.442,4,32,1993,2024,2016,0.705,FALSE
+single_night,q4,amp,197,Gifford | Habitat Protection Zone,direct,2024,0.582,2,32,1993,2024,2017,0.649,FALSE
+single_night,q4,amp,197,Gifford | Habitat Protection Zone,cell,2024,0.519,3,32,1993,2024,1998,0.578,FALSE
+single_night,q4,amp,198,Hunter | Habitat Protection Zone,direct,2024,0.499,5,32,1993,2024,2016,0.945,FALSE
+single_night,q4,amp,198,Hunter | Habitat Protection Zone,cell,2024,0.442,4,32,1993,2024,2016,0.705,FALSE
+single_night,q4,amp,199,Hunter | Special Purpose Zone (Trawl),direct,2024,0.323,8,32,1993,2024,2016,0.621,FALSE
+single_night,q4,amp,199,Hunter | Special Purpose Zone (Trawl),cell,2024,0.442,4,32,1993,2024,2016,0.705,FALSE
+single_night,q4,amp,200,Jervis | Habitat Protection Zone,direct,2024,0.381,10,32,1993,2024,2016,1.008,FALSE
+single_night,q4,amp,200,Jervis | Habitat Protection Zone,cell,2024,0.412,7,32,1993,2024,2016,0.858,FALSE
+single_night,q4,amp,201,Jervis | Special Purpose Zone (Trawl),direct,2024,0.5,9,32,1993,2024,2016,0.961,FALSE
+single_night,q4,amp,201,Jervis | Special Purpose Zone (Trawl),cell,2024,0.447,9,31,1993,2024,2016,0.896,FALSE
+single_night,q4,amp,202,Lord Howe | Habitat Protection Zone,direct,2024,0.641,1,32,1993,2024,2024,0.641,FALSE
+single_night,q4,amp,202,Lord Howe | Habitat Protection Zone,cell,2024,0.501,3,32,1993,2024,2019,0.548,FALSE
+single_night,q4,amp,203,Lord Howe | Habitat Protection Zone (Lord Howe),direct,2024,0.677,1,32,1993,2024,2024,0.677,FALSE
+single_night,q4,amp,203,Lord Howe | Habitat Protection Zone (Lord Howe),cell,2024,0.657,1,32,1993,2024,2024,0.657,FALSE
+single_night,q4,amp,204,Lord Howe | Multiple Use Zone,direct,2024,0.567,2,32,1993,2024,2020,0.635,FALSE
+single_night,q4,amp,204,Lord Howe | Multiple Use Zone,cell,2024,0.675,1,32,1993,2024,2024,0.675,FALSE
+single_night,q4,amp,205,Lord Howe | National Park Zone,direct,2024,0.782,1,32,1993,2024,2024,0.782,FALSE
+single_night,q4,amp,205,Lord Howe | National Park Zone,cell,2024,0.657,1,32,1993,2024,2024,0.657,FALSE
+single_night,q4,amp,206,Lord Howe | National Park Zone,direct,2024,0.703,1,31,1993,2024,2024,0.703,FALSE
+single_night,q4,amp,206,Lord Howe | National Park Zone,cell,2024,0.657,1,32,1993,2024,2024,0.657,FALSE
+single_night,q4,amp,207,Lord Howe | National Park Zone,direct,2024,0.65,2,32,1993,2024,2020,0.738,FALSE
+single_night,q4,amp,207,Lord Howe | National Park Zone,cell,2024,0.704,1,32,1993,2024,2024,0.704,FALSE
+single_night,q4,amp,208,Lord Howe | Recreational Use Zone,direct,2024,0.582,2,32,1993,2024,2020,0.619,FALSE
+single_night,q4,amp,208,Lord Howe | Recreational Use Zone,cell,2024,0.665,1,32,1993,2024,2024,0.665,FALSE
+single_night,q4,amp,209,Norfolk | Habitat Protection Zone,direct,2024,0.53,3,32,1993,2024,1998,0.619,FALSE
+single_night,q4,amp,209,Norfolk | Habitat Protection Zone,cell,2024,0.529,3,32,1993,2024,1998,0.649,FALSE
+single_night,q4,amp,210,Norfolk | National Park Zone,direct,2024,0.504,2,31,1993,2024,1998,0.851,FALSE
+single_night,q4,amp,210,Norfolk | National Park Zone,cell,2024,0.431,3,31,1993,2024,1998,0.854,FALSE
+single_night,q4,amp,211,Norfolk | Special Purpose Zone (Norfolk),direct,2024,0.743,1,32,1993,2024,2024,0.743,FALSE
+single_night,q4,amp,211,Norfolk | Special Purpose Zone (Norfolk),cell,2024,0.571,1,32,1993,2024,2024,0.571,FALSE
+single_night,q4,amp,212,Solitary Islands | Multiple Use Zone,direct,2024,0.735,1,32,1993,2024,2024,0.735,FALSE
+single_night,q4,amp,212,Solitary Islands | Multiple Use Zone,cell,2024,0.59,1,32,1993,2024,2024,0.59,FALSE
+single_night,q4,amp,213,Solitary Islands | National Park Zone,direct,2024,0.84,1,32,1993,2024,2024,0.84,FALSE
+single_night,q4,amp,213,Solitary Islands | National Park Zone,cell,2024,0.59,1,32,1993,2024,2024,0.59,FALSE
+single_night,q4,amp,214,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,1998,0.56,FALSE
+single_night,q4,amp,214,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.59,1,32,1993,2024,2024,0.59,FALSE
+single_night,q4,amp,215,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,1998,0.505,FALSE
+single_night,q4,amp,215,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.59,1,32,1993,2024,2024,0.59,FALSE
+single_night,q4,amp,216,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,1998,0.489,FALSE
+single_night,q4,amp,216,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.59,1,32,1993,2024,2024,0.59,FALSE
+single_night,q4,domain,1,whole domain,direct,2024,0.497,10,32,1993,2024,1993,2.812,FALSE
+single_night,q4,domain,1,whole domain,cell,2024,0.452,1,30,1995,2024,2024,0.452,FALSE
+single_night,q4,eez,1,MLD,direct,2024,-0.024,13,32,1993,2024,1998,0.878,FALSE
+single_night,q4,eez,1,MLD,cell,2024,0.367,1,32,1993,2024,2024,0.367,FALSE
+single_night,q4,eez,2,TST,direct,2024,0.52,7,31,1993,2024,2022,1.114,FALSE
+single_night,q4,eez,2,TST,cell,2024,0.434,7,31,1993,2024,2022,1.053,FALSE
+single_night,q4,eez,3,CI,direct,2024,0.411,6,32,1993,2024,2016,1.023,FALSE
+single_night,q4,eez,3,CI,cell,2024,0.415,6,31,1994,2024,2016,1.019,FALSE
+single_night,q4,eez,4,CKI,direct,2024,0.559,2,29,1994,2024,2010,0.563,FALSE
+single_night,q4,eez,4,CKI,cell,2024,0.526,1,28,1995,2024,2024,0.526,FALSE
+single_night,q4,eez,5,NI,direct,2024,0.452,3,32,1993,2024,1998,0.698,FALSE
+single_night,q4,eez,5,NI,cell,2024,0.486,3,32,1993,2024,1998,0.699,FALSE
+single_night,q4,eez,6,MAC,direct,2024,-0.205,19,25,1999,2024,2017,0.314,FALSE
+single_night,q4,eez,6,MAC,cell,2024,-0.113,19,25,1999,2024,2019,0.387,FALSE
+single_night,q4,eez,8,AATW,cell,2024,,,15,2002,2022,2010,0.555,TRUE
+single_night,q4,eez,9,AATE,cell,2024,,,19,2001,2022,2010,0.49,TRUE
+single_night,q4,eez_legal,1,MLD,direct,2024,0.032,12,32,1993,2024,1998,0.896,FALSE
+single_night,q4,eez_legal,1,MLD,cell,2024,0.378,1,32,1993,2024,2024,0.378,FALSE
+single_night,q4,eez_legal,2,TST,direct,2024,0.518,7,31,1993,2024,2022,1.115,FALSE
+single_night,q4,eez_legal,2,TST,cell,2024,0.434,7,31,1993,2024,2022,1.054,FALSE
+single_night,q4,eez_legal,3,CI,direct,2024,0.413,6,32,1993,2024,2016,1.022,FALSE
+single_night,q4,eez_legal,3,CI,cell,2024,0.416,6,31,1994,2024,2016,1.019,FALSE
+single_night,q4,eez_legal,4,CKI,direct,2024,0.559,2,29,1994,2024,2010,0.563,FALSE
+single_night,q4,eez_legal,4,CKI,cell,2024,0.526,1,28,1995,2024,2024,0.526,FALSE
+single_night,q4,eez_legal,5,NI,direct,2024,0.45,3,32,1993,2024,1998,0.699,FALSE
+single_night,q4,eez_legal,5,NI,cell,2024,0.486,3,32,1993,2024,1998,0.7,FALSE
+single_night,q4,eez_legal,6,MAC,direct,2024,-0.206,19,25,1999,2024,2017,0.313,FALSE
+single_night,q4,eez_legal,6,MAC,cell,2024,-0.111,19,25,1999,2024,2019,0.388,FALSE
+single_night,q4,eez_legal,8,AATW,cell,2024,,,15,2002,2022,2010,0.558,TRUE
+single_night,q4,eez_legal,9,AATE,cell,2024,,,19,2001,2022,2010,0.493,TRUE
+single_night,q4,imcra,1,Southwest Transition,direct,2024,0.264,8,31,1994,2024,2011,1.01,FALSE
+single_night,q4,imcra,1,Southwest Transition,cell,2024,0.338,5,31,1994,2024,2011,1.006,FALSE
+single_night,q4,imcra,2,Southwest Shelf Province,direct,2024,0.087,12,32,1993,2024,2011,0.897,FALSE
+single_night,q4,imcra,2,Southwest Shelf Province,cell,2024,0.159,9,31,1994,2024,2011,0.796,FALSE
+single_night,q4,imcra,3,Spencer Gulf Shelf Province,direct,2024,-0.383,29,31,1993,2024,2013,0.792,FALSE
+single_night,q4,imcra,3,Spencer Gulf Shelf Province,cell,2024,-0.273,28,31,1993,2024,2013,0.773,FALSE
+single_night,q4,imcra,4,Southern Province,direct,2024,0.293,6,31,1993,2024,2013,0.551,FALSE
+single_night,q4,imcra,4,Southern Province,cell,2024,0.268,6,31,1993,2024,2013,0.569,FALSE
+single_night,q4,imcra,5,Southeast Shelf Transition,direct,2024,0.355,5,31,1993,2024,2000,0.536,FALSE
+single_night,q4,imcra,5,Southeast Shelf Transition,cell,2024,0.425,4,31,1993,2024,2017,0.569,FALSE
+single_night,q4,imcra,6,Southeast Transition,direct,2024,0.528,5,31,1993,2024,2016,0.817,FALSE
+single_night,q4,imcra,6,Southeast Transition,cell,2024,0.503,5,31,1993,2024,2017,0.83,FALSE
+single_night,q4,imcra,7,Western Bass Strait Shelf Transition,direct,2024,0.169,11,31,1993,2024,2013,0.913,FALSE
+single_night,q4,imcra,7,Western Bass Strait Shelf Transition,cell,2024,0.233,9,30,1995,2024,2013,0.742,FALSE
+single_night,q4,imcra,8,West Tasmania Transition,direct,2024,0.29,8,30,1995,2024,2000,0.637,FALSE
+single_night,q4,imcra,8,West Tasmania Transition,cell,2024,0.147,12,30,1995,2024,2000,0.571,FALSE
+single_night,q4,imcra,9,Bass Strait Shelf Province,direct,2024,0.503,3,31,1993,2024,2000,0.577,FALSE
+single_night,q4,imcra,9,Bass Strait Shelf Province,cell,2024,0.44,4,31,1993,2024,2000,0.582,FALSE
+single_night,q4,imcra,10,Tasmanian Shelf Province,direct,2024,0.561,2,31,1993,2024,2023,0.623,FALSE
+single_night,q4,imcra,10,Tasmanian Shelf Province,cell,2024,0.518,2,30,1995,2024,2023,0.625,FALSE
+single_night,q4,imcra,11,Tasmania Province,direct,2024,0.783,2,30,1995,2024,2023,0.914,FALSE
+single_night,q4,imcra,11,Tasmania Province,cell,2024,0.665,2,29,1995,2024,2023,0.679,FALSE
+single_night,q4,imcra,12,Macquarie Island Province,direct,2024,-0.205,19,25,1999,2024,2017,0.314,FALSE
+single_night,q4,imcra,12,Macquarie Island Province,cell,2024,-0.113,19,25,1999,2024,2019,0.387,FALSE
+single_night,q4,imcra,13,Cocos (Keeling) Island Province,direct,2024,0.559,2,29,1994,2024,2010,0.563,FALSE
+single_night,q4,imcra,13,Cocos (Keeling) Island Province,cell,2024,0.526,1,28,1995,2024,2024,0.526,FALSE
+single_night,q4,imcra,14,Christmas Island Province,direct,2024,0.407,6,32,1993,2024,2016,1.027,FALSE
+single_night,q4,imcra,14,Christmas Island Province,cell,2024,0.418,6,32,1993,2024,2016,1.071,FALSE
+single_night,q4,imcra,15,Timor Transition,direct,2024,0.262,8,31,1994,2024,2016,0.947,FALSE
+single_night,q4,imcra,15,Timor Transition,cell,2024,0.304,7,32,1993,2024,2016,0.941,FALSE
+single_night,q4,imcra,16,Northern Shelf Province,direct,2024,,,31,1993,2023,2016,0.875,FALSE
+single_night,q4,imcra,16,Northern Shelf Province,cell,2024,,,30,1993,2023,2016,0.897,FALSE
+single_night,q4,imcra,17,Northeast Shelf Transition,direct,2024,0.377,7,32,1993,2024,2022,0.958,FALSE
+single_night,q4,imcra,17,Northeast Shelf Transition,cell,2024,,,31,1993,2023,2022,0.982,FALSE
+single_night,q4,imcra,18,Cape Province,direct,2024,0.606,5,32,1993,2024,2022,1.041,FALSE
+single_night,q4,imcra,18,Cape Province,cell,2024,,,31,1993,2023,2022,1.013,FALSE
+single_night,q4,imcra,19,Northwest Shelf Transition,direct,2024,,,25,1993,2023,2016,1.185,FALSE
+single_night,q4,imcra,19,Northwest Shelf Transition,cell,2024,0.23,10,29,1993,2024,2016,1.132,FALSE
+single_night,q4,imcra,20,Timor Province,direct,2024,0.356,8,31,1993,2024,2016,1.13,FALSE
+single_night,q4,imcra,20,Timor Province,cell,2024,0.327,8,32,1993,2024,2016,1.112,FALSE
+single_night,q4,imcra,21,Northeast Transition,direct,2024,0.442,7,32,1993,2024,2022,0.953,FALSE
+single_night,q4,imcra,21,Northeast Transition,cell,2024,0.453,7,32,1993,2024,2022,0.984,FALSE
+single_night,q4,imcra,22,Northwest Shelf Province,direct,2024,0.229,9,32,1993,2024,2016,0.566,FALSE
+single_night,q4,imcra,22,Northwest Shelf Province,cell,2024,0.277,7,32,1993,2024,2016,0.601,FALSE
+single_night,q4,imcra,23,Kenn Transition,direct,2024,0.319,6,32,1993,2024,1998,0.774,FALSE
+single_night,q4,imcra,23,Kenn Transition,cell,2024,0.449,3,32,1993,2024,1998,0.526,FALSE
+single_night,q4,imcra,24,Northeast Province,direct,2024,0.41,7,32,1993,2024,2022,0.765,FALSE
+single_night,q4,imcra,24,Northeast Province,cell,2024,0.444,7,32,1993,2024,2022,0.733,FALSE
+single_night,q4,imcra,25,Northwest Transition,direct,2024,0.274,7,32,1993,2024,2016,0.825,FALSE
+single_night,q4,imcra,25,Northwest Transition,cell,2024,0.3,7,32,1993,2024,2016,0.768,FALSE
+single_night,q4,imcra,26,Northeast Shelf Province,direct,2024,0.475,4,32,1993,2024,2016,0.699,FALSE
+single_night,q4,imcra,26,Northeast Shelf Province,cell,2024,0.462,4,32,1993,2024,2016,0.65,FALSE
+single_night,q4,imcra,27,Northwest Province,direct,2024,0.336,6,32,1993,2024,1999,0.527,FALSE
+single_night,q4,imcra,27,Northwest Province,cell,2024,0.352,6,32,1993,2024,1999,0.486,FALSE
+single_night,q4,imcra,28,Kenn Province,direct,2024,0.353,8,32,1993,2024,1998,0.758,FALSE
+single_night,q4,imcra,28,Kenn Province,cell,2024,0.385,7,32,1993,2024,1998,0.718,FALSE
+single_night,q4,imcra,29,Central Western Transition,direct,2024,0.496,3,32,1993,2024,1999,0.67,FALSE
+single_night,q4,imcra,29,Central Western Transition,cell,2024,0.462,4,32,1993,2024,1999,0.635,FALSE
+single_night,q4,imcra,30,Central Western Shelf Transition,direct,2024,0.261,7,32,1993,2024,1999,0.84,FALSE
+single_night,q4,imcra,30,Central Western Shelf Transition,cell,2024,0.31,7,32,1993,2024,1999,0.702,FALSE
+single_night,q4,imcra,31,Central Eastern Transition,direct,2024,0.506,2,32,1993,2024,2010,0.51,FALSE
+single_night,q4,imcra,31,Central Eastern Transition,cell,2024,0.516,2,32,1993,2024,1998,0.535,FALSE
+single_night,q4,imcra,32,Central Western Shelf Province,direct,2024,0.271,7,32,1993,2024,2011,1.06,FALSE
+single_night,q4,imcra,32,Central Western Shelf Province,cell,2024,0.287,7,32,1993,2024,2011,1.03,FALSE
+single_night,q4,imcra,33,Central Eastern Shelf Transition,direct,2024,0.672,1,32,1993,2024,2024,0.672,FALSE
+single_night,q4,imcra,33,Central Eastern Shelf Transition,cell,2024,0.584,1,32,1993,2024,2024,0.584,FALSE
+single_night,q4,imcra,34,Central Western Province,direct,2024,0.352,7,31,1994,2024,2011,1.086,FALSE
+single_night,q4,imcra,34,Central Western Province,cell,2024,0.362,6,31,1994,2024,2011,1.056,FALSE
+single_night,q4,imcra,35,Norfolk Island Province,direct,2024,0.452,3,32,1993,2024,1998,0.698,FALSE
+single_night,q4,imcra,35,Norfolk Island Province,cell,2024,0.486,3,32,1993,2024,1998,0.699,FALSE
+single_night,q4,imcra,36,Lord Howe Province,direct,2024,0.624,1,32,1993,2024,2024,0.624,FALSE
+single_night,q4,imcra,36,Lord Howe Province,cell,2024,0.617,1,32,1993,2024,2024,0.617,FALSE
+single_night,q4,imcra,37,Tasman Basin Province,direct,2024,0.588,1,32,1993,2024,2024,0.588,FALSE
+single_night,q4,imcra,37,Tasman Basin Province,cell,2024,0.633,1,32,1993,2024,2024,0.633,FALSE
+single_night,q4,imcra,38,Central Eastern Province,direct,2024,0.525,2,32,1993,2024,2016,0.583,FALSE
+single_night,q4,imcra,38,Central Eastern Province,cell,2024,0.522,2,32,1993,2024,2016,0.548,FALSE
+single_night,q4,imcra,39,Southwest Shelf Transition,direct,2024,0.154,11,32,1993,2024,2011,1.076,FALSE
+single_night,q4,imcra,39,Southwest Shelf Transition,cell,2024,0.262,11,32,1993,2024,2011,1.165,FALSE
+single_night,q4,imcra,40,Central Eastern Shelf Province,direct,2024,0.377,7,32,1993,2024,2001,0.608,FALSE
+single_night,q4,imcra,40,Central Eastern Shelf Province,cell,2024,0.459,3,32,1993,2024,2016,0.704,FALSE
+single_night,q4,imcra,41,Great Australian Bight Shelf Transition,direct,2024,-0.299,27,32,1993,2024,2013,0.753,FALSE
+single_night,q4,imcra,41,Great Australian Bight Shelf Transition,cell,2024,-0.188,24,31,1993,2024,2013,0.711,FALSE
+single_night,q4,star,1,Coral Sea,direct,2024,0.412,7,32,1993,2024,2022,0.731,FALSE
+single_night,q4,star,1,Coral Sea,cell,2024,0.443,7,32,1993,2024,2022,0.741,FALSE
+single_night,q4,star,2,North,direct,2024,,,31,1993,2023,2016,0.891,FALSE
+single_night,q4,star,2,North,cell,2024,,,30,1993,2023,2016,0.918,FALSE
+single_night,q4,star,3,North-west,direct,2024,0.215,7,32,1993,2024,2016,0.756,FALSE
+single_night,q4,star,3,North-west,cell,2024,0.341,7,32,1993,2024,2016,0.547,FALSE
+single_night,q4,star,4,South-east,direct,2024,0.433,8,31,1993,2024,1993,1.445,FALSE
+single_night,q4,star,4,South-east,cell,2024,0.252,7,30,1995,2024,2017,0.469,FALSE
+single_night,q4,star,5,South-west,direct,2024,0.215,9,32,1993,2024,2011,0.898,FALSE
+single_night,q4,star,5,South-west,cell,2024,0.221,6,32,1993,2024,2011,0.64,FALSE
+single_night,q4,star,6,Temperate East,direct,2024,0.593,1,32,1993,2024,2024,0.593,FALSE
+single_night,q4,star,6,Temperate East,cell,2024,0.569,1,32,1993,2024,2024,0.569,FALSE
+single_night,q4,star,7,outside regions: MLD,direct,2024,-0.352,27,32,1993,2024,1998,0.733,FALSE
+single_night,q4,star,7,outside regions: MLD,cell,2024,0.332,3,32,1993,2024,2016,0.394,FALSE
+single_night,q4,star,8,outside regions: TST,direct,2024,0.52,7,31,1993,2024,2022,1.114,FALSE
+single_night,q4,star,8,outside regions: TST,cell,2024,0.434,7,31,1993,2024,2022,1.053,FALSE
+single_night,q4,star,9,outside regions: CI,direct,2024,0.411,6,32,1993,2024,2016,1.023,FALSE
+single_night,q4,star,9,outside regions: CI,cell,2024,0.415,6,31,1994,2024,2016,1.019,FALSE
+single_night,q4,star,10,outside regions: CKI,direct,2024,0.559,2,29,1994,2024,2010,0.563,FALSE
+single_night,q4,star,10,outside regions: CKI,cell,2024,0.526,1,28,1995,2024,2024,0.526,FALSE
+single_night,q4,star,11,outside regions: NI,direct,2024,0.475,5,32,1993,2024,1998,0.874,FALSE
+single_night,q4,star,11,outside regions: NI,cell,2024,0.571,1,32,1993,2024,2024,0.571,FALSE
+single_night,q4,star,12,outside regions: MAC,direct,2024,-0.046,12,24,1999,2024,2010,0.755,FALSE
+single_night,q4,star,12,outside regions: MAC,cell,2024,-0.181,20,25,1999,2024,2017,0.384,FALSE
+single_night,q4,star,14,outside regions: AATW,cell,2024,,,15,2002,2022,2010,0.555,TRUE
+single_night,q4,star,15,outside regions: AATE,cell,2024,,,19,2001,2022,2010,0.49,TRUE
+single_night,q4b,amp,1,Coral Sea | Habitat Protection Zone,direct,2024,0.531,4,32,1993,2024,2022,0.861,FALSE
+single_night,q4b,amp,1,Coral Sea | Habitat Protection Zone,cell,2024,0.543,5,32,1993,2024,2022,0.842,FALSE
+single_night,q4b,amp,2,Coral Sea | Habitat Protection Zone,direct,2024,,,30,1993,2023,2022,1.091,FALSE
+single_night,q4b,amp,2,Coral Sea | Habitat Protection Zone,cell,2024,0.657,5,32,1993,2024,2022,1.085,FALSE
+single_night,q4b,amp,3,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.634,3,32,1993,2024,2022,0.852,FALSE
+single_night,q4b,amp,3,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.57,4,32,1993,2024,2022,0.793,FALSE
+single_night,q4b,amp,4,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.536,5,32,1993,2024,2022,0.882,FALSE
+single_night,q4b,amp,4,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.561,5,32,1993,2024,2022,0.822,FALSE
+single_night,q4b,amp,5,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.612,3,32,1993,2024,2022,0.754,FALSE
+single_night,q4b,amp,5,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.541,4,32,1993,2024,2022,0.825,FALSE
+single_night,q4b,amp,6,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.484,5,32,1993,2024,1998,0.676,FALSE
+single_night,q4b,amp,6,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.535,3,32,1993,2024,1998,0.696,FALSE
+single_night,q4b,amp,7,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.48,4,32,1993,2024,2016,0.666,FALSE
+single_night,q4b,amp,7,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.501,4,32,1993,2024,1998,0.755,FALSE
+single_night,q4b,amp,8,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.408,7,32,1993,2024,1998,0.749,FALSE
+single_night,q4b,amp,8,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.489,4,32,1993,2024,1998,0.775,FALSE
+single_night,q4b,amp,9,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.686,2,32,1993,2024,1998,0.904,FALSE
+single_night,q4b,amp,9,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.489,4,32,1993,2024,1998,0.775,FALSE
+single_night,q4b,amp,10,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.416,6,32,1993,2024,1998,0.664,FALSE
+single_night,q4b,amp,10,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.489,4,32,1993,2024,1998,0.775,FALSE
+single_night,q4b,amp,11,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,,,31,1993,2023,2022,1.189,FALSE
+single_night,q4b,amp,11,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.5,6,32,1993,2024,2022,1.084,FALSE
+single_night,q4b,amp,12,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,,,31,1993,2023,2022,1.114,FALSE
+single_night,q4b,amp,12,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.5,6,32,1993,2024,2022,1.084,FALSE
+single_night,q4b,amp,13,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.502,5,32,1993,2024,2022,0.945,FALSE
+single_night,q4b,amp,13,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.5,6,32,1993,2024,2022,1.084,FALSE
+single_night,q4b,amp,14,Coral Sea | Habitat Protection Zone (Reefs),direct,2024,0.491,4,31,1993,2024,2021,0.718,FALSE
+single_night,q4b,amp,14,Coral Sea | Habitat Protection Zone (Reefs),cell,2024,0.559,5,32,1993,2024,2022,1.156,FALSE
+single_night,q4b,amp,15,Coral Sea | National Park Zone,direct,2024,0.572,5,32,1993,2024,2022,1.228,FALSE
+single_night,q4b,amp,15,Coral Sea | National Park Zone,cell,2024,,,31,1993,2023,2022,1.225,FALSE
+single_night,q4b,amp,16,Coral Sea | National Park Zone,direct,2024,0.769,3,32,1993,2024,2022,1.195,FALSE
+single_night,q4b,amp,16,Coral Sea | National Park Zone,cell,2024,,,31,1993,2023,2022,1.235,FALSE
+single_night,q4b,amp,17,Coral Sea | National Park Zone,direct,2024,0.46,5,32,1993,2024,2022,1.167,FALSE
+single_night,q4b,amp,17,Coral Sea | National Park Zone,cell,2024,0.5,6,32,1993,2024,2022,1.084,FALSE
+single_night,q4b,amp,18,Coral Sea | National Park Zone,direct,2024,0.593,4,32,1993,2024,2022,1.099,FALSE
+single_night,q4b,amp,18,Coral Sea | National Park Zone,cell,2024,0.556,4,32,1993,2024,2022,1.085,FALSE
+single_night,q4b,amp,19,Coral Sea | National Park Zone,direct,2024,0.435,5,32,1993,2024,1998,0.65,FALSE
+single_night,q4b,amp,19,Coral Sea | National Park Zone,cell,2024,0.489,4,32,1993,2024,1998,0.775,FALSE
+single_night,q4b,amp,20,Coral Sea | National Park Zone,direct,2024,0.547,5,32,1993,2024,2022,0.944,FALSE
+single_night,q4b,amp,20,Coral Sea | National Park Zone,cell,2024,0.567,5,32,1993,2024,2022,0.802,FALSE
+single_night,q4b,amp,21,Coral Sea | National Park Zone,direct,2024,0.485,6,32,1993,2024,2022,0.936,FALSE
+single_night,q4b,amp,21,Coral Sea | National Park Zone,cell,2024,0.57,4,32,1993,2024,2022,0.793,FALSE
+single_night,q4b,amp,22,Coral Sea | National Park Zone,direct,2024,0.48,6,32,1993,2024,2022,0.734,FALSE
+single_night,q4b,amp,22,Coral Sea | National Park Zone,cell,2024,0.535,3,32,1993,2024,1998,0.696,FALSE
+single_night,q4b,amp,23,Coral Sea | National Park Zone,direct,2024,0.623,3,32,1993,2024,2022,0.799,FALSE
+single_night,q4b,amp,23,Coral Sea | National Park Zone,cell,2024,0.541,4,32,1993,2024,2022,0.825,FALSE
+single_night,q4b,amp,24,Coral Sea | National Park Zone,direct,2024,0.6,1,32,1993,2024,2024,0.6,FALSE
+single_night,q4b,amp,24,Coral Sea | National Park Zone,cell,2024,0.646,1,32,1993,2024,2024,0.646,FALSE
+single_night,q4b,amp,25,Coral Sea | National Park Zone,direct,2024,0.589,2,31,1993,2024,2021,0.698,FALSE
+single_night,q4b,amp,25,Coral Sea | National Park Zone,cell,2024,0.537,2,31,1993,2024,2021,0.645,FALSE
+single_night,q4b,amp,26,Coral Sea | Special Purpose Zone (Trawl),direct,2024,0.535,3,32,1993,2024,2022,1.014,FALSE
+single_night,q4b,amp,26,Coral Sea | Special Purpose Zone (Trawl),cell,2024,0.489,4,32,1993,2024,1998,0.775,FALSE
+single_night,q4b,amp,27,Coral Sea | Special Purpose Zone (Trawl),direct,2024,0.622,3,32,1993,2024,2020,0.712,FALSE
+single_night,q4b,amp,27,Coral Sea | Special Purpose Zone (Trawl),cell,2024,0.619,1,32,1993,2024,2024,0.619,FALSE
+single_night,q4b,amp,28,Coral Sea | Special Purpose Zone (Trawl),direct,2024,0.529,4,32,1993,2024,1998,0.692,FALSE
+single_night,q4b,amp,28,Coral Sea | Special Purpose Zone (Trawl),cell,2024,0.545,4,32,1993,2024,1998,0.659,FALSE
+single_night,q4b,amp,38,Christmas Island | Habitat Protection Zone,direct,2024,0.32,7,30,1993,2024,1998,0.939,FALSE
+single_night,q4b,amp,38,Christmas Island | Habitat Protection Zone,cell,2024,0.428,7,31,1994,2024,2016,1.044,FALSE
+single_night,q4b,amp,39,Christmas Island | National Park Zone,direct,2024,0.48,5,32,1993,2024,2016,1.065,FALSE
+single_night,q4b,amp,39,Christmas Island | National Park Zone,cell,2024,0.482,5,31,1994,2024,2016,1.062,FALSE
+single_night,q4b,amp,40,Cocos (Keeling) Islands | Habitat Protection Zone,direct,2024,0.558,2,29,1995,2024,2021,0.581,FALSE
+single_night,q4b,amp,40,Cocos (Keeling) Islands | Habitat Protection Zone,cell,2024,0.583,1,29,1994,2024,2024,0.583,FALSE
+single_night,q4b,amp,41,Cocos (Keeling) Islands | National Park Zone,cell,2024,0.583,1,29,1994,2024,2024,0.583,FALSE
+single_night,q4b,amp,42,Cocos (Keeling) Islands | National Park Zone,direct,2024,,,3,1996,2003,1996,0.352,FALSE
+single_night,q4b,amp,42,Cocos (Keeling) Islands | National Park Zone,cell,2024,0.583,1,29,1994,2024,2024,0.583,FALSE
+single_night,q4b,amp,43,Cocos (Keeling) Islands | National Park Zone,direct,2024,0.626,1,29,1994,2024,2024,0.626,FALSE
+single_night,q4b,amp,43,Cocos (Keeling) Islands | National Park Zone,cell,2024,0.595,1,28,1995,2024,2024,0.595,FALSE
+single_night,q4b,amp,44,Arafura | Multiple Use Zone,direct,2024,0.268,8,30,1994,2024,2016,0.99,FALSE
+single_night,q4b,amp,44,Arafura | Multiple Use Zone,cell,2024,0.415,6,32,1993,2024,2016,0.969,FALSE
+single_night,q4b,amp,45,Arafura | Special Purpose Zone,direct,2024,,,25,1996,2023,2022,1.039,FALSE
+single_night,q4b,amp,45,Arafura | Special Purpose Zone,cell,2024,0.25,10,30,1994,2024,2016,1.032,FALSE
+single_night,q4b,amp,46,Arafura | Special Purpose Zone (Trawl),direct,2024,0.429,5,30,1994,2024,2016,0.937,FALSE
+single_night,q4b,amp,46,Arafura | Special Purpose Zone (Trawl),cell,2024,0.458,6,32,1993,2024,2022,0.952,FALSE
+single_night,q4b,amp,47,Arnhem | Special Purpose Zone,direct,2024,0.209,9,26,1994,2024,2016,1.008,FALSE
+single_night,q4b,amp,47,Arnhem | Special Purpose Zone,cell,2024,0.25,10,30,1994,2024,2016,1.032,FALSE
+single_night,q4b,amp,48,Gulf of Carpentaria | National Park Zone,direct,2024,,,31,1993,2023,2016,0.835,FALSE
+single_night,q4b,amp,48,Gulf of Carpentaria | National Park Zone,cell,2024,0.603,2,32,1993,2024,2016,0.804,FALSE
+single_night,q4b,amp,49,Gulf of Carpentaria | Special Purpose Zone (Trawl),direct,2024,0.618,2,32,1993,2024,2016,0.83,FALSE
+single_night,q4b,amp,49,Gulf of Carpentaria | Special Purpose Zone (Trawl),cell,2024,0.595,2,32,1993,2024,2016,0.799,FALSE
+single_night,q4b,amp,50,Gulf of Carpentaria | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,2016,0.838,FALSE
+single_night,q4b,amp,50,Gulf of Carpentaria | Special Purpose Zone (Trawl),cell,2024,0.621,2,32,1993,2024,2016,0.775,FALSE
+single_night,q4b,amp,51,Joseph Bonaparte Gulf | Multiple Use Zone,direct,2024,,,20,1993,2023,2016,1.478,FALSE
+single_night,q4b,amp,51,Joseph Bonaparte Gulf | Multiple Use Zone,cell,2024,,,19,1993,2023,2022,0.581,FALSE
+single_night,q4b,amp,52,Joseph Bonaparte Gulf | Special Purpose Zone,direct,2024,,,12,1997,2019,2005,0.634,FALSE
+single_night,q4b,amp,52,Joseph Bonaparte Gulf | Special Purpose Zone,cell,2024,,,19,1993,2023,2022,0.581,FALSE
+single_night,q4b,amp,53,Limmen | Habitat Protection Zone,direct,2024,,,30,1993,2023,2016,1,FALSE
+single_night,q4b,amp,53,Limmen | Habitat Protection Zone,cell,2024,,,31,1993,2023,2016,0.949,FALSE
+single_night,q4b,amp,54,Oceanic Shoals | Habitat Protection Zone,direct,2024,,,13,1994,2023,2022,0.798,FALSE
+single_night,q4b,amp,54,Oceanic Shoals | Habitat Protection Zone,cell,2024,,,24,1994,2023,2016,1.196,FALSE
+single_night,q4b,amp,55,Oceanic Shoals | Multiple Use Zone,direct,2024,,,25,1993,2023,2016,1.221,FALSE
+single_night,q4b,amp,55,Oceanic Shoals | Multiple Use Zone,cell,2024,0.286,9,26,1993,2024,2016,1.24,FALSE
+single_night,q4b,amp,56,Oceanic Shoals | Multiple Use Zone,direct,2024,,,25,1994,2023,2016,1.07,FALSE
+single_night,q4b,amp,56,Oceanic Shoals | Multiple Use Zone,cell,2024,0.357,6,28,1993,2024,2016,1.05,FALSE
+single_night,q4b,amp,57,Oceanic Shoals | National Park Zone,direct,2024,,,13,1997,2023,2022,0.827,FALSE
+single_night,q4b,amp,57,Oceanic Shoals | National Park Zone,cell,2024,,,15,1994,2023,2009,0.329,FALSE
+single_night,q4b,amp,58,Oceanic Shoals | Special Purpose Zone (Trawl),direct,2024,,,23,1994,2023,2016,1.11,FALSE
+single_night,q4b,amp,58,Oceanic Shoals | Special Purpose Zone (Trawl),cell,2024,0.385,6,29,1993,2024,2016,1.119,FALSE
+single_night,q4b,amp,59,Wessel | Habitat Protection Zone,direct,2024,,,30,1993,2023,2016,1.011,FALSE
+single_night,q4b,amp,59,Wessel | Habitat Protection Zone,cell,2024,,,29,1993,2023,2016,0.991,FALSE
+single_night,q4b,amp,60,Wessel | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,2022,1.028,FALSE
+single_night,q4b,amp,60,Wessel | Special Purpose Zone (Trawl),cell,2024,,,29,1993,2023,2016,0.989,FALSE
+single_night,q4b,amp,61,West Cape York | Habitat Protection Zone,direct,2024,,,28,1993,2022,2022,1.043,FALSE
+single_night,q4b,amp,61,West Cape York | Habitat Protection Zone,cell,2024,,,29,1993,2023,2022,1.024,FALSE
+single_night,q4b,amp,62,West Cape York | National Park Zone,direct,2024,,,30,1993,2023,2022,1.075,FALSE
+single_night,q4b,amp,62,West Cape York | National Park Zone,cell,2024,0.478,6,31,1993,2024,2022,1.133,FALSE
+single_night,q4b,amp,63,West Cape York | National Park Zone,direct,2024,,,29,1993,2023,2022,1.171,FALSE
+single_night,q4b,amp,63,West Cape York | National Park Zone,cell,2024,,,29,1993,2023,2022,1.024,FALSE
+single_night,q4b,amp,64,West Cape York | Special Purpose Zone,direct,2024,,,26,1993,2023,2010,0.956,FALSE
+single_night,q4b,amp,64,West Cape York | Special Purpose Zone,cell,2024,,,29,1993,2023,2022,1.024,FALSE
+single_night,q4b,amp,65,Argo-Rowley Terrace | Multiple Use Zone,direct,2024,0.383,5,32,1993,2024,2016,0.897,FALSE
+single_night,q4b,amp,65,Argo-Rowley Terrace | Multiple Use Zone,cell,2024,0.393,4,32,1993,2024,2016,0.716,FALSE
+single_night,q4b,amp,66,Argo-Rowley Terrace | Multiple Use Zone,direct,2024,0.412,5,32,1993,2024,2016,0.994,FALSE
+single_night,q4b,amp,66,Argo-Rowley Terrace | Multiple Use Zone,cell,2024,0.424,5,32,1993,2024,2016,0.976,FALSE
+single_night,q4b,amp,67,Argo-Rowley Terrace | National Park Zone,direct,2024,0.434,6,32,1993,2024,2016,1.143,FALSE
+single_night,q4b,amp,67,Argo-Rowley Terrace | National Park Zone,cell,2024,0.428,7,32,1993,2024,2016,1.125,FALSE
+single_night,q4b,amp,68,Argo-Rowley Terrace | Special Purpose Zone (Trawl),direct,2024,0.383,7,32,1993,2024,2016,0.956,FALSE
+single_night,q4b,amp,68,Argo-Rowley Terrace | Special Purpose Zone (Trawl),cell,2024,0.311,8,32,1993,2024,2016,0.967,FALSE
+single_night,q4b,amp,69,Ashmore Reef | Recreational Use Zone,direct,2024,0.419,6,27,1993,2024,2016,1.219,FALSE
+single_night,q4b,amp,69,Ashmore Reef | Recreational Use Zone,cell,2024,0.438,6,29,1993,2024,2016,1.194,FALSE
+single_night,q4b,amp,70,Ashmore Reef | Sanctuary Zone,direct,2024,0.493,6,30,1993,2024,2016,1.167,FALSE
+single_night,q4b,amp,70,Ashmore Reef | Sanctuary Zone,cell,2024,0.438,6,29,1993,2024,2016,1.194,FALSE
+single_night,q4b,amp,71,Carnarvon Canyon | Habitat Protection Zone,direct,2024,0.702,1,31,1994,2024,2024,0.702,FALSE
+single_night,q4b,amp,71,Carnarvon Canyon | Habitat Protection Zone,cell,2024,0.645,1,32,1993,2024,2024,0.645,FALSE
+single_night,q4b,amp,72,Cartier Island | Sanctuary Zone,direct,2024,0.473,6,25,1993,2024,2016,1.239,FALSE
+single_night,q4b,amp,72,Cartier Island | Sanctuary Zone,cell,2024,0.438,6,29,1993,2024,2016,1.194,FALSE
+single_night,q4b,amp,73,Dampier | Habitat Protection Zone,direct,2024,0.337,6,32,1993,2024,2020,0.646,FALSE
+single_night,q4b,amp,73,Dampier | Habitat Protection Zone,cell,2024,0.291,6,32,1993,2024,1998,0.54,FALSE
+single_night,q4b,amp,74,Dampier | Multiple Use Zone,direct,2024,0.386,5,32,1993,2024,2020,0.652,FALSE
+single_night,q4b,amp,74,Dampier | Multiple Use Zone,cell,2024,0.424,3,32,1993,2024,2020,0.609,FALSE
+single_night,q4b,amp,75,Dampier | National Park Zone,direct,2024,0.352,6,32,1993,2024,2020,0.628,FALSE
+single_night,q4b,amp,75,Dampier | National Park Zone,cell,2024,0.321,6,32,1993,2024,2020,0.544,FALSE
+single_night,q4b,amp,76,Eighty Mile Beach | Multiple Use Zone,direct,2024,0.411,4,31,1993,2024,1998,0.583,FALSE
+single_night,q4b,amp,76,Eighty Mile Beach | Multiple Use Zone,cell,2024,0.394,4,32,1993,2024,2016,0.682,FALSE
+single_night,q4b,amp,77,Gascoyne | Habitat Protection Zone,direct,2024,0.554,3,32,1993,2024,1999,0.689,FALSE
+single_night,q4b,amp,77,Gascoyne | Habitat Protection Zone,cell,2024,0.615,2,32,1993,2024,1999,0.622,FALSE
+single_night,q4b,amp,78,Gascoyne | Habitat Protection Zone,direct,2024,0.32,8,32,1993,2024,2011,1.02,FALSE
+single_night,q4b,amp,78,Gascoyne | Habitat Protection Zone,cell,2024,0.396,4,32,1993,2024,2011,1.026,FALSE
+single_night,q4b,amp,79,Gascoyne | Multiple Use Zone,direct,2024,0.419,5,32,1993,2024,1999,0.739,FALSE
+single_night,q4b,amp,79,Gascoyne | Multiple Use Zone,cell,2024,0.466,2,32,1993,2024,1999,0.628,FALSE
+single_night,q4b,amp,80,Gascoyne | National Park Zone,direct,2024,0.577,3,31,1994,2024,2011,0.724,FALSE
+single_night,q4b,amp,80,Gascoyne | National Park Zone,cell,2024,0.587,1,31,1994,2024,2024,0.587,FALSE
+single_night,q4b,amp,81,Kimberley | Habitat Protection Zone,direct,2024,0.328,9,26,1993,2024,2016,1.037,FALSE
+single_night,q4b,amp,81,Kimberley | Habitat Protection Zone,cell,2024,0.339,9,30,1993,2024,2016,1.157,FALSE
+single_night,q4b,amp,82,Kimberley | Habitat Protection Zone,direct,2024,0.385,7,31,1993,2024,2016,0.849,FALSE
+single_night,q4b,amp,82,Kimberley | Habitat Protection Zone,cell,2024,0.339,9,30,1993,2024,2016,1.157,FALSE
+single_night,q4b,amp,83,Kimberley | Multiple Use Zone,direct,2024,0.312,9,31,1993,2024,2016,1.076,FALSE
+single_night,q4b,amp,83,Kimberley | Multiple Use Zone,cell,2024,0.292,9,31,1993,2024,2016,1.114,FALSE
+single_night,q4b,amp,84,Kimberley | National Park Zone,direct,2024,,,27,1993,2023,2016,1.117,FALSE
+single_night,q4b,amp,84,Kimberley | National Park Zone,cell,2024,0.339,9,30,1993,2024,2016,1.157,FALSE
+single_night,q4b,amp,85,Mermaid Reef | National Park Zone,direct,2024,0.415,6,32,1993,2024,2016,0.96,FALSE
+single_night,q4b,amp,85,Mermaid Reef | National Park Zone,cell,2024,0.322,8,32,1993,2024,2016,1.023,FALSE
+single_night,q4b,amp,86,Montebello | Multiple Use Zone,direct,2024,0.252,8,32,1993,2024,1999,0.669,FALSE
+single_night,q4b,amp,86,Montebello | Multiple Use Zone,cell,2024,0.347,6,32,1993,2024,1998,0.538,FALSE
+single_night,q4b,amp,87,Ningaloo | National Park Zone,direct,2024,0.419,6,32,1993,2024,1999,0.827,FALSE
+single_night,q4b,amp,87,Ningaloo | National Park Zone,cell,2024,0.414,5,32,1993,2024,1999,0.696,FALSE
+single_night,q4b,amp,88,Ningaloo | Recreational Use Zone,direct,2024,0.37,7,32,1993,2024,1999,0.856,FALSE
+single_night,q4b,amp,88,Ningaloo | Recreational Use Zone,cell,2024,0.414,5,32,1993,2024,1999,0.696,FALSE
+single_night,q4b,amp,89,Ningaloo | Recreational Use Zone,direct,2024,0.406,5,32,1993,2024,1999,0.782,FALSE
+single_night,q4b,amp,89,Ningaloo | Recreational Use Zone,cell,2024,0.414,5,32,1993,2024,1999,0.696,FALSE
+single_night,q4b,amp,90,Roebuck | Multiple Use Zone,direct,2024,0.6,2,27,1995,2024,2016,0.879,FALSE
+single_night,q4b,amp,90,Roebuck | Multiple Use Zone,cell,2024,0.543,3,30,1993,2024,2016,0.955,FALSE
+single_night,q4b,amp,91,Shark Bay | Multiple Use Zone,direct,2024,0.319,10,32,1993,2024,2011,1.094,FALSE
+single_night,q4b,amp,91,Shark Bay | Multiple Use Zone,cell,2024,0.414,4,32,1993,2024,2011,0.987,FALSE
+single_night,q4b,amp,92,Apollo | Multiple Use Zone,direct,2024,0.469,4,30,1995,2024,2013,0.784,FALSE
+single_night,q4b,amp,92,Apollo | Multiple Use Zone,cell,2024,0.371,6,30,1995,2024,2013,0.761,FALSE
+single_night,q4b,amp,93,Beagle | Multiple Use Zone,direct,2024,0.399,5,30,1995,2024,2013,0.596,FALSE
+single_night,q4b,amp,93,Beagle | Multiple Use Zone,cell,2024,0.515,1,31,1993,2024,2024,0.515,FALSE
+single_night,q4b,amp,94,Beagle | National Park Zone,direct,2024,0.457,3,30,1995,2024,2013,0.617,FALSE
+single_night,q4b,amp,94,Beagle | National Park Zone,cell,2024,0.515,1,31,1993,2024,2024,0.515,FALSE
+single_night,q4b,amp,95,Boags | Multiple Use Zone,direct,2024,0.597,1,30,1995,2024,2024,0.597,FALSE
+single_night,q4b,amp,95,Boags | Multiple Use Zone,cell,2024,0.624,2,31,1993,2024,2000,0.632,FALSE
+single_night,q4b,amp,96,East Gippsland | Multiple Use Zone,direct,2024,0.594,6,31,1993,2024,2023,0.948,FALSE
+single_night,q4b,amp,96,East Gippsland | Multiple Use Zone,cell,2024,0.466,7,31,1993,2024,2016,0.865,FALSE
+single_night,q4b,amp,97,Flinders | Habitat Protection Zone,direct,2024,0.649,5,31,1993,2024,2017,1.082,FALSE
+single_night,q4b,amp,97,Flinders | Habitat Protection Zone,cell,2024,0.638,5,31,1993,2024,2017,1.02,FALSE
+single_night,q4b,amp,98,Flinders | Multiple Use Zone,direct,2024,0.799,1,30,1995,2024,2024,0.799,FALSE
+single_night,q4b,amp,98,Flinders | Multiple Use Zone,cell,2024,0.839,1,31,1993,2024,2024,0.839,FALSE
+single_night,q4b,amp,99,Flinders | National Park Zone,direct,2024,0.459,9,31,1993,2024,2017,1.341,FALSE
+single_night,q4b,amp,99,Flinders | National Park Zone,cell,2024,0.538,7,31,1993,2024,2017,1.08,FALSE
+single_night,q4b,amp,100,Flinders | National Park Zone,direct,2024,0.853,1,31,1993,2024,2024,0.853,FALSE
+single_night,q4b,amp,100,Flinders | National Park Zone,cell,2024,0.947,1,31,1993,2024,2024,0.947,FALSE
+single_night,q4b,amp,101,Flinders | National Park Zone,direct,2024,0.813,4,30,1995,2024,2023,0.89,FALSE
+single_night,q4b,amp,101,Flinders | National Park Zone,cell,2024,0.717,5,31,1993,2024,2017,0.885,FALSE
+single_night,q4b,amp,102,Franklin | Multiple Use Zone,direct,2024,0.533,4,29,1995,2024,2013,0.827,FALSE
+single_night,q4b,amp,102,Franklin | Multiple Use Zone,cell,2024,0.624,2,31,1993,2024,2000,0.632,FALSE
+single_night,q4b,amp,103,Franklin | National Park Zone,direct,2024,0.567,3,29,1995,2024,2013,0.79,FALSE
+single_night,q4b,amp,103,Franklin | National Park Zone,cell,2024,0.624,2,31,1993,2024,2000,0.632,FALSE
+single_night,q4b,amp,104,Freycinet | Habitat Protection Zone,direct,2024,0.807,1,31,1993,2024,2024,0.807,FALSE
+single_night,q4b,amp,104,Freycinet | Habitat Protection Zone,cell,2024,0.96,1,31,1993,2024,2024,0.96,FALSE
+single_night,q4b,amp,105,Freycinet | Multiple Use Zone,direct,2024,0.918,1,30,1995,2024,2024,0.918,FALSE
+single_night,q4b,amp,105,Freycinet | Multiple Use Zone,cell,2024,0.96,1,31,1993,2024,2024,0.96,FALSE
+single_night,q4b,amp,106,Freycinet | National Park Zone,direct,2024,1.251,1,30,1995,2024,2024,1.251,FALSE
+single_night,q4b,amp,106,Freycinet | National Park Zone,cell,2024,1.02,1,30,1995,2024,2024,1.02,FALSE
+single_night,q4b,amp,107,Freycinet | National Park Zone,direct,2024,0.664,1,31,1993,2024,2024,0.664,FALSE
+single_night,q4b,amp,107,Freycinet | National Park Zone,cell,2024,0.96,1,31,1993,2024,2024,0.96,FALSE
+single_night,q4b,amp,108,Freycinet | Recreational Use Zone,direct,2024,0.851,1,30,1995,2024,2024,0.851,FALSE
+single_night,q4b,amp,108,Freycinet | Recreational Use Zone,cell,2024,0.96,1,31,1993,2024,2024,0.96,FALSE
+single_night,q4b,amp,109,Huon | Multiple Use Zone,direct,2024,0.922,1,29,1995,2024,2024,0.922,FALSE
+single_night,q4b,amp,109,Huon | Multiple Use Zone,cell,2024,0.869,1,29,1995,2024,2024,0.869,FALSE
+single_night,q4b,amp,110,Huon | National Park Zone,direct,2024,1.111,1,30,1995,2024,2024,1.111,FALSE
+single_night,q4b,amp,110,Huon | National Park Zone,cell,2024,0.631,2,30,1995,2024,2023,0.707,FALSE
+single_night,q4b,amp,111,Macquarie Island | Habitat Protection Zone (Macquarie),direct,2024,-0.01,12,25,1999,2024,2017,0.337,FALSE
+single_night,q4b,amp,111,Macquarie Island | Habitat Protection Zone (Macquarie),cell,2024,0.012,12,25,1999,2024,2017,0.285,FALSE
+single_night,q4b,amp,112,Macquarie Island | National Park Zone,direct,2024,-0.131,19,25,1999,2024,2017,0.235,FALSE
+single_night,q4b,amp,112,Macquarie Island | National Park Zone,cell,2024,-0.007,12,25,1999,2024,2019,0.33,FALSE
+single_night,q4b,amp,113,Macquarie Island | Sanctuary Zone,direct,2024,0.024,11,25,1999,2024,2017,0.466,FALSE
+single_night,q4b,amp,113,Macquarie Island | Sanctuary Zone,cell,2024,-0.11,14,25,1999,2024,2019,0.408,FALSE
+single_night,q4b,amp,114,Murray | Habitat Protection Zone,direct,2024,0.279,7,31,1993,2024,2013,0.843,FALSE
+single_night,q4b,amp,114,Murray | Habitat Protection Zone,cell,2024,0.227,7,31,1993,2024,2013,0.762,FALSE
+single_night,q4b,amp,115,Murray | Habitat Protection Zone,direct,2024,0.257,9,30,1995,2024,2013,0.787,FALSE
+single_night,q4b,amp,115,Murray | Habitat Protection Zone,cell,2024,0.224,7,31,1993,2024,2013,0.76,FALSE
+single_night,q4b,amp,116,Murray | Multiple Use Zone,direct,2024,-0.352,28,31,1993,2024,2013,0.908,FALSE
+single_night,q4b,amp,116,Murray | Multiple Use Zone,cell,2024,-0.133,20,31,1993,2024,2013,0.761,FALSE
+single_night,q4b,amp,117,Murray | Multiple Use Zone,direct,2024,0.15,11,31,1993,2024,2013,1.068,FALSE
+single_night,q4b,amp,117,Murray | Multiple Use Zone,cell,2024,0.251,8,31,1993,2024,2013,0.773,FALSE
+single_night,q4b,amp,118,Murray | National Park Zone,direct,2024,0.374,4,31,1993,2024,2013,0.641,FALSE
+single_night,q4b,amp,118,Murray | National Park Zone,cell,2024,0.277,4,31,1993,2024,2013,0.68,FALSE
+single_night,q4b,amp,119,Nelson | National Park Zone,direct,2024,0.267,8,30,1995,2024,2013,0.927,FALSE
+single_night,q4b,amp,119,Nelson | National Park Zone,cell,2024,0.225,9,30,1995,2024,2013,0.827,FALSE
+single_night,q4b,amp,120,South Tasman Rise | National Park Zone,direct,2024,,,28,1995,2023,2022,0.99,FALSE
+single_night,q4b,amp,120,South Tasman Rise | National Park Zone,cell,2024,0.885,1,29,1995,2024,2024,0.885,FALSE
+single_night,q4b,amp,121,Tasman Fracture | Multiple Use Zone,direct,2024,0.436,7,30,1995,2024,2022,0.851,FALSE
+single_night,q4b,amp,121,Tasman Fracture | Multiple Use Zone,cell,2024,0.551,5,30,1995,2024,2023,0.726,FALSE
+single_night,q4b,amp,122,Tasman Fracture | National Park Zone,direct,2024,0.541,4,29,1995,2024,2023,0.708,FALSE
+single_night,q4b,amp,122,Tasman Fracture | National Park Zone,cell,2024,0.625,2,30,1995,2024,2023,0.705,FALSE
+single_night,q4b,amp,123,Tasman Fracture | National Park Zone,direct,2024,0.509,7,28,1995,2024,2023,1.001,FALSE
+single_night,q4b,amp,123,Tasman Fracture | National Park Zone,cell,2024,0.398,8,28,1995,2024,2023,0.795,FALSE
+single_night,q4b,amp,124,Zeehan | Multiple Use Zone,direct,2024,0.372,6,30,1995,2024,2013,0.873,FALSE
+single_night,q4b,amp,124,Zeehan | Multiple Use Zone,cell,2024,0.371,6,30,1995,2024,2013,0.761,FALSE
+single_night,q4b,amp,125,Zeehan | National Park Zone,direct,2024,0.081,16,30,1995,2024,2000,0.804,FALSE
+single_night,q4b,amp,125,Zeehan | National Park Zone,cell,2024,0.235,11,30,1995,2024,2000,0.61,FALSE
+single_night,q4b,amp,126,Zeehan | Special Purpose Zone,direct,2024,0.187,12,30,1995,2024,2013,0.937,FALSE
+single_night,q4b,amp,126,Zeehan | Special Purpose Zone,cell,2024,0.371,6,30,1995,2024,2013,0.761,FALSE
+single_night,q4b,amp,127,Abrolhos | Habitat Protection Zone,direct,2024,0.501,4,31,1994,2024,2012,0.868,FALSE
+single_night,q4b,amp,127,Abrolhos | Habitat Protection Zone,cell,2024,0.505,4,32,1993,2024,2011,0.847,FALSE
+single_night,q4b,amp,128,Abrolhos | Multiple Use Zone,direct,2024,0.32,9,32,1993,2024,2011,1.269,FALSE
+single_night,q4b,amp,128,Abrolhos | Multiple Use Zone,cell,2024,0.337,8,32,1993,2024,2011,1.21,FALSE
+single_night,q4b,amp,129,Abrolhos | Multiple Use Zone,direct,2024,0.432,5,31,1994,2024,2011,1.153,FALSE
+single_night,q4b,amp,129,Abrolhos | Multiple Use Zone,cell,2024,0.433,4,31,1994,2024,2011,1.068,FALSE
+single_night,q4b,amp,130,Abrolhos | Multiple Use Zone,direct,2024,0.367,9,32,1993,2024,2011,1.214,FALSE
+single_night,q4b,amp,130,Abrolhos | Multiple Use Zone,cell,2024,0.337,8,32,1993,2024,2011,1.21,FALSE
+single_night,q4b,amp,131,Abrolhos | National Park Zone,direct,2024,0.38,7,31,1994,2024,2011,1.279,FALSE
+single_night,q4b,amp,131,Abrolhos | National Park Zone,cell,2024,0.366,5,32,1993,2024,2011,1.187,FALSE
+single_night,q4b,amp,132,Abrolhos | National Park Zone,direct,2024,0.345,7,32,1993,2024,2011,1.268,FALSE
+single_night,q4b,amp,132,Abrolhos | National Park Zone,cell,2024,0.337,8,32,1993,2024,2011,1.21,FALSE
+single_night,q4b,amp,133,Abrolhos | National Park Zone,direct,2024,0.386,7,32,1993,2024,2011,1.289,FALSE
+single_night,q4b,amp,133,Abrolhos | National Park Zone,cell,2024,0.337,8,32,1993,2024,2011,1.21,FALSE
+single_night,q4b,amp,134,Abrolhos | Special Purpose Zone,direct,2024,0.346,7,32,1993,2024,2011,1.269,FALSE
+single_night,q4b,amp,134,Abrolhos | Special Purpose Zone,cell,2024,0.337,8,32,1993,2024,2011,1.21,FALSE
+single_night,q4b,amp,135,Abrolhos | Special Purpose Zone,direct,2024,0.333,8,32,1993,2024,2011,1.13,FALSE
+single_night,q4b,amp,135,Abrolhos | Special Purpose Zone,cell,2024,0.337,8,32,1993,2024,2011,1.21,FALSE
+single_night,q4b,amp,136,Bremer | National Park Zone,direct,2024,0.215,9,31,1994,2024,2012,0.747,FALSE
+single_night,q4b,amp,136,Bremer | National Park Zone,cell,2024,0.243,7,31,1994,2024,2011,0.702,FALSE
+single_night,q4b,amp,137,Bremer | Special Purpose Zone (Mining Exclusion),direct,2024,0.108,12,32,1993,2024,2012,0.62,FALSE
+single_night,q4b,amp,137,Bremer | Special Purpose Zone (Mining Exclusion),cell,2024,0.243,7,31,1994,2024,2011,0.702,FALSE
+single_night,q4b,amp,138,Bremer | Special Purpose Zone (Mining Exclusion),direct,2024,0.083,13,31,1994,2024,2011,0.658,FALSE
+single_night,q4b,amp,138,Bremer | Special Purpose Zone (Mining Exclusion),cell,2024,0.243,7,31,1994,2024,2011,0.702,FALSE
+single_night,q4b,amp,139,Eastern Recherche | National Park Zone,direct,2024,0.238,6,32,1993,2024,2013,0.633,FALSE
+single_night,q4b,amp,139,Eastern Recherche | National Park Zone,cell,2024,0.201,8,32,1993,2024,2011,0.581,FALSE
+single_night,q4b,amp,140,Eastern Recherche | National Park Zone,direct,2024,0.57,3,30,1995,2024,2011,0.611,FALSE
+single_night,q4b,amp,140,Eastern Recherche | National Park Zone,cell,2024,0.475,2,30,1995,2024,2011,0.557,FALSE
+single_night,q4b,amp,141,Eastern Recherche | Special Purpose Zone,direct,2024,0.261,7,31,1994,2024,2013,0.602,FALSE
+single_night,q4b,amp,141,Eastern Recherche | Special Purpose Zone,cell,2024,0.201,8,32,1993,2024,2011,0.581,FALSE
+single_night,q4b,amp,142,Geographe | Habitat Protection Zone,direct,2024,0.445,4,30,1995,2024,2011,1.081,FALSE
+single_night,q4b,amp,142,Geographe | Habitat Protection Zone,cell,2024,0.406,5,31,1994,2024,2011,0.987,FALSE
+single_night,q4b,amp,143,Geographe | Multiple Use Zone,direct,2024,0.462,4,31,1994,2024,2011,1.069,FALSE
+single_night,q4b,amp,143,Geographe | Multiple Use Zone,cell,2024,0.406,5,31,1994,2024,2011,0.987,FALSE
+single_night,q4b,amp,144,Geographe | National Park Zone,direct,2024,0.545,3,31,1994,2024,2011,0.936,FALSE
+single_night,q4b,amp,144,Geographe | National Park Zone,cell,2024,0.406,5,31,1994,2024,2011,0.987,FALSE
+single_night,q4b,amp,145,Geographe | Special Purpose Zone (Mining Exclusion),direct,2024,0.428,5,31,1994,2024,2011,1.086,FALSE
+single_night,q4b,amp,145,Geographe | Special Purpose Zone (Mining Exclusion),cell,2024,0.406,5,31,1994,2024,2011,0.987,FALSE
+single_night,q4b,amp,146,Great Australian Bight | Multiple Use Zone,direct,2024,0.36,2,31,1993,2024,2013,0.588,FALSE
+single_night,q4b,amp,146,Great Australian Bight | Multiple Use Zone,cell,2024,0.244,5,31,1993,2024,2013,0.61,FALSE
+single_night,q4b,amp,147,Great Australian Bight | National Park Zone,direct,2024,-0.411,29,31,1993,2024,2013,0.814,FALSE
+single_night,q4b,amp,147,Great Australian Bight | National Park Zone,cell,2024,-0.397,30,32,1993,2024,2013,0.812,FALSE
+single_night,q4b,amp,148,Great Australian Bight | Special Purpose Zone,direct,2024,0.035,14,31,1993,2024,2013,0.693,FALSE
+single_night,q4b,amp,148,Great Australian Bight | Special Purpose Zone,cell,2024,-0.037,17,31,1993,2024,2013,0.678,FALSE
+single_night,q4b,amp,149,Great Australian Bight | Special Purpose Zone (Mining Exclusion),direct,2024,-0.318,27,32,1993,2024,2013,0.831,FALSE
+single_night,q4b,amp,149,Great Australian Bight | Special Purpose Zone (Mining Exclusion),cell,2024,-0.145,23,31,1993,2024,2013,0.759,FALSE
+single_night,q4b,amp,150,Great Australian Bight | Special Purpose Zone (Mining Exclusion),direct,2024,-0.601,31,31,1993,2024,2013,0.841,FALSE
+single_night,q4b,amp,150,Great Australian Bight | Special Purpose Zone (Mining Exclusion),cell,2024,-0.318,29,32,1993,2024,2013,0.783,FALSE
+single_night,q4b,amp,151,Jurien | National Park Zone,direct,2024,0.303,9,32,1993,2024,2011,0.961,FALSE
+single_night,q4b,amp,151,Jurien | National Park Zone,cell,2024,0.404,6,32,1993,2024,2011,1.159,FALSE
+single_night,q4b,amp,152,Jurien | Special Purpose Zone,direct,2024,0.188,11,32,1993,2024,2011,1.082,FALSE
+single_night,q4b,amp,152,Jurien | Special Purpose Zone,cell,2024,0.404,6,32,1993,2024,2011,1.159,FALSE
+single_night,q4b,amp,153,Murat | National Park Zone,direct,2024,-0.583,31,31,1993,2024,2013,0.826,FALSE
+single_night,q4b,amp,153,Murat | National Park Zone,cell,2024,-0.528,30,31,1993,2024,2013,0.837,FALSE
+single_night,q4b,amp,154,Perth Canyon | Habitat Protection Zone,direct,2024,0.286,6,32,1993,2024,2011,1.352,FALSE
+single_night,q4b,amp,154,Perth Canyon | Habitat Protection Zone,cell,2024,0.405,5,32,1993,2024,2011,1.081,FALSE
+single_night,q4b,amp,155,Perth Canyon | Habitat Protection Zone,direct,2024,0.36,6,32,1993,2024,2011,1.209,FALSE
+single_night,q4b,amp,155,Perth Canyon | Habitat Protection Zone,cell,2024,0.405,5,31,1994,2024,2011,1.058,FALSE
+single_night,q4b,amp,156,Perth Canyon | Habitat Protection Zone,direct,2024,0.477,4,32,1993,2024,2011,1.03,FALSE
+single_night,q4b,amp,156,Perth Canyon | Habitat Protection Zone,cell,2024,0.406,5,31,1994,2024,2011,0.991,FALSE
+single_night,q4b,amp,157,Perth Canyon | Multiple Use Zone,direct,2024,0.477,5,32,1993,2024,2011,1.075,FALSE
+single_night,q4b,amp,157,Perth Canyon | Multiple Use Zone,cell,2024,0.406,5,31,1994,2024,2011,0.998,FALSE
+single_night,q4b,amp,158,Perth Canyon | Multiple Use Zone,direct,2024,0.327,6,32,1993,2024,2011,1.235,FALSE
+single_night,q4b,amp,158,Perth Canyon | Multiple Use Zone,cell,2024,0.406,5,31,1994,2024,2011,0.987,FALSE
+single_night,q4b,amp,159,Perth Canyon | National Park Zone,direct,2024,0.24,8,32,1993,2024,2011,1.326,FALSE
+single_night,q4b,amp,159,Perth Canyon | National Park Zone,cell,2024,0.404,6,32,1993,2024,2011,1.118,FALSE
+single_night,q4b,amp,160,Perth Canyon | National Park Zone,direct,2024,0.37,6,32,1993,2024,2011,1.183,FALSE
+single_night,q4b,amp,160,Perth Canyon | National Park Zone,cell,2024,0.406,5,31,1994,2024,2011,0.987,FALSE
+single_night,q4b,amp,161,South-west Corner | Habitat Protection Zone,direct,2024,0.431,7,30,1995,2024,2013,1.118,FALSE
+single_night,q4b,amp,161,South-west Corner | Habitat Protection Zone,cell,2024,0.437,7,30,1995,2024,2011,0.964,FALSE
+single_night,q4b,amp,162,South-west Corner | Multiple Use Zone,direct,2024,0.296,9,30,1995,2024,2011,1.226,FALSE
+single_night,q4b,amp,162,South-west Corner | Multiple Use Zone,cell,2024,0.487,5,31,1994,2024,2011,1.005,FALSE
+single_night,q4b,amp,163,South-west Corner | Multiple Use Zone,direct,2024,0.557,2,30,1995,2024,2011,0.778,FALSE
+single_night,q4b,amp,163,South-west Corner | Multiple Use Zone,cell,2024,0.243,7,31,1994,2024,2011,0.702,FALSE
+single_night,q4b,amp,164,South-west Corner | Multiple Use Zone,direct,2024,0.781,1,30,1995,2024,2024,0.781,FALSE
+single_night,q4b,amp,164,South-west Corner | Multiple Use Zone,cell,2024,0.679,2,30,1995,2024,2012,0.738,FALSE
+single_night,q4b,amp,165,South-west Corner | Multiple Use Zone,direct,2024,0.524,2,31,1994,2024,2011,0.935,FALSE
+single_night,q4b,amp,165,South-west Corner | Multiple Use Zone,cell,2024,0.237,8,31,1994,2024,2011,0.684,FALSE
+single_night,q4b,amp,166,South-west Corner | National Park Zone,direct,2024,0.13,11,31,1994,2024,2011,1.133,FALSE
+single_night,q4b,amp,166,South-west Corner | National Park Zone,cell,2024,0.406,5,31,1994,2024,2011,0.987,FALSE
+single_night,q4b,amp,167,South-west Corner | National Park Zone,direct,2024,0.338,4,30,1995,2024,2011,0.885,FALSE
+single_night,q4b,amp,167,South-west Corner | National Park Zone,cell,2024,0.474,4,30,1995,2024,2011,0.587,FALSE
+single_night,q4b,amp,168,South-west Corner | National Park Zone,direct,2024,0.054,12,31,1994,2024,2011,0.843,FALSE
+single_night,q4b,amp,168,South-west Corner | National Park Zone,cell,2024,0.292,9,30,1995,2024,2011,1.143,FALSE
+single_night,q4b,amp,169,South-west Corner | National Park Zone,direct,2024,-0.039,19,32,1993,2024,2013,0.546,FALSE
+single_night,q4b,amp,169,South-west Corner | National Park Zone,cell,2024,0.243,7,31,1994,2024,2011,0.702,FALSE
+single_night,q4b,amp,170,South-west Corner | National Park Zone,direct,2024,0.475,6,30,1995,2024,2000,1.07,FALSE
+single_night,q4b,amp,170,South-west Corner | National Park Zone,cell,2024,0.485,6,30,1995,2024,2000,1.102,FALSE
+single_night,q4b,amp,171,South-west Corner | National Park Zone,direct,2024,0.469,4,30,1995,2024,2012,1.291,FALSE
+single_night,q4b,amp,171,South-west Corner | National Park Zone,cell,2024,0.559,4,31,1994,2024,2011,1.062,FALSE
+single_night,q4b,amp,172,South-west Corner | National Park Zone,direct,2024,0.191,12,31,1994,2024,2011,1.074,FALSE
+single_night,q4b,amp,172,South-west Corner | National Park Zone,cell,2024,0.406,5,31,1994,2024,2011,0.987,FALSE
+single_night,q4b,amp,173,South-west Corner | Special Purpose Zone,direct,2024,-0.009,15,31,1994,2024,2011,0.836,FALSE
+single_night,q4b,amp,173,South-west Corner | Special Purpose Zone,cell,2024,0.175,10,31,1994,2024,2011,0.944,FALSE
+single_night,q4b,amp,174,South-west Corner | Special Purpose Zone,direct,2024,0.085,12,32,1993,2024,2011,0.585,FALSE
+single_night,q4b,amp,174,South-west Corner | Special Purpose Zone,cell,2024,0.243,7,31,1994,2024,2011,0.702,FALSE
+single_night,q4b,amp,175,South-west Corner | Special Purpose Zone (Mining Exclusion),direct,2024,0.297,9,31,1994,2024,2011,1.144,FALSE
+single_night,q4b,amp,175,South-west Corner | Special Purpose Zone (Mining Exclusion),cell,2024,0.406,5,31,1994,2024,2011,0.987,FALSE
+single_night,q4b,amp,176,South-west Corner | Special Purpose Zone (Mining Exclusion),direct,2024,0.182,10,31,1994,2024,2011,1.101,FALSE
+single_night,q4b,amp,176,South-west Corner | Special Purpose Zone (Mining Exclusion),cell,2024,0.4,5,31,1994,2024,2011,1,FALSE
+single_night,q4b,amp,177,Southern Kangaroo Island | Special Purpose Zone (Mining Exclusion),direct,2024,-0.461,29,31,1993,2024,2013,0.914,FALSE
+single_night,q4b,amp,177,Southern Kangaroo Island | Special Purpose Zone (Mining Exclusion),cell,2024,-0.199,22,31,1993,2024,2013,0.762,FALSE
+single_night,q4b,amp,178,Twilight | National Park Zone,direct,2024,0.163,6,31,1993,2024,2013,0.743,FALSE
+single_night,q4b,amp,178,Twilight | National Park Zone,cell,2024,0.196,6,31,1993,2024,2013,0.644,FALSE
+single_night,q4b,amp,179,Twilight | Special Purpose Zone (Mining Exclusion),direct,2024,0.055,14,32,1993,2024,2013,0.778,FALSE
+single_night,q4b,amp,179,Twilight | Special Purpose Zone (Mining Exclusion),cell,2024,0.196,6,31,1993,2024,2013,0.644,FALSE
+single_night,q4b,amp,180,Twilight | Special Purpose Zone (Mining Exclusion),direct,2024,0.044,14,31,1993,2024,2013,0.771,FALSE
+single_night,q4b,amp,180,Twilight | Special Purpose Zone (Mining Exclusion),cell,2024,0.196,6,31,1993,2024,2013,0.644,FALSE
+single_night,q4b,amp,181,Two Rocks | Multiple Use Zone,direct,2024,0.291,10,32,1993,2024,2011,0.912,FALSE
+single_night,q4b,amp,181,Two Rocks | Multiple Use Zone,cell,2024,0.404,6,32,1993,2024,2011,1.159,FALSE
+single_night,q4b,amp,182,Two Rocks | National Park Zone,direct,2024,0.292,10,32,1993,2024,2011,0.901,FALSE
+single_night,q4b,amp,182,Two Rocks | National Park Zone,cell,2024,0.404,6,32,1993,2024,2011,1.159,FALSE
+single_night,q4b,amp,183,Western Eyre | Multiple Use Zone,direct,2024,0.356,7,31,1993,2024,2013,0.867,FALSE
+single_night,q4b,amp,183,Western Eyre | Multiple Use Zone,cell,2024,0.154,10,31,1993,2024,2013,0.8,FALSE
+single_night,q4b,amp,184,Western Eyre | National Park Zone,direct,2024,-0.651,31,31,1993,2024,2013,0.895,FALSE
+single_night,q4b,amp,184,Western Eyre | National Park Zone,cell,2024,-0.653,31,31,1993,2024,2013,0.877,FALSE
+single_night,q4b,amp,185,Western Eyre | National Park Zone,direct,2024,0.414,3,30,1995,2024,2013,0.651,FALSE
+single_night,q4b,amp,185,Western Eyre | National Park Zone,cell,2024,0.43,4,30,1995,2024,2013,0.548,FALSE
+single_night,q4b,amp,186,Western Eyre | National Park Zone,direct,2024,-0.529,30,31,1993,2024,2013,0.936,FALSE
+single_night,q4b,amp,186,Western Eyre | National Park Zone,cell,2024,-0.249,25,31,1993,2024,2013,0.85,FALSE
+single_night,q4b,amp,187,Western Eyre | Special Purpose Zone,direct,2024,-0.526,30,31,1993,2024,2013,0.892,FALSE
+single_night,q4b,amp,187,Western Eyre | Special Purpose Zone,cell,2024,-0.422,29,31,1993,2024,2013,0.862,FALSE
+single_night,q4b,amp,188,Western Eyre | Special Purpose Zone (Trawl),direct,2024,0.066,15,31,1993,2024,2013,0.783,FALSE
+single_night,q4b,amp,188,Western Eyre | Special Purpose Zone (Trawl),cell,2024,-0.249,25,31,1993,2024,2013,0.85,FALSE
+single_night,q4b,amp,189,Western Kangaroo Island | National Park Zone,direct,2024,-0.238,24,31,1993,2024,2013,0.979,FALSE
+single_night,q4b,amp,189,Western Kangaroo Island | National Park Zone,cell,2024,-0.161,22,31,1993,2024,2013,0.763,FALSE
+single_night,q4b,amp,190,Western Kangaroo Island | Special Purpose Zone,direct,2024,-0.159,22,31,1993,2024,2013,0.997,FALSE
+single_night,q4b,amp,190,Western Kangaroo Island | Special Purpose Zone,cell,2024,0.244,7,31,1993,2024,2013,0.789,FALSE
+single_night,q4b,amp,191,Western Kangaroo Island | Special Purpose Zone (Mining Exclusion),direct,2024,-0.315,25,31,1993,2024,2013,1,FALSE
+single_night,q4b,amp,191,Western Kangaroo Island | Special Purpose Zone (Mining Exclusion),cell,2024,0.144,10,31,1993,2024,2013,0.782,FALSE
+single_night,q4b,amp,192,Central Eastern | Habitat Protection Zone,direct,2024,0.809,1,32,1993,2024,2024,0.809,FALSE
+single_night,q4b,amp,192,Central Eastern | Habitat Protection Zone,cell,2024,0.844,1,32,1993,2024,2024,0.844,FALSE
+single_night,q4b,amp,193,Central Eastern | Habitat Protection Zone,direct,2024,0.888,1,32,1993,2024,2024,0.888,FALSE
+single_night,q4b,amp,193,Central Eastern | Habitat Protection Zone,cell,2024,0.741,1,32,1993,2024,2024,0.741,FALSE
+single_night,q4b,amp,194,Central Eastern | Multiple Use Zone,direct,2024,0.576,3,32,1993,2024,1998,0.727,FALSE
+single_night,q4b,amp,194,Central Eastern | Multiple Use Zone,cell,2024,0.706,1,32,1993,2024,2024,0.706,FALSE
+single_night,q4b,amp,195,Central Eastern | National Park Zone,direct,2024,1.008,1,32,1993,2024,2024,1.008,FALSE
+single_night,q4b,amp,195,Central Eastern | National Park Zone,cell,2024,0.917,1,32,1993,2024,2024,0.917,FALSE
+single_night,q4b,amp,196,Cod Grounds | National Park Zone,direct,2024,1.009,1,31,1993,2024,2024,1.009,FALSE
+single_night,q4b,amp,196,Cod Grounds | National Park Zone,cell,2024,0.565,2,32,1993,2024,2016,0.76,FALSE
+single_night,q4b,amp,197,Gifford | Habitat Protection Zone,direct,2024,0.702,1,32,1993,2024,2024,0.702,FALSE
+single_night,q4b,amp,197,Gifford | Habitat Protection Zone,cell,2024,0.638,1,32,1993,2024,2024,0.638,FALSE
+single_night,q4b,amp,198,Hunter | Habitat Protection Zone,direct,2024,0.621,3,32,1993,2024,2016,0.99,FALSE
+single_night,q4b,amp,198,Hunter | Habitat Protection Zone,cell,2024,0.565,2,32,1993,2024,2016,0.76,FALSE
+single_night,q4b,amp,199,Hunter | Special Purpose Zone (Trawl),direct,2024,0.447,5,32,1993,2024,2016,0.679,FALSE
+single_night,q4b,amp,199,Hunter | Special Purpose Zone (Trawl),cell,2024,0.565,2,32,1993,2024,2016,0.76,FALSE
+single_night,q4b,amp,200,Jervis | Habitat Protection Zone,direct,2024,0.496,10,32,1993,2024,2016,1.071,FALSE
+single_night,q4b,amp,200,Jervis | Habitat Protection Zone,cell,2024,0.523,6,32,1993,2024,2016,0.918,FALSE
+single_night,q4b,amp,201,Jervis | Special Purpose Zone (Trawl),direct,2024,0.612,7,32,1993,2024,2016,1.021,FALSE
+single_night,q4b,amp,201,Jervis | Special Purpose Zone (Trawl),cell,2024,0.564,6,31,1993,2024,2016,0.956,FALSE
+single_night,q4b,amp,202,Lord Howe | Habitat Protection Zone,direct,2024,0.76,1,32,1993,2024,2024,0.76,FALSE
+single_night,q4b,amp,202,Lord Howe | Habitat Protection Zone,cell,2024,0.62,1,32,1993,2024,2024,0.62,FALSE
+single_night,q4b,amp,203,Lord Howe | Habitat Protection Zone (Lord Howe),direct,2024,0.791,1,32,1993,2024,2024,0.791,FALSE
+single_night,q4b,amp,203,Lord Howe | Habitat Protection Zone (Lord Howe),cell,2024,0.775,1,32,1993,2024,2024,0.775,FALSE
+single_night,q4b,amp,204,Lord Howe | Multiple Use Zone,direct,2024,0.685,1,32,1993,2024,2024,0.685,FALSE
+single_night,q4b,amp,204,Lord Howe | Multiple Use Zone,cell,2024,0.794,1,32,1993,2024,2024,0.794,FALSE
+single_night,q4b,amp,205,Lord Howe | National Park Zone,direct,2024,0.9,1,32,1993,2024,2024,0.9,FALSE
+single_night,q4b,amp,205,Lord Howe | National Park Zone,cell,2024,0.775,1,32,1993,2024,2024,0.775,FALSE
+single_night,q4b,amp,206,Lord Howe | National Park Zone,direct,2024,0.83,1,31,1993,2024,2024,0.83,FALSE
+single_night,q4b,amp,206,Lord Howe | National Park Zone,cell,2024,0.775,1,32,1993,2024,2024,0.775,FALSE
+single_night,q4b,amp,207,Lord Howe | National Park Zone,direct,2024,0.765,1,32,1993,2024,2024,0.765,FALSE
+single_night,q4b,amp,207,Lord Howe | National Park Zone,cell,2024,0.823,1,32,1993,2024,2024,0.823,FALSE
+single_night,q4b,amp,208,Lord Howe | Recreational Use Zone,direct,2024,0.689,1,32,1993,2024,2024,0.689,FALSE
+single_night,q4b,amp,208,Lord Howe | Recreational Use Zone,cell,2024,0.784,1,32,1993,2024,2024,0.784,FALSE
+single_night,q4b,amp,209,Norfolk | Habitat Protection Zone,direct,2024,0.647,2,32,1993,2024,1998,0.687,FALSE
+single_night,q4b,amp,209,Norfolk | Habitat Protection Zone,cell,2024,0.646,2,32,1993,2024,1998,0.717,FALSE
+single_night,q4b,amp,210,Norfolk | National Park Zone,direct,2024,0.618,2,31,1993,2024,1998,0.907,FALSE
+single_night,q4b,amp,210,Norfolk | National Park Zone,cell,2024,0.542,2,31,1993,2024,1998,0.909,FALSE
+single_night,q4b,amp,211,Norfolk | Special Purpose Zone (Norfolk),direct,2024,0.857,1,32,1993,2024,2024,0.857,FALSE
+single_night,q4b,amp,211,Norfolk | Special Purpose Zone (Norfolk),cell,2024,0.688,1,32,1993,2024,2024,0.688,FALSE
+single_night,q4b,amp,212,Solitary Islands | Multiple Use Zone,direct,2024,0.875,1,32,1993,2024,2024,0.875,FALSE
+single_night,q4b,amp,212,Solitary Islands | Multiple Use Zone,cell,2024,0.706,1,32,1993,2024,2024,0.706,FALSE
+single_night,q4b,amp,213,Solitary Islands | National Park Zone,direct,2024,0.976,1,32,1993,2024,2024,0.976,FALSE
+single_night,q4b,amp,213,Solitary Islands | National Park Zone,cell,2024,0.706,1,32,1993,2024,2024,0.706,FALSE
+single_night,q4b,amp,214,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,1998,0.633,FALSE
+single_night,q4b,amp,214,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.706,1,32,1993,2024,2024,0.706,FALSE
+single_night,q4b,amp,215,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,1998,0.573,FALSE
+single_night,q4b,amp,215,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.706,1,32,1993,2024,2024,0.706,FALSE
+single_night,q4b,amp,216,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,,,31,1993,2023,1998,0.567,FALSE
+single_night,q4b,amp,216,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.706,1,32,1993,2024,2024,0.706,FALSE
+single_night,q4b,domain,1,whole domain,direct,2024,0.571,10,32,1993,2024,1993,2.811,FALSE
+single_night,q4b,domain,1,whole domain,cell,2024,0.539,1,30,1995,2024,2024,0.539,FALSE
+single_night,q4b,eez,1,MLD,direct,2024,0.07,13,32,1993,2024,1998,0.941,FALSE
+single_night,q4b,eez,1,MLD,cell,2024,0.467,1,32,1993,2024,2024,0.467,FALSE
+single_night,q4b,eez,2,TST,direct,2024,0.581,5,31,1993,2024,2022,1.248,FALSE
+single_night,q4b,eez,2,TST,cell,2024,0.497,6,31,1993,2024,2022,1.169,FALSE
+single_night,q4b,eez,3,CI,direct,2024,0.478,7,32,1993,2024,2016,1.066,FALSE
+single_night,q4b,eez,3,CI,cell,2024,0.481,5,31,1994,2024,2016,1.062,FALSE
+single_night,q4b,eez,4,CKI,direct,2024,0.626,1,29,1994,2024,2024,0.626,FALSE
+single_night,q4b,eez,4,CKI,cell,2024,0.595,1,28,1995,2024,2024,0.595,FALSE
+single_night,q4b,eez,5,NI,direct,2024,0.569,3,32,1993,2024,1998,0.763,FALSE
+single_night,q4b,eez,5,NI,cell,2024,0.602,3,32,1993,2024,1998,0.763,FALSE
+single_night,q4b,eez,6,MAC,direct,2024,-0.116,17,25,1999,2024,2017,0.268,FALSE
+single_night,q4b,eez,6,MAC,cell,2024,-0.022,13,25,1999,2024,2019,0.333,FALSE
+single_night,q4b,eez,8,AATW,cell,2024,,,15,2002,2022,2010,0.575,TRUE
+single_night,q4b,eez,9,AATE,cell,2024,,,19,2001,2022,2010,0.518,TRUE
+single_night,q4b,eez_legal,1,MLD,direct,2024,0.125,12,32,1993,2024,1998,0.959,FALSE
+single_night,q4b,eez_legal,1,MLD,cell,2024,0.478,1,32,1993,2024,2024,0.478,FALSE
+single_night,q4b,eez_legal,2,TST,direct,2024,0.581,5,31,1993,2024,2022,1.25,FALSE
+single_night,q4b,eez_legal,2,TST,cell,2024,0.497,6,31,1993,2024,2022,1.171,FALSE
+single_night,q4b,eez_legal,3,CI,direct,2024,0.48,5,32,1993,2024,2016,1.065,FALSE
+single_night,q4b,eez_legal,3,CI,cell,2024,0.482,5,31,1994,2024,2016,1.062,FALSE
+single_night,q4b,eez_legal,4,CKI,direct,2024,0.626,1,29,1994,2024,2024,0.626,FALSE
+single_night,q4b,eez_legal,4,CKI,cell,2024,0.594,1,28,1995,2024,2024,0.594,FALSE
+single_night,q4b,eez_legal,5,NI,direct,2024,0.567,3,32,1993,2024,1998,0.764,FALSE
+single_night,q4b,eez_legal,5,NI,cell,2024,0.601,3,32,1993,2024,1998,0.764,FALSE
+single_night,q4b,eez_legal,6,MAC,direct,2024,-0.117,17,25,1999,2024,2017,0.268,FALSE
+single_night,q4b,eez_legal,6,MAC,cell,2024,-0.02,13,25,1999,2024,2019,0.334,FALSE
+single_night,q4b,eez_legal,8,AATW,cell,2024,,,15,2002,2022,2010,0.578,TRUE
+single_night,q4b,eez_legal,9,AATE,cell,2024,,,19,2001,2022,2010,0.521,TRUE
+single_night,q4b,imcra,1,Southwest Transition,direct,2024,0.371,5,31,1994,2024,2011,1.025,FALSE
+single_night,q4b,imcra,1,Southwest Transition,cell,2024,0.447,5,31,1994,2024,2011,1.021,FALSE
+single_night,q4b,imcra,2,Southwest Shelf Province,direct,2024,0.2,9,32,1993,2024,2011,0.917,FALSE
+single_night,q4b,imcra,2,Southwest Shelf Province,cell,2024,0.271,6,31,1994,2024,2011,0.819,FALSE
+single_night,q4b,imcra,3,Spencer Gulf Shelf Province,direct,2024,-0.27,28,31,1993,2024,2013,0.8,FALSE
+single_night,q4b,imcra,3,Spencer Gulf Shelf Province,cell,2024,-0.16,23,31,1993,2024,2013,0.781,FALSE
+single_night,q4b,imcra,4,Southern Province,direct,2024,0.404,5,31,1993,2024,2013,0.562,FALSE
+single_night,q4b,imcra,4,Southern Province,cell,2024,0.378,5,31,1993,2024,2013,0.581,FALSE
+single_night,q4b,imcra,5,Southeast Shelf Transition,direct,2024,0.464,3,31,1993,2024,2000,0.56,FALSE
+single_night,q4b,imcra,5,Southeast Shelf Transition,cell,2024,0.531,2,31,1993,2024,2023,0.537,FALSE
+single_night,q4b,imcra,6,Southeast Transition,direct,2024,0.628,4,31,1993,2024,2016,0.877,FALSE
+single_night,q4b,imcra,6,Southeast Transition,cell,2024,0.604,4,31,1993,2024,2016,0.813,FALSE
+single_night,q4b,imcra,7,Western Bass Strait Shelf Transition,direct,2024,0.28,8,31,1993,2024,2013,0.928,FALSE
+single_night,q4b,imcra,7,Western Bass Strait Shelf Transition,cell,2024,0.336,7,30,1995,2024,2013,0.756,FALSE
+single_night,q4b,imcra,8,West Tasmania Transition,direct,2024,0.388,7,30,1995,2024,2000,0.657,FALSE
+single_night,q4b,imcra,8,West Tasmania Transition,cell,2024,0.251,9,30,1995,2024,2000,0.589,FALSE
+single_night,q4b,imcra,9,Bass Strait Shelf Province,direct,2024,0.608,2,31,1993,2024,2000,0.612,FALSE
+single_night,q4b,imcra,9,Bass Strait Shelf Province,cell,2024,0.547,3,31,1993,2024,2000,0.614,FALSE
+single_night,q4b,imcra,10,Tasmanian Shelf Province,direct,2024,0.668,2,31,1993,2024,2023,0.696,FALSE
+single_night,q4b,imcra,10,Tasmanian Shelf Province,cell,2024,0.621,2,30,1995,2024,2023,0.692,FALSE
+single_night,q4b,imcra,11,Tasmania Province,direct,2024,0.882,2,30,1995,2024,2023,0.979,FALSE
+single_night,q4b,imcra,11,Tasmania Province,cell,2024,0.765,1,29,1995,2024,2024,0.765,FALSE
+single_night,q4b,imcra,12,Macquarie Island Province,direct,2024,-0.116,17,25,1999,2024,2017,0.268,FALSE
+single_night,q4b,imcra,12,Macquarie Island Province,cell,2024,-0.022,13,25,1999,2024,2019,0.333,FALSE
+single_night,q4b,imcra,13,Cocos (Keeling) Island Province,direct,2024,0.626,1,29,1994,2024,2024,0.626,FALSE
+single_night,q4b,imcra,13,Cocos (Keeling) Island Province,cell,2024,0.595,1,28,1995,2024,2024,0.595,FALSE
+single_night,q4b,imcra,14,Christmas Island Province,direct,2024,0.472,7,32,1993,2024,2016,1.08,FALSE
+single_night,q4b,imcra,14,Christmas Island Province,cell,2024,0.483,5,32,1993,2024,2016,1.113,FALSE
+single_night,q4b,imcra,15,Timor Transition,direct,2024,0.341,6,31,1994,2024,2016,0.974,FALSE
+single_night,q4b,imcra,15,Timor Transition,cell,2024,0.383,6,32,1993,2024,2022,0.964,FALSE
+single_night,q4b,imcra,16,Northern Shelf Province,direct,2024,,,31,1993,2023,2016,0.91,FALSE
+single_night,q4b,imcra,16,Northern Shelf Province,cell,2024,,,30,1993,2023,2016,0.931,FALSE
+single_night,q4b,imcra,17,Northeast Shelf Transition,direct,2024,0.455,6,32,1993,2024,2022,1.075,FALSE
+single_night,q4b,imcra,17,Northeast Shelf Transition,cell,2024,,,31,1993,2023,2022,1.099,FALSE
+single_night,q4b,imcra,18,Cape Province,direct,2024,0.68,5,32,1993,2024,2022,1.163,FALSE
+single_night,q4b,imcra,18,Cape Province,cell,2024,,,31,1993,2023,2022,1.132,FALSE
+single_night,q4b,imcra,19,Northwest Shelf Transition,direct,2024,,,25,1993,2023,2016,1.239,FALSE
+single_night,q4b,imcra,19,Northwest Shelf Transition,cell,2024,0.32,7,29,1993,2024,2016,1.177,FALSE
+single_night,q4b,imcra,20,Timor Province,direct,2024,0.439,7,31,1993,2024,2016,1.174,FALSE
+single_night,q4b,imcra,20,Timor Province,cell,2024,0.41,7,32,1993,2024,2016,1.155,FALSE
+single_night,q4b,imcra,21,Northeast Transition,direct,2024,0.539,5,32,1993,2024,2022,1.068,FALSE
+single_night,q4b,imcra,21,Northeast Transition,cell,2024,0.549,5,32,1993,2024,2022,1.1,FALSE
+single_night,q4b,imcra,22,Northwest Shelf Province,direct,2024,0.32,5,32,1993,2024,2016,0.614,FALSE
+single_night,q4b,imcra,22,Northwest Shelf Province,cell,2024,0.368,5,32,1993,2024,2016,0.649,FALSE
+single_night,q4b,imcra,23,Kenn Transition,direct,2024,0.432,4,32,1993,2024,1998,0.81,FALSE
+single_night,q4b,imcra,23,Kenn Transition,cell,2024,0.559,1,32,1993,2024,2024,0.559,FALSE
+single_night,q4b,imcra,24,Northeast Province,direct,2024,0.517,6,32,1993,2024,2022,0.877,FALSE
+single_night,q4b,imcra,24,Northeast Province,cell,2024,0.551,3,32,1993,2024,2022,0.85,FALSE
+single_night,q4b,imcra,25,Northwest Transition,direct,2024,0.358,7,32,1993,2024,2016,0.867,FALSE
+single_night,q4b,imcra,25,Northwest Transition,cell,2024,0.385,6,32,1993,2024,2016,0.812,FALSE
+single_night,q4b,imcra,26,Northeast Shelf Province,direct,2024,0.586,3,32,1993,2024,2016,0.738,FALSE
+single_night,q4b,imcra,26,Northeast Shelf Province,cell,2024,0.572,3,32,1993,2024,2016,0.688,FALSE
+single_night,q4b,imcra,27,Northwest Province,direct,2024,0.43,4,32,1993,2024,1999,0.523,FALSE
+single_night,q4b,imcra,27,Northwest Province,cell,2024,0.446,3,32,1993,2024,1998,0.504,FALSE
+single_night,q4b,imcra,28,Kenn Province,direct,2024,0.465,4,32,1993,2024,1998,0.788,FALSE
+single_night,q4b,imcra,28,Kenn Province,cell,2024,0.499,4,32,1993,2024,1998,0.749,FALSE
+single_night,q4b,imcra,29,Central Western Transition,direct,2024,0.596,2,32,1993,2024,1999,0.665,FALSE
+single_night,q4b,imcra,29,Central Western Transition,cell,2024,0.562,3,32,1993,2024,1999,0.63,FALSE
+single_night,q4b,imcra,30,Central Western Shelf Transition,direct,2024,0.365,7,32,1993,2024,1999,0.827,FALSE
+single_night,q4b,imcra,30,Central Western Shelf Transition,cell,2024,0.411,4,32,1993,2024,1999,0.693,FALSE
+single_night,q4b,imcra,31,Central Eastern Transition,direct,2024,0.626,1,32,1993,2024,2024,0.626,FALSE
+single_night,q4b,imcra,31,Central Eastern Transition,cell,2024,0.633,1,32,1993,2024,2024,0.633,FALSE
+single_night,q4b,imcra,32,Central Western Shelf Province,direct,2024,0.379,5,32,1993,2024,2011,1.071,FALSE
+single_night,q4b,imcra,32,Central Western Shelf Province,cell,2024,0.395,4,32,1993,2024,2011,1.042,FALSE
+single_night,q4b,imcra,33,Central Eastern Shelf Transition,direct,2024,0.793,1,32,1993,2024,2024,0.793,FALSE
+single_night,q4b,imcra,33,Central Eastern Shelf Transition,cell,2024,0.704,1,32,1993,2024,2024,0.704,FALSE
+single_night,q4b,imcra,34,Central Western Province,direct,2024,0.458,5,31,1994,2024,2011,1.102,FALSE
+single_night,q4b,imcra,34,Central Western Province,cell,2024,0.469,5,31,1994,2024,2011,1.072,FALSE
+single_night,q4b,imcra,35,Norfolk Island Province,direct,2024,0.569,3,32,1993,2024,1998,0.763,FALSE
+single_night,q4b,imcra,35,Norfolk Island Province,cell,2024,0.602,3,32,1993,2024,1998,0.763,FALSE
+single_night,q4b,imcra,36,Lord Howe Province,direct,2024,0.743,1,32,1993,2024,2024,0.743,FALSE
+single_night,q4b,imcra,36,Lord Howe Province,cell,2024,0.736,1,32,1993,2024,2024,0.736,FALSE
+single_night,q4b,imcra,37,Tasman Basin Province,direct,2024,0.708,1,32,1993,2024,2024,0.708,FALSE
+single_night,q4b,imcra,37,Tasman Basin Province,cell,2024,0.753,1,32,1993,2024,2024,0.753,FALSE
+single_night,q4b,imcra,38,Central Eastern Province,direct,2024,0.634,2,32,1993,2024,2016,0.638,FALSE
+single_night,q4b,imcra,38,Central Eastern Province,cell,2024,0.632,1,32,1993,2024,2024,0.632,FALSE
+single_night,q4b,imcra,39,Southwest Shelf Transition,direct,2024,0.267,11,32,1993,2024,2011,1.089,FALSE
+single_night,q4b,imcra,39,Southwest Shelf Transition,cell,2024,0.37,7,32,1993,2024,2011,1.179,FALSE
+single_night,q4b,imcra,40,Central Eastern Shelf Province,direct,2024,0.5,4,32,1993,2024,2016,0.635,FALSE
+single_night,q4b,imcra,40,Central Eastern Shelf Province,cell,2024,0.582,2,32,1993,2024,2016,0.76,FALSE
+single_night,q4b,imcra,41,Great Australian Bight Shelf Transition,direct,2024,-0.187,24,32,1993,2024,2013,0.76,FALSE
+single_night,q4b,imcra,41,Great Australian Bight Shelf Transition,cell,2024,-0.077,20,31,1993,2024,2013,0.719,FALSE
+single_night,q4b,star,1,Coral Sea,direct,2024,0.518,6,32,1993,2024,2022,0.848,FALSE
+single_night,q4b,star,1,Coral Sea,cell,2024,0.548,5,32,1993,2024,2022,0.86,FALSE
+single_night,q4b,star,2,North,direct,2024,,,31,1993,2023,2016,0.926,FALSE
+single_night,q4b,star,2,North,cell,2024,,,30,1993,2023,2016,0.951,FALSE
+single_night,q4b,star,3,North-west,direct,2024,0.303,6,32,1993,2024,2016,0.803,FALSE
+single_night,q4b,star,3,North-west,cell,2024,0.43,4,32,1993,2024,2016,0.593,FALSE
+single_night,q4b,star,4,South-east,direct,2024,0.535,6,31,1993,2024,1993,1.335,FALSE
+single_night,q4b,star,4,South-east,cell,2024,0.352,3,30,1995,2024,2023,0.435,FALSE
+single_night,q4b,star,5,South-west,direct,2024,0.326,6,32,1993,2024,2011,0.917,FALSE
+single_night,q4b,star,5,South-west,cell,2024,0.331,6,32,1993,2024,2011,0.659,FALSE
+single_night,q4b,star,6,Temperate East,direct,2024,0.711,1,32,1993,2024,2024,0.711,FALSE
+single_night,q4b,star,6,Temperate East,cell,2024,0.686,1,32,1993,2024,2024,0.686,FALSE
+single_night,q4b,star,7,outside regions: MLD,direct,2024,-0.257,27,32,1993,2024,1998,0.781,FALSE
+single_night,q4b,star,7,outside regions: MLD,cell,2024,0.439,2,32,1993,2024,2016,0.442,FALSE
+single_night,q4b,star,8,outside regions: TST,direct,2024,0.581,5,31,1993,2024,2022,1.248,FALSE
+single_night,q4b,star,8,outside regions: TST,cell,2024,0.497,6,31,1993,2024,2022,1.169,FALSE
+single_night,q4b,star,9,outside regions: CI,direct,2024,0.478,7,32,1993,2024,2016,1.066,FALSE
+single_night,q4b,star,9,outside regions: CI,cell,2024,0.481,5,31,1994,2024,2016,1.062,FALSE
+single_night,q4b,star,10,outside regions: CKI,direct,2024,0.626,1,29,1994,2024,2024,0.626,FALSE
+single_night,q4b,star,10,outside regions: CKI,cell,2024,0.595,1,28,1995,2024,2024,0.595,FALSE
+single_night,q4b,star,11,outside regions: NI,direct,2024,0.589,3,32,1993,2024,1998,0.95,FALSE
+single_night,q4b,star,11,outside regions: NI,cell,2024,0.688,1,32,1993,2024,2024,0.688,FALSE
+single_night,q4b,star,12,outside regions: MAC,direct,2024,0.044,10,24,1999,2024,2010,0.737,FALSE
+single_night,q4b,star,12,outside regions: MAC,cell,2024,-0.095,18,25,1999,2024,2017,0.34,FALSE
+single_night,q4b,star,14,outside regions: AATW,cell,2024,,,15,2002,2022,2010,0.575,TRUE
+single_night,q4b,star,15,outside regions: AATE,cell,2024,,,19,2001,2022,2010,0.518,TRUE

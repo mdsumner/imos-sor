@@ -101,3 +101,14 @@ confirmed.
       sometimes present with made-up values, and sometimes perhaps just absent.
     - Counts from `nci/sums_check.csv` and the day logs.
 
+22. **The AVHRR night L3S (`L3S-1d/ngt`, skin SST) has unflagged sub-freezing pixels in the winter ice zone, and some near-empty files.**
+    - In the night sums (Continental window only), the −2.5 … 40 °C test drops 0.22% of the finite pixels that aren't flagged as ice, almost all
+      of them cold. That's 0.005–0.09% a year in 1992–1998, 0.13–0.44% in 1999–2022, and 0.04–0.05% in 2023–2025 (fv01).
+    - On 2004-07-15, 48,305 pixels are below −2.5 °C at 50–64°S, at every quality level (2–5). South of 60°S, 27% of the unflagged pixels
+      are below −2.5 °C and 45% below −1.8 °C. On 2018-07-15 it's 10% and 22%, and on 2024-07-15 3% and 14%.
+    - The ice flag is set on 0.3–1.9% of night pixels a year to 2012, and almost never from 2013 (as issue 21).
+    - So below about 55°S in winter the night record holds ice or cloud as SST, in amounts that change with processing era.
+    - 23 night files have no quality-4 pixel at all, and most are nearly empty (a typical night has about 4 million finite pixels).
+      They hold 1,366–292,400 finite pixels. The 19 in 1992 lie only south of 36–59°S (1992-03-21: 4,557 pixels at 59–70°S, quality 2–3).
+      The others are 1994-10-28, 1994-12-04, 1994-12-06 and 2013-04-06 (2,443 pixels at 50–63°S).
+    - Counts from the day logs of `nci/sums.R` (job 184505429) and 27 files read from S3.

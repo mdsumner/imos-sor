@@ -225,8 +225,12 @@ approach:
    - The 2023 seam is small (2022 paired offsets within ±0.045 °C).
    - From 2022 single-sensor runs cooler than multi-sensor, by up to 0.2 °C (Coral Sea, Temperate East).
    - 2024 is the warmest year in the whole domain in both products.
-   - Next: the night-only product (`L3S-1d/ngt`), a finer S2 level in the south-east, and MUR/OISST from trend.sst as a
-     reference for the 2022 drift.
+   - Night only (`L3S-1d/ngt`, AVHRR skin SST, Continental only: STAR 1.2's source) agrees with day+night over 1993–2016
+     within 0.05 °C/decade in every STAR region: South-east +0.23 [+0.08, +0.38], South-west +0.11 [−0.13, +0.35]. Its
+     fastest cell, east of Tasmania, is +0.53. So the night record doesn't reach "~1 °C per decade" at L5 either.
+   - Night steps up against day+night by 0.08–0.18 °C between 2017 and 2019, so after 2017 all three products disagree
+     by 0.1–0.2 °C, each in its own way.
+   - Next: a finer S2 level in the south-east, and MUR/OISST from trend.sst as a reference for the post-2017 drifts.
 5. Add L3S-SO (with `sea_ice_fraction`) and GAMSSA to the S2 L5 registry
    next to OISST/MUR, joining trend.sst and trend.ice.
 6. **NCI** (`nci/README.md`): join sh74 (IMOS/AODN mirror, `/g/data/sh74/IMOS_AODN`, not on THREDDS) and qm43 (BoM SST).
@@ -240,5 +244,7 @@ approach:
    - The screened rerun is done: 17,399 product-days, in R/07's per-day layout under `data/sums_imos/`.
      Every check against the first run passes (`nci/README.md`, "In-situ sums results").
    - The ice flag is set only in some processing eras. Near the ice edge, trends need a time-invariant ice mask.
+   - The night-only AVHRR record is in too (job 184505429, 12,045 nights). 23 nights with no quality-4 pixel failed on a
+     bug, since fixed; a rerun of those months (`REDO_FAILED=1`) will fill them.
 7. Biology refresh from the BGC_DB CSVs via planktonr. This is cheap and
    covers about half of the report's series.

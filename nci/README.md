@@ -138,10 +138,20 @@ these scripts write goes to jk72:
      - Its 2024 files are BoM fv01 (`product_version` 01.0), like day+night. The header check (`headers_compare.R`)
        covered day+night only, so the night record's fv02 → fv01 switch date hasn't been checked.
      - The converter gives it the Continental window's areas as `domain_km2` (`aus_km2` in `domain_km2.rds`).
-     - Run it alone with `-v PRODUCTS=single_night` (about 1.7 h, 55 SU). The day+night products already in `sums-v2/`
-       are skipped either way, since finished product-months always are.
+     - Run it alone with `-v PRODUCTS=single_night`. The day+night products already in `sums-v2/` are skipped either
+       way, since finished product-months always are. Job 184505429 took 1 h 36 min (about 4 s a night per worker, 51 SU)
+       and wrote all 400 product-months.
      - Tested here: the day+night single-sensor sums are bit-identical to before. Convert just the new product with
        `PRODUCTS=single_night Rscript nci/sums_to_parquet.R`.
+     - **23 nights failed** in job 184505429 (in 1992-03 … 07, 1992-10, 1994-10, 1994-12 and 2013-04), with "arguments
+       imply differing number of rows: 1, 0". Those files have no quality-4 pixel (1,366–292,400 finite pixels, most only
+       in the far south; `notes/issues.md` 22), so q4 had no S2 cell, and `one_day()` couldn't build a zero-row table.
+       Day+night never had such a day. Fixed
+       in `sums.R`, and tested here on two of those nights (1992-03-21, 2013-04-06) fetched from S3: the domain `all`
+       count is the finite pixels less the logged ice and range counts, and q4 and q4b are empty.
+       To fill them, rerun just those months:
+       `qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -l walltime=00:30:00 -v PRODUCTS=single_night,REDO_FAILED=1 sums.pbs`.
+       `REDO_FAILED=1` also redoes any month whose file logs a failed day, and skips the rest.
    - Each day is composited on the union lattice as in R/07: the Continental file wins wherever it covers a pixel,
      and the Southern file fills the rest. Days with only one of the two files are kept, and the log says which.
    - Every variant drops pixels flagged as ice (`l2p_flags` bit 4) and SST outside −2.5 … 40 °C. The log counts
@@ -190,6 +200,10 @@ these scripts write goes to jk72:
   |---|---|---|---|
   | multi | 0.124% | 0.045% | 0.169% |
   | single | 0.943% | 0.185% | 1.127% |
+  | single_night | 0.677% | 0.222% | 0.899% |
+
+- **Night** (job 184505429): 12,045 nights written, 23 left out as failed (step 9). Almost everything the range test drops
+  at night is cold: unflagged sub-freezing pixels in the winter ice zone, most of them in 1999–2022 (`notes/issues.md` 22).
 
 - **The ice flag isn't consistent over time** (`notes/issues.md` 21). It depends on the processing era, not on how much
   ice there is:

@@ -3515,7 +3515,7 @@ single_night,all,amp,55,Oceanic Shoals | Multiple Use Zone,cell,2024,0.376,8,32,
 single_night,all,amp,56,Oceanic Shoals | Multiple Use Zone,direct,2024,0.331,7,32,1993,2024,2016,1.009,FALSE
 single_night,all,amp,56,Oceanic Shoals | Multiple Use Zone,cell,2024,0.328,9,32,1993,2024,2016,1.033,FALSE
 single_night,all,amp,57,Oceanic Shoals | National Park Zone,direct,2024,0.348,7,32,1993,2024,2016,0.968,FALSE
-single_night,all,amp,57,Oceanic Shoals | National Park Zone,cell,2024,0.311,9,32,1993,2024,2016,1.086,FALSE
+single_night,all,amp,57,Oceanic Shoals | National Park Zone,cell,2024,0.311,9,32,1993,2024,2016,1.085,FALSE
 single_night,all,amp,58,Oceanic Shoals | Special Purpose Zone (Trawl),direct,2024,0.438,7,32,1993,2024,2016,1.064,FALSE
 single_night,all,amp,58,Oceanic Shoals | Special Purpose Zone (Trawl),cell,2024,0.326,8,32,1993,2024,2016,1.074,FALSE
 single_night,all,amp,59,Wessel | Habitat Protection Zone,direct,2024,0.46,6,32,1993,2024,2016,1,FALSE
@@ -3671,7 +3671,7 @@ single_night,all,amp,133,Abrolhos | National Park Zone,cell,2024,0.24,11,32,1993
 single_night,all,amp,134,Abrolhos | Special Purpose Zone,direct,2024,0.248,11,32,1993,2024,2011,1.244,FALSE
 single_night,all,amp,134,Abrolhos | Special Purpose Zone,cell,2024,0.24,11,32,1993,2024,2011,1.189,FALSE
 single_night,all,amp,135,Abrolhos | Special Purpose Zone,direct,2024,0.264,10,32,1993,2024,2011,1.095,FALSE
-single_night,all,amp,135,Abrolhos | Special Purpose Zone,cell,2024,0.24,11,32,1993,2024,2011,1.189,FALSE
+single_night,all,amp,135,Abrolhos | Special Purpose Zone,cell,2024,0.24,11,32,1993,2024,2011,1.188,FALSE
 single_night,all,amp,136,Bremer | National Park Zone,direct,2024,0.156,10,32,1993,2024,2012,0.679,FALSE
 single_night,all,amp,136,Bremer | National Park Zone,cell,2024,0.193,9,32,1993,2024,2011,0.646,FALSE
 single_night,all,amp,137,Bremer | Special Purpose Zone (Mining Exclusion),direct,2024,0.028,17,32,1993,2024,2011,0.576,FALSE
@@ -3743,7 +3743,7 @@ single_night,all,amp,169,South-west Corner | National Park Zone,cell,2024,0.193,
 single_night,all,amp,170,South-west Corner | National Park Zone,direct,2024,0.493,6,32,1993,2024,2000,0.892,FALSE
 single_night,all,amp,170,South-west Corner | National Park Zone,cell,2024,0.465,6,32,1993,2024,2012,0.852,FALSE
 single_night,all,amp,171,South-west Corner | National Park Zone,direct,2024,0.355,5,31,1994,2024,2012,1.216,FALSE
-single_night,all,amp,171,South-west Corner | National Park Zone,cell,2024,0.478,4,32,1993,2024,2011,1.078,FALSE
+single_night,all,amp,171,South-west Corner | National Park Zone,cell,2024,0.479,4,32,1993,2024,2011,1.078,FALSE
 single_night,all,amp,172,South-west Corner | National Park Zone,direct,2024,0.143,12,32,1993,2024,2011,1.041,FALSE
 single_night,all,amp,172,South-west Corner | National Park Zone,cell,2024,0.325,6,32,1993,2024,2011,0.969,FALSE
 single_night,all,amp,173,South-west Corner | Special Purpose Zone,direct,2024,-0.014,15,32,1993,2024,2011,0.764,FALSE
@@ -3778,9 +3778,9 @@ single_night,all,amp,187,Western Eyre | Special Purpose Zone,direct,2024,-0.564,
 single_night,all,amp,187,Western Eyre | Special Purpose Zone,cell,2024,-0.446,30,32,1993,2024,2013,0.849,FALSE
 single_night,all,amp,188,Western Eyre | Special Purpose Zone (Trawl),direct,2024,-0.024,17,32,1993,2024,2013,0.786,FALSE
 single_night,all,amp,188,Western Eyre | Special Purpose Zone (Trawl),cell,2024,-0.249,27,32,1993,2024,2013,0.843,FALSE
-single_night,all,amp,189,Western Kangaroo Island | National Park Zone,direct,2024,-0.322,28,32,1993,2024,2013,0.957,FALSE
+single_night,all,amp,189,Western Kangaroo Island | National Park Zone,direct,2024,-0.322,28,32,1993,2024,2013,0.956,FALSE
 single_night,all,amp,189,Western Kangaroo Island | National Park Zone,cell,2024,-0.271,29,32,1993,2024,2013,0.778,FALSE
-single_night,all,amp,190,Western Kangaroo Island | Special Purpose Zone,direct,2024,-0.228,26,32,1993,2024,2013,1.025,FALSE
+single_night,all,amp,190,Western Kangaroo Island | Special Purpose Zone,direct,2024,-0.229,26,32,1993,2024,2013,1.025,FALSE
 single_night,all,amp,190,Western Kangaroo Island | Special Purpose Zone,cell,2024,0.171,11,32,1993,2024,2013,0.818,FALSE
 single_night,all,amp,191,Western Kangaroo Island | Special Purpose Zone (Mining Exclusion),direct,2024,-0.377,29,32,1993,2024,2013,1.02,FALSE
 single_night,all,amp,191,Western Kangaroo Island | Special Purpose Zone (Mining Exclusion),cell,2024,0.062,12,32,1993,2024,2013,0.808,FALSE
@@ -3832,7 +3832,7 @@ single_night,all,amp,214,Solitary Islands | Special Purpose Zone (Trawl),direct,
 single_night,all,amp,214,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.574,1,32,1993,2024,2024,0.574,FALSE
 single_night,all,amp,215,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,0.451,3,32,1993,2024,1998,0.522,FALSE
 single_night,all,amp,215,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.574,1,32,1993,2024,2024,0.574,FALSE
-single_night,all,amp,216,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,0.32,4,32,1993,2024,1998,0.528,FALSE
+single_night,all,amp,216,Solitary Islands | Special Purpose Zone (Trawl),direct,2024,0.32,4,32,1993,2024,1998,0.527,FALSE
 single_night,all,amp,216,Solitary Islands | Special Purpose Zone (Trawl),cell,2024,0.574,1,32,1993,2024,2024,0.574,FALSE
 single_night,all,domain,1,whole domain,direct,2024,1.19,3,32,1993,2024,2023,1.385,FALSE
 single_night,all,domain,1,whole domain,cell,2024,0.508,1,32,1993,2024,2024,0.508,FALSE
@@ -3907,7 +3907,7 @@ single_night,all,imcra,18,Cape Province,cell,2024,0.533,6,32,1993,2024,2022,1.03
 single_night,all,imcra,19,Northwest Shelf Transition,direct,2024,0.297,10,32,1993,2024,2016,1.155,FALSE
 single_night,all,imcra,19,Northwest Shelf Transition,cell,2024,0.317,10,32,1993,2024,2016,1.137,FALSE
 single_night,all,imcra,20,Timor Province,direct,2024,0.457,6,32,1993,2024,2016,1.138,FALSE
-single_night,all,imcra,20,Timor Province,cell,2024,0.463,6,32,1993,2024,2016,1.123,FALSE
+single_night,all,imcra,20,Timor Province,cell,2024,0.463,6,32,1993,2024,2016,1.122,FALSE
 single_night,all,imcra,21,Northeast Transition,direct,2024,0.478,7,32,1993,2024,2022,1.004,FALSE
 single_night,all,imcra,21,Northeast Transition,cell,2024,0.509,6,32,1993,2024,2022,1.015,FALSE
 single_night,all,imcra,22,Northwest Shelf Province,direct,2024,0.315,6,32,1993,2024,2016,0.62,FALSE
@@ -3945,7 +3945,7 @@ single_night,all,imcra,37,Tasman Basin Province,cell,2024,0.688,1,32,1993,2024,2
 single_night,all,imcra,38,Central Eastern Province,direct,2024,0.584,2,32,1993,2024,2016,0.601,FALSE
 single_night,all,imcra,38,Central Eastern Province,cell,2024,0.565,2,32,1993,2024,2016,0.567,FALSE
 single_night,all,imcra,39,Southwest Shelf Transition,direct,2024,0.169,11,32,1993,2024,2011,1.076,FALSE
-single_night,all,imcra,39,Southwest Shelf Transition,cell,2024,0.281,11,32,1993,2024,2011,1.167,FALSE
+single_night,all,imcra,39,Southwest Shelf Transition,cell,2024,0.28,11,32,1993,2024,2011,1.167,FALSE
 single_night,all,imcra,40,Central Eastern Shelf Province,direct,2024,0.444,3,32,1993,2024,2001,0.634,FALSE
 single_night,all,imcra,40,Central Eastern Shelf Province,cell,2024,0.511,3,32,1993,2024,2016,0.721,FALSE
 single_night,all,imcra,41,Great Australian Bight Shelf Transition,direct,2024,-0.256,26,32,1993,2024,2013,0.753,FALSE

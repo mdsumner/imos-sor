@@ -180,8 +180,8 @@ Single-sensor is relative to 1993–2022; multi-sensor to 2013–2022.
     territories and STAR regions, but crude for small parks (`amp`): use a finer level for them.
   - Cloud cover still affects which pixels each cell's monthly mean is made from.
 - **Night:**
-  - 23 nights (0.19%) are missing until they are rerun (`nci/README.md`, step 9). Their files have no quality-4 pixel,
-    and most are nearly empty.
+  - 23 nights have no quality-4 pixel, and most are nearly empty (`notes/issues.md` 22). They failed in the first run
+    and were filled by a rerun (`nci/README.md`, step 9). They add to `all` only.
   - The fv02 → fv01 seam was measured for day+night only (`seam_2022` is empty for night), and the night record's
     switch date hasn't been checked.
   - What the range test drops at night is almost all cold: unflagged sub-freezing pixels in the winter ice zone

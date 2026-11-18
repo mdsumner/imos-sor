@@ -244,7 +244,7 @@ approach:
    - The screened rerun is done: 17,399 product-days, in R/07's per-day layout under `data/sums_imos/`.
      Every check against the first run passes (`nci/README.md`, "In-situ sums results").
    - The ice flag is set only in some processing eras. Near the ice edge, trends need a time-invariant ice mask.
-   - The night-only AVHRR record is in too (job 184505429, 12,045 nights). 23 nights with no quality-4 pixel failed on a
-     bug, since fixed; a rerun of those months (`REDO_FAILED=1`) will fill them.
+   - The night-only AVHRR record is in too: all 12,068 nights (jobs 184505429 and 184519414). The 23 nights with no
+     quality-4 pixel failed on a bug in the first run. The bug is fixed, and a rerun of those months (`REDO_FAILED=1`) filled them.
 7. Biology refresh from the BGC_DB CSVs via planktonr. This is cheap and
    covers about half of the report's series.

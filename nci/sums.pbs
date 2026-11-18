@@ -20,7 +20,8 @@
 ## single_night alone: 1 h 36 min, 51 SU).
 ## Resumable (finished product-months are skipped), so rerun the same command
 ## if it hits walltime. REDO_FAILED=1 also redoes months whose file logs a
-## failed day (job 184505429 lost 23 nights to a bug since fixed in sums.R).
+## failed day (job 184505429 lost 23 nights to a bug since fixed in sums.R;
+## job 184519414 filled them: 9 months, 3 min 39 s, 1.95 SU).
 ##
 ##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 sums.pbs
 ##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v PRODUCTS=single_night sums.pbs   (one product)

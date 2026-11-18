@@ -77,10 +77,11 @@ for (i in seq_len(nrow(files))) {
   if (files$product[i] %in% aus_only) { reg$domain_km2 <- reg$aus_km2; reg <- reg[reg$domain_km2 > 0, ] }
   for (v in unique(s2$variant)) for (d in as.character(unique(u$date))) {
     a <- s2[s2$variant == v & s2$date == as.Date(d), ]
-    a <- data.frame(cell = cells[a$cell], a[s4], date = as.Date(d), row.names = NULL)
+    ## rep(): a night with no quality-4 pixel has no q4 cells, and data.frame() won't recycle a date over zero rows
+    a <- data.frame(cell = cells[a$cell], a[s4], date = rep(as.Date(d), nrow(a)), row.names = NULL)
     a <- a[order(a$cell), ]
     b <- reg[reg$variant == v & reg$date == as.Date(d), ]
-    b <- data.frame(set = b$set, region_id = b$region_id, b[s4], domain_km2 = b$domain_km2, date = as.Date(d), row.names = NULL)
+    b <- data.frame(set = b$set, region_id = b$region_id, b[s4], domain_km2 = b$domain_km2, date = rep(as.Date(d), nrow(b)), row.names = NULL)
     b <- b[order(b$set, b$region_id), ]
     for (k in c("s2l5", "regions")) {
       f <- file.path(out, k, paste0(files$product[i], "_", v), paste0(d, ".parquet"))

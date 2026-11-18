@@ -146,12 +146,15 @@ these scripts write goes to jk72:
      - **23 nights failed** in job 184505429 (in 1992-03 … 07, 1992-10, 1994-10, 1994-12 and 2013-04), with "arguments
        imply differing number of rows: 1, 0". Those files have no quality-4 pixel (1,366–292,400 finite pixels, most only
        in the far south; `notes/issues.md` 22), so q4 had no S2 cell, and `one_day()` couldn't build a zero-row table.
-       Day+night never had such a day. Fixed
-       in `sums.R`, and tested here on two of those nights (1992-03-21, 2013-04-06) fetched from S3: the domain `all`
-       count is the finite pixels less the logged ice and range counts, and q4 and q4b are empty.
-       To fill them, rerun just those months:
+       Day+night never had such a day. The converter had the same problem when writing such a night, and both are fixed.
+       The fix was tested here on two of those nights (1992-03-21, 2013-04-06) fetched from S3.
+     - Job 184519414 filled them:
        `qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -l walltime=00:30:00 -v PRODUCTS=single_night,REDO_FAILED=1 sums.pbs`.
-       `REDO_FAILED=1` also redoes any month whose file logs a failed day, and skips the rest.
+       `REDO_FAILED=1` redoes only months whose file logs a failed day: here 9 months, 3 min 39 s, 1.95 SU.
+       - The nights that had worked before are bit-identical.
+       - On each new night, the domain `all` count is the finite pixels less the logged ice and range counts, and
+         q4 and q4b are empty.
+       - The new nights add to `all` only, and moved no night trend by more than 0.001 °C/decade.
    - Each day is composited on the union lattice as in R/07: the Continental file wins wherever it covers a pixel,
      and the Southern file fills the rest. Days with only one of the two files are kept, and the log says which.
    - Every variant drops pixels flagged as ice (`l2p_flags` bit 4) and SST outside −2.5 … 40 °C. The log counts
@@ -202,7 +205,7 @@ these scripts write goes to jk72:
   | single | 0.943% | 0.185% | 1.127% |
   | single_night | 0.677% | 0.222% | 0.899% |
 
-- **Night** (job 184505429): 12,045 nights written, 23 left out as failed (step 9). Almost everything the range test drops
+- **Night** (jobs 184505429 and 184519414): all 12,068 nights written. Almost everything the range test drops
   at night is cold: unflagged sub-freezing pixels in the winter ice zone, most of them in 1999–2022 (`notes/issues.md` 22).
 
 - **The ice flag isn't consistent over time** (`notes/issues.md` 21). It depends on the processing era, not on how much

@@ -179,9 +179,11 @@ Night − single-sensor day+night, both re-centred on 2013–2021 (°C):
   (year-to-year sd 0.04–0.07 °C, no trend beyond ±0.05 °C/decade).
 - Night against multi-sensor doesn't show single-sensor's 2022 drop. It is −0.14 … +0.01 °C in 2012–2016, rises to
   +0.00 … +0.16 in 2019–2021, then comes back to −0.12 … +0.07 in 2022–2024.
-- So after 2017 the three products disagree by 0.1–0.2 °C, each in its own way. Which drifts can't be told from them
-  alone. An independent reference is needed: the MUR v4.1 and OISST sums in trend.sst, on the same S2 L5 cells.
-  The night files' platform attributes across 2017–2019 are worth a look too.
+- So after 2017 the three products disagree by 0.1–0.2 °C, each in its own way. Against MUR v4.1 and OISST on the
+  same cells (`notes/crossover.md`, R/11), the drift is mostly single-sensor day+night. It falls 0.09–0.19 °C
+  against MUR (2019–2024 less 2012–2016), multi-sensor falls 0.03–0.11, and night has no lasting step (−0.04 …
+  +0.11). So single-sensor trends that run past 2017 are low, and for 1993–2024 the night record is the better
+  guide. The night files' platform attributes across 2017–2019 are still worth a look.
 
 ## Status: 2024 (q4, anomalies first, °C)
 

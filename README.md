@@ -41,6 +41,7 @@ Decisions so far:
 | `R/05_time_axes.R` … `R/08_compare.R` | time-axis audit → S2 L5 mapping → 5-day block sums (S2 + regions) → comparison with trend.sst |
 | `R/09_trends.R`, `notes/trends.md` | monthly anomalies (anomalies first, per S2 L5 cell), trends and 2024 status for every region, from the in-situ L3S sums |
 | `R/10_fine_trends.R` | the same on S2 L8 → L5 cells over the STAR South-east region, from `nci/sums_fine.R`; settings and fit shared with R/09 in `R/trend_fns.R` |
+| `R/11_crossover.R`, `notes/crossover.md` | the IMOS L3S products against MUR v4.1 and OISST (trend.sst sums) on the same S2 L5 cells: which product drifts |
 | `trends/` | committed outputs of `R/09`: `region_trends.csv`, `cell_trends_q4.csv`, `region_status.csv`, `region_monthly_q4.csv.gz` |
 | `nci/` | IMOS on NCI: the sh74 IMOS/AODN mirror and BoM's qm43 SST archive (fv01 = IMOS operational, fv02 = BoM reprocessing), projects to join, the Gadi probe and inventory job, and raad.virtualize candidates (`nci/README.md`) |
 | `notes/block_2024-01-04.md` | first 5-day block: IMOS L3S vs OISST/MUR on S2 L5; exact EEZ means vs L5 cell selections |
@@ -236,7 +237,10 @@ approach:
      1993–2016 at any level: the fastest is +0.71 [+0.48, +0.95] at night, an L8 cell in the Tasman Sea east of
      Tasmania (+0.64 by day+night). The region trend rises with finer cells, night +0.23 at L5 to +0.28 at L8,
      from the finer anomalies rather than the tighter footprint (`notes/trends.md`).
-   - Next: MUR/OISST from trend.sst as a reference for the post-2017 drifts.
+   - Crossover with MUR v4.1 and OISST from trend.sst (`R/11_crossover.R`, `notes/crossover.md`): after 2017 it is
+     single-sensor day+night that drifts. It falls 0.15 °C against both references in the aus window (2019–2024 less
+     2012–2016), multi-sensor falls 0.05 against MUR, and night has no lasting step (+0.01). Before 2017 single and
+     night are steady against MUR (2003–2016).
 5. Add L3S-SO (with `sea_ice_fraction`) and GAMSSA to the S2 L5 registry
    next to OISST/MUR, joining trend.sst and trend.ice.
 6. **NCI** (`nci/README.md`): join sh74 (IMOS/AODN mirror, `/g/data/sh74/IMOS_AODN`, not on THREDDS) and qm43 (BoM SST).

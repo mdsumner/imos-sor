@@ -7,16 +7,22 @@
 #PBS -l wd
 #PBS -j oe
 #PBS -N imos-sor-sums
-## The IMOS L3S SST record (BoM/IMOS ABOM GHRSST L3S 1-day day+night, not
-## MUR) as exact daily sums, in situ from sh74: S2 L5 cells (trend.sst
-## schema), the region sets and the whole domain, for multi- and
-## single-sensor and the all / q4 / q4b variants (nci/sums.R; R/07 for whole
-## records), after the ice-flag and -2.5..40 C screen. About 17,400
-## product-days; ~10 s per day per worker on Gadi (job 184407123, no screen: 3 h 37 min with NWORK=12, 116 SU).
+## The IMOS L3S SST record (BoM/IMOS ABOM GHRSST L3S 1-day, not MUR) as
+## exact daily sums, in situ from sh74: S2 L5 cells (trend.sst schema), the
+## region sets and the whole domain, for the all / q4 / q4b variants
+## (nci/sums.R; R/07 for whole records), after the ice-flag and -2.5..40 C
+## screen. Products (PRODUCTS, default all):
+##   multi         day+night SSTfnd, Continental + Southern, 2012-01 ->   5,333 days
+##   single        day+night SSTfnd, Continental + Southern, 1992-03 ->  12,077 days
+##   single_night  night SSTskin, Continental only (STAR 1.2), 1992-03 -> 12,068 days
+## Day+night: ~10 s per day per worker on Gadi (job 184447215: 3 h 56 min with
+## NWORK=12, 126 SU). Night reads one window, so expect about 6 s a day:
+## ~1.7 h and ~55 SU for single_night alone.
 ## Resumable (finished product-months are skipped), so rerun the same command
 ## if it hits walltime.
 ##
 ##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 sums.pbs
+##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v PRODUCTS=single_night sums.pbs   (one product)
 ##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v PRODUCTS=multi,YEARS=2024 sums.pbs   (a subset)
 ##
 ## Needs in $OUTDIR: inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz

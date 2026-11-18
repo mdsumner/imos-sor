@@ -9,8 +9,12 @@
 # window elsewhere. As in R/07 the Continental file wins wherever both
 # windows cover a pixel, whether or not it has a value there. The overlap is
 # never filled from the Southern file, so each pixel always has one source.
-#   multi  = L3SM-1d (aus) + L3SM-1dS (so)   MultiSensor
-#   single = L3S-1d  (aus) + L3S-1dS  (so)   AVHRR_D
+#   multi        = L3SM-1d/dn (aus) + L3SM-1dS/dn (so)   MultiSensor, day+night, SSTfnd
+#   single       = L3S-1d/dn  (aus) + L3S-1dS/dn  (so)   AVHRR_D, day+night, SSTfnd
+#   single_night = L3S-1d/ngt (aus only)                 AVHRR_D, night, SSTskin
+# The night product (STAR 1.2's source) is skin SST, so it runs cooler than
+# the foundation SST of the day+night composites. It has no Southern file,
+# so its domain is the Continental window (OUT/domain_km2.rds, aus_km2).
 # Screen (every variant): a pixel is dropped if l2p_flags has the ice bit
 # (4), or if its SST is outside -2.5 .. 40 C. In the AVHRR record the
 # ice-flagged pixels include the Ross Ice Shelf set to 52.0 C at quality 4-5,
@@ -61,9 +65,9 @@ NWORK <- as.integer(env("NWORK", "4")); MAXDAYS <- as.integer(env("MAXDAYS", "0"
 set_config_option("GDAL_NUM_THREADS", "1"); set_config_option("GDAL_CACHEMAX", "256")
 set_config_option("GDAL_DISABLE_READDIR_ON_OPEN", "EMPTY_DIR")
 
-prods <- data.frame(product = c("multi", "multi", "single", "single"),
-                    dir = c("L3SM-1d", "L3SM-1dS", "L3S-1d", "L3S-1dS"),
-                    window = c("aus", "so", "aus", "so"))
+prods <- data.frame(product = c("multi", "multi", "single", "single", "single_night"),
+                    dir = c("L3SM-1d/dn", "L3SM-1dS/dn", "L3S-1d/dn", "L3S-1dS/dn", "L3S-1d/ngt"),
+                    window = c("aus", "so", "aus", "so", "aus"))
 if (!is.null(split_env("PRODUCTS"))) prods <- prods[prods$product %in% split_env("PRODUCTS"), ]
 variants <- c("all", "q4", "q4b")
 screen <- list(ice_bit = 4L, sst_min = -2.5, sst_max = 40)
@@ -71,9 +75,11 @@ screen <- list(ice_bit = 4L, sst_min = -2.5, sst_max = 40)
 ## ---- days from the sh74 inventory -----------------------------------------
 inv <- read.delim(gzfile(inv_f), header = FALSE, col.names = c("path", "size", "mtime"),
                   colClasses = c("character", "numeric", "numeric"), quote = "")
-re <- "^IMOS/SRS/SST/ghrsst/(L3S-1d|L3SM-1d|L3S-1dS|L3SM-1dS)/dn/[0-9]{4}/[0-9]{14}-ABOM-L3S_GHRSST-SSTfnd-(AVHRR_D|MultiSensor)-1d_dn(_Southern)?\\.nc$"
+re <- paste0("^IMOS/SRS/SST/ghrsst/(L3S-1d|L3SM-1d|L3S-1dS|L3SM-1dS)/",
+             "(dn/[0-9]{4}/[0-9]{14}-ABOM-L3S_GHRSST-SSTfnd-(AVHRR_D|MultiSensor)-1d_dn(_Southern)?",
+             "|ngt/[0-9]{4}/[0-9]{14}-ABOM-L3S_GHRSST-SSTskin-(AVHRR_D|MultiSensor)-1d_night)\\.nc$")
 inv <- inv[grepl(re, inv$path) & inv$size > 0, ]
-inv$dir <- sub("^IMOS/SRS/SST/ghrsst/([^/]+)/.*$", "\\1", inv$path)
+inv$dir <- sub("^IMOS/SRS/SST/ghrsst/([^/]+/[^/]+)/.*$", "\\1", inv$path)   # product directory and time of day
 inv$date <- as.Date(substr(basename(inv$path), 1, 8), "%Y%m%d")
 inv <- merge(inv, prods, by = "dir")
 inv <- inv[order(-inv$size), ]
@@ -145,11 +151,12 @@ geo <- lapply(c(aus = "aus", so = "so"), function(g) {
        gid_km2 = by_gid(R$gid, R$w), km2 = sum(rep(w$km2_row, each = w$ncol)[use]))
 })
 rm(kit); invisible(gc())
-## region area inside the composite domain (R/07's domain_km2)
+## region area inside the composite domain (R/07's domain_km2), and inside the
+## Continental window alone (aus_km2: the domain of a product without a Southern file)
 gkm2 <- geo$aus$gid_km2 + geo$so$gid_km2
 in_dom <- which(gkm2 > 0)
-dkm2 <- rbind(data.frame(set = gid_set[in_dom], region_id = gid_region[in_dom], domain_km2 = gkm2[in_dom]),
-              data.frame(set = "domain", region_id = 1L, domain_km2 = geo$aus$km2 + geo$so$km2))
+dkm2 <- rbind(data.frame(set = gid_set[in_dom], region_id = gid_region[in_dom], domain_km2 = gkm2[in_dom], aus_km2 = geo$aus$gid_km2[in_dom]),
+              data.frame(set = "domain", region_id = 1L, domain_km2 = geo$aus$km2 + geo$so$km2, aus_km2 = geo$aus$km2))
 dir.create(out, recursive = TRUE, showWarnings = FALSE)
 sf <- file.path(out, "screen.rds")
 if (file.exists(sf)) {

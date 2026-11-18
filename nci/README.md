@@ -132,6 +132,16 @@ these scripts write goes to jk72:
    - Covers multi-sensor (L3SM-1d + L3SM-1dS, 2012-01 → 2026-11) and single-sensor (L3S-1d + L3S-1dS,
      1992-03 → 2025-06), all / q4 / q4b, per S2 L5 cell (trend.sst schema), region set and whole domain.
      That's about 17,400 product-days in 579 product-months. It reuses `offset_kit.rds`, which is already in the probe directory.
+   - `single_night` adds the night-only AVHRR record (`L3S-1d/ngt`, 1992-03 → 2025-06, 12,068 days). STAR 1.2 used it.
+     - It is Continental only and **skin** SST. On 2024-01-04/05, on the same S2 cells (q4), night minus day+night has
+       a median of −0.17 °C: the cool skin.
+     - Its 2024 files are BoM fv01 (`product_version` 01.0), like day+night. The header check (`headers_compare.R`)
+       covered day+night only, so the night record's fv02 → fv01 switch date hasn't been checked.
+     - The converter gives it the Continental window's areas as `domain_km2` (`aus_km2` in `domain_km2.rds`).
+     - Run it alone with `-v PRODUCTS=single_night` (about 1.7 h, 55 SU). The day+night products already in `sums-v2/`
+       are skipped either way, since finished product-months always are.
+     - Tested here: the day+night single-sensor sums are bit-identical to before. Convert just the new product with
+       `PRODUCTS=single_night Rscript nci/sums_to_parquet.R`.
    - Each day is composited on the union lattice as in R/07: the Continental file wins wherever it covers a pixel,
      and the Southern file fills the rest. Days with only one of the two files are kept, and the log says which.
    - Every variant drops pixels flagged as ice (`l2p_flags` bit 4) and SST outside −2.5 … 40 °C. The log counts

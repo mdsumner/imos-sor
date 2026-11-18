@@ -14,8 +14,11 @@
 # All inputs must have been made with the same screen (OUT/screen.rds of
 # sums.R); the first run, made before the screen, is refused.
 #
-# usage (from the repo root): Rscript nci/sums_to_parquet.R [OUT] [IN ...]
-#   defaults: OUT = data/sums_imos, IN = data/nci/sums-v2
+# A product with no Southern file (single_night) gets the Continental
+# window's areas as domain_km2, and only the regions inside it.
+#
+# usage (from the repo root): [PRODUCTS=single_night] Rscript nci/sums_to_parquet.R [OUT] [IN ...]
+#   defaults: OUT = data/sums_imos, IN = data/nci/sums-v2; PRODUCTS = all found
 args <- commandArgs(TRUE)
 out <- if (length(args) >= 1) args[1] else "data/sums_imos"
 ins <- if (length(args) >= 2) args[-1] else "data/nci/sums-v2"
@@ -25,16 +28,24 @@ cat("screen: ice bit", scr[[1]]$ice_bit, "; SST", scr[[1]]$sst_min, "..", scr[[1
 kit <- readRDS("data/nci/offset_kit.rds"); cells <- kit$cells
 s4 <- c("n", "sumw", "sumwx", "sumwx2")
 dkm2 <- readRDS(file.path(ins[1], "domain_km2.rds"))
+if (is.null(dkm2$aus_km2)) dkm2$aus_km2 <- NA_real_   # written before the night product
 
 files <- do.call(rbind, lapply(seq_along(ins), function(i) {
   f <- Sys.glob(file.path(ins[i], "*", "*.rds"))
   if (length(f)) data.frame(src = i, file = f, product = basename(dirname(f)), month = sub("\\.rds$", "", basename(f)))
 }))
 if (is.null(files)) stop("no sums under ", paste(ins, collapse = " "))
+if (nzchar(Sys.getenv("PRODUCTS"))) files <- files[files$product %in% strsplit(Sys.getenv("PRODUCTS"), ",")[[1]], ]
 cat("product-month files:", nrow(files), " input directories:", length(ins), "\n")
 ## which source gives each product-day: the last one where the day is good
 logs <- do.call(rbind, lapply(seq_len(nrow(files)), function(i) data.frame(src = files$src[i], product = files$product[i], readRDS(files$file[i])$days, row.names = NULL)))
 logs$good <- logs$error == "" & !logs$stale_aus & !logs$stale_so
+## a product with no Southern file on any day (single_night) has the Continental window as its domain
+aus_only <- names(which(tapply(logs$file_so != "", logs$product, sum) == 0))
+if (length(aus_only)) {
+  cat("Continental window only:", aus_only, "\n")
+  if (anyNA(dkm2$aus_km2)) stop("domain_km2.rds has no aus_km2: rerun sums.R (any product) to rewrite it")
+}
 logs <- logs[order(logs$product, logs$date, logs$good, logs$src), ]
 pick <- logs[!duplicated(logs[c("product", "date")], fromLast = TRUE), ]
 use <- pick[pick$good, c("product", "date", "src")]
@@ -63,6 +74,7 @@ for (i in seq_len(nrow(files))) {
   s2 <- r$s2[r$s2$date %in% u$date, ]
   reg <- r$regions[r$regions$date %in% u$date, ]
   reg <- merge(reg, dkm2, by = c("set", "region_id"), all.x = TRUE, sort = FALSE)
+  if (files$product[i] %in% aus_only) { reg$domain_km2 <- reg$aus_km2; reg <- reg[reg$domain_km2 > 0, ] }
   for (v in unique(s2$variant)) for (d in as.character(unique(u$date))) {
     a <- s2[s2$variant == v & s2$date == as.Date(d), ]
     a <- data.frame(cell = cells[a$cell], a[s4], date = as.Date(d), row.names = NULL)

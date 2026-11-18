@@ -11,7 +11,12 @@
 # never filled from the Southern file, so each pixel always has one source.
 #   multi  = L3SM-1d (aus) + L3SM-1dS (so)   MultiSensor
 #   single = L3S-1d  (aus) + L3S-1dS  (so)   AVHRR_D
-# Variants: all = every finite SST; q4 = quality_level >= 4;
+# Screen (every variant): a pixel is dropped if l2p_flags has the ice bit
+# (4), or if its SST is outside -2.5 .. 40 C. In the AVHRR record the
+# ice-flagged pixels include the Ross Ice Shelf set to 52.0 C at quality 4-5,
+# and one Southern file (1999-10-04) decodes to 2.4e36 C (notes/issues.md
+# 19-20). The log counts what each window loses to each test.
+# Variants: all = every screened SST; q4 = quality_level >= 4;
 #           q4b = q4 and SST - sses_bias. SST in degrees C (K - 273.15).
 # IMOS holds BoM fv02 to 2022-12-31 and fv01 after (nci/README.md).
 #
@@ -27,10 +32,14 @@
 #   OUT/<product>/<YYYY-MM>.rds = list(
 #     s2       date, variant, cell (index into kit$cells), n, sumw, sumwx, sumwx2   (cells with n > 0)
 #     regions  date, variant, set, region_id, n, sumw, sumwx, sumwx2               (incl. set "domain")
-#     days     per-day log: the two files (or ""), stale flags, pixels used per
-#              window, q4 count and q4b domain mean, read/total seconds, error)
+#     days     per-day log: the two files (or ""), stale flags, finite pixels per
+#              window (n_aus, n_so) and how many the screen dropped (ice_*,
+#              range_*), q4 count and q4b domain mean, seconds, error
+#     screen   the screen used)
 # plus OUT/domain_km2.rds (region area inside the composite domain, per set and
-# region). sums_to_parquet.R turns them into R/07's per-day parquet layout.
+# region) and OUT/screen.rds. An OUT made with another screen (or none: the
+# first run, before the screen) is refused, so runs can't mix.
+# sums_to_parquet.R turns them into R/07's per-day parquet layout.
 #
 # A day is written if either window has a file. If one is missing its part of
 # the domain is empty that day, and the log says so. If a file can't be read
@@ -57,6 +66,7 @@ prods <- data.frame(product = c("multi", "multi", "single", "single"),
                     window = c("aus", "so", "aus", "so"))
 if (!is.null(split_env("PRODUCTS"))) prods <- prods[prods$product %in% split_env("PRODUCTS"), ]
 variants <- c("all", "q4", "q4b")
+screen <- list(ice_bit = 4L, sst_min = -2.5, sst_max = 40)
 
 ## ---- days from the sh74 inventory -----------------------------------------
 inv <- read.delim(gzfile(inv_f), header = FALSE, col.names = c("path", "size", "mtime"),
@@ -141,6 +151,13 @@ in_dom <- which(gkm2 > 0)
 dkm2 <- rbind(data.frame(set = gid_set[in_dom], region_id = gid_region[in_dom], domain_km2 = gkm2[in_dom]),
               data.frame(set = "domain", region_id = 1L, domain_km2 = geo$aus$km2 + geo$so$km2))
 dir.create(out, recursive = TRUE, showWarnings = FALSE)
+sf <- file.path(out, "screen.rds")
+if (file.exists(sf)) {
+  if (!identical(readRDS(sf), screen)) stop(out, " was made with another screen: use a new OUT")
+} else {
+  if (length(Sys.glob(file.path(out, "*", "*.rds")))) stop(out, " holds sums made before the screen: use a new OUT")
+  saveRDS(screen, sf)
+}
 saveRDS(dkm2, file.path(out, "domain_km2.rds"))
 tasks <- tasks[!file.exists(tasks$file), ]
 if (!nrow(tasks)) quit(save = "no")
@@ -175,8 +192,15 @@ window_sums <- function(f, W) {
   sst <- rd(f, "sea_surface_temperature", W)
   fin <- is.finite(sst); if (!is.null(W$use)) fin <- fin & W$use
   k <- which(fin); rm(fin)
-  x <- list(sst = sst[k] - 273.15, ql = rd(f, "quality_level", W)[k], sb = rd(f, "sses_bias", W)[k])
-  rm(sst)
+  s <- sst[k] - 273.15; rm(sst)
+  fl <- rd(f, "l2p_flags", W)[k]
+  ice <- is.finite(fl) & bitwAnd(as.integer(fl), screen$ice_bit) > 0L; rm(fl)
+  oor <- !ice & (s < screen$sst_min | s > screen$sst_max)
+  n0 <- length(k); n_ice <- sum(ice); n_range <- sum(oor)
+  ok <- which(!(ice | oor)); rm(ice, oor)
+  k <- k[ok]; s <- s[ok]
+  x <- list(sst = s, ql = rd(f, "quality_level", W)[k], sb = rd(f, "sses_bias", W)[k])
+  rm(s)
   rk <- W$run[k]
   L <- integer(W$N); L[k] <- seq_along(k)
   pos <- L[W$R_pix]; keep <- which(pos > 0L); pos <- pos[keep]
@@ -197,7 +221,7 @@ window_sums <- function(f, W) {
     res[[v]] <- list(S = S, R = R, D = c(sum(U[, "c"]), colSums(U * W$run_km2[runs])))
     rm(Q, U, QP)
   }
-  list(res = res, n = length(k))
+  list(res = res, n = n0, ice = n_ice, range = n_range)
 }
 s4 <- c("n", "sumw", "sumwx", "sumwx2")
 one_day <- function(d) {
@@ -217,10 +241,11 @@ one_day <- function(d) {
                       data.frame(date = d$date, variant = v, set = "domain", region_id = 1L, `names<-`(as.list(D), s4)))
     info[[v]] <- D
   }
-  nn <- function(g) if (is.null(parts[[g]])) 0L else parts[[g]]$n
+  nn <- function(g, k = "n") if (is.null(parts[[g]])) 0L else parts[[g]][[k]]
   list(s2 = do.call(rbind, s2), regions = do.call(rbind, reg),
        day = data.frame(date = d$date, file_aus = basename(d$path_aus), file_so = basename(d$path_so),
                         stale_aus = d$stale_aus, stale_so = d$stale_so, n_aus = nn("aus"), n_so = nn("so"),
+                        ice_aus = nn("aus", "ice"), ice_so = nn("so", "ice"), range_aus = nn("aus", "range"), range_so = nn("so", "range"),
                         n_q4 = unname(info$q4[1]), mean_q4b = unname(info$q4b[3] / info$q4b[2]),
                         seconds = round(as.numeric(difftime(Sys.time(), t0, units = "secs")), 1), error = ""))
 }
@@ -237,6 +262,7 @@ run_task <- function(i) {
     if (is.character(r)) {
       log[[j]] <- data.frame(date = P$date[j], file_aus = basename(P$path_aus[j]), file_so = basename(P$path_so[j]),
                              stale_aus = P$stale_aus[j], stale_so = P$stale_so[j], n_aus = NA_integer_, n_so = NA_integer_,
+                             ice_aus = NA_integer_, ice_so = NA_integer_, range_aus = NA_integer_, range_so = NA_integer_,
                              n_q4 = NA_real_, mean_q4b = NA_real_,
                              seconds = round(as.numeric(difftime(Sys.time(), t0, units = "secs")), 1), error = r)
       next
@@ -244,7 +270,7 @@ run_task <- function(i) {
     s2[[j]] <- r$s2; reg[[j]] <- r$regions; log[[j]] <- r$day
   }
   res <- list(product = t$product, month = t$month, s2 = do.call(rbind, s2), regions = do.call(rbind, reg),
-              days = do.call(rbind, log))
+              days = do.call(rbind, log), screen = screen)
   if (!is.null(res$s2)) { rownames(res$s2) <- NULL; rownames(res$regions) <- NULL }
   rownames(res$days) <- NULL
   dir.create(dirname(t$file), recursive = TRUE, showWarnings = FALSE)

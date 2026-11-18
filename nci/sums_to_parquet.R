@@ -4,17 +4,24 @@
 #   OUT/s2l5/<product>_<variant>/<date>.parquet      cell, n, sumw, sumwx, sumwx2, date
 #   OUT/regions/<product>_<variant>/<date>.parquet   set, region_id, n, sumw, sumwx, sumwx2, domain_km2, date
 #                                                    (plus set "domain": the whole composite)
-#   OUT/days-<product>.csv                           the day log: files, stale flags, pixels per window, errors
+#   OUT/days-<product>.csv                           the day log: files, stale flags, pixels per window,
+#                                                    what the ice/range screen dropped, errors
 # Days that failed, and days whose sh74 file S3 has since replaced ("stale"),
 # are left out and listed. Give more input directories to fill them (for
 # example a local run of sums.R on those days from S3): a later directory
 # overrides an earlier one for the same product and day.
 #
+# All inputs must have been made with the same screen (OUT/screen.rds of
+# sums.R); the first run, made before the screen, is refused.
+#
 # usage (from the repo root): Rscript nci/sums_to_parquet.R [OUT] [IN ...]
-#   defaults: OUT = data/sums_imos, IN = data/nci/sums
+#   defaults: OUT = data/sums_imos, IN = data/nci/sums-v2
 args <- commandArgs(TRUE)
 out <- if (length(args) >= 1) args[1] else "data/sums_imos"
-ins <- if (length(args) >= 2) args[-1] else "data/nci/sums"
+ins <- if (length(args) >= 2) args[-1] else "data/nci/sums-v2"
+scr <- lapply(ins, function(d) { f <- file.path(d, "screen.rds"); if (!file.exists(f)) stop(d, " has no screen.rds (made before the screen?)"); readRDS(f) })
+if (!all(vapply(scr, identical, logical(1), scr[[1]]))) stop("inputs were made with different screens")
+cat("screen: ice bit", scr[[1]]$ice_bit, "; SST", scr[[1]]$sst_min, "..", scr[[1]]$sst_max, "C\n")
 kit <- readRDS("data/nci/offset_kit.rds"); cells <- kit$cells
 s4 <- c("n", "sumw", "sumwx", "sumwx2")
 dkm2 <- readRDS(file.path(ins[1], "domain_km2.rds"))
@@ -36,6 +43,17 @@ dir.create(out, recursive = TRUE, showWarnings = FALSE)
 for (p in unique(pick$product)) write.csv(pick[pick$product == p, setdiff(names(pick), "good")], file.path(out, paste0("days-", p, ".csv")), row.names = FALSE)
 cat("days written:", nrow(use), " left out:", nrow(bad), "\n")
 if (nrow(bad)) print(table(bad$product, ifelse(bad$error != "", "failed", "stale vs S3")))
+## what the screen took, and windows it emptied (a broken file, or nothing but ice)
+g <- pick[pick$good, ]
+for (p in unique(g$product)) { x <- g[g$product == p, ]
+  cat(sprintf("%s: screen dropped %.3f%% of finite pixels (ice %.3f%%, out of range %.3f%%)\n", p,
+              100 * sum(x[c("ice_aus", "ice_so", "range_aus", "range_so")]) / sum(x[c("n_aus", "n_so")]),
+              100 * sum(x[c("ice_aus", "ice_so")]) / sum(x[c("n_aus", "n_so")]),
+              100 * sum(x[c("range_aus", "range_so")]) / sum(x[c("n_aus", "n_so")]))) }
+for (w in c("aus", "so")) {
+  e <- g[g[[paste0("n_", w)]] > 0 & g[[paste0("range_", w)]] > 0.5 * g[[paste0("n_", w)]], ]
+  if (nrow(e)) { cat("windows mostly out of range (", w, "):\n", sep = ""); print(e[c("product", "date", paste0(c("n_", "range_"), w))], row.names = FALSE) }
+}
 
 n_written <- 0L
 for (i in seq_len(nrow(files))) {

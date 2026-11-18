@@ -134,19 +134,35 @@ these scripts write goes to jk72:
      That's about 17,400 product-days in 579 product-months. It reuses `offset_kit.rds`, which is already in the probe directory.
    - Each day is composited on the union lattice as in R/07: the Continental file wins wherever it covers a pixel,
      and the Southern file fills the rest. Days with only one of the two files are kept, and the log says which.
+   - Every variant drops pixels flagged as ice (`l2p_flags` bit 4) and SST outside −2.5 … 40 °C. The log counts
+     what each window loses to each test, so the dropped pixels can be accounted for exactly.
+     - The first run (job 184407123, output in `sums/`, copied here at 504/579 product-months) had no screen.
+       Two problems in the source showed up in it (`notes/issues.md` 19–20).
+       - The Southern single-sensor file for 1999-10-04 decodes to 2.4e36 °C.
+       - Single-sensor AVHRR puts the Ross Ice Shelf at a fixed 52.0 °C with quality 4–5, flagged as ice.
+         That gave 4,243 q4 S2 cell-days outside −3 … 40 °C, mostly in 1995–2005.
+     - Both get into the region and domain sums, and no later filter on cells can take them out, so the run is
+       redone with the screen into `sums-v2/`. `sums.R` refuses to add to a directory made with another screen,
+       and the converter refuses to mix them.
+     - Multi-sensor hardly ever sets the ice flag (0–6 pixels a day in 2024). It only has a sub-freezing tail:
+       126 q4 cell-days at −3 … −4.5 °C, at the ice edge, 2012–2022.
    - The 20 sh74 files that S3 has since replaced (2026-09/10, multi-sensor) are computed but flagged. The S3 versions
      are 0.45–7 MB larger.
    - Tested here on 2024-01-04/05, with the files fetched from S3:
      - Multi-sensor matches R/07 (from the AODN Zarr) in every S2 cell and region: the same pixel counts, and means
        within 1.5e-5 °C (the Zarr's float32 rounding).
      - Single-sensor matches too, except for one 500 × 500 chunk that the Zarr lacks (`notes/issues.md` 18).
-     - 11.6 s per day for multi, 5.2 for single, and about 3.5 GB per worker. At that pace it takes about 3 h with 12 workers
-       (about 100 SU), probably less: the offset job ran about twice as fast on Gadi as here.
-   - Output: `sums/<product>/<YYYY-MM>.rds`, about 1.2 GB in all. Copy back with the usual rsync, then
+     - That comparison was without the screen. With it, each day's domain count drops by exactly the logged ice and
+       range counts (multi 2024-01-04: 8,371 of 15.6 M, mostly below −2.5 °C at quality < 4). Cells the screen
+       doesn't touch have bit-identical sums.
+   - Cost: on Gadi the first run took about 10 s per day per worker. That is about 4 h with 12 workers, or
+     roughly 130 SU, not the 3 h guessed from here. Memory is about 3.5 GB per worker.
+   - Output: `sums-v2/<product>/<YYYY-MM>.rds`, about 1.2 GB in all. Copy back with the usual rsync, then
      `Rscript nci/sums_to_parquet.R` writes R/07's per-day layout under `data/sums_imos/`
      (`s2l5/<product>_<variant>/<date>.parquet`, `regions/...`, and `days-<product>.csv`).
-     It leaves out stale and failed days. To fill the stale ones, run `sums.R` here on those files fetched
-     from S3 and pass that output directory second: `Rscript nci/sums_to_parquet.R data/sums_imos data/nci/sums <s3 run>`.
+     It leaves out stale and failed days, and lists windows that lost more than half their pixels to the range test.
+     To fill the stale days, run `sums.R` here on those files fetched from S3, and pass that output directory second:
+     `Rscript nci/sums_to_parquet.R data/sums_imos data/nci/sums-v2 <s3 run>`.
 
 All of these use the container you use for trend.ice (`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`).
 

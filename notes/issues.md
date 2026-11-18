@@ -78,3 +78,16 @@ confirmed.
 17. **BoM's fv02 is not one reprocessing.** All files say `product_version = 02.0`, but Continental 2023–2025 was made in 2025-09/10 and earlier years in batches back to 2014 (`nci/qm43_headers_by_year.csv`). In Continental AVHRR the batch boundary at 2023-01-01 shows as a step in `sses_bias` relative to fv01 (about −0.15 °C between late 2022 and early 2023, on paired pixels; `nci/README.md`, "Offset results"). Multi-sensor has no step there. Nothing in the files or the docs marks the boundary.
 18. **The single-sensor Australia L3S Zarr is missing a chunk.** For 2024-01-04 and 2024-01-05 (the two days checked), one 500 × 500 chunk (100–110°E, 30–40°S) reads as empty, while IMOS's NetCDF has 92,238 and 78,261 valid pixels there. Everywhere else the Zarr and the NetCDF agree pixel for pixel, to float32 rounding (≤ 1.5e-5 K). So R/07's single-sensor block lacks those pixels, and the in-situ sums (`nci/sums.R`) have them. The multi-sensor stores match the NetCDF in pixel counts on both days.
     - Related to issue 9: on 2024-01-04 the Southern AVHRR NetCDF has data only at 79–172°E, 27.5–63.8°S, all inside the Australia window. So that day the Southern file adds nothing to a composite where Australia wins.
+19. **A broken Southern AVHRR file: `L3S-1dS/dn/1999/19991004111000-ABOM-L3S_GHRSST-SSTfnd-AVHRR_D-1d_dn_Southern.nc`.**
+    Its SST `add_offset` is 2.357e36 (other files: 270–300 K), and all 2.33 M valid pixels hold raw 0, so they decode to 2.4e36 °C.
+    The sh74 copy is byte-identical to S3 (md5). In a composite where Australia wins, its 30,412 pixels outside the overlap are garbage.
+    The single-sensor Zarr (issue 9) should be checked for that day too.
+20. **Ice-flagged pixels in the AVHRR L3S hold made-up SST at high quality.**
+    - On 1995-11-25 (Southern), 20,716 pixels at 67–78°S, 81°E–164°W (most on the Ross Ice Shelf, at 162–176°W) are at 52.0 °C (19 at 51.6),
+      and 17,086 of them have quality 4–5. All are flagged as ice (`l2p_flags` bit 4).
+    - So are 99% of the q4 pixels below −3 °C. Of the q4 pixels flagged as ice, 65% are in −2.5 … 36 °C (median −1.85).
+    - Use `l2p_flags`, not `quality_level`, to leave ice out.
+    - The multi-sensor L3S hardly ever sets the ice flag (0–6 pixels a day in 2024-01). It keeps a sub-freezing tail at the ice edge
+      (q4 S2 cell means down to −4.5 °C), and `quality_level` 0–3 pixels go up to 40.2 °C and down to −4.3 °C.
+    - The Continental AVHRR file for 1999-10-04 has quality < 4 pixels up to 52.0 °C (187 above 40 °C) and down to −8.8 °C.
+

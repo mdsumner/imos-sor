@@ -221,6 +221,9 @@ approach:
    Headers confirm IMOS switches from BoM fv02 to fv01 at 2023-01-01. On paired pixels fv01 − fv02 is −0.01 to −0.03 °C
    there (q4b), but the versions keep different pixels, which moves whole-window means by up to 0.25–0.36 °C in some years.
    Working choice: IMOS's record (fv02 to 2022, fv01 after) as the base, with 2023-01-01 as a documented seam.
-   The in-situ daily sums of the whole L3S record (`nci/sums.pbs`) are written and tested, matching R/07; next, run them on Gadi.
+   The in-situ daily sums of the whole L3S record (`nci/sums.pbs`) match R/07.
+   - The first full run showed garbage in the source: a broken 1999 Southern AVHRR file, and the Ross Ice Shelf at
+     52 °C, flagged as ice. So the sums now drop ice-flagged pixels and SST outside −2.5 … 40 °C.
+   - Next: rerun them on Gadi into `sums-v2/`.
 7. Biology refresh from the BGC_DB CSVs via planktonr. This is cheap and
    covers about half of the report's series.

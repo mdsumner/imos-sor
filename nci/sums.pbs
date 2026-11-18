@@ -11,17 +11,19 @@
 ## MUR) as exact daily sums, in situ from sh74: S2 L5 cells (trend.sst
 ## schema), the region sets and the whole domain, for multi- and
 ## single-sensor and the all / q4 / q4b variants (nci/sums.R; R/07 for whole
-## records). About 17,400 product-days; ~8 s per day per worker. Resumable
-## (finished product-months are skipped), so rerun the same command if it hits
-## walltime.
+## records), after the ice-flag and -2.5..40 C screen. About 17,400
+## product-days; ~10 s per day per worker on Gadi, so ~4 h with NWORK=12.
+## Resumable (finished product-months are skipped), so rerun the same command
+## if it hits walltime.
 ##
 ##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 sums.pbs
 ##   qsub -P jk72 -l storage=gdata/sh74+gdata/jk72 -v PRODUCTS=multi,YEARS=2024 sums.pbs   (a subset)
 ##
 ## Needs in $OUTDIR: inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz
 ## (inventory.pbs) and offset_kit.rds (nci/offset_kit.R, already copied for
-## the offset job). Output: $OUTDIR/sums/<product>/<YYYY-MM>.rds and
-## $OUTDIR/sums/domain_km2.rds.
+## the offset job). Output: $OUTDIR/sums-v2/<product>/<YYYY-MM>.rds,
+## domain_km2.rds and screen.rds. ($OUTDIR/sums is the first run, made
+## before the screen: sums.R refuses to add to it.)
 ## Memory: ~3.5 GB per worker, so NWORK=12 for 64 GB.
 set -euo pipefail
 module load singularity
@@ -32,7 +34,8 @@ INV=inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz
 for f in $INV offset_kit.rds; do
   [ -f "$OUTDIR/$f" ] || { echo "missing $OUTDIR/$f" >&2; exit 1; }
 done
-mkdir -p "$OUTDIR/sums"
+SUMS=$OUTDIR/sums-v2
+mkdir -p "$SUMS"
 ## keep host R/Python libraries out of the container (as in raad.virtualize); pass the job settings in
 export SINGULARITYENV_R_LIBS_USER=/nonexistent SINGULARITYENV_R_LIBS= SINGULARITYENV_PYTHONNOUSERSITE=1
 export SINGULARITYENV_NWORK=${NWORK:-12}
@@ -41,6 +44,6 @@ for v in PRODUCTS YEARS MONTHS MAXDAYS; do
 done
 echo "start $(date -Is) NWORK=$SINGULARITYENV_NWORK PRODUCTS=${PRODUCTS:-all} YEARS=${YEARS:-all} MONTHS=${MONTHS:-all}"
 singularity exec -B /g/data "$SIF" Rscript "$PBS_O_WORKDIR/sums.R" \
-  "$OUTDIR/$INV" "$OUTDIR/offset_kit.rds" "$OUTDIR/sums" /g/data/sh74/IMOS_AODN \
+  "$OUTDIR/$INV" "$OUTDIR/offset_kit.rds" "$SUMS" /g/data/sh74/IMOS_AODN \
   "$PBS_O_WORKDIR/compare-IMOS_SRS_SST_ghrsst-files.csv"
-echo "done $(date -Is): $(find "$OUTDIR/sums" -mindepth 2 -name '*.rds' | wc -l) product-month files in $OUTDIR/sums"
+echo "done $(date -Is): $(find "$SUMS" -mindepth 2 -name '*.rds' | wc -l) product-month files in $SUMS"

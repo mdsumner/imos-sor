@@ -200,9 +200,12 @@ these scripts write goes to jk72:
       run `Rscript nci/fine_kit.R <set> <region_id> <level>` here, then pass `-v KIT=<kit>,SUMS=<new dir>`.
     - Tested here on 8 files fetched from S3 (nights in 1992, 1994, 2004, 2013, 2018 and 2024; single and multi on
       2024-07-15). Summed over children, the L8 sums give step 9's L5 sums: the same pixel counts in every cell and
-      variant, and sums within 5e-15 relative. About 1 s a file, so expect about 1 h with 16 workers (~32 SU).
-    - Output: `$OUTDIR/sums-fine-se-l8/<product>/<YYYY-MM>.rds` (an estimated 4–5 GB), `screen.rds` and `kit.rds`.
+      variant, and sums within 5e-15 relative.
+    - Output: `$OUTDIR/sums-fine-se-l8/<product>/<YYYY-MM>.rds`, `screen.rds` and `kit.rds`.
       A different kit or screen is refused. Copy back to `data/nci/`, then run `Rscript R/10_fine_trends.R`.
+    - Job 184559983: 979 product-months (multi 179, single 400, single_night 400), every day read, none failed; 11 stale
+      multi days are logged and left out by R/10. 27 min with 16 workers, 0.6–1.2 s a day, 14.6 SU. Output 2.8 GB.
+      R/10's L5 equals R/09's in every cell trend (309) and South-east trend (27).
 
 ### In-situ sums results (sums-v2, job 184447215)
 

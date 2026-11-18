@@ -10,6 +10,8 @@
 # each level has its own pixel-days and largest daily count (the ocean
 # share), as R/09 has at L5. L5 from the fine sums must reproduce R/09's L5
 # cell trends and its South-east cell-method trends; that is checked here.
+# A footprint test (printed) weights the finest cells' anomalies by their L5
+# parent's region weight, to tell a tighter footprint from finer anomalies.
 #
 # Inputs: data/nci/sums-fine-se-l8/<product>/<YYYY-MM>.rds (copied back from
 # Gadi), nci/fine_kit_star_4_l8.rds, data/coverage/star.parquet,
@@ -123,6 +125,15 @@ rt <- rt[, .(product, variant, level, region = B$region, period, slope = round(s
              se = round(se, 4), n, months_frac = round(months_frac, 4), r1 = round(r1, 4), n_eff = round(n_eff, 4))]
 setorder(rt, product, variant, level, period)
 fwrite(rt, "trends/fine_se_region_trends.csv")
+## footprint test: the finest cells' anomalies, weighted by their L5 parent's region weight (shared by ocean
+## area), give the L5 footprint with fine anomalies; it separates the two ways the level changes the region trend
+fl <- lv[level == B$level, .(cell, a = km2 * ocean)][, parent := fine_to$L5[cell]]
+fl <- merge(fl, ov[level == 5L, .(parent = cell, w5 = w)], by = "parent")[a > 0][, w := w5 * a / sum(a), by = parent]
+fp <- rbindlist(lapply(split(cells_m[variant == "q4" & level == B$level], by = "product"), function(cm) {
+  ca <- anom_cell_regions(fl[, .(set = B$set, region_id = B$region_id, cell, w)], cm)
+  ca[, `:=`(product = cm$product[1], year = ym %/% 12L)]
+}))
+ft <- trends_of(fp[, .(product, ym, year, anom = anom_cell)], "product")
 
 ## ---- checks against R/09 (L5) -------------------------------------------------------------
 mx <- function(x) if (any(is.finite(x))) max(abs(x), na.rm = TRUE) else NA_real_
@@ -140,6 +151,10 @@ cat(sprintf("check, %s cell-method trends at L5 vs R/09: %d rows, max |slope dif
 cat("\n", B$region, ", anomalies first, q4, by level (C/decade):\n", sep = "")
 x <- rt[variant == "q4"]; x[, txt := ifelse(is.finite(slope), sprintf("%+.2f [%+.2f, %+.2f]", slope, lo, hi), "-")]
 if (nrow(x)) print(dcast(x, product + period ~ paste0("L", level), value.var = "txt"), row.names = FALSE)
+cat(sprintf("\nfootprint test: L%d anomalies on the L5 footprint (L5 cells cover %.0f km2 for a region of %.0f km2)\n",
+            B$level, sum(lv[level == 5L & km2_region > 0, km2]), sum(reg_f$km2)))
+y <- ft[, .(product, period, txt = ifelse(is.finite(slope), sprintf("%+.2f [%+.2f, %+.2f]", slope, lo, hi), "-"))]
+if (nrow(y)) print(setnames(y, "txt", "fine anomalies, L5 footprint"), row.names = FALSE)
 for (p in intersect(c("single_night", "single"), products)) for (L in levels) {
   y <- ct[product == p & level == L & period == "1993-2016" & region_share > 0.5]
   if (!nrow(y)) next

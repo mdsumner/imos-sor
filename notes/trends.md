@@ -9,6 +9,8 @@ These are BoM/IMOS ABOM GHRSST L3S 1-day composites at 0.02°, not MUR.
 The input is the daily sums from `nci/sums.R`. Ice-flagged pixels and SST outside −2.5 … 40 °C have already been dropped (`nci/README.md`, step 9).
 The script is `R/09_trends.R`, which runs in about 3 minutes. Its committed outputs are `trends/region_trends.csv`,
 `trends/cell_trends_q4.csv`, `trends/region_status.csv` and `trends/region_monthly_q4.csv.gz`.
+The finer S2 levels in the South-east come from `R/10_fine_trends.R` (about 6 minutes), with outputs
+`trends/fine_se_region_trends.csv` and `trends/fine_se_cell_trends_q4.csv`.
 
 ## Method
 
@@ -90,10 +92,45 @@ Night against day+night, single-sensor q4, anomalies first (°C/decade):
   Tasmania and in the southern Tasman: 151.8°E 42.6°S is +0.53 [+0.31, +0.75] at night (+0.49 day+night), then
   149.7°E 44.5°S +0.47, 148.8°E 41.7°S +0.47 (partly land), 149.8°E 39.7°S +0.45 and 152.8°E 40.5°S +0.45.
 - **So ~1 °C/decade isn't reached at L5, by night or by day+night.** L5 cells are about 290 km across, so a narrower
-  hotspot would be smoothed out. Next: a finer S2 level around south-east Australia.
+  hotspot would be smoothed out. The finer levels below don't reach it either.
 - Night's later trends are higher than day+night's: by 0.01–0.09 °C/decade over 1993–2024 and 0.09–0.23 over
   2013–2024, because of the step below. Night's whole domain is the Continental window only, so it isn't compared with
   the day+night whole domain (night: 1993–2016 +0.21 [+0.11, +0.30], 1993–2024 +0.20 [+0.15, +0.25]).
+
+## Finer S2 levels in the South-east (R/10)
+
+The STAR South-east region at S2 L8 (about 33 km at 42°S), L7 (~70 km), L6 (~140 km) and L5 (~290 km). The L8 sums
+cover every pixel of the 45 L5 cells that touch the region (`nci/README.md`, step 10; job 184559983). Each coarser
+level is the exact sum of its children, and at L5 every cell and region trend equals R/09's (difference 0). Same
+method as R/09, q4, °C/decade.
+
+Fastest cells, among cells at least half in the region:
+
+| product, period | L8 | L7 | L6 | L5 |
+|---|---|---|---|---|
+| night 1993–2016 | +0.71 [+0.48, +0.95] | +0.70 [+0.46, +0.94] | +0.61 [+0.36, +0.86] | +0.53 [+0.31, +0.75] |
+| day+night 1993–2016 | +0.64 [+0.42, +0.87] | +0.63 [+0.40, +0.86] | +0.56 [+0.33, +0.79] | +0.49 [+0.27, +0.71] |
+| night 1993–2024 | +0.55 [+0.34, +0.77] | +0.53 [+0.31, +0.74] | +0.48 [+0.33, +0.63] | +0.44 [+0.26, +0.62] |
+| day+night 1993–2024 | +0.48 [+0.30, +0.66] | +0.45 [+0.25, +0.65] | +0.41 [+0.24, +0.58] | +0.37 [+0.19, +0.56] |
+
+- **No cell reaches ~1 °C/decade over 1993–2016, at any level, by night or by day+night.** The fastest is +0.71 at
+  night in the L8 cell at 151.3°E 42.9°S, in the Tasman Sea about 250 km off the east coast of Tasmania. Its interval
+  runs to +0.95. Night has 170 of 1,190 L8 cells at +0.5 or more, and none at +0.8. Day+night has 90 of 1,424.
+- **The hotspot is one place.** The fastest cells at L8, L7 and L6 are all in the same patch, 150.4–152.2°E,
+  42.4–43.6°S, inside the L5 cell (151.8°E 42.6°S) that was fastest in R/09. Smaller cells raise its peak from +0.53
+  to +0.71. The L7 peak is nearly the L8 peak, so the fast patch is at least an L7 cell (~70 km) wide.
+- **Over 1993–2016 most cells warm:** the median L8 cell is +0.31 at night and +0.22 by day+night. 795 of 1,190 night
+  cells have an interval above zero.
+- **2013–2024 is too short:** medians are near zero or negative. Two night L8 cells reach +0.8 or more (+0.85 at
+  144.9°E 45.8°S), and the fastest cell's interval spans zero at every level.
+- **The region trend rises a little with finer cells.** Night 1993–2016 is +0.23 [+0.08, +0.38] at L5, +0.27 at L6
+  and L7, and +0.28 [+0.12, +0.43] at L8. Day+night goes from +0.21 to +0.23. Later periods move by 0.00–0.03.
+  - This isn't because L5 cells reach outside the region. The 45 L5 cells cover 3.3 million km², twice the region,
+    but weighting the L8 anomalies by the L5 footprint gives +0.27, nearly the L8 value (R/10's footprint test;
+    day+night +0.23, the L8 value).
+  - So the change comes from the anomalies themselves: which pixels and months each cell's mean and climatology are
+    made from. An L5 cell's monthly mean mixes whatever parts of it were clear. Night probably gains more than
+    day+night because it has fewer passes (not checked). Here L5 region trends are up to 0.05 °C/decade below L8's.
 
 ## Single-sensor, multi-sensor and night
 
@@ -178,7 +215,8 @@ Single-sensor is relative to 1993–2022; multi-sensor to 2013–2022.
 - **Cells:**
   - A cell's anomaly covers the whole cell (inside the domain), not just the part in a region. That's fine for EEZ
     territories and STAR regions, but crude for small parks (`amp`): use a finer level for them.
-  - Cloud cover still affects which pixels each cell's monthly mean is made from.
+  - Cloud cover still affects which pixels each cell's monthly mean is made from. In the South-east, anomalies on
+    L8 cells instead of L5 raise the region trend by up to 0.05 °C/decade (night 1993–2016; see above).
 - **Night:**
   - 23 nights have no quality-4 pixel, and most are nearly empty (`notes/issues.md` 22). They failed in the first run
     and were filled by a rerun (`nci/README.md`, step 9). They add to `all` only.

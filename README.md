@@ -231,9 +231,11 @@ approach:
      fastest cell, east of Tasmania, is +0.53. So the night record doesn't reach "~1 °C per decade" at L5 either.
    - Night steps up against day+night by 0.08–0.18 °C between 2017 and 2019, so after 2017 all three products disagree
      by 0.1–0.2 °C, each in its own way.
-   - A finer S2 level in the south-east is set up. `nci/sums_fine.pbs` makes L8 sums (about 33 km) over the South-east
-     region's 45 L5 cells, and `R/10_fine_trends.R` rolls them up to L7–L5. Tested end to end: R/10's L5 reproduces
-     R/09 exactly. It is waiting for the Gadi run.
+   - Finer S2 levels in the South-east (`nci/sums_fine.pbs`, `R/10_fine_trends.R`): L8 sums (about 33 km) over the
+     region's 45 L5 cells, rolled up to L7–L5; R/10's L5 reproduces R/09 exactly. No cell reaches ~1 °C/decade over
+     1993–2016 at any level: the fastest is +0.71 [+0.48, +0.95] at night, an L8 cell in the Tasman Sea east of
+     Tasmania (+0.64 by day+night). The region trend rises with finer cells, night +0.23 at L5 to +0.28 at L8,
+     from the finer anomalies rather than the tighter footprint (`notes/trends.md`).
    - Next: MUR/OISST from trend.sst as a reference for the post-2017 drifts.
 5. Add L3S-SO (with `sea_ice_fraction`) and GAMSSA to the S2 L5 registry
    next to OISST/MUR, joining trend.sst and trend.ice.

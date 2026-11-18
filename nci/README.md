@@ -155,8 +155,9 @@ these scripts write goes to jk72:
      - That comparison was without the screen. With it, each day's domain count drops by exactly the logged ice and
        range counts (multi 2024-01-04: 8,371 of 15.6 M, mostly below −2.5 °C at quality < 4). Cells the screen
        doesn't touch have bit-identical sums.
-   - Cost: on Gadi the first run took about 10 s per day per worker. That is about 4 h with 12 workers, or
-     roughly 130 SU, not the 3 h guessed from here. Memory is about 3.5 GB per worker.
+   - Cost: the first run (job 184407123, without the screen) took 3 h 37 min with 12 workers (40.5 CPU-hours, about 10 s per
+     day per worker, 116 SU). All 579 product-months were written, with no failed days. The screen reads one more
+     variable per window, so expect a little more. PBS reported 64 GB used, which counts file cache; about 3.5 GB per worker.
    - Output: `sums-v2/<product>/<YYYY-MM>.rds`, about 1.2 GB in all. Copy back with the usual rsync, then
      `Rscript nci/sums_to_parquet.R` writes R/07's per-day layout under `data/sums_imos/`
      (`s2l5/<product>_<variant>/<date>.parquet`, `regions/...`, and `days-<product>.csv`).

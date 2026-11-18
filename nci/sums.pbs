@@ -12,7 +12,7 @@
 ## schema), the region sets and the whole domain, for multi- and
 ## single-sensor and the all / q4 / q4b variants (nci/sums.R; R/07 for whole
 ## records), after the ice-flag and -2.5..40 C screen. About 17,400
-## product-days; ~10 s per day per worker on Gadi, so ~4 h with NWORK=12.
+## product-days; ~10 s per day per worker on Gadi (job 184407123, no screen: 3 h 37 min with NWORK=12, 116 SU).
 ## Resumable (finished product-months are skipped), so rerun the same command
 ## if it hits walltime.
 ##

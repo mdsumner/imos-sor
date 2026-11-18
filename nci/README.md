@@ -155,15 +155,46 @@ these scripts write goes to jk72:
      - That comparison was without the screen. With it, each day's domain count drops by exactly the logged ice and
        range counts (multi 2024-01-04: 8,371 of 15.6 M, mostly below −2.5 °C at quality < 4). Cells the screen
        doesn't touch have bit-identical sums.
-   - Cost: the first run (job 184407123, without the screen) took 3 h 37 min with 12 workers (40.5 CPU-hours, about 10 s per
-     day per worker, 116 SU). All 579 product-months were written, with no failed days. The screen reads one more
-     variable per window, so expect a little more. PBS reported 64 GB used, which counts file cache; about 3.5 GB per worker.
-   - Output: `sums-v2/<product>/<YYYY-MM>.rds`, about 1.2 GB in all. Copy back with the usual rsync, then
+   - Cost: the first run (job 184407123, without the screen) took 3 h 37 min with 12 workers (116 SU). The screened run
+     (job 184447215) took 3 h 56 min (44.2 CPU-hours, about 10 s per day per worker, 126 SU). Both wrote all
+     579 product-months, with no failed days. PBS reported 64 GB used, which counts file cache; about 3.5 GB per worker.
+   - Output: `sums-v2/<product>/<YYYY-MM>.rds`, about 1.3 GB in all. Copy back with the usual rsync, then
      `Rscript nci/sums_to_parquet.R` writes R/07's per-day layout under `data/sums_imos/`
      (`s2l5/<product>_<variant>/<date>.parquet`, `regions/...`, and `days-<product>.csv`).
      It leaves out stale and failed days, and lists windows that lost more than half their pixels to the range test.
      To fill the stale days, run `sums.R` here on those files fetched from S3, and pass that output directory second:
      `Rscript nci/sums_to_parquet.R data/sums_imos data/nci/sums-v2 <s3 run>`.
+   - `Rscript nci/sums_check.R` compares `sums-v2/` with the first run and writes `nci/sums_check.csv`.
+
+### In-situ sums results (sums-v2, job 184447215)
+
+- **Checks:** every check passes in all 579 product-months. Days, files and finite pixel counts per window are the same
+  as in the first run. Every day's domain count drops by exactly the logged ice and range counts. Region and cell counts
+  never rise. Cells the screen didn't touch have bit-identical sums.
+- **Converter:** 17,399 product-days are written to `data/sums_imos/` (2.4 GB): multi 5,322, single 12,077.
+  Left out: the 11 multi-sensor days with an sh74 file that S3 has since replaced.
+- **What the screen drops:**
+
+  | product | ice-flagged | out of range | total |
+  |---|---|---|---|
+  | multi | 0.124% | 0.045% | 0.169% |
+  | single | 0.943% | 0.185% | 1.127% |
+
+- **The ice flag isn't consistent over time** (`notes/issues.md` 21). It depends on the processing era, not on how much
+  ice there is:
+  - Single-sensor flags Southern-window pixels outside the overlap each September through 2012 (typically 2–6%,
+    from 0.1% to 22%), and almost never from 2013-01.
+  - Multi-sensor almost never sets it until 2025-04, then flags 0.5–4% a month from 2025-05.
+  - So the screen takes ice out only in some years. Unflagged ice pixels with made-up values over 40 °C are caught by
+    the range test.
+  - Seven Southern single-sensor windows lost more than half their pixels outside the overlap to the range test:
+    1997-05-05, 05-14 and 05-28, 1997-08-08, 1998-06-27, 1998-07-02, and the broken 1999-10-04.
+    For example, 1997-05-05 has 115,912 pixels at 50.6–51.5 °C, not flagged as ice, at 57–67°S.
+  - Trends near the ice edge need a time-invariant ice mask from outside these files.
+- **Cell means:** in `all` and `q4`, S2 cell means stay within −2.5 … 40 °C. In q4b they go down to −4.8 °C (single)
+  and −2.7 °C (multi), because `sses_bias` is subtracted after the screen.
+  - 143 q4 cell-days have means above 35 °C (136 single, 7 multi). Most are single-sensor cells near Indonesia in
+    1999–2001 at 36–38 °C, which is implausible but rare. They are left in.
 
 All of these use the container you use for trend.ice (`/g/data/jk72/$USER/sif_lib/gdal-r-python-extras_latest.sif`).
 

@@ -90,4 +90,14 @@ confirmed.
     - The multi-sensor L3S hardly ever sets the ice flag (0–6 pixels a day in 2024-01). It keeps a sub-freezing tail at the ice edge
       (q4 S2 cell means down to −4.5 °C), and `quality_level` 0–3 pixels go up to 40.2 °C and down to −4.3 °C.
     - The Continental AVHRR file for 1999-10-04 has quality < 4 pixels up to 52.0 °C (187 above 40 °C) and down to −8.8 °C.
+    - The ice flag doesn't catch all of it. On 1997-05-05 (Southern), 115,912 pixels at 50.6–51.5 °C (71k at quality 4–5) are *not*
+      flagged as ice, at 57–67°S, mostly 0–70°E (the May ice zone). In the sums, 6 more Southern days lose over half their pixels outside
+      the overlap to a −2.5 … 40 °C test (1997-05/08, 1998-06/07).
+21. **Whether BoM sets the ice flag depends on processing era, not on how much ice there is.**
+    - Single-sensor AVHRR: Southern-window pixels outside the overlap are flagged as ice each September through 2012 (typically 2–6%,
+      from 0.1% to 22%), and almost none from 2013-01.
+    - Multi-sensor: almost none until 2025-04, then 0.5–4% a month from 2025-05.
+    - So `l2p_flags` ice is not a consistent mask through time. Combined with issue 20, ice-zone pixels are sometimes flagged,
+      sometimes present with made-up values, and sometimes perhaps just absent.
+    - Counts from `nci/sums_check.csv` and the day logs.
 

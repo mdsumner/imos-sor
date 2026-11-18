@@ -224,6 +224,8 @@ approach:
    The in-situ daily sums of the whole L3S record (`nci/sums.pbs`) match R/07.
    - The first full run showed garbage in the source: a broken 1999 Southern AVHRR file, and the Ross Ice Shelf at
      52 °C, flagged as ice. So the sums now drop ice-flagged pixels and SST outside −2.5 … 40 °C.
-   - Next: rerun them on Gadi into `sums-v2/`.
+   - The screened rerun is done: 17,399 product-days, in R/07's per-day layout under `data/sums_imos/`.
+     Every check against the first run passes (`nci/README.md`, "In-situ sums results").
+   - The ice flag is set only in some processing eras. Near the ice edge, trends need a time-invariant ice mask.
 7. Biology refresh from the BGC_DB CSVs via planktonr. This is cheap and
    covers about half of the report's series.

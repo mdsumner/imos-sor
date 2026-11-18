@@ -6,6 +6,8 @@
 #  - S2 cells the screen didn't touch (same n): identical sums
 #  - the range of S2 cell means in v2 (q4b can go below the screen: sses_bias
 #    is subtracted after it)
+# The first run (data/nci/sums) was deleted on 2026-11-18 after this check;
+# its result is kept in nci/sums_check.csv.
 # usage (from the repo root): Rscript nci/sums_check.R [v1 = data/nci/sums] [v2 = data/nci/sums-v2]
 # Writes nci/sums_check.csv: one row per product-month, the checks, and the
 # finite, ice and out-of-range pixel totals.

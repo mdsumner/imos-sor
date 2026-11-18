@@ -136,7 +136,7 @@ these scripts write goes to jk72:
      and the Southern file fills the rest. Days with only one of the two files are kept, and the log says which.
    - Every variant drops pixels flagged as ice (`l2p_flags` bit 4) and SST outside −2.5 … 40 °C. The log counts
      what each window loses to each test, so the dropped pixels can be accounted for exactly.
-     - The first run (job 184407123, output in `sums/`, copied here at 504/579 product-months) had no screen.
+     - The first run (job 184407123, output in `sums/`, deleted on 2026-11-18 after the checks below) had no screen.
        Two problems in the source showed up in it (`notes/issues.md` 19–20).
        - The Southern single-sensor file for 1999-10-04 decodes to 2.4e36 °C.
        - Single-sensor AVHRR puts the Ross Ice Shelf at a fixed 52.0 °C with quality 4–5, flagged as ice.
@@ -164,7 +164,8 @@ these scripts write goes to jk72:
      It leaves out stale and failed days, and lists windows that lost more than half their pixels to the range test.
      To fill the stale days, run `sums.R` here on those files fetched from S3, and pass that output directory second:
      `Rscript nci/sums_to_parquet.R data/sums_imos data/nci/sums-v2 <s3 run>`.
-   - `Rscript nci/sums_check.R` compares `sums-v2/` with the first run and writes `nci/sums_check.csv`.
+   - `nci/sums_check.R` compared `sums-v2/` with the first run and wrote `nci/sums_check.csv`.
+     The first run has since been deleted, so the CSV is the record; rerunning the check would mean rerunning job 184407123.
 
 ### In-situ sums results (sums-v2, job 184447215)
 

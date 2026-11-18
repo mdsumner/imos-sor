@@ -22,8 +22,9 @@
 ## Needs in $OUTDIR: inventory-sh74_IMOS_AODN_IMOS_SRS_SST_ghrsst.tsv.gz
 ## (inventory.pbs) and offset_kit.rds (nci/offset_kit.R, already copied for
 ## the offset job). Output: $OUTDIR/sums-v2/<product>/<YYYY-MM>.rds,
-## domain_km2.rds and screen.rds. ($OUTDIR/sums is the first run, made
-## before the screen: sums.R refuses to add to it.)
+## domain_km2.rds and screen.rds. (The first run, made before the screen,
+## was in $OUTDIR/sums; deleted 2026-11-18. sums.R refuses to add to such a
+## directory.)
 ## Memory: ~3.5 GB per worker, so NWORK=12 for 64 GB.
 set -euo pipefail
 module load singularity

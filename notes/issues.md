@@ -122,3 +122,9 @@ confirmed.
       is also "Weddel seal" (one tag). `location` holds campaign codes (`ct91`, `ct101`, `ct110`) for most fur seal
       tags.
     - The Parquet ends at 2024-02-22, while the location-QC `ctd` tables run to 2025 (delayed) and 2026 (real time).
+    - The bad positions are in IMOS's MEOP netCDF files too (`satellite_tagging/MEOP_QC_CTD`, 267,386 profiles, 4,537 more
+      than the Parquet), so it isn't a conversion fault. All have `POSITION_QC` = 1 (good). In `ct150-354BAT-16_hr1_prof.nc`,
+      403 of 404 positions sit at 34.0–34.5°N, 162.2–162.9°W from the second profile on (`R/14_meop_cells.R`).
+    - Their `geospatial_lat_*`/`geospatial_lon_*` attributes give the true range for some files (−78.0 … −77.2°S there). But
+      they are wrong across the antimeridian (longitudes 180 … 180, 359.3 … 71) and cover only part of some tracks, so they
+      can't be used to screen.

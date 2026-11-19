@@ -1,0 +1,469 @@
+cell,profiles,tags,days,first,last,species,lon,lat,in_l3s
+b1f4,19040,101,1122,2006-02-15,2022-02-24,southern elephant seal; Weddell seal,80.37,-68.63,TRUE
+b314,13213,285,2384,2008-12-26,2022-11-24,southern elephant seal,71.44,-49.85,TRUE
+b18c,12394,83,1141,2006-03-15,2022-04-15,southern elephant seal; Weddell seal,73.77,-68.11,TRUE
+b31c,8154,160,1698,2009-01-01,2022-11-08,southern elephant seal,75.03,-50.38,TRUE
+b304,6994,165,1738,2009-01-01,2022-11-24,southern elephant seal,73.55,-52.94,TRUE
+aec4,5469,32,859,2005-03-07,2015-01-17,southern elephant seal; Weddell seal,140.51,-67.11,TRUE
+adfc,4347,36,747,2006-04-21,2022-11-14,southern elephant seal; Weddell seal,92.7,-65.83,TRUE
+6b3c,3859,29,320,2012-06-12,2014-08-20,fur seal,149.84,-37.2,TRUE
+b21c,3834,48,742,2006-03-02,2022-06-27,southern elephant seal; Weddell seal,81.7,-65.63,TRUE
+b30c,3800,138,1130,2009-01-22,2022-09-18,southern elephant seal,69.66,-52.32,TRUE
+b2fc,3669,112,941,2009-02-04,2022-10-08,southern elephant seal,77.41,-53.42,TRUE
+b184,3484,43,605,2011-03-04,2022-04-20,southern elephant seal; Weddell seal,67.25,-67.3,TRUE
+b26c,2687,60,577,2009-02-20,2022-11-15,southern elephant seal,83.58,-59.68,TRUE
+add4,2605,44,393,2009-02-23,2022-06-20,southern elephant seal,109.85,-64.52,TRUE
+addc,2429,39,309,2009-02-19,2022-03-26,southern elephant seal,104.07,-65.2,TRUE
+6b14,2401,14,190,2012-07-08,2014-09-05,fur seal,149.84,-34.67,TRUE
+af74,2374,29,412,2014-02-02,2020-09-01,Weddell seal,162.99,-77.39,TRUE
+adec,2259,58,535,2009-02-16,2022-11-01,southern elephant seal,97.26,-62.64,TRUE
+69dc,2246,27,432,2022-06-18,2024-02-01,flatback turtle; olive ridley turtle,136.21,-10.97,TRUE
+adf4,2212,63,498,2012-04-08,2022-11-03,southern elephant seal,92.36,-62.81,TRUE
+b33c,2125,33,595,2009-01-02,2022-11-16,southern elephant seal,72.99,-47.45,TRUE
+b20c,2101,60,517,2009-02-24,2022-11-14,southern elephant seal,87.64,-62.81,TRUE
+ae7c,2069,30,293,2009-02-28,2022-04-08,southern elephant seal,112.75,-67.3,TRUE
+b244,2015,60,478,2009-02-18,2022-10-08,southern elephant seal,79.06,-59.38,TRUE
+b2f4,1947,81,417,2009-02-06,2022-10-06,southern elephant seal,81.19,-53.76,TRUE
+b204,1945,36,519,2006-04-21,2022-08-04,southern elephant seal; Weddell seal,87.3,-65.83,TRUE
+b224,1781,52,396,2009-02-22,2022-06-29,southern elephant seal; Weddell seal,75.93,-65.2,TRUE
+b2e4,1730,77,466,2009-04-26,2022-09-21,southern elephant seal,78.56,-50.79,TRUE
+adc4,1617,51,436,2009-02-19,2022-08-11,southern elephant seal,102.34,-62.28,TRUE
+b23c,1478,51,372,2009-02-22,2022-09-20,southern elephant seal,77.66,-62.28,TRUE
+b214,1381,56,386,2009-02-21,2022-10-03,southern elephant seal,82.74,-62.64,TRUE
+b24c,1344,56,310,2009-02-16,2022-08-23,southern elephant seal,74.44,-58.9,TRUE
+b124,1318,8,359,2012-04-19,2021-07-14,southern elephant seal,33.28,-68.71,TRUE
+b3ac,1314,76,356,2009-02-13,2022-10-23,southern elephant seal,71.82,-55.57,TRUE
+b164,1272,14,405,2011-05-07,2022-03-23,southern elephant seal,55.15,-64.83,TRUE
+b22c,1197,50,329,2011-03-13,2022-04-26,southern elephant seal,70.15,-64.52,TRUE
+ac2c,1154,19,328,2005-04-28,2022-06-17,southern elephant seal,115.51,-63.59,TRUE
+b254,1127,81,314,2009-02-15,2022-10-21,southern elephant seal,76.05,-56.13,TRUE
+69c4,1122,12,301,2022-06-28,2023-08-27,flatback turtle; olive ridley turtle,138.72,-11.41,TRUE
+2ccc,1083,19,395,2022-06-05,2024-02-01,flatback turtle; olive ridley turtle,133.79,-10.97,TRUE
+ad94,1071,44,287,2012-04-17,2022-10-27,southern elephant seal,96.42,-59.68,TRUE
+69d4,1070,9,297,2022-07-01,2024-01-18,olive ridley turtle,136.21,-8.78,TRUE
+aebc,1062,14,312,2005-02-24,2022-03-14,southern elephant seal; Weddell seal,135,-65.26,TRUE
+ac8c,1030,18,303,2004-04-14,2022-09-19,southern elephant seal,114.22,-51.54,TRUE
+ad8c,998,53,280,2009-02-13,2022-09-03,southern elephant seal,92.09,-59.82,TRUE
+b28c,983,61,290,2009-02-08,2022-10-04,southern elephant seal,84.84,-53.97,TRUE
+b25c,976,71,301,2009-02-16,2022-07-25,southern elephant seal,80.22,-56.54,TRUE
+ae84,968,12,262,2005-04-18,2022-06-16,southern elephant seal,119.01,-66.2,TRUE
+b2ec,914,64,300,2009-04-29,2022-09-16,southern elephant seal,82.01,-51.07,TRUE
+adbc,903,32,273,2012-04-17,2022-10-27,southern elephant seal,100.94,-59.38,TRUE
+b264,900,59,270,2009-02-09,2022-10-04,southern elephant seal,84.26,-56.79,TRUE
+b344,897,13,230,2011-08-20,2022-06-27,southern elephant seal,69.64,-46.88,TRUE
+2cc4,894,24,96,2022-05-24,2023-06-19,flatback turtle; olive ridley turtle,131.28,-11.41,TRUE
+2c5c,882,1,304,2022-12-16,2024-01-04,flatback turtle,123.08,-12.68,TRUE
+b35c,880,12,322,2011-07-20,2022-07-13,southern elephant seal,66.28,-46.2,TRUE
+b27c,877,51,246,2009-02-10,2022-10-06,southern elephant seal,88.14,-56.91,TRUE
+b294,866,50,278,2009-05-02,2022-09-09,southern elephant seal,85.32,-51.25,TRUE
+ad84,856,38,239,2012-04-22,2022-09-28,southern elephant seal,91.86,-56.91,TRUE
+b234,856,50,252,2009-02-19,2022-06-11,southern elephant seal,72.51,-61.71,TRUE
+b3bc,856,33,233,2011-04-30,2022-06-16,southern elephant seal,65.19,-57.38,TRUE
+b3b4,843,45,259,2009-02-16,2022-06-04,southern elephant seal,69.79,-58.24,TRUE
+b274,840,52,265,2009-02-12,2022-03-07,southern elephant seal,87.91,-59.82,TRUE
+b3cc,834,35,239,2011-04-06,2022-04-29,southern elephant seal,67.38,-60.92,TRUE
+ad04,816,31,258,2009-05-16,2022-10-06,southern elephant seal,102.59,-53.42,TRUE
+ad0c,810,36,259,2012-09-13,2022-09-27,southern elephant seal,98.81,-53.76,TRUE
+ad74,810,41,244,2012-07-11,2022-09-11,southern elephant seal,95.16,-53.97,TRUE
+ac7c,785,13,256,2004-03-16,2022-06-30,southern elephant seal,120.63,-52.87,TRUE
+acf4,781,23,229,2009-05-20,2022-08-26,southern elephant seal,110.34,-52.32,TRUE
+b15c,773,16,223,2011-06-18,2022-07-07,southern elephant seal,49.81,-63.21,TRUE
+2cd4,761,11,219,2022-06-11,2024-02-22,olive ridley turtle,133.79,-8.78,TRUE
+b284,753,47,237,2012-05-11,2022-09-30,southern elephant seal,88.33,-54.07,TRUE
+a85c,748,14,179,2012-01-29,2015-01-10,southern elephant seal,171.19,-53.76,TRUE
+a92c,746,8,161,2005-02-17,2010-08-19,southern elephant seal,154.49,-63.59,TRUE
+ade4,744,28,233,2012-04-04,2022-04-17,southern elephant seal,98.3,-65.63,TRUE
+a84c,742,8,257,2012-04-26,2014-11-25,southern elephant seal,168.56,-50.79,TRUE
+b3c4,740,27,201,2011-04-27,2022-01-16,southern elephant seal,62.38,-59.91,TRUE
+ae9c,739,15,224,2005-03-03,2022-03-03,southern elephant seal,124.85,-64.83,TRUE
+adcc,735,23,211,2012-05-27,2022-09-04,southern elephant seal,107.49,-61.71,TRUE
+b13c,717,12,190,2012-03-27,2021-04-05,southern elephant seal,39.49,-67.11,TRUE
+ac1c,716,11,208,2005-06-12,2021-07-09,southern elephant seal,126.02,-61.01,TRUE
+b414,697,20,240,2012-07-17,2019-09-21,southern elephant seal,45,-54.02,TRUE
+acfc,690,26,222,2009-05-17,2022-08-11,southern elephant seal,106.45,-52.94,TRUE
+b16c,688,10,202,2011-05-20,2022-03-18,southern elephant seal,50.51,-67.11,TRUE
+a60c,686,12,241,2004-04-30,2013-04-20,southern elephant seal,-171.7,-65.63,TRUE
+ad7c,684,46,215,2012-07-09,2022-06-30,southern elephant seal,91.67,-54.07,TRUE
+ac24,668,13,169,2005-05-13,2021-05-17,southern elephant seal,120.93,-62.41,TRUE
+a8d4,653,6,166,2004-02-17,2010-09-17,southern elephant seal,160.15,-64.52,TRUE
+b374,644,42,190,2011-07-11,2022-09-18,southern elephant seal,65.78,-51.54,TRUE
+b324,640,32,242,2012-04-27,2022-10-06,southern elephant seal,76.31,-47.9,TRUE
+ac5c,630,17,180,2012-08-09,2022-10-18,southern elephant seal,112.41,-54.83,TRUE
+b3a4,623,53,221,2009-02-14,2022-06-15,southern elephant seal,67.59,-54.83,TRUE
+b3d4,619,24,181,2011-04-20,2022-04-22,southern elephant seal,64.49,-63.59,TRUE
+b14c,617,18,194,2012-05-29,2022-07-15,southern elephant seal,40.19,-63.21,TRUE
+b384,615,27,188,2011-07-02,2022-09-09,southern elephant seal,59.37,-52.87,TRUE
+ac4c,609,21,177,2012-08-09,2022-10-21,southern elephant seal,110.21,-58.24,TRUE
+ac54,603,19,179,2012-08-06,2022-10-18,southern elephant seal,108.18,-55.57,TRUE
+b6cc,600,12,167,2012-06-01,2022-07-16,southern elephant seal,30.93,-62.41,TRUE
+ad9c,595,29,192,2012-05-06,2022-09-24,southern elephant seal,95.74,-56.79,TRUE
+b17c,591,15,186,2011-04-27,2022-04-14,southern elephant seal,60.99,-66.2,TRUE
+ac44,590,16,157,2012-08-03,2022-09-18,southern elephant seal,114.81,-57.38,TRUE
+698c,587,3,182,2022-08-16,2023-03-14,flatback turtle; olive ridley turtle,141.35,-16.76,TRUE
+b2c4,584,27,192,2013-03-01,2022-09-15,southern elephant seal,82.71,-48.49,TRUE
+ad1c,573,23,179,2009-05-14,2022-09-09,southern elephant seal,101.44,-50.79,TRUE
+aecc,573,12,173,2005-02-13,2013-08-02,southern elephant seal,145.15,-64.83,TRUE
+b424,572,16,204,2012-06-12,2018-04-17,southern elephant seal,37.65,-53.73,TRUE
+b39c,571,38,181,2011-07-17,2022-05-22,southern elephant seal,63.42,-53.93,TRUE
+a854,570,18,196,2012-01-28,2015-01-10,southern elephant seal,167.41,-53.42,TRUE
+b2dc,568,29,165,2013-02-26,2022-10-02,southern elephant seal,79.56,-48.24,TRUE
+b134,562,15,138,2012-05-27,2022-03-15,southern elephant seal,34.85,-64.83,TRUE
+b394,559,29,195,2011-06-25,2022-06-15,southern elephant seal,60.72,-56.33,TRUE
+a904,558,29,147,2004-02-01,2014-11-22,southern elephant seal,161.82,-55.57,TRUE
+69e4,554,2,217,2022-11-30,2023-07-12,flatback turtle; olive ridley turtle,136.21,-13.24,TRUE
+2cec,552,7,208,2022-05-29,2023-08-19,flatback turtle; olive ridley turtle,128.65,-11.84,TRUE
+b36c,551,37,209,2011-06-08,2022-05-10,southern elephant seal,67.83,-49.18,TRUE
+acec,547,18,163,2012-08-22,2022-08-29,southern elephant seal,108.56,-49.85,TRUE
+a674,537,8,183,2004-07-15,2013-04-24,southern elephant seal,-165.93,-65.2,TRUE
+b29c,526,43,186,2009-05-04,2022-08-28,southern elephant seal,88.48,-51.34,TRUE
+b6e4,515,12,170,2013-04-06,2021-08-21,southern elephant seal,20.21,-58.24,TRUE
+b69c,511,16,170,2012-06-09,2018-05-06,southern elephant seal,33.58,-55.11,TRUE
+aed4,509,8,91,2005-02-18,2010-04-13,southern elephant seal,150.99,-66.2,TRUE
+b6a4,507,22,180,2012-06-03,2022-08-15,southern elephant seal,36.92,-57.29,TRUE
+adb4,503,18,152,2012-07-22,2022-10-24,southern elephant seal,105.56,-58.9,TRUE
+b71c,498,9,164,2013-04-08,2021-07-16,southern elephant seal,15.56,-58.9,TRUE
+b68c,492,9,151,2013-04-23,2022-02-21,southern elephant seal,26.58,-53.93,TRUE
+b6b4,489,15,151,2012-05-30,2022-08-02,southern elephant seal,36.02,-61.01,TRUE
+b144,488,18,141,2011-06-16,2022-07-12,southern elephant seal,45,-65.26,TRUE
+ad64,483,34,153,2009-05-07,2022-09-04,southern elephant seal,91.52,-51.34,TRUE
+ada4,472,26,161,2012-07-17,2022-09-20,southern elephant seal,99.78,-56.54,TRUE
+a604,468,10,160,2004-04-20,2013-04-17,southern elephant seal,-177.3,-65.83,TRUE
+ac64,468,17,175,2004-04-10,2022-09-18,southern elephant seal,116.58,-53.93,TRUE
+ae74,465,12,69,2009-03-13,2022-02-27,southern elephant seal,106.23,-68.11,TRUE
+682c,462,9,152,2022-06-27,2023-12-14,olive ridley turtle,136.21,-6.66,TRUE
+b3e4,461,18,143,2011-06-22,2022-06-27,southern elephant seal,53.98,-61.01,TRUE
+b6d4,460,7,122,2012-06-08,2022-07-02,southern elephant seal,25.51,-63.59,TRUE
+b154,459,19,146,2011-10-12,2022-07-17,southern elephant seal,45,-61.39,TRUE
+ad14,457,26,154,2009-05-11,2022-09-15,southern elephant seal,97.99,-51.07,TRUE
+ac84,456,14,145,2004-04-15,2022-09-14,southern elephant seal,118.04,-50.63,TRUE
+ac14,454,11,125,2005-06-18,2022-09-01,southern elephant seal,122.41,-58.7,TRUE
+a5e4,451,8,140,2004-03-31,2012-04-11,southern elephant seal,-170.37,-68.63,TRUE
+ad44,448,14,144,2015-08-13,2022-09-18,southern elephant seal,94.26,-48.64,TRUE
+b444,448,12,172,2012-10-09,2022-02-04,southern elephant seal,45,-50.59,TRUE
+b3f4,439,24,152,2011-06-26,2022-05-16,southern elephant seal,53.08,-57.29,TRUE
+b2bc,435,23,139,2013-03-05,2022-09-12,southern elephant seal,85.74,-48.64,TRUE
+b3dc,434,20,148,2011-08-24,2022-01-21,southern elephant seal,59.07,-62.41,TRUE
+a86c,433,4,159,2012-03-06,2015-01-05,southern elephant seal,175.32,-51.25,TRUE
+a8cc,433,6,125,2004-02-18,2010-05-07,southern elephant seal,165.93,-65.2,TRUE
+ac34,430,13,116,2012-06-08,2022-08-11,southern elephant seal,112.62,-60.92,TRUE
+b70c,428,5,142,2013-07-15,2022-03-08,southern elephant seal,9.78,-56.54,TRUE
+a90c,420,35,150,2004-01-27,2014-12-29,southern elephant seal,157.59,-54.83,TRUE
+b38c,420,25,153,2011-06-29,2022-05-18,southern elephant seal,56.42,-55.11,TRUE
+b40c,418,21,141,2011-07-03,2022-08-27,southern elephant seal,48.87,-55.73,TRUE
+b3ec,417,20,149,2011-08-21,2022-02-25,southern elephant seal,57.59,-58.7,TRUE
+b2a4,416,21,136,2013-03-07,2022-09-23,southern elephant seal,88.62,-48.71,TRUE
+b67c,416,6,111,2015-04-08,2021-07-28,southern elephant seal,28.04,-50.63,TRUE
+ac74,415,10,113,2004-03-07,2022-08-24,southern elephant seal,123.58,-55.11,TRUE
+b42c,412,13,146,2012-06-14,2022-02-15,southern elephant seal,34.53,-51.67,TRUE
+a5fc,408,11,108,2004-02-25,2013-04-17,southern elephant seal,-176.86,-68.88,TRUE
+a844,403,9,104,2012-03-04,2015-01-08,southern elephant seal,172.01,-51.07,TRUE
+b41c,403,25,147,2012-08-04,2022-08-18,southern elephant seal,41.13,-55.73,TRUE
+ace4,402,18,121,2012-09-01,2022-09-06,southern elephant seal,104.97,-50.38,TRUE
+b474,400,20,123,2011-07-07,2022-09-02,southern elephant seal,52.35,-53.73,TRUE
+ad6c,386,26,120,2009-05-09,2022-09-16,southern elephant seal,94.68,-51.25,TRUE
+b47c,370,18,118,2011-07-10,2022-09-07,southern elephant seal,55.47,-51.67,TRUE
+b43c,369,13,146,2012-07-23,2022-02-05,southern elephant seal,41.46,-52.21,TRUE
+b684,367,13,134,2012-06-14,2022-02-18,southern elephant seal,30.63,-52.87,TRUE
+aea4,364,14,129,2005-02-25,2021-05-14,southern elephant seal,130.19,-63.21,TRUE
+adac,356,21,106,2012-08-02,2022-05-11,southern elephant seal,103.95,-56.13,TRUE
+b0dc,348,4,64,2012-04-26,2021-07-10,southern elephant seal,26.4,-70.01,TRUE
+b37c,343,22,114,2011-07-06,2022-09-14,southern elephant seal,61.96,-50.63,TRUE
+b2ac,342,12,110,2013-09-29,2022-09-20,southern elephant seal,88.74,-46.2,TRUE
+2cf4,337,3,99,2022-11-22,2023-08-24,flatback turtle; olive ridley turtle,125.92,-12.27,TRUE
+ac6c,332,10,99,2012-08-20,2022-04-03,southern elephant seal,119.28,-56.33,TRUE
+b694,330,18,122,2012-07-06,2021-09-09,southern elephant seal,29.28,-56.33,TRUE
+b714,323,9,87,2013-04-11,2022-03-11,southern elephant seal,10.94,-59.38,TRUE
+aeb4,315,9,115,2005-02-14,2013-08-03,southern elephant seal,139.81,-63.21,TRUE
+b6bc,310,16,112,2012-06-17,2022-08-05,southern elephant seal,32.41,-58.7,TRUE
+ac94,307,9,82,2013-06-07,2022-08-20,southern elephant seal,112.17,-49.18,TRUE
+b6ac,306,20,115,2012-06-02,2022-08-16,southern elephant seal,40.71,-59.4,TRUE
+b364,302,13,108,2011-07-13,2022-02-02,southern elephant seal,64.25,-48.4,TRUE
+b6f4,301,10,101,2013-07-28,2022-02-25,southern elephant seal,22.41,-54.83,TRUE
+af54,300,8,90,2004-02-22,2010-04-02,southern elephant seal,176.86,-68.88,TRUE
+b404,299,15,106,2012-07-13,2022-08-21,southern elephant seal,45,-57.63,TRUE
+acdc,298,9,73,2012-09-06,2022-09-01,southern elephant seal,103.69,-47.9,TRUE
+ad5c,298,18,91,2013-03-09,2022-09-20,southern elephant seal,91.38,-48.71,TRUE
+a8dc,297,10,102,2004-02-05,2010-09-22,southern elephant seal,162.51,-61.71,TRUE
+b664,285,6,90,2013-05-03,2021-06-08,southern elephant seal,24.22,-51.54,TRUE
+b6ec,285,12,101,2013-08-12,2021-09-03,southern elephant seal,24.81,-57.38,TRUE
+ab64,282,4,87,2009-05-29,2022-09-07,southern elephant seal,119.27,-47.48,TRUE
+a924,281,6,61,2010-02-02,2010-09-11,southern elephant seal,157.38,-60.92,TRUE
+af7c,281,5,115,2010-03-08,2016-06-06,southern elephant seal; Weddell seal,174.35,-77.87,TRUE
+ac04,277,6,68,2010-06-04,2022-03-18,southern elephant seal,130.71,-59.4,TRUE
+2c64,270,1,81,2022-12-24,2023-03-14,flatback turtle,123.08,-15.27,TRUE
+b484,270,15,80,2011-07-08,2022-03-25,southern elephant seal,58.25,-49.58,TRUE
+b76c,270,5,92,2013-04-17,2022-03-16,southern elephant seal,6.42,-59.68,TRUE
+b12c,265,8,83,2012-05-02,2022-05-30,southern elephant seal,29.01,-66.2,TRUE
+a9a4,263,7,93,2005-05-25,2014-09-06,southern elephant seal,159.66,-52.32,TRUE
+b6fc,263,8,79,2015-03-29,2022-03-01,southern elephant seal,18.18,-55.57,TRUE
+b46c,261,16,98,2013-09-08,2022-01-28,southern elephant seal,48.54,-52.21,TRUE
+b50c,258,6,100,2012-08-15,2021-08-16,southern elephant seal,42.16,-42.82,TRUE
+b354,252,3,43,2011-09-01,2019-09-16,southern elephant seal,68.08,-44.06,TRUE
+ac3c,247,10,73,2012-05-31,2022-09-13,southern elephant seal,117.62,-59.91,TRUE
+b4a4,246,6,53,2011-09-07,2019-10-20,southern elephant seal,62.95,-45.41,TRUE
+b6dc,238,9,76,2013-03-21,2022-06-18,southern elephant seal,22.62,-60.92,TRUE
+b72c,235,7,72,2013-03-31,2022-06-25,southern elephant seal,19.85,-64.52,TRUE
+69ec,233,7,81,2022-08-01,2023-08-29,flatback turtle; olive ridley turtle,138.72,-13.76,TRUE
+a894,228,7,75,2010-01-30,2013-04-07,southern elephant seal,173.58,-59.68,TRUE
+b434,228,8,71,2012-07-28,2022-02-11,southern elephant seal,38.24,-50.33,TRUE
+a91c,222,20,61,2004-01-31,2012-05-20,southern elephant seal,159.79,-58.24,TRUE
+a8fc,221,13,73,2010-01-23,2014-09-25,southern elephant seal,166.05,-56.13,TRUE
+6994,219,4,98,2022-08-07,2023-10-03,flatback turtle; olive ridley turtle,141.35,-14.28,TRUE
+a8e4,215,18,69,2004-02-04,2014-09-19,southern elephant seal,164.44,-58.9,TRUE
+b44c,215,9,75,2012-10-13,2021-08-19,southern elephant seal,41.73,-48.88,TRUE
+b3fc,213,16,77,2012-07-09,2022-05-13,southern elephant seal,49.29,-59.4,TRUE
+b724,212,5,66,2013-03-25,2022-06-19,southern elephant seal,17.49,-61.71,TRUE
+abec,208,6,58,2004-02-24,2012-06-17,southern elephant seal,135,-54.02,TRUE
+6b74,204,2,39,2013-06-09,2013-07-29,fur seal,152.83,-32.8,TRUE
+ad3c,202,8,64,2018-08-13,2021-08-29,southern elephant seal,97.29,-48.49,TRUE
+b5ac,201,5,66,2012-09-09,2019-06-15,southern elephant seal,41.97,-45.75,TRUE
+af4c,200,5,62,2004-02-25,2010-03-31,southern elephant seal,170.37,-68.63,TRUE
+b65c,200,3,69,2013-05-05,2016-04-30,southern elephant seal,20.34,-52.32,TRUE
+b704,196,8,63,2013-09-02,2022-03-06,southern elephant seal,13.95,-56.13,TRUE
+b504,195,5,84,2018-05-12,2021-08-12,southern elephant seal,45,-44.31,TRUE
+2c94,194,1,94,2022-06-20,2022-10-08,olive ridley turtle,128.65,-14.28,TRUE
+ac0c,193,9,64,2004-03-06,2022-08-25,southern elephant seal,126.92,-57.29,TRUE
+a5d4,189,3,49,2010-03-10,2013-05-06,southern elephant seal,-157.25,-67.3,TRUE
+b464,188,11,66,2012-10-25,2022-01-24,southern elephant seal,51.76,-50.33,TRUE
+b454,186,6,59,2015-03-13,2021-02-12,southern elephant seal,45,-47.35,TRUE
+a66c,185,4,57,2010-03-16,2012-07-28,southern elephant seal,-167.66,-62.28,TRUE
+b75c,184,5,55,2013-05-09,2022-03-29,southern elephant seal,2.36,-62.81,TRUE
+a8ac,182,11,67,2004-02-19,2013-04-14,southern elephant seal,177.3,-65.83,TRUE
+ab7c,176,7,66,2004-04-24,2022-09-08,southern elephant seal,121.75,-49.58,TRUE
+abc4,176,3,51,2005-06-01,2010-11-10,southern elephant seal,138.54,-52.21,TRUE
+b734,176,7,56,2013-04-23,2022-04-20,southern elephant seal,14.07,-65.2,TRUE
+b764,174,4,58,2013-05-03,2022-03-20,southern elephant seal,2.09,-59.82,TRUE
+b6c4,171,9,62,2013-03-17,2018-09-07,southern elephant seal,27.62,-59.91,TRUE
+a80c,169,2,66,2013-04-05,2014-12-31,southern elephant seal,178.62,-48.71,TRUE
+a8bc,168,11,62,2004-02-13,2012-05-11,southern elephant seal,172.74,-62.64,TRUE
+b48c,168,9,52,2012-09-12,2021-09-05,southern elephant seal,54.67,-48.4,TRUE
+b49c,168,8,61,2011-07-08,2021-07-22,southern elephant seal,60.73,-47.48,TRUE
+ab84,163,6,55,2004-05-02,2022-08-16,southern elephant seal,124.53,-51.67,TRUE
+69bc,161,2,76,2022-07-07,2022-11-26,flatback turtle; olive ridley turtle,141.35,-11.84,TRUE
+ad4c,161,5,51,2013-03-13,2022-09-14,southern elephant seal,93.9,-46.14,TRUE
+b2b4,161,8,58,2018-09-07,2022-09-25,southern elephant seal,86.1,-46.14,TRUE
+a82c,158,1,60,2014-09-18,2014-11-16,southern elephant seal,170.42,-45.81,TRUE
+b51c,154,4,60,2012-08-01,2019-09-12,southern elephant seal,47.84,-42.82,TRUE
+ad54,150,11,59,2013-03-11,2022-09-18,southern elephant seal,91.26,-46.2,TRUE
+b774,150,4,57,2013-07-08,2018-04-30,southern elephant seal,5.74,-56.79,TRUE
+6b6c,149,6,40,2012-07-30,2014-09-04,fur seal,152.83,-35.43,TRUE
+ab14,147,2,68,2009-07-09,2013-08-03,southern elephant seal,126,-45.33,TRUE
+ab8c,147,5,48,2004-03-11,2022-08-19,southern elephant seal,127.65,-53.73,TRUE
+2ce4,146,2,63,2022-06-13,2022-12-03,flatback turtle; olive ridley turtle,128.65,-9.48,TRUE
+a67c,144,5,50,2005-03-27,2013-05-13,southern elephant seal,-160.15,-64.52,TRUE
+ad24,144,9,49,2013-08-17,2022-05-01,southern elephant seal,100.44,-48.24,TRUE
+af64,144,4,54,2010-03-01,2014-07-21,southern elephant seal; Weddell seal,175.5,-74.92,TRUE
+a8a4,143,8,45,2005-03-05,2013-04-12,southern elephant seal,177.64,-62.81,TRUE
+a8f4,143,10,55,2010-06-12,2014-09-22,southern elephant seal,170.22,-56.54,TRUE
+a8c4,142,13,51,2004-02-08,2012-05-11,southern elephant seal,167.66,-62.28,TRUE
+a614,141,5,44,2010-02-22,2012-07-21,southern elephant seal,-172.74,-62.64,TRUE
+a8ec,141,9,52,2004-02-27,2014-09-21,southern elephant seal,169.06,-59.38,TRUE
+b0b4,141,3,43,2017-04-04,2022-04-18,southern elephant seal,9.63,-68.63,TRUE
+72b4,140,1,49,2013-04-10,2013-05-30,southern elephant seal,-176.26,-43.73,TRUE
+b45c,138,11,57,2012-10-23,2021-08-27,southern elephant seal,48.27,-48.88,TRUE
+a934,137,11,63,2005-02-12,2010-03-04,southern elephant seal,149.07,-62.41,TRUE
+af34,132,4,40,2010-02-25,2010-04-24,southern elephant seal,163.77,-68.11,TRUE
+b744,132,4,55,2013-05-17,2018-07-18,southern elephant seal,7.26,-62.64,TRUE
+a694,131,3,42,2010-04-03,2013-07-05,southern elephant seal,-152.38,-59.91,FALSE
+b5b4,130,2,34,2015-06-09,2021-05-22,southern elephant seal,38.74,-47.12,TRUE
+b674,130,4,41,2015-04-30,2021-05-29,southern elephant seal,25.75,-48.4,TRUE
+281c,126,1,31,2021-07-28,2021-09-07,southern elephant seal,93.74,-43.73,TRUE
+a9ac,126,7,52,2005-06-01,2014-11-21,southern elephant seal,163.55,-52.94,TRUE
+a8b4,125,7,46,2004-02-15,2010-05-02,southern elephant seal,171.7,-65.63,TRUE
+ba5c,124,1,65,2017-03-22,2017-07-23,Weddell seal,-27.7,-76.42,FALSE
+a99c,123,3,46,2010-07-11,2012-08-19,southern elephant seal,155.78,-51.54,TRUE
+b5a4,121,4,43,2012-08-23,2019-07-06,southern elephant seal,39.16,-44.11,TRUE
+a914,119,12,37,2004-01-30,2010-02-12,southern elephant seal,155.19,-57.38,TRUE
+a93c,119,11,43,2005-02-06,2010-02-21,southern elephant seal,152.38,-59.91,TRUE
+a69c,118,3,36,2010-03-29,2013-07-03,southern elephant seal,-149.07,-62.41,FALSE
+b73c,117,4,36,2013-05-21,2022-04-27,southern elephant seal,12.34,-62.28,TRUE
+a644,115,3,31,2010-07-22,2010-11-29,southern elephant seal,-169.06,-59.38,TRUE
+b2cc,115,8,42,2014-07-05,2022-09-27,southern elephant seal,83.32,-46.01,TRUE
+a9bc,113,2,46,2005-07-10,2010-09-10,southern elephant seal,161.44,-49.85,TRUE
+b0d4,113,7,39,2013-04-10,2022-05-30,southern elephant seal,22.75,-67.3,TRUE
+b654,112,1,38,2013-05-31,2013-07-07,southern elephant seal,16.45,-52.94,TRUE
+a424,110,2,30,2010-06-08,2010-07-09,southern elephant seal,-145.15,-64.83,FALSE
+abe4,110,7,43,2004-02-19,2022-04-02,southern elephant seal,138.87,-55.73,TRUE
+a664,109,4,37,2005-03-27,2012-07-31,southern elephant seal,-162.51,-61.71,TRUE
+ab6c,109,3,42,2009-06-01,2022-09-04,southern elephant seal,122.69,-46.46,TRUE
+b2d4,108,4,35,2019-08-19,2022-10-02,southern elephant seal,80.42,-45.81,TRUE
+ba54,104,1,44,2017-03-04,2017-07-29,Weddell seal,-37.11,-74.99,FALSE
+b66c,103,3,47,2015-05-17,2021-05-28,southern elephant seal,22.17,-49.18,TRUE
+a88c,101,7,37,2010-06-25,2014-09-27,southern elephant seal,174.26,-56.79,TRUE
+a43c,100,1,31,2010-04-18,2010-06-08,southern elephant seal,-140.51,-67.11,FALSE
+a6e4,97,1,34,2012-08-15,2012-10-08,southern elephant seal,-157.59,-54.83,TRUE
+a61c,93,5,30,2010-02-18,2012-02-20,southern elephant seal,-177.64,-62.81,TRUE
+b9e4,92,4,29,2013-05-25,2022-04-04,southern elephant seal,-2.36,-62.81,FALSE
+2804,90,3,21,2018-07-27,2021-09-09,southern elephant seal,91.21,-43.78,TRUE
+a6a4,89,1,28,2010-05-27,2010-07-03,southern elephant seal,-143.98,-61.01,FALSE
+a6ec,89,2,30,2010-07-19,2013-07-07,southern elephant seal,-155.19,-57.38,TRUE
+a834,89,1,33,2014-08-21,2014-11-21,southern elephant seal,169.56,-48.24,TRUE
+a95c,89,2,31,2004-02-15,2010-06-12,southern elephant seal,143.08,-57.29,TRUE
+a5ec,85,2,31,2004-03-05,2010-03-24,southern elephant seal,-168.65,-71.62,TRUE
+ac9c,82,5,28,2009-05-28,2022-08-14,southern elephant seal,115.75,-48.4,TRUE
+a434,81,1,27,2010-04-15,2010-05-23,southern elephant seal,-146.72,-68.71,FALSE
+acbc,79,3,25,2013-03-30,2022-08-20,southern elephant seal,110.36,-46.88,TRUE
+b5d4,79,6,23,2012-09-01,2021-07-31,southern elephant seal,31.75,-49.58,TRUE
+a89c,77,6,26,2010-05-31,2013-04-09,southern elephant seal,177.91,-59.82,TRUE
+acc4,77,7,32,2013-03-26,2022-08-28,southern elephant seal,107.01,-47.45,TRUE
+2cdc,74,8,30,2022-06-03,2022-11-09,flatback turtle; olive ridley turtle,131.28,-9.13,TRUE
+a684,74,2,24,2010-03-26,2013-06-02,southern elephant seal,-154.49,-63.59,TRUE
+a98c,72,2,27,2010-08-13,2012-08-23,southern elephant seal,154.25,-48.4,TRUE
+abb4,71,2,29,2005-06-07,2012-10-25,southern elephant seal,138.27,-48.88,TRUE
+b4f4,71,5,23,2012-09-17,2021-08-04,southern elephant seal,51.26,-47.12,TRUE
+b4bc,69,4,21,2012-07-12,2019-10-16,southern elephant seal,59.68,-44.52,TRUE
+abfc,68,4,24,2010-05-01,2022-03-22,southern elephant seal,135,-57.63,TRUE
+a5f4,66,2,20,2004-02-28,2004-03-18,southern elephant seal,-176.28,-71.92,TRUE
+b0cc,66,5,27,2013-04-11,2022-04-18,southern elephant seal,16.23,-68.11,TRUE
+b4c4,66,3,28,2012-11-07,2019-10-05,southern elephant seal,56.5,-43.53,TRUE
+aa54,65,2,32,2005-06-18,2012-09-14,southern elephant seal,138.03,-45.75,TRUE
+abf4,65,3,23,2004-02-25,2012-06-15,southern elephant seal,131.13,-55.73,TRUE
+af6c,65,3,25,2014-02-28,2014-04-13,Weddell seal,166.31,-74.55,TRUE
+a41c,63,1,20,2010-05-09,2010-06-02,southern elephant seal,-139.81,-63.21,FALSE
+b59c,63,3,24,2019-07-06,2021-08-20,southern elephant seal,36.57,-42.45,TRUE
+b5c4,62,1,16,2021-03-23,2021-05-18,southern elephant seal,32.69,-46.46,TRUE
+a71c,61,1,22,2012-08-28,2012-09-18,southern elephant seal,-159.66,-52.32,TRUE
+abbc,61,4,23,2010-07-10,2012-10-09,southern elephant seal,135,-50.59,TRUE
+af5c,61,2,21,2004-03-05,2010-03-22,southern elephant seal,176.28,-71.92,TRUE
+a654,60,2,20,2010-08-22,2012-10-19,southern elephant seal,-166.05,-56.13,TRUE
+ab1c,59,2,28,2009-06-27,2013-07-26,southern elephant seal,129.16,-44.11,TRUE
+aba4,59,2,24,2010-07-05,2012-09-28,southern elephant seal,131.73,-48.88,TRUE
+b334,59,3,16,2012-09-25,2022-01-08,southern elephant seal,74.35,-45.13,TRUE
+a65c,58,3,21,2010-06-21,2012-08-04,southern elephant seal,-164.44,-58.9,TRUE
+b594,58,2,26,2019-06-23,2019-07-24,southern elephant seal,33.5,-43.53,TRUE
+b4fc,57,4,18,2019-06-10,2021-08-08,southern elephant seal,48.03,-45.75,TRUE
+b514,57,2,23,2012-08-08,2019-07-14,southern elephant seal,45,-41.48,TRUE
+a5c4,56,1,19,2010-03-07,2010-03-31,southern elephant seal,-160.98,-70.98,TRUE
+b5dc,55,2,17,2015-09-24,2021-05-13,southern elephant seal,29.27,-47.48,TRUE
+a68c,54,3,20,2010-03-25,2013-06-06,southern elephant seal,-157.38,-60.92,TRUE
+2d34,52,1,19,2022-07-28,2022-08-17,olive ridley turtle,133.79,-4.63,TRUE
+a974,52,5,21,2005-09-09,2012-07-01,southern elephant seal,153.42,-53.93,TRUE
+b614,51,1,32,2015-06-02,2015-07-17,southern elephant seal,20.36,-46.88,TRUE
+a994,50,2,18,2010-07-31,2010-09-06,southern elephant seal,157.83,-49.18,TRUE
+b5cc,50,2,19,2015-09-30,2021-05-21,southern elephant seal,35.33,-48.4,TRUE
+b74c,50,4,22,2013-04-30,2019-03-14,southern elephant seal,8.3,-65.63,TRUE
+27fc,49,4,19,2018-07-19,2022-09-23,southern elephant seal,88.79,-43.78,TRUE
+6b44,49,4,14,2012-07-05,2014-08-06,fur seal,152.83,-37.99,TRUE
+a624,49,4,17,2010-08-31,2012-07-15,southern elephant seal,-177.91,-59.82,TRUE
+6b4c,48,2,10,2012-07-07,2012-09-28,fur seal,152.83,-40.46,TRUE
+a63c,47,4,15,2010-08-25,2012-07-16,southern elephant seal,-173.58,-59.68,TRUE
+a6bc,46,2,18,2010-04-07,2013-06-29,southern elephant seal,-147.59,-58.7,FALSE
+a6fc,46,1,18,2012-08-05,2012-10-14,southern elephant seal,-161.82,-55.57,TRUE
+ad34,45,3,18,2013-03-15,2022-09-10,southern elephant seal,96.68,-46.01,TRUE
+6b2c,44,2,7,2012-11-02,2013-10-24,fur seal,146.92,-38.77,TRUE
+a64c,44,3,14,2010-09-05,2012-10-23,southern elephant seal,-170.22,-56.54,TRUE
+6b34,43,4,9,2012-07-07,2013-10-20,fur seal,149.84,-39.66,TRUE
+ad2c,43,3,17,2013-03-18,2022-09-06,southern elephant seal,99.58,-45.81,TRUE
+a954,42,5,18,2005-05-24,2022-03-25,southern elephant seal,139.29,-59.4,TRUE
+ab94,42,2,17,2004-07-16,2010-07-03,southern elephant seal,131.46,-52.21,TRUE
+b4ac,42,2,10,2011-08-30,2012-08-16,southern elephant seal,64.94,-43.38,TRUE
+a5dc,41,5,20,2005-03-20,2013-04-23,southern elephant seal,-163.77,-68.11,TRUE
+b4dc,41,4,16,2012-11-04,2019-08-28,southern elephant seal,53.43,-42.45,TRUE
+aa44,40,2,18,2005-08-03,2012-09-09,southern elephant seal,144,-45.33,TRUE
+a7e4,39,2,18,2013-04-07,2014-11-21,southern elephant seal,-178.62,-48.71,TRUE
+aa34,39,2,14,2005-08-25,2012-11-07,southern elephant seal,144.67,-48.4,TRUE
+a864,38,3,16,2012-07-01,2014-11-07,southern elephant seal,174.84,-53.97,TRUE
+aca4,38,2,13,2013-04-03,2022-08-16,southern elephant seal,113.72,-46.2,TRUE
+b4e4,38,3,20,2012-07-26,2019-09-18,southern elephant seal,50.84,-44.11,TRUE
+a6f4,37,3,12,2010-08-06,2012-08-05,southern elephant seal,-159.79,-58.24,TRUE
+a884,37,3,13,2010-09-04,2012-07-09,southern elephant seal,178.14,-56.91,TRUE
+aeac,37,3,13,2005-05-21,2010-06-06,southern elephant seal,135,-61.39,TRUE
+b5e4,37,1,9,2021-05-03,2021-05-12,southern elephant seal,27.05,-45.41,TRUE
+b574,35,3,12,2012-09-21,2021-08-18,southern elephant seal,39.52,-41.3,TRUE
+b9fc,35,2,9,2018-05-26,2022-04-08,southern elephant seal,-2.7,-65.83,FALSE
+69f4,34,2,8,2022-11-12,2022-11-19,flatback turtle,138.72,-16.17,TRUE
+abdc,34,3,13,2005-08-30,2012-06-24,southern elephant seal,142.35,-53.73,TRUE
+b524,34,3,16,2012-11-01,2019-09-09,southern elephant seal,50.48,-41.3,TRUE
+b77c,34,2,13,2016-03-15,2018-05-08,southern elephant seal,1.86,-56.91,TRUE
+a72c,32,1,12,2013-07-19,2013-07-30,southern elephant seal,-151.96,-50.63,FALSE
+a9b4,32,4,16,2005-07-20,2014-07-25,southern elephant seal,165.03,-50.38,TRUE
+a62c,31,2,11,2010-08-31,2010-09-22,southern elephant seal,-178.14,-56.91,TRUE
+a87c,31,3,12,2012-10-30,2014-11-03,southern elephant seal,178.33,-54.07,TRUE
+a97c,31,2,10,2010-09-04,2012-06-28,southern elephant seal,149.37,-52.87,TRUE
+b32c,30,3,9,2019-09-08,2022-01-14,southern elephant seal,77.42,-45.51,TRUE
+b4ec,30,2,11,2012-07-20,2019-10-09,southern elephant seal,54,-45.33,TRUE
+a634,29,4,12,2010-08-29,2012-10-26,southern elephant seal,-174.26,-56.79,TRUE
+a94c,29,5,12,2005-02-21,2010-06-10,southern elephant seal,143.98,-61.01,TRUE
+abcc,29,2,10,2005-06-06,2010-08-30,southern elephant seal,141.76,-50.33,TRUE
+acb4,29,1,11,2013-08-26,2013-09-05,southern elephant seal,108.77,-44.64,TRUE
+2d2c,28,2,12,2022-06-18,2022-07-22,olive ridley turtle,133.79,-6.66,TRUE
+a6ac,28,1,10,2010-04-27,2010-05-06,southern elephant seal,-139.29,-59.4,FALSE
+a944,28,3,11,2004-02-12,2010-06-14,southern elephant seal,147.59,-58.7,TRUE
+a42c,27,1,9,2010-04-07,2010-04-15,southern elephant seal,-150.99,-66.2,FALSE
+a964,27,3,12,2005-09-05,2012-06-25,southern elephant seal,146.42,-55.11,TRUE
+b7a4,27,2,13,2016-03-08,2018-04-22,southern elephant seal,8.81,-53.76,TRUE
+b9c4,27,1,10,2018-04-10,2018-04-19,southern elephant seal,-6.42,-59.68,FALSE
+2cfc,26,2,10,2022-06-11,2022-12-07,flatback turtle; olive ridley turtle,125.92,-9.83,TRUE
+a6b4,26,1,9,2010-04-18,2010-04-27,southern elephant seal,-143.08,-57.29,FALSE
+a7fc,26,2,11,2013-04-08,2014-11-06,southern elephant seal,-178.74,-46.2,TRUE
+a804,26,2,15,2013-06-03,2014-12-23,southern elephant seal,178.74,-46.2,TRUE
+ab44,26,2,11,2009-06-04,2013-08-12,southern elephant seal,120.32,-44.52,TRUE
+6824,25,1,11,2022-07-27,2022-08-21,olive ridley turtle,136.21,-4.63,TRUE
+aa3c,25,2,11,2005-08-17,2012-09-03,southern elephant seal,147.31,-46.46,TRUE
+ba04,25,1,5,2022-04-08,2022-04-12,southern elephant seal,-3.14,-68.88,FALSE
+aa2c,24,2,11,2005-08-26,2012-11-13,southern elephant seal,148.25,-49.58,TRUE
+aafc,24,2,8,2005-07-08,2012-09-21,southern elephant seal,135,-44.31,TRUE
+ab3c,24,2,12,2009-06-05,2013-08-06,southern elephant seal,123.5,-43.53,TRUE
+b494,24,2,11,2012-07-16,2019-10-14,southern elephant seal,57.31,-46.46,TRUE
+b9dc,23,2,9,2018-04-04,2018-05-21,southern elephant seal,-2.09,-59.82,FALSE
+ab24,22,1,10,2009-06-16,2009-06-26,southern elephant seal,126.57,-42.45,TRUE
+abac,22,1,6,2012-09-22,2012-09-27,southern elephant seal,135,-47.35,TRUE
+a96c,21,2,10,2004-02-10,2010-06-20,southern elephant seal,150.72,-56.33,TRUE
+aa9c,21,1,9,2013-10-27,2013-11-06,fur seal,140.16,-38.69,TRUE
+a874,20,1,10,2014-10-04,2015-01-02,southern elephant seal,178.48,-51.34,TRUE
+6ad4,19,1,7,2012-11-05,2012-11-11,fur seal,144.08,-37.83,TRUE
+ab0c,18,2,9,2010-07-17,2013-07-06,southern elephant seal,128.74,-47.12,TRUE
+abd4,18,1,7,2010-08-28,2010-09-03,southern elephant seal,145.47,-51.67,TRUE
+b9ec,18,1,7,2018-04-26,2018-05-02,southern elephant seal,-7.26,-62.64,FALSE
+a6d4,17,1,7,2013-07-13,2013-07-19,southern elephant seal,-149.37,-52.87,FALSE
+aa84,17,1,4,2013-10-24,2013-10-27,fur seal,142.93,-39.77,TRUE
+b0ac,17,1,3,2022-04-13,2022-04-15,southern elephant seal,3.14,-68.88,TRUE
+b60c,17,1,10,2015-06-30,2015-07-19,southern elephant seal,23.72,-46.2,TRUE
+ab5c,16,1,9,2013-04-06,2013-08-18,southern elephant seal,117.05,-45.41,TRUE
+b34c,16,2,5,2012-09-23,2019-09-17,southern elephant seal,71.23,-44.64,TRUE
+b754,16,1,6,2018-05-29,2018-06-03,southern elephant seal,2.7,-65.83,TRUE
+a6dc,15,1,5,2013-07-09,2013-07-13,southern elephant seal,-153.42,-53.93,FALSE
+a984,15,2,7,2005-09-01,2012-08-19,southern elephant seal,151.96,-50.63,TRUE
+aa24,15,1,5,2012-08-24,2012-08-28,southern elephant seal,150.73,-47.48,TRUE
+aa5c,15,1,10,2005-07-23,2005-08-03,southern elephant seal,140.84,-44.11,TRUE
+acd4,15,2,7,2013-03-23,2021-09-20,southern elephant seal,102.58,-45.51,TRUE
+ae94,14,3,9,2012-12-12,2022-03-04,southern elephant seal,129.49,-67.11,TRUE
+aa4c,13,2,7,2005-06-12,2012-10-26,southern elephant seal,141.26,-47.12,TRUE
+b5ec,13,1,7,2019-06-28,2019-07-04,southern elephant seal,30.32,-44.52,TRUE
+27f4,12,2,4,2021-08-01,2022-09-23,southern elephant seal,86.26,-43.73,TRUE
+ab74,12,1,5,2013-06-13,2013-07-03,southern elephant seal,125.33,-48.4,TRUE
+b9bc,12,1,6,2018-04-18,2018-04-23,southern elephant seal,-10.94,-59.38,FALSE
+277c,11,1,3,2022-01-10,2022-01-12,southern elephant seal,77.93,-43.15,TRUE
+29d4,11,1,4,2013-09-10,2013-09-13,southern elephant seal,102.07,-43.15,TRUE
+a404,11,1,4,2010-05-06,2010-05-09,southern elephant seal,-135,-61.39,FALSE
+a7d4,11,1,4,2012-10-27,2012-10-30,southern elephant seal,-178.33,-54.07,TRUE
+b5bc,11,1,6,2019-06-18,2019-06-23,southern elephant seal,36,-45.33,TRUE
+accc,10,1,4,2013-09-06,2013-09-09,southern elephant seal,105.65,-45.13,TRUE
+b994,10,1,3,2018-04-24,2018-04-26,southern elephant seal,-12.34,-62.28,FALSE
+2c8c,9,1,4,2022-12-21,2022-12-24,flatback turtle,125.92,-14.78,TRUE
+b79c,9,1,3,2016-03-11,2016-03-13,southern elephant seal,5.16,-53.97,TRUE
+b7ac,9,1,5,2016-03-30,2016-04-03,southern elephant seal,12.59,-53.42,TRUE
+2784,8,1,4,2022-01-12,2022-01-15,southern elephant seal,80.81,-43.42,TRUE
+a594,8,1,3,2010-03-21,2010-03-23,southern elephant seal,-166.31,-74.55,TRUE
+a814,8,1,3,2013-04-04,2013-06-06,southern elephant seal,175.74,-48.64,TRUE
+ab2c,8,1,4,2009-06-12,2009-06-15,southern elephant seal,124.19,-40.79,TRUE
+a6c4,7,1,3,2013-07-07,2013-07-09,southern elephant seal,-150.72,-56.33,FALSE
+278c,5,1,2,2022-01-15,2022-01-16,southern elephant seal,83.59,-43.61,TRUE
+ab9c,5,1,2,2010-07-04,2010-07-05,southern elephant seal,128.24,-50.33,TRUE
+af44,5,2,3,2007-08-02,2010-02-21,southern elephant seal; Weddell seal,168.65,-71.62,TRUE
+b52c,5,1,3,2019-09-01,2019-09-03,southern elephant seal,52.93,-39.77,TRUE
+a7cc,4,1,2,2012-10-26,2012-10-27,southern elephant seal,-174.84,-53.97,TRUE
+acac,3,1,2,2013-08-25,2013-08-26,southern elephant seal,111.92,-44.06,TRUE
+af2c,3,1,2,2010-04-02,2010-04-03,southern elephant seal,157.25,-67.3,TRUE
+2764,2,1,2,2022-01-08,2022-01-09,southern elephant seal,74.97,-42.8,TRUE
+29dc,2,1,2,2013-09-09,2013-09-10,southern elephant seal,105.03,-42.8,TRUE
+6b64,2,1,1,2014-08-06,2014-08-06,fur seal,155.86,-36.12,TRUE
+72cc,2,1,1,2013-04-13,2013-04-13,southern elephant seal,-173.59,-43.61,TRUE
+a44c,2,1,1,2010-05-03,2010-05-03,southern elephant seal,-141.47,-71.05,FALSE
+a5cc,2,1,2,2010-03-31,2010-04-01,southern elephant seal,-153.6,-70.01,TRUE
+a7f4,2,1,2,2013-05-29,2013-05-31,southern elephant seal,-176.1,-46.14,TRUE
+2cbc,1,1,1,2022-10-04,2022-10-04,olive ridley turtle,131.28,-13.76,TRUE
+2d24,1,1,1,2022-06-16,2022-06-16,olive ridley turtle,131.28,-6.93,TRUE
+6b5c,1,1,1,2014-08-06,2014-08-06,fur seal,155.86,-38.7,TRUE
+a9cc,1,1,1,2014-08-22,2014-08-22,southern elephant seal,166.31,-47.9,TRUE
+af24,1,1,1,2007-08-02,2007-08-02,Weddell seal,153.6,-70.01,TRUE

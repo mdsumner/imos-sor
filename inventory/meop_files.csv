@@ -1,0 +1,565 @@
+key,smru,wmo,species,deployment,location,release,n_levels,profiles,bad_positions,first,last
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/awru1/awru1-A-06_prof.nc,awru1-A-06, ,Weddell seal,awru1,Davis,MEOP-CTD_2017-10-01,12,893,0,2007-03-03,2007-07-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/awru1/awru1-B-06_prof.nc,awru1-B-06, ,Weddell seal,awru1,Davis,MEOP-CTD_2017-10-01,12,1596,0,2007-03-04,2007-10-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/awru1/awru1-C-06_prof.nc,awru1-C-06, ,Weddell seal,awru1,Davis,MEOP-CTD_2017-10-01,12,1031,0,2007-03-02,2007-09-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct100/ct100-251-13_prof.nc,ct100-251-13,Q9900582,southern elephant seal,ct100,Campbell,MEOP-CTD_2017-10-01,16,158,0,2013-03-15,2013-05-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct100/ct100-263-13_prof.nc,ct100-263-13,Q9900583,southern elephant seal,ct100,Campbell,MEOP-CTD_2017-10-01,16,478,0,2013-04-02,2014-01-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct100/ct100-264-13_prof.nc,ct100-264-13,Q9900584,southern elephant seal,ct100,Campbell,MEOP-CTD_2017-10-01,16,231,0,2013-03-13,2013-06-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct100/ct100-298-13_prof.nc,ct100-298-13,Q9900585,southern elephant seal,ct100,Campbell,MEOP-CTD_2017-10-01,16,160,0,2013-03-28,2013-06-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct100/ct100-301-13_prof.nc,ct100-301-13,Q9900586,southern elephant seal,ct100,Campbell,MEOP-CTD_2017-10-01,16,411,0,2013-03-31,2013-07-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-303-12_hr1_prof.nc,ct101-303-12,Q9900587,fur seal,ct101,ct101,IMOS-CTD_2024,1000,352,343,2013-05-26,2013-08-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-330-12_hr1_prof.nc,ct101-330-12,Q9900588,fur seal,ct101,ct101,IMOS-CTD_2024,1000,152,147,2013-05-27,2013-07-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-416-12_hr1_prof.nc,ct101-416-12,Q9900589,fur seal,ct101,ct101,IMOS-CTD_2024,1000,295,295,2013-05-26,2013-07-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-701-13_hr1_prof.nc,ct101-701-13,Q9900590,fur seal,ct101,ct101,IMOS-CTD_2024,1000,246,238,2013-05-26,2013-07-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-703-13_hr1_prof.nc,ct101-703-13,Q9900591,fur seal,ct101,ct101,IMOS-CTD_2024,1000,1151,0,2013-05-26,2013-11-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-704-13_hr1_prof.nc,ct101-704-13,Q9900592,fur seal,ct101,ct101,IMOS-CTD_2024,1000,112,0,2013-05-26,2013-06-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-706-13_hr1_prof.nc,ct101-706-13,Q9900593,fur seal,ct101,Australia,IMOS-CTD_2024,1000,26,0,2013-05-29,2013-06-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-790-13_hr1_prof.nc,ct101-790-13,Q9900594,fur seal,ct101,ct101,IMOS-CTD_2024,1000,992,9,2013-05-27,2013-11-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-791-13_hr1_prof.nc,ct101-791-13,Q9900595,fur seal,ct101,ct101,IMOS-CTD_2024,1000,76,0,2013-05-27,2013-06-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-792-13_hr1_prof.nc,ct101-792-13,Q9900596,fur seal,ct101,ct101,IMOS-CTD_2024,1000,286,5,2013-05-27,2013-07-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-793-13_hr1_prof.nc,ct101-793-13,Q9900597,fur seal,ct101,ct101,IMOS-CTD_2024,1000,186,1,2013-06-03,2013-07-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-794-13_hr1_prof.nc,ct101-794-13,Q9900598,fur seal,ct101,ct101,IMOS-CTD_2024,1000,539,3,2013-05-28,2013-09-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct101/ct101-795-13_hr1_prof.nc,ct101-795-13,Q9900599,fur seal,ct101,ct101,IMOS-CTD_2024,1000,614,5,2013-05-29,2013-09-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct108/ct108-297-13_prof.nc,ct108-297-13,Q9900690,southern elephant seal,ct108,Campbell,MEOP-CTD_2017-10-01,16,368,0,2014-07-24,2014-12-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct108/ct108-300-13_prof.nc,ct108-300-13,Q9900691,southern elephant seal,ct108,Campbell,MEOP-CTD_2017-10-01,16,260,0,2014-07-18,2014-10-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct108/ct108-554-13_prof.nc,ct108-554-13,Q9900692,southern elephant seal,ct108,Campbell,MEOP-CTD_2017-10-01,16,108,0,2014-07-24,2014-09-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct108/ct108-555-13_prof.nc,ct108-555-13,Q9900693,southern elephant seal,ct108,Campbell Is,MEOP-CTD_2017-10-01,16,25,0,2014-08-13,2014-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct108/ct108-564-13_prof.nc,ct108-564-13,Q9900694,southern elephant seal,ct108,Campbell,MEOP-CTD_2017-10-01,16,438,0,2014-08-06,2015-01-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct108/ct108-569-13_prof.nc,ct108-569-13,Q9900696,southern elephant seal,ct108,Campbell,MEOP-CTD_2017-10-01,16,303,0,2014-08-01,2014-11-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct108/ct108-622-13_prof.nc,ct108-622-13,Q9900697,southern elephant seal,ct108,Campbell,MEOP-CTD_2017-10-01,16,281,0,2014-08-16,2014-11-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct108/ct108-632-13_prof.nc,ct108-632-13,Q9900698,southern elephant seal,ct108,Campbell,MEOP-CTD_2017-10-01,16,154,0,2014-07-31,2014-09-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct108/ct108-663-13_prof.nc,ct108-663-13,Q9900699,southern elephant seal,ct108,Campbell,MEOP-CTD_2017-10-01,16,285,0,2014-08-03,2014-11-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-031-14_prof.nc,ct109-031-14,Q9900739,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,341,0,2015-01-09,2015-09-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-032-14_prof.nc,ct109-032-14,Q9900738,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,418,0,2014-12-29,2015-07-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-085-14_prof.nc,ct109-085-14,Q9900747,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,638,0,2015-02-01,2015-09-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-184-14_prof.nc,ct109-184-14,Q9900741,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,673,0,2015-01-25,2015-09-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-186-14_prof.nc,ct109-186-14,Q9900748,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,728,0,2015-02-07,2015-10-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-187-14_prof.nc,ct109-187-14,Q9900749,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,571,0,2015-02-03,2015-09-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-188-14_prof.nc,ct109-188-14,Q9900750,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,715,0,2015-02-03,2015-10-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-190-14_prof.nc,ct109-190-14,Q9900751,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,521,0,2015-02-10,2015-11-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-191-14_prof.nc,ct109-191-14,Q9900752,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,332,0,2015-02-02,2015-07-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-937-14_prof.nc,ct109-937-14,Q9900742,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,640,0,2015-01-24,2015-09-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-939-14_prof.nc,ct109-939-14,Q9900729,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,716,0,2014-12-30,2015-09-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-942-14_prof.nc,ct109-942-14,Q9900730,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,189,0,2014-12-26,2015-04-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-944-14_prof.nc,ct109-944-14,Q9900743,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,711,0,2015-01-24,2015-09-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-949-14_prof.nc,ct109-949-14,Q9900731,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,201,0,2014-12-17,2015-03-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-956-14_prof.nc,ct109-956-14,Q9900733,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,512,0,2014-12-28,2015-10-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-958-14_prof.nc,ct109-958-14,Q9900732,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,419,0,2014-12-17,2015-04-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-964-14_prof.nc,ct109-964-14,Q9900728,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,93,0,2014-12-16,2015-01-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-965-14_prof.nc,ct109-965-14,Q9900744,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,713,0,2015-01-22,2015-09-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-966-14_prof.nc,ct109-966-14,Q9900745,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,592,0,2015-01-22,2015-09-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-967-14_prof.nc,ct109-967-14,Q9900734,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,64,0,2014-12-29,2015-01-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-968-14_prof.nc,ct109-968-14,Q9900735,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,337,0,2014-12-24,2015-05-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-969-14_prof.nc,ct109-969-14,Q9900736,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,641,0,2015-01-01,2015-10-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct109/ct109-973-14_prof.nc,ct109-973-14,Q9900746,southern elephant seal,ct109,Kerguelen,MEOP-CTD_2017-10-01,16,710,0,2015-01-20,2015-10-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct110/ct110-027-14_hr1_prof.nc,ct110-027-14,Q9900700,fur seal,ct110,ct110,IMOS-CTD_2024,1000,110,107,2014-08-04,2014-08-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct110/ct110-028-14_hr1_prof.nc,ct110-028-14,Q9900701,fur seal,ct110,ct110,IMOS-CTD_2024,1000,278,275,2014-08-05,2014-10-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct110/ct110-029-14_hr1_prof.nc,ct110-029-14,Q9900702,fur seal,ct110,ct110,IMOS-CTD_2024,1000,386,383,2014-08-05,2014-11-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct110/ct110-086-14_hr1_prof.nc,ct110-086-14,Q9900703,fur seal,ct110,ct110,IMOS-CTD_2024,1000,145,142,2014-08-06,2014-09-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct110/ct110-087-14_hr1_prof.nc,ct110-087-14,Q9900704,fur seal,ct110,ct110,IMOS-CTD_2024,1000,242,236,2014-08-05,2014-09-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct110/ct110-088-14_hr1_prof.nc,ct110-088-14,Q9900705,fur seal,ct110,ct110,IMOS-CTD_2024,1000,310,310,2014-08-06,2014-10-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct110/ct110-089-14_hr1_prof.nc,ct110-089-14,Q9900706,fur seal,ct110,ct110,IMOS-CTD_2024,1000,163,160,2014-08-06,2014-09-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct110/ct110-090-14_hr1_prof.nc,ct110-090-14,Q9900707,fur seal,ct110,ct110,IMOS-CTD_2024,1000,142,140,2014-08-06,2014-09-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct110/ct110-255-12_hr1_prof.nc,ct110-255-12,Q9900632,fur seal,ct110,Montague Is.Australia,IMOS-CTD_2024,1000,32,26,2014-08-09,2014-08-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct110/ct110-256-12_hr1_prof.nc,ct110-256-12,Q9900633,fur seal,ct110,ct110,IMOS-CTD_2024,1000,87,0,2014-08-05,2014-09-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct111/ct111-030-13_prof.nc,ct111-030-13,Q9900712,Weddell seal,ct111,Dumont d'Urville,MEOP-CTD_2017-10-01,16,175,0,2014-11-05,2015-01-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct111/ct111-617-13_prof.nc,ct111-617-13,Q9900713,Weddell seal,ct111,Dumont d'Urville,MEOP-CTD_2017-10-01,16,137,0,2014-11-03,2015-01-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct111/ct111-665-13_prof.nc,ct111-665-13,Q9900714,Weddell seal,ct111,Dumont d'Urville,MEOP-CTD_2017-10-01,16,123,0,2014-11-08,2014-12-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct111/ct111-701-14_prof.nc,ct111-701-14, ,Weddell seal,ct111,Dumont d'Urville,MEOP-CTD_2017-10-01,16,16,0,2014-11-11,2014-11-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct111/ct111-835-10_prof.nc,ct111-835-10, ,Weddell seal,ct111,Dumont d'Urville,MEOP-CTD_2017-10-01,28,35,0,2014-11-15,2014-12-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct116/ct116-13-15_prof.nc,ct116-13-15,Q9900841,southern elephant seal,ct116,Davis,MEOP-CTD_2017-10-01,16,296,0,2016-02-11,2016-06-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct116/ct116-308-14_prof.nc,ct116-308-14,Q9900804,southern elephant seal,ct116,Davis,MEOP-CTD_2017-10-01,16,225,0,2016-02-17,2016-04-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct119/ct119-275-14_prof.nc,ct119-275-14,Q9900828,Weddell seal,ct119,Scott Base,MEOP-CTD_2017-10-01,16,293,0,2016-01-18,2016-09-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct119/ct119-279-14_prof.nc,ct119-279-14,Q9900840,Weddell seal,ct119,Scott Base,MEOP-CTD_2017-10-01,16,156,0,2016-02-05,2016-04-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct119/ct119-294-14_prof.nc,ct119-294-14,Q9900843,Weddell seal,ct119,Scott Base,MEOP-CTD_2017-10-01,16,237,0,2016-02-09,2016-10-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct119/ct119-300-14_prof.nc,ct119-300-14,Q9900906,Weddell seal,ct119,Scott Base,MEOP-CTD_2017-10-01,16,54,0,2017-01-22,2017-02-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-153-15_prof.nc,ct122-153-15, ,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,243,0,2016-03-07,2016-08-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-154-15_prof.nc,ct122-154-15,Q9900824,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,739,0,2016-01-17,2016-10-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-157-15_prof.nc,ct122-157-15,Q9900825,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,435,0,2016-01-16,2016-08-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-158-15_prof.nc,ct122-158-15,Q9900826,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,705,0,2016-01-31,2016-09-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-159-15_prof.nc,ct122-159-15,Q9900854,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,647,0,2016-02-22,2016-10-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-32BAT-15_prof.nc,ct122-32BAT-15,Q9900855,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,725,0,2016-03-01,2016-10-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-33BAT-15_prof.nc,ct122-33BAT-15,Q9900849,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,704,0,2016-02-18,2016-11-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-35BAT-15_prof.nc,ct122-35BAT-15,Q9900847,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,635,0,2016-02-16,2016-09-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-39BAT-13_prof.nc,ct122-39BAT-13,Q9900856,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,594,0,2016-02-26,2016-10-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-42BAT-15_prof.nc,ct122-42BAT-15,Q9900850,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,217,0,2016-02-19,2016-04-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-43BAT-15_prof.nc,ct122-43BAT-15,Q9900851,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,682,0,2016-02-17,2016-10-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct122/ct122-49BAT-15_prof.nc,ct122-49BAT-15,Q9900835,southern elephant seal,ct122,Kerguelen,MEOP-CTD_2017-10-01,16,329,0,2016-01-28,2016-05-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct128/ct128-246BAT-12_prof.nc,ct128-246BAT-12,Q9900920,Weddell seal,ct128,Weddell Sea,MEOP-CTD_2017-10-01,16,228,0,2017-03-04,2017-07-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct134/ct134-164-15_prof.nc,ct134-164-15,Q9900910,southern elephant seal,ct134,Davis,MEOP-CTD_2017-10-01,16,151,0,2017-02-21,2017-04-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct134/ct134-165-15_prof.nc,ct134-165-15,Q9900911,southern elephant seal,ct134,Davis,MEOP-CTD_2017-10-01,16,15,0,2017-02-21,2017-03-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct134/ct134-276-14_prof.nc,ct134-276-14,Q9900796,southern elephant seal,ct134,Davis,MEOP-CTD_2017-10-01,16,177,0,2017-02-25,2017-04-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct134/ct134-277-14_prof.nc,ct134-277-14,Q9900797,southern elephant seal,ct134,Davis,MEOP-CTD_2017-10-01,16,500,0,2017-03-02,2017-08-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct134/ct134-295-14_prof.nc,ct134-295-14,Q9900799,southern elephant seal,ct134,Davis,MEOP-CTD_2017-10-01,16,412,0,2017-02-26,2017-08-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct134/ct134-301-14_prof.nc,ct134-301-14,Q9900801,southern elephant seal,ct134,Davis,MEOP-CTD_2017-10-01,16,377,0,2017-02-25,2017-07-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct134/ct134-303-14_prof.nc,ct134-303-14,Q9900802,southern elephant seal,ct134,Davis,MEOP-CTD_2017-10-01,16,132,0,2017-03-01,2017-04-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct134/ct134-304-14_prof.nc,ct134-304-14,Q9900803,southern elephant seal,ct134,Davis,MEOP-CTD_2017-10-01,16,481,0,2017-02-22,2017-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-084BAT-14_prof.nc,ct135-084BAT-14,Q9900909,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,16,567,0,2017-02-07,2017-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-184BAT-14_prof.nc,ct135-184BAT-14,Q9900899,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,16,583,0,2017-02-05,2017-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-186BAT-14_prof.nc,ct135-186BAT-14,Q9900900,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,16,603,0,2017-01-30,2017-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-188BAT-14_prof.nc,ct135-188BAT-14,Q9900901,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,16,171,0,2017-01-28,2017-08-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-190BAT-14_prof.nc,ct135-190BAT-14,Q9900907,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,16,509,0,2017-02-01,2017-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-297BAT-13_prof.nc,ct135-297BAT-13,Q9900902,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,16,649,0,2017-01-31,2017-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-892BAT-12_prof.nc,ct135-892BAT-12, ,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,17,116,0,2017-01-31,2017-05-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-937BAT-14_prof.nc,ct135-937BAT-14,Q9900903,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,16,645,0,2017-02-05,2017-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-939BAT-14_prof.nc,ct135-939BAT-14,Q9900904,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,16,588,0,2017-01-25,2017-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-965BAT-14_prof.nc,ct135-965BAT-14,Q9900905,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,16,598,0,2017-01-26,2017-08-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct135/ct135-966BAT-14_prof.nc,ct135-966BAT-14, ,southern elephant seal,ct135,Kerguelen,MEOP-CTD_2017-10-01,16,10,0,2017-02-06,2017-02-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-154BAT-15_hr1_prof.nc,ct140-154BAT-15,Q9901034,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,671,0,2018-02-02,2018-09-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-158BAT-15_hr1_prof.nc,ct140-158BAT-15,Q9901032,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,536,0,2018-02-02,2018-10-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-159BAT-15_hr1_prof.nc,ct140-159BAT-15,Q9901047,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,556,0,2018-02-08,2018-09-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-161-15_hr1_prof.nc,ct140-161-15,Q9901021,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,333,0,2018-01-27,2018-05-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-162-15_hr1_prof.nc,ct140-162-15,Q9901039,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,489,0,2018-02-02,2018-09-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-163-15_hr1_prof.nc,ct140-163-15,Q9901036,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,470,0,2018-02-04,2018-08-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-166-15_hr1_prof.nc,ct140-166-15,Q9901016,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,516,0,2018-01-08,2018-06-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-168-15_hr1_prof.nc,ct140-168-15,Q9901030,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,158,0,2018-01-27,2018-06-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-169-15_hr1_prof.nc,ct140-169-15,Q9901035,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,510,0,2018-02-04,2018-07-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-170-15_hr1_prof.nc,ct140-170-15,Q9901020,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,217,0,2018-01-26,2018-08-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-171-15_hr1_prof.nc,ct140-171-15,Q9901031,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,403,0,2018-02-02,2018-08-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-172-15_hr1_prof.nc,ct140-172-15,Q9901025,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,409,0,2018-01-21,2018-06-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-173-15_hr1_prof.nc,ct140-173-15,Q9901017,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,531,0,2018-01-08,2018-09-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-174-15_hr1_prof.nc,ct140-174-15,Q9901015,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,635,0,2018-01-11,2018-07-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-175-15_hr1_prof.nc,ct140-175-15,Q9901011,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,301,0,2018-01-04,2018-04-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-176-15_hr1_prof.nc,ct140-176-15,Q9901022,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,106,0,2018-01-15,2018-02-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-177-15_hr1_prof.nc,ct140-177-15,Q9901012,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,290,0,2018-01-03,2018-05-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-178-15_hr1_prof.nc,ct140-178-15,Q9901013,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,451,0,2018-01-02,2018-09-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-179-15_hr1_prof.nc,ct140-179-15,Q9901033,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,625,0,2018-02-03,2018-09-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-188-15_hr1_prof.nc,ct140-188-15,Q9901018,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,568,0,2018-01-08,2018-08-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-189-15_hr1_prof.nc,ct140-189-15,Q9901024,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,270,0,2018-01-23,2018-06-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-635BAT-13_hr1_prof.nc,ct140-635BAT-13,Q9901014,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,651,0,2018-01-11,2018-11-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-690BAT-13_hr1_prof.nc,ct140-690BAT-13,Q9901019,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,218,0,2018-01-19,2018-05-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-695BAT-13_hr1_prof.nc,ct140-695BAT-13,Q9901046,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,274,0,2018-02-07,2018-04-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-699BAT-13_hr1_prof.nc,ct140-699BAT-13,Q9901037,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,694,0,2018-02-06,2018-09-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-700BAT-13_hr1_prof.nc,ct140-700BAT-13,Q9901023,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,725,0,2018-01-21,2018-09-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct140/ct140-956BAT-14_hr1_prof.nc,ct140-956BAT-14,Q9901038,southern elephant seal,ct140,Kerguelen,IMOS-CTD_2024,1000,483,0,2018-02-06,2018-09-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-932-18_hr1_prof.nc,ct148-932-18,Q9901157,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,789,0,2019-01-09,2019-09-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-933-18_hr1_prof.nc,ct148-933-18,Q9901146,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,681,0,2019-01-02,2019-08-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-934-18_hr1_prof.nc,ct148-934-18,Q9901129,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,763,0,2018-12-25,2019-09-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-935-18_hr1_prof.nc,ct148-935-18,Q9901158,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,869,0,2019-01-10,2019-10-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-936-18_hr1_prof.nc,ct148-936-18,Q9901147,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,954,0,2019-01-03,2019-10-31
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-937-18_hr1_prof.nc,ct148-937-18,Q9901148,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,24,0,2019-01-02,2019-01-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-938-18_hr1_prof.nc,ct148-938-18,Q9901149,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,365,0,2019-01-03,2019-04-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-939-18_hr1_prof.nc,ct148-939-18,Q9901150,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,766,0,2019-01-05,2019-09-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-940-18_hr1_prof.nc,ct148-940-18,Q9901172,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,786,0,2019-01-21,2019-09-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-941-18_hr1_prof.nc,ct148-941-18,Q9901169,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,681,0,2019-01-19,2019-11-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-944-18_hr1_prof.nc,ct148-944-18,Q9901170,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,410,0,2019-01-20,2019-05-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-945-18_hr1_prof.nc,ct148-945-18,Q9901130,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,688,0,2018-12-22,2019-07-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-946-18_hr1_prof.nc,ct148-946-18,Q9901131,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,481,0,2018-12-27,2019-06-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-947-18_hr1_prof.nc,ct148-947-18,Q9901132,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,554,0,2018-12-29,2019-07-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-948-18_hr1_prof.nc,ct148-948-18,Q9901179,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,380,0,2019-02-06,2019-05-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-961-18_hr1_prof.nc,ct148-961-18,Q9901151,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,645,0,2019-01-01,2019-09-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-962-18_hr1_prof.nc,ct148-962-18,Q9901159,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,781,0,2019-01-10,2019-10-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-963-18_hr1_prof.nc,ct148-963-18,Q9901133,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,740,0,2018-12-26,2019-09-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-964-18_hr1_prof.nc,ct148-964-18,Q9901171,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,134,0,2019-01-21,2019-02-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-965-18_hr1_prof.nc,ct148-965-18,Q9901177,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,99,0,2019-01-25,2019-02-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-966-18_hr1_prof.nc,ct148-966-18,Q9901175,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,876,0,2019-01-23,2019-09-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-967-18_hr1_prof.nc,ct148-967-18,Q9901168,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,973,0,2019-01-15,2019-11-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-968-18_hr1_prof.nc,ct148-968-18,Q9901167,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,793,0,2019-01-15,2019-09-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-969-18_hr1_prof.nc,ct148-969-18,Q9901152,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,429,0,2019-01-01,2019-04-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct148/ct148-970-18_hr1_prof.nc,ct148-970-18,Q9901174,southern elephant seal,ct148,Kerguelen,IMOS-CTD_2024,1000,855,0,2019-01-23,2019-09-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct149/ct149-922-18_hr1_prof.nc,ct149-922-18,Q9901173,southern elephant seal,ct149,Kerguelen,IMOS-CTD_2024,1000,817,0,2019-01-22,2019-09-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct149/ct149-923-18_hr1_prof.nc,ct149-923-18,Q9901142,southern elephant seal,ct149,Kerguelen,IMOS-CTD_2024,1000,171,0,2019-01-04,2019-03-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct149/ct149-924-18_hr1_prof.nc,ct149-924-18,Q9901134,southern elephant seal,ct149,Kerguelen,IMOS-CTD_2024,1000,528,0,2018-12-26,2019-06-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct149/ct149-925-18_hr1_prof.nc,ct149-925-18,Q9901166,southern elephant seal,ct149,Kerguelen,IMOS-CTD_2024,1000,884,0,2019-01-19,2019-09-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct149/ct149-926-18_hr1_prof.nc,ct149-926-18,Q9901135,southern elephant seal,ct149,Kerguelen,IMOS-CTD_2024,1000,857,0,2018-12-28,2019-10-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct149/ct149-927-18_hr1_prof.nc,ct149-927-18,Q9901143,southern elephant seal,ct149,Kerguelen,IMOS-CTD_2024,1000,674,0,2019-01-05,2019-08-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct149/ct149-928-18_hr1_prof.nc,ct149-928-18,Q9901136,southern elephant seal,ct149,Kerguelen,IMOS-CTD_2024,1000,729,0,2018-12-27,2019-08-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct149/ct149-929-18_hr1_prof.nc,ct149-929-18,Q9901144,southern elephant seal,ct149,Kerguelen,IMOS-CTD_2024,1000,236,0,2019-01-03,2019-03-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct149/ct149-930-18_hr1_prof.nc,ct149-930-18,Q9901145,southern elephant seal,ct149,Kerguelen,IMOS-CTD_2024,1000,543,0,2019-01-05,2019-06-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct149/ct149-931-18_hr1_prof.nc,ct149-931-18,Q9901160,southern elephant seal,ct149,Kerguelen,IMOS-CTD_2024,1000,19,0,2019-01-10,2019-01-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-354BAT-16_hr1_prof.nc,ct150-354BAT-16,Q9901200,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,404,403,2019-03-06,2019-09-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-360BAT-16_hr1_prof.nc,ct150-360BAT-16,Q9901201,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,602,599,2019-03-06,2019-09-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-416BAT-16_hr1_prof.nc,ct150-416BAT-16,Q9901202,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,421,421,2019-03-09,2019-11-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-422BAT-16_hr1_prof.nc,ct150-422BAT-16,Q9901203,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,122,121,2019-03-07,2019-04-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-441BAT-16_hr1_prof.nc,ct150-441BAT-16,Q9901214,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,450,449,2019-03-08,2019-08-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-971-BULL-18_hr1_prof.nc,ct150-971-BULL-18,Q9901204,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,700,698,2019-03-05,2019-10-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-972-BULL-18_hr1_prof.nc,ct150-972-BULL-18,Q9901191,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,266,265,2019-02-20,2019-05-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-973-BULL-18_hr1_prof.nc,ct150-973-BULL-18,Q9901205,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,223,223,2019-03-02,2019-06-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-974-VERT-18_hr1_prof.nc,ct150-974-VERT-18,Q9901199,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,326,326,2019-02-25,2019-09-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-975-VERT-18_hr1_prof.nc,ct150-975-VERT-18,Q9901206,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,410,409,2019-02-25,2019-07-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-976-VERT-18_hr1_prof.nc,ct150-976-VERT-18,Q9901192,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,666,666,2019-02-20,2019-10-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-977-VERT-18_hr1_prof.nc,ct150-977-VERT-18,Q9901207,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,683,683,2019-03-04,2019-10-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-978-VERT-18_hr1_prof.nc,ct150-978-VERT-18,Q9901193,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,457,457,2019-02-21,2019-09-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-979-VERT-18_hr1_prof.nc,ct150-979-VERT-18,Q9901198,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,33,33,2019-02-22,2019-03-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-980-BULL-18_hr1_prof.nc,ct150-980-BULL-18,Q9901197,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,265,265,2019-02-24,2019-06-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-981-BULL-18_hr1_prof.nc,ct150-981-BULL-18,Q9901208,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,221,221,2019-02-24,2019-05-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct150/ct150-982-BULL-18_hr1_prof.nc,ct150-982-BULL-18,Q9901209,Weddell seal,ct150,Ross Sea,IMOS-CTD_2024,1000,431,431,2019-03-04,2019-07-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-185BAT-15_hr1_prof.nc,ct156-185BAT-15,Q9901382,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,798,796,2020-03-05,2020-10-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-190BAT-15_hr1_prof.nc,ct156-190BAT-15,Q9901370,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,275,272,2020-02-25,2020-07-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-226-VERT-20_hr1_prof.nc,ct156-226-VERT-20,Q9901374,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,802,802,2020-02-27,2020-10-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-227-VERT-20_hr1_prof.nc,ct156-227-VERT-20,Q9901381,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,370,370,2020-03-05,2020-11-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-228-VERT-20_hr1_prof.nc,ct156-228-VERT-20,Q9901384,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,779,777,2020-03-07,2020-09-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-229-VERT-20_hr1_prof.nc,ct156-229-VERT-20,Q9901365,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,448,446,2020-02-22,2020-06-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-230-VERT-20_hr1_prof.nc,ct156-230-VERT-20,Q9901368,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,460,457,2020-02-25,2020-09-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-232-VERT-20_hr1_prof.nc,ct156-232-VERT-20,Q9901366,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,737,737,2020-02-24,2020-09-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-234-VERT-20_hr1_prof.nc,ct156-234-VERT-20,Q9901379,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,533,533,2020-03-03,2020-08-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-235-VERT-20_hr1_prof.nc,ct156-235-VERT-20,Q9901367,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,145,144,2020-02-24,2020-04-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-237-VERT-20_hr1_prof.nc,ct156-237-VERT-20,Q9901376,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,672,672,2020-03-01,2020-08-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-361BAT-16_hr1_prof.nc,ct156-361BAT-16,Q9901360,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,487,487,2020-02-16,2020-08-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-419BAT-16_hr1_prof.nc,ct156-419BAT-16,Q9901361,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,277,275,2020-02-20,2020-09-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-440BAT-16_hr1_prof.nc,ct156-440BAT-16,Q9901362,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,286,286,2020-02-21,2020-07-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-822BAT-08_hr1_prof.nc,ct156-822BAT-08,Q9901369,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,359,357,2020-02-25,2020-09-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-879BAT-12_hr1_prof.nc,ct156-879BAT-12,Q9901364,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,213,210,2020-02-22,2020-09-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-R763BAT-10_hr1_prof.nc,ct156-R763BAT-10,Q9901380,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,176,175,2020-03-03,2020-05-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct156/ct156-R881BAT-09_hr1_prof.nc,ct156-R881BAT-09,Q9901383,Weddell seal,ct156,Ross Sea,IMOS-CTD_2024,1000,622,622,2020-03-07,2020-10-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-264-20_hr1_prof.nc,ct160-264-20,Q9901413,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,1045,0,2021-01-08,2021-07-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-265-20_hr1_prof.nc,ct160-265-20,Q9901453,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,1017,0,2021-02-18,2021-10-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-266-20-N1_hr1_prof.nc,ct160-266-20-N1,Q9901437,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,881,0,2021-02-04,2021-07-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-266-20-N2_hr1_prof.nc,ct160-266-20-N2,Q9901437,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,265,0,2021-07-30,2021-09-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-267-20_hr1_prof.nc,ct160-267-20,Q9901445,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,930,0,2021-02-15,2021-09-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-268-20-N1_hr1_prof.nc,ct160-268-20-N1,Q9901428,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,794,0,2021-01-13,2021-06-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-268-20-N2_hr1_prof.nc,ct160-268-20-N2,Q9901428,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,224,0,2021-07-07,2021-11-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-278BAT2-14_hr1_prof.nc,ct160-278BAT2-14,Q9901421,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,647,0,2021-01-10,2021-10-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-300-20_hr1_prof.nc,ct160-300-20,Q9901432,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,1220,0,2021-01-19,2021-10-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-301-20_hr1_prof.nc,ct160-301-20,Q9901414,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,218,0,2021-01-06,2021-02-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-302-20_hr1_prof.nc,ct160-302-20,Q9901415,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,755,0,2021-01-05,2021-05-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-303-20_hr1_prof.nc,ct160-303-20,Q9901416,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,308,0,2020-12-21,2021-03-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-304-20-N1_hr1_prof.nc,ct160-304-20-N1,Q9901417,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,464,0,2020-12-29,2021-04-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-304-20-N2_hr1_prof.nc,ct160-304-20-N2,Q9901417,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,608,0,2021-05-12,2021-11-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-305-20-N1_hr1_prof.nc,ct160-305-20-N1,Q9901440,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,481,0,2021-02-08,2021-05-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-305-20-N2_hr1_prof.nc,ct160-305-20-N2,Q9901440,southern elephant seal,ct160,Kerguelen,MEOP-CTD_2023-12-01,1000,575,0,2021-05-15,2021-09-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-306-20-N1_hr1_prof.nc,ct160-306-20-N1,Q9901430,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,753,0,2021-01-14,2021-06-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-306-20-N2_hr1_prof.nc,ct160-306-20-N2,Q9901430,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,796,0,2021-07-11,2021-12-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-307-20_hr1_prof.nc,ct160-307-20,Q9901439,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,1134,0,2021-02-05,2021-10-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-308-20-N1_hr1_prof.nc,ct160-308-20-N1,Q9901422,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,991,0,2021-01-09,2021-07-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-308-20-N2_hr1_prof.nc,ct160-308-20-N2,Q9901422,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,342,0,2021-08-24,2021-11-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-309-20_hr1_prof.nc,ct160-309-20,Q9901423,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,910,0,2021-01-10,2021-07-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-310-20-N1_hr1_prof.nc,ct160-310-20-N1,Q9901434,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,892,0,2021-01-26,2021-07-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-310-20-N2_hr1_prof.nc,ct160-310-20-N2,Q9901434,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,247,0,2021-07-11,2021-09-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-311-20_hr1_prof.nc,ct160-311-20,Q9901455,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,11,0,2021-02-21,2021-02-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-312-20_hr1_prof.nc,ct160-312-20,Q9901435,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,1226,0,2021-01-24,2021-10-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-313-20_hr1_prof.nc,ct160-313-20,Q9901433,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,861,0,2021-01-19,2021-09-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-314-20-N1_hr1_prof.nc,ct160-314-20-N1,Q9901431,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,837,0,2021-01-16,2021-06-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-314-20-N2_hr1_prof.nc,ct160-314-20-N2,Q9901431,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,556,0,2021-07-06,2021-11-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-315-20-N1_hr1_prof.nc,ct160-315-20-N1,Q9901441,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,1011,0,2021-02-07,2021-08-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-315-20-N2_hr1_prof.nc,ct160-315-20-N2,Q9901441,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,200,0,2021-08-31,2021-10-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-316-20_hr1_prof.nc,ct160-316-20,Q9901427,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,551,0,2021-01-11,2021-04-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-318-20_hr1_prof.nc,ct160-318-20,Q9901426,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,475,0,2021-01-10,2021-03-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-319-20-N1_hr1_prof.nc,ct160-319-20-N1,Q9901418,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,782,0,2021-01-06,2021-06-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-319-20-N2_hr1_prof.nc,ct160-319-20-N2,Q9901418,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,163,0,2021-07-15,2021-08-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-331-20-N1_hr1_prof.nc,ct160-331-20-N1,Q9901436,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,1004,0,2021-01-30,2021-08-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-331-20-N2_hr1_prof.nc,ct160-331-20-N2,Q9901436,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,100,0,2021-08-05,2021-08-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-332-20-N1_hr1_prof.nc,ct160-332-20-N1,Q9901442,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,551,0,2021-02-07,2021-05-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-332-20-N2_hr1_prof.nc,ct160-332-20-N2,Q9901442,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,421,0,2021-05-27,2021-09-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-336-20_hr1_prof.nc,ct160-336-20,Q9901438,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,961,0,2021-02-04,2021-09-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-338-20-N1_hr1_prof.nc,ct160-338-20-N1,Q9901424,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,551,0,2021-01-10,2021-06-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-338-20-N2_hr1_prof.nc,ct160-338-20-N2,Q9901424,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,321,0,2021-08-01,2021-12-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-339-20_hr1_prof.nc,ct160-339-20,Q9901419,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,165,0,2021-01-03,2021-02-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-341-20_hr1_prof.nc,ct160-341-20,Q9901420,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,364,0,2020-12-26,2021-04-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-342-20_hr1_prof.nc,ct160-342-20,Q9901429,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,280,0,2021-01-12,2021-04-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-918BAT-18_hr1_prof.nc,ct160-918BAT-18,Q9901412,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,86,0,2021-01-04,2021-02-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct160/ct160-Oxy726-20_hr1_prof.nc,ct160-Oxy726-20,Q9901446,southern elephant seal,ct160,Kerguelen,IMOS-CTD_2024,1000,201,0,2021-02-14,2021-04-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-172-BAT2-15_hr1_prof.nc,ct164-172-BAT2-15,Q9901608,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,23,0,2022-02-05,2022-02-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-183-BAT-20_hr1_prof.nc,ct164-183-BAT-20,Q9901619,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,1142,0,2022-02-07,2022-09-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-186-BAT-20_hr1_prof.nc,ct164-186-BAT-20,Q9901623,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,622,0,2022-02-12,2022-06-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-189-BAT-20_hr1_prof.nc,ct164-189-BAT-20,Q9901572,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,971,0,2022-01-03,2022-07-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-206-BAT-20_hr1_prof.nc,ct164-206-BAT-20,Q9901573,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,699,0,2022-01-10,2022-06-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-215-BAT-20_hr1_prof.nc,ct164-215-BAT-20,Q9901558,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,11,0,2021-12-30,2022-01-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-216-BAT-20_hr1_prof.nc,ct164-216-BAT-20,Q9901574,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,367,0,2022-01-01,2022-04-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-217-BAT-20_hr1_prof.nc,ct164-217-BAT-20,Q9901559,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,873,0,2021-12-28,2022-09-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-224-BAT-20_hr1_prof.nc,ct164-224-BAT-20,Q9901620,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,14,0,2022-02-07,2022-02-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-460-21_hr1_prof.nc,ct164-460-21,Q9901575,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,460,0,2022-01-05,2022-04-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-461-21_hr1_prof.nc,ct164-461-21,Q9901576,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,283,0,2022-01-06,2022-05-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-462-21_hr1_prof.nc,ct164-462-21,Q9901577,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,116,0,2022-01-09,2022-03-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-463-21_hr1_prof.nc,ct164-463-21,Q9901560,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,768,0,2021-12-24,2022-07-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-464-21_hr1_prof.nc,ct164-464-21,Q9901578,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,470,0,2022-01-05,2022-07-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-480-21_hr1_prof.nc,ct164-480-21,Q9901562,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,233,0,2021-12-27,2022-02-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-481-21_hr1_prof.nc,ct164-481-21,Q9901555,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,669,0,2021-12-22,2022-11-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-482-21_hr1_prof.nc,ct164-482-21,Q9901563,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,1246,0,2021-12-27,2022-11-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-483-21_hr1_prof.nc,ct164-483-21,Q9901554,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,360,0,2021-12-22,2022-04-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-485-21_hr1_prof.nc,ct164-485-21,Q9901579,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,967,0,2022-01-02,2022-10-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-486-21_hr1_prof.nc,ct164-486-21,Q9901564,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,524,0,2021-12-30,2022-05-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-487-21_hr1_prof.nc,ct164-487-21,Q9901597,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,304,0,2022-01-13,2022-04-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-488-21_hr1_prof.nc,ct164-488-21,Q9901565,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,865,0,2021-12-31,2022-11-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-490-21_hr1_prof.nc,ct164-490-21,Q9901566,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,825,0,2021-12-25,2022-10-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-491-21_hr1_prof.nc,ct164-491-21,Q9901580,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,1150,0,2021-12-31,2022-11-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-492-21_hr1_prof.nc,ct164-492-21,Q9901596,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,486,0,2022-01-10,2022-05-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-493-21_hr1_prof.nc,ct164-493-21,Q9901581,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,1238,0,2022-01-02,2022-11-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-494-21_hr1_prof.nc,ct164-494-21,Q9901582,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,233,0,2022-01-05,2022-03-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-499-21_hr1_prof.nc,ct164-499-21,Q9901553,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,417,0,2021-12-15,2022-04-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-500-21_hr1_prof.nc,ct164-500-21,Q9901621,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,693,0,2022-02-06,2022-07-31
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-501-21_hr1_prof.nc,ct164-501-21,Q9901599,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,898,0,2022-01-14,2022-10-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-502-21_hr1_prof.nc,ct164-502-21,Q9901609,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,1060,0,2022-02-03,2022-09-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-503-21_hr1_prof.nc,ct164-503-21,Q9901610,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,152,0,2022-02-05,2022-03-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-504-21_hr1_prof.nc,ct164-504-21,Q9901641,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,914,0,2022-02-14,2022-10-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-505-21_hr1_prof.nc,ct164-505-21,Q9901624,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,884,0,2022-02-12,2022-09-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-506-21_hr1_prof.nc,ct164-506-21,Q9901642,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,1060,0,2022-02-10,2022-10-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-507-21_hr1_prof.nc,ct164-507-21,Q9901583,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,294,0,2022-01-01,2022-05-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-508-21_hr1_prof.nc,ct164-508-21,Q9901567,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,465,0,2021-12-27,2022-05-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-938-BAT-18_hr1_prof.nc,ct164-938-BAT-18,Q9901626,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,649,0,2022-02-08,2022-09-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-941-BAT-18_hr1_prof.nc,ct164-941-BAT-18,Q9901571,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,231,0,2022-01-07,2022-05-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-F468-21_hr1_prof.nc,ct164-F468-21,Q9901561,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,798,0,2021-12-29,2022-11-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-F509-21_hr1_prof.nc,ct164-F509-21,Q9901584,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,117,0,2022-01-02,2022-02-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-F510-21_hr1_prof.nc,ct164-F510-21,Q9901600,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,176,0,2022-01-15,2022-03-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-F511-21_hr1_prof.nc,ct164-F511-21,Q9901556,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,34,0,2021-12-22,2022-01-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-F512-21_hr1_prof.nc,ct164-F512-21,Q9901585,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,177,0,2022-01-03,2022-04-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct164/ct164-F513-21_hr1_prof.nc,ct164-F513-21,Q9901586,southern elephant seal,ct164,Kerguelen,IMOS-CTD_2024,1000,305,0,2022-01-07,2022-05-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct2/ct2-9916-04_prof.nc,ct2-9916-04, ,southern elephant seal,ct2,Macquarie,MEOP-CTD_2017-10-01,22,537,0,2004-01-29,2004-07-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct2/ct2-9919-04_prof.nc,ct2-9919-04, ,southern elephant seal,ct2,Macquarie,MEOP-CTD_2017-10-01,22,564,0,2004-01-29,2004-07-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct2/ct2-9920-04_prof.nc,ct2-9920-04, ,southern elephant seal,ct2,Macquarie,MEOP-CTD_2017-10-01,22,447,0,2004-01-27,2004-06-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct2/ct2-9925-04_prof.nc,ct2-9925-04, ,southern elephant seal,ct2,Macquarie,MEOP-CTD_2017-10-01,22,542,0,2004-01-31,2004-07-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct36/ct36-A-09_prof.nc,ct36-A-09,Q9900180,southern elephant seal,ct36,Kerguelen,MEOP-CTD_2017-10-01,17,346,0,2009-02-08,2009-05-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct36/ct36-B-09_prof.nc,ct36-B-09,Q9900181,southern elephant seal,ct36,Kerguelen,MEOP-CTD_2017-10-01,17,489,0,2009-01-18,2009-09-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct36/ct36-C-09_prof.nc,ct36-C-09,Q9900182,southern elephant seal,ct36,Kerguelen,MEOP-CTD_2017-10-01,17,161,0,2009-02-08,2009-04-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct36/ct36-D-09_prof.nc,ct36-D-09,Q9900183,southern elephant seal,ct36,Kerguelen,MEOP-CTD_2017-10-01,17,315,0,2009-02-02,2009-06-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct36/ct36-E-09_prof.nc,ct36-E-09,Q9900184,southern elephant seal,ct36,Kerguelen,MEOP-CTD_2017-10-01,17,191,0,2009-01-31,2009-03-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct36/ct36-F-09_prof.nc,ct36-F-09,Q9900185,southern elephant seal,ct36,Kerguelen,MEOP-CTD_2017-10-01,17,664,0,2009-02-10,2009-10-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct36/ct36-R1-09_prof.nc,ct36-R1-09,Q9900186,southern elephant seal,ct36,Kerguelen,MEOP-CTD_2017-10-01,17,128,0,2008-12-28,2009-02-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct36/ct36-R2-09_prof.nc,ct36-R2-09,Q9900187,southern elephant seal,ct36,Kerguelen,MEOP-CTD_2017-10-01,17,167,0,2008-12-26,2009-04-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct36/ct36-R3-09_prof.nc,ct36-R3-09,Q9900188,southern elephant seal,ct36,Kerguelen,MEOP-CTD_2017-10-01,17,7,0,2009-01-14,2009-01-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct36/ct36-R4-09_prof.nc,ct36-R4-09,Q9900189,southern elephant seal,ct36,Kerguelen,MEOP-CTD_2017-10-01,17,359,0,2009-02-08,2009-06-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct38w/ct38w-Daniella-08_prof.nc,ct38w-Daniella-08,Q9900093,Weddell seal,ct38w,Dumont d'Urville,MEOP-CTD_2017-10-01,17,5,0,2008-02-21,2008-02-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct38w/ct38w-Denise-08_prof.nc,ct38w-Denise-08,Q9900095,Weddell seal,ct38w,Dumont d'Urville,MEOP-CTD_2017-10-01,17,427,0,2008-02-22,2008-10-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct38w/ct38w-Elodie-08_prof.nc,ct38w-Elodie-08,Q9900096,Weddell seal,ct38w,Dumont d'Urville,MEOP-CTD_2017-10-01,17,69,0,2008-02-21,2008-04-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct38w/ct38w-Mathilde-08_prof.nc,ct38w-Mathilde-08,Q9900097,Weddell seal,ct38w,Dumont d'Urville,MEOP-CTD_2017-10-01,17,403,0,2008-02-23,2008-10-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct38w/ct38w-QueenEliz-08_prof.nc,ct38w-QueenEliz-08,Q9900098,Weddell seal,ct38w,Dumont d'Urville,MEOP-CTD_2017-10-01,17,351,0,2008-02-21,2008-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct47/ct47-A-09_prof.nc,ct47-A-09, ,Weddell seal,ct47,Dumont d'Urville,MEOP-CTD_2017-10-01,17,377,0,2009-02-22,2009-09-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct47/ct47-B-09_prof.nc,ct47-B-09, ,Weddell seal,ct47,Dumont d'Urville,MEOP-CTD_2017-10-01,17,315,0,2009-02-13,2009-07-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct47/ct47-C-09_prof.nc,ct47-C-09, ,Weddell seal,ct47,Dumont d'Urville,MEOP-CTD_2017-10-01,17,248,0,2009-02-17,2009-07-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct47/ct47-D-09_prof.nc,ct47-D-09, ,Weddell seal,ct47,Dumont d'Urville,MEOP-CTD_2017-10-01,17,221,0,2009-02-19,2009-06-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct47/ct47-E-09_prof.nc,ct47-E-09, ,Weddell seal,ct47,Dumont d'Urville,MEOP-CTD_2017-10-01,17,132,0,2009-02-22,2009-05-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct47/ct47-F-09_prof.nc,ct47-F-09, ,Weddell seal,ct47,Dumont d'Urville,MEOP-CTD_2017-10-01,17,165,0,2009-02-17,2009-05-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct47/ct47-G-09_prof.nc,ct47-G-09, ,Weddell seal,ct47,Dumont d'Urville,MEOP-CTD_2017-10-01,17,231,0,2009-02-15,2009-06-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct47/ct47-I-09_prof.nc,ct47-I-09, ,Weddell seal,ct47,Dumont d'Urville,MEOP-CTD_2017-10-01,17,194,0,2009-02-19,2009-07-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-10006-05_prof.nc,ct6-10006-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,20,179,0,2005-02-12,2005-04-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-10010-05_prof.nc,ct6-10010-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,20,124,0,2005-02-09,2005-04-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-10011-05_prof.nc,ct6-10011-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,20,380,0,2005-02-01,2005-09-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-10015-05_prof.nc,ct6-10015-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,20,451,0,2005-02-04,2005-09-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-10016-05_prof.nc,ct6-10016-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,20,69,0,2005-02-19,2005-03-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-10017-05_prof.nc,ct6-10017-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,20,412,0,2005-02-01,2005-08-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-10018-05_prof.nc,ct6-10018-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,20,328,0,2005-02-14,2005-07-31
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-10020-05_prof.nc,ct6-10020-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,20,250,0,2005-02-14,2005-10-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-10021-05_prof.nc,ct6-10021-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,20,325,0,2005-02-12,2005-09-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-9920-05_prof.nc,ct6-9920-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,12,348,0,2005-02-21,2005-04-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct6/ct6-9923-05_prof.nc,ct6-9923-05, ,southern elephant seal,ct6,Macquarie,MEOP-CTD_2017-10-01,12,7,0,2005-02-24,2005-02-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M001-09_prof.nc,ct64-M001-09,Q9900315,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,865,0,2010-01-20,2010-09-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M036-09_prof.nc,ct64-M036-09,Q9900316,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,806,0,2010-01-26,2010-10-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M037-09_prof.nc,ct64-M037-09,Q9900317,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,821,0,2010-01-17,2010-09-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M040-09_prof.nc,ct64-M040-09,Q9900318,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,620,0,2010-02-03,2010-08-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M043-09_prof.nc,ct64-M043-09,Q9900319,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,832,0,2010-01-29,2010-10-31
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M044-09_prof.nc,ct64-M044-09,Q9900332,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,892,0,2010-02-09,2010-11-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M052-09_prof.nc,ct64-M052-09,Q9900331,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,561,0,2010-02-11,2010-08-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M053-09_prof.nc,ct64-M053-09,Q9900320,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,799,0,2010-01-26,2010-09-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M059-09_prof.nc,ct64-M059-09,Q9900330,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,859,0,2010-02-05,2010-11-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M061-09_prof.nc,ct64-M061-09,Q9900333,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,85,0,2010-02-16,2010-04-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M721-09_prof.nc,ct64-M721-09,Q9900336,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,780,0,2010-02-05,2010-09-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M746-09_prof.nc,ct64-M746-09,Q9900335,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,800,0,2010-02-05,2010-10-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M752-09_prof.nc,ct64-M752-09,Q9900334,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,804,0,2010-02-05,2010-11-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M979-09_prof.nc,ct64-M979-09,Q9900321,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,761,0,2010-01-31,2010-10-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct64/ct64-M994-09_prof.nc,ct64-M994-09,Q9900329,southern elephant seal,ct64,Macquarie,MEOP-CTD_2017-10-01,17,818,0,2010-02-06,2010-10-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct75/ct75-020-11_prof.nc,ct75-020-11, ,Weddell seal,ct75,Dumont d'Urville,MEOP-CTD_2017-10-01,17,57,0,2011-11-11,2011-12-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct75/ct75-030-11_prof.nc,ct75-030-11, ,Weddell seal,ct75,Dumont d'Urville,MEOP-CTD_2017-10-01,17,40,0,2011-11-08,2011-12-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct75/ct75-048-11_prof.nc,ct75-048-11, ,Weddell seal,ct75,Dumont d'Urville,MEOP-CTD_2017-10-01,17,21,0,2011-11-18,2011-12-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct75/ct75-056-11_prof.nc,ct75-056-11, ,Weddell seal,ct75,Dumont d'Urville,MEOP-CTD_2017-10-01,17,5,0,2011-11-12,2011-11-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct75/ct75-838-11_prof.nc,ct75-838-11, ,Weddell seal,ct75,Dumont d'Urville,MEOP-CTD_2017-10-01,17,80,0,2011-11-13,2011-12-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct75/ct75-839-11_prof.nc,ct75-839-11, ,Weddell seal,ct75,Dumont d'Urville,MEOP-CTD_2017-10-01,17,53,0,2011-11-13,2011-12-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct75/ct75-Cy32-11_prof.nc,ct75-Cy32-11, ,Weddell seal,ct75,Dumont d'Urville,MEOP-CTD_2017-10-01,27,39,0,2011-11-13,2011-12-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-167-12_prof.nc,ct77-167-12,Q9900484,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,738,0,2012-03-17,2012-11-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-169-12_prof.nc,ct77-169-12,Q9900485,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,849,0,2012-03-12,2012-12-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-170-12_prof.nc,ct77-170-12,Q9900486,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,319,0,2012-03-08,2012-06-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-171-12_prof.nc,ct77-171-12,Q9900487,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,619,0,2012-03-11,2012-11-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-173-12_prof.nc,ct77-173-12,Q9900488,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,22,0,2012-03-19,2012-03-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-177-12_prof.nc,ct77-177-12,Q9900489,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,568,0,2012-03-13,2012-10-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-178-12_prof.nc,ct77-178-12,Q9900490,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,486,0,2012-03-17,2012-09-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-179-12_prof.nc,ct77-179-12,Q9900491,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,685,0,2012-03-18,2012-11-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-180-12_prof.nc,ct77-180-12,Q9900492,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,523,0,2012-03-14,2012-09-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-181-12_prof.nc,ct77-181-12,Q9900493,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,551,0,2012-03-19,2012-09-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-182-12_prof.nc,ct77-182-12,Q9900494,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,230,0,2012-04-07,2012-06-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-183-12_prof.nc,ct77-183-12,Q9900495,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,186,0,2012-03-20,2012-06-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-184-12_prof.nc,ct77-184-12,Q9900496,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,681,0,2012-03-21,2012-11-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-185-12_prof.nc,ct77-185-12,Q9900497,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,168,0,2012-03-23,2012-05-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-469-12_prof.nc,ct77-469-12,Q9900498,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,17,636,0,2012-03-05,2012-06-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-473-12_prof.nc,ct77-473-12,Q9900499,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,17,573,0,2012-03-02,2012-07-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-485-12_prof.nc,ct77-485-12,Q9900500,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,17,1281,0,2012-03-05,2012-10-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-492-12_prof.nc,ct77-492-12,Q9900501,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,17,956,0,2012-03-04,2012-07-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-652-12_prof.nc,ct77-652-12,Q9900502,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,17,454,0,2012-03-06,2012-11-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-701-12_prof.nc,ct77-701-12,Q9900503,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,17,379,0,2012-02-24,2012-07-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-823-12_prof.nc,ct77-823-12,Q9900504,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,17,452,0,2012-03-06,2012-09-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-824-12_prof.nc,ct77-824-12,Q9900505,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,17,798,0,2012-03-16,2012-11-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-854-12_prof.nc,ct77-854-12,Q9900506,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,17,672,0,2012-03-17,2012-11-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-891-12_prof.nc,ct77-891-12,Q9900507,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,17,123,0,2012-03-08,2012-04-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct77/ct77-919-12_prof.nc,ct77-919-12,Q9900508,southern elephant seal,ct77,Casey,MEOP-CTD_2017-10-01,16,166,0,2012-03-12,2012-05-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-450-12_prof.nc,ct78-450-12,Q9900509,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,1333,0,2012-03-25,2012-10-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-459-12_prof.nc,ct78-459-12,Q9900510,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,1239,0,2012-02-27,2012-10-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-460-12_prof.nc,ct78-460-12, ,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,1180,0,2012-03-17,2012-09-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-461-12_prof.nc,ct78-461-12,Q9900511,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,782,0,2012-02-27,2012-08-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-465-12_prof.nc,ct78-465-12,Q9900512,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,286,0,2012-03-20,2012-06-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-471-12_prof.nc,ct78-471-12,Q9900513,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,888,0,2012-03-27,2012-08-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-472-12_prof.nc,ct78-472-12,Q9900514,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,1161,0,2012-03-30,2012-10-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-497-12_prof.nc,ct78-497-12,Q9900515,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,689,0,2012-03-16,2012-10-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-498-12_prof.nc,ct78-498-12,Q9900516,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,264,0,2012-03-07,2012-06-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-523-12_prof.nc,ct78-523-12,Q9900517,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,61,0,2012-03-19,2012-04-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-700-12_prof.nc,ct78-700-12,Q9900518,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,705,0,2012-02-26,2012-11-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-706-12_prof.nc,ct78-706-12,Q9900472,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,371,0,2012-02-21,2012-06-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-758-12_prof.nc,ct78-758-12, ,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,811,0,2012-03-06,2012-11-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-820-12_prof.nc,ct78-820-12,Q9900519,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,863,0,2012-03-19,2012-12-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-821-12_prof.nc,ct78-821-12,Q9900520,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,801,0,2012-03-04,2012-12-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-826-12_prof.nc,ct78-826-12,Q9900521,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,153,0,2012-04-05,2012-05-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-828-12_prof.nc,ct78-828-12,Q9900522,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,332,0,2012-03-06,2012-06-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-829-12_prof.nc,ct78-829-12,Q9900523,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,754,0,2012-03-23,2012-10-31
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-851-12_prof.nc,ct78-851-12,Q9900524,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,292,0,2012-03-01,2012-06-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-852-12_prof.nc,ct78-852-12,Q9900525,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,731,0,2012-03-23,2012-11-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-875-12_prof.nc,ct78-875-12,Q9900450,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,255,0,2012-02-05,2012-05-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-878-12_prof.nc,ct78-878-12,Q9900451,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,2,0,2012-02-07,2012-02-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-879-12_prof.nc,ct78-879-12,Q9900452,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,30,0,2012-02-05,2012-02-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78/ct78-892-12_prof.nc,ct78-892-12,Q9900453,southern elephant seal,ct78,Davis,MEOP-CTD_2017-10-01,17,182,0,2012-02-07,2012-04-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-760-11_prof.nc,ct78d-760-11,Q9900428,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,311,0,2011-03-16,2011-06-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D351-11_prof.nc,ct78d-D351-11,Q9900414,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,701,0,2011-03-21,2011-07-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D358-11_prof.nc,ct78d-D358-11,Q9900415,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,1267,0,2011-03-01,2011-10-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D361-11_prof.nc,ct78d-D361-11,Q9900416,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,1098,0,2011-03-01,2011-09-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D362-11_prof.nc,ct78d-D362-11,Q9900417,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,647,0,2011-03-16,2011-07-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D398-11_prof.nc,ct78d-D398-11,Q9900418,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,1153,0,2011-03-13,2011-10-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D400-11_prof.nc,ct78d-D400-11,Q9900419,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,1219,0,2011-03-05,2011-10-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D408-11_prof.nc,ct78d-D408-11,Q9900420,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,793,0,2011-03-01,2011-08-17
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D484-11_prof.nc,ct78d-D484-11,Q9900421,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,765,0,2011-03-05,2011-07-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D487-11_prof.nc,ct78d-D487-11,Q9900422,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,1301,0,2011-03-08,2011-11-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D489-11_prof.nc,ct78d-D489-11,Q9900423,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,55,0,2011-03-29,2011-04-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D496-11_prof.nc,ct78d-D496-11,Q9900424,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,745,0,2011-03-04,2011-11-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D677-11_prof.nc,ct78d-D677-11,Q9900425,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,870,0,2011-02-26,2011-12-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D703-11_prof.nc,ct78d-D703-11,Q9900426,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,404,0,2011-02-26,2011-07-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D704-11_prof.nc,ct78d-D704-11,Q9900427,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,340,0,2011-03-16,2011-06-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D761-11_prof.nc,ct78d-D761-11,Q9900429,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,344,0,2011-03-12,2011-08-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D822-11_prof.nc,ct78d-D822-11,Q9900430,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,763,0,2011-02-27,2011-11-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D827-11_prof.nc,ct78d-D827-11,Q9900431,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,314,0,2011-03-16,2011-06-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D850-11_prof.nc,ct78d-D850-11,Q9900432,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,642,0,2011-02-27,2011-11-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D876-11_prof.nc,ct78d-D876-11,Q9900433,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,239,0,2011-03-06,2011-06-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct78d/ct78d-D877-11_prof.nc,ct78d-D877-11,Q9900434,southern elephant seal,ct78d,Davis,MEOP-CTD_2017-10-01,17,181,0,2011-02-27,2011-04-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct79/ct79-238-12_prof.nc,ct79-238-12,Q9900449,southern elephant seal,ct79,Campbell,MEOP-CTD_2017-10-01,16,838,0,2012-01-28,2012-11-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct79/ct79-242-12_prof.nc,ct79-242-12,Q9900526,southern elephant seal,ct79,Campbell,MEOP-CTD_2017-10-01,16,211,0,2012-03-01,2012-05-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct79/ct79-249-12_prof.nc,ct79-249-12, ,southern elephant seal,ct79,Campbell,MEOP-CTD_2017-10-01,16,9,0,2012-03-05,2012-03-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct79/ct79-259-12_prof.nc,ct79-259-12,Q9900527,southern elephant seal,ct79,Campbell,MEOP-CTD_2017-10-01,16,479,0,2012-03-03,2012-09-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct85/ct85-237-12_prof.nc,ct85-237-12,Q9900626,Weddell seal,ct85,Scott Base,MEOP-CTD_2017-10-01,16,408,0,2014-02-02,2014-09-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct85/ct85-245-12_prof.nc,ct85-245-12,Q9900627,Weddell seal,ct85,Scott Base,MEOP-CTD_2017-10-01,16,391,0,2014-02-12,2014-07-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct85/ct85-246-12_prof.nc,ct85-246-12,Q9900628,Weddell seal,ct85,Scott Base,MEOP-CTD_2017-10-01,16,394,0,2014-02-13,2014-10-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct85/ct85-250-12_prof.nc,ct85-250-12,Q9900629,Weddell seal,ct85,Scott Base,MEOP-CTD_2017-10-01,16,59,0,2014-02-07,2014-03-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct85/ct85-252-12_prof.nc,ct85-252-12,Q9900630,Weddell seal,ct85,Scott Base,MEOP-CTD_2017-10-01,16,236,0,2014-02-09,2014-05-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct85/ct85-254-12_prof.nc,ct85-254-12,Q9900631,Weddell seal,ct85,Scott Base,MEOP-CTD_2017-10-01,16,282,0,2014-02-13,2014-08-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct85/ct85-257-12_prof.nc,ct85-257-12,Q9900634,Weddell seal,ct85,Scott Base,MEOP-CTD_2017-10-01,16,134,0,2014-02-11,2014-04-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct85/ct85-44-13_prof.nc,ct85-44-13,Q9900635,Weddell seal,ct85,Scott Base,MEOP-CTD_2017-10-01,16,127,0,2014-02-10,2014-04-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct91/ct91-305-12_hr1_prof.nc,ct91-305-12,Q9900475,fur seal,ct91,ct91,IMOS-CTD_2024,1000,630,628,2012-06-13,2012-11-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct91/ct91-326-12_hr1_prof.nc,ct91-326-12,Q9900476,fur seal,ct91,ct91,IMOS-CTD_2024,1000,300,300,2012-06-25,2012-08-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct91/ct91-327-12_hr1_prof.nc,ct91-327-12,Q9900477,fur seal,ct91,ct91,IMOS-CTD_2024,1000,453,450,2012-06-24,2012-10-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct91/ct91-329-12_hr1_prof.nc,ct91-329-12,Q9900478,fur seal,ct91,ct91,IMOS-CTD_2024,1000,183,181,2012-06-24,2012-10-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct91/ct91-411-12_hr1_prof.nc,ct91-411-12,Q9900479,fur seal,ct91,ct91,IMOS-CTD_2024,1000,570,0,2012-06-26,2012-10-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct91/ct91-412-12_hr1_prof.nc,ct91-412-12,Q9900480,fur seal,ct91,ct91,IMOS-CTD_2024,1000,833,6,2012-06-24,2012-11-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct91/ct91-414-12_hr1_prof.nc,ct91-414-12,Q9900481,fur seal,ct91,ct91,IMOS-CTD_2024,1000,179,0,2012-06-24,2012-08-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct91/ct91-417-12_hr1_prof.nc,ct91-417-12,Q9900482,fur seal,ct91,ct91,IMOS-CTD_2024,1000,361,3,2012-06-24,2012-08-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct91/ct91-418-12_hr1_prof.nc,ct91-418-12,Q9900483,fur seal,ct91,ct91,IMOS-CTD_2024,1000,822,3,2012-06-12,2012-11-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-01-13_prof.nc,ct96-01-13,Q9900571,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,364,0,2013-03-30,2013-08-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-02-13_prof.nc,ct96-02-13,Q9900556,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,623,0,2013-02-20,2013-10-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-03-13_prof.nc,ct96-03-13,Q9900557,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,724,0,2013-02-27,2013-10-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-05-13_prof.nc,ct96-05-13,Q9900572,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,644,0,2013-03-15,2013-11-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-06-13_prof.nc,ct96-06-13,Q9900573,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,141,0,2013-03-31,2013-05-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-07-13_prof.nc,ct96-07-13,Q9900558,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,518,0,2013-02-17,2013-09-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-08-13_prof.nc,ct96-08-13,Q9900559,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,105,0,2013-02-15,2013-03-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-09-13_prof.nc,ct96-09-13,Q9900574,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,561,0,2013-03-06,2013-09-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-10-13_prof.nc,ct96-10-13,Q9900575,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,510,0,2013-03-06,2013-10-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-11-13_prof.nc,ct96-11-13,Q9900576,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,340,0,2013-03-02,2013-06-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-12-13_prof.nc,ct96-12-13,Q9900577,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,911,0,2013-03-11,2013-12-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-13-13_prof.nc,ct96-13-13, ,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,2,0,2013-03-19,2013-03-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-14-13_prof.nc,ct96-14-13,Q9900578,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,129,0,2013-03-21,2013-05-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-15-13_prof.nc,ct96-15-13, ,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,800,0,2013-02-23,2014-01-11
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-16-13_prof.nc,ct96-16-13,Q9900560,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,757,0,2013-02-27,2013-10-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-17-13_prof.nc,ct96-17-13,Q9900579,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,387,0,2013-03-31,2013-08-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-18-13_prof.nc,ct96-18-13,Q9900561,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,670,0,2013-03-01,2013-10-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-19-13_prof.nc,ct96-19-13,Q9900562,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,111,0,2013-02-11,2013-03-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-20-13_prof.nc,ct96-20-13,Q9900563,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,597,0,2013-02-10,2013-10-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-21-13_prof.nc,ct96-21-13,Q9900564,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,776,0,2013-02-21,2013-10-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-22-13_prof.nc,ct96-22-13, ,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,436,0,2013-02-25,2013-09-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-23-13_prof.nc,ct96-23-13,Q9900565,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,703,0,2013-02-27,2013-10-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-24-13_prof.nc,ct96-24-13,Q9900566,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,220,0,2013-02-10,2013-04-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-25-13_prof.nc,ct96-25-13,Q9900580,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,752,0,2013-04-04,2013-11-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-26-13_prof.nc,ct96-26-13,Q9900567,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,737,0,2013-02-13,2013-09-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-27-13_prof.nc,ct96-27-13,Q9900568,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,514,0,2013-02-19,2013-08-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-28-13_prof.nc,ct96-28-13,Q9900581,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,670,0,2013-03-08,2013-10-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-29-13_prof.nc,ct96-29-13,Q9900569,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,729,0,2013-02-20,2013-09-29
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct96/ct96-30-13_prof.nc,ct96-30-13,Q9900570,southern elephant seal,ct96,Kerguelen,MEOP-CTD_2017-10-01,16,533,0,2013-02-17,2013-08-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-31-13_prof.nc,ct98-31-13,Q9900607,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,707,0,2014-01-31,2014-09-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-33-13_prof.nc,ct98-33-13,Q9900609,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,730,0,2014-01-06,2014-11-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-34-13_prof.nc,ct98-34-13,Q9900610,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,546,0,2014-01-28,2014-10-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-35-13_prof.nc,ct98-35-13,Q9900611,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,204,0,2014-02-02,2014-03-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-36-13_prof.nc,ct98-36-13,Q9900612,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,633,0,2014-01-19,2014-09-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-38-13_prof.nc,ct98-38-13,Q9900614,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,766,0,2014-01-14,2014-10-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-39-13_prof.nc,ct98-39-13,Q9900615,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,702,0,2014-01-30,2014-10-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-40-13_prof.nc,ct98-40-13,Q9900616,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,56,0,2014-02-04,2014-02-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-41-13_prof.nc,ct98-41-13,Q9900617,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,134,0,2014-02-01,2014-03-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-42-13_prof.nc,ct98-42-13,Q9900618,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,758,0,2014-01-29,2014-09-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-43-13_prof.nc,ct98-43-13,Q9900619,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,747,0,2014-01-31,2014-09-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-45-13_prof.nc,ct98-45-13,Q9900620,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,784,0,2014-01-02,2014-10-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-46-13_prof.nc,ct98-46-13,Q9900621,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,684,0,2014-02-01,2014-09-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-47-13_prof.nc,ct98-47-13,Q9900622,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,478,0,2013-12-29,2014-09-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-48-13_prof.nc,ct98-48-13,Q9900623,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,275,0,2014-01-11,2014-04-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-49-13_prof.nc,ct98-49-13,Q9900624,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,676,0,2014-01-08,2014-09-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ct98/ct98-50-13_prof.nc,ct98-50-13,Q9900625,southern elephant seal,ct98,Kerguelen,MEOP-CTD_2017-10-01,16,43,0,2014-01-29,2014-02-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ft24/ft24-917-18_hr1_prof.nc,ft24-917-18,Q9901153,southern elephant seal,ft24,Kerguelen,IMOS-CTD_2024,1000,156,0,2019-01-01,2019-03-23
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ft24/ft24-918-18_hr1_prof.nc,ft24-918-18,Q9901139,southern elephant seal,ft24,Kerguelen,IMOS-CTD_2024,1000,506,0,2018-12-28,2019-11-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ft24/ft24-919-18_hr1_prof.nc,ft24-919-18,Q9901154,southern elephant seal,ft24,Kerguelen,IMOS-CTD_2024,1000,456,0,2019-01-02,2019-10-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ft24/ft24-920-18_hr1_prof.nc,ft24-920-18,Q9901140,southern elephant seal,ft24,Kerguelen,IMOS-CTD_2024,1000,390,0,2018-12-30,2019-08-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/ft24/ft24-921-18_hr1_prof.nc,ft24-921-18,Q9901141,southern elephant seal,ft24,Kerguelen,IMOS-CTD_2024,1000,133,0,2018-12-26,2019-03-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-611-22_hr1_prof.nc,tu117-611-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,73,0,2023-05-09,2023-06-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-612-22_hr1_prof.nc,tu117-612-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,299,0,2022-05-31,2022-11-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-614-22_hr1_prof.nc,tu117-614-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,206,0,2022-06-20,2022-10-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-616-22_hr1_prof.nc,tu117-616-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,54,0,2022-05-31,2022-06-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-617-22_hr1_prof.nc,tu117-617-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,7,0,2022-05-31,2022-06-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-664-22_hr1_prof.nc,tu117-664-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,257,0,2023-05-09,2023-09-24
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-670-22_hr1_prof.nc,tu117-670-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,284,0,2022-05-26,2022-10-26
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-671-22_hr1_prof.nc,tu117-671-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,114,0,2022-05-27,2022-08-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-672-22_hr1_prof.nc,tu117-672-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,207,0,2022-05-28,2022-09-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-673-22_hr1_prof.nc,tu117-673-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,138,0,2022-05-28,2022-08-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-674-22_hr1_prof.nc,tu117-674-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,57,0,2022-05-28,2022-06-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-675-22_hr1_prof.nc,tu117-675-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,53,0,2022-05-28,2022-06-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-676-22_hr1_prof.nc,tu117-676-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,208,0,2022-05-27,2022-08-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-677-22_hr1_prof.nc,tu117-677-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,220,0,2022-05-24,2022-09-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-678-22_hr1_prof.nc,tu117-678-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,128,0,2022-05-24,2022-08-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-679-22_hr1_prof.nc,tu117-679-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,123,0,2022-05-24,2022-08-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-681-22_hr1_prof.nc,tu117-681-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,163,0,2023-05-09,2023-07-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-684-22_hr1_prof.nc,tu117-684-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,386,0,2022-05-28,2022-12-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-685-22_hr1_prof.nc,tu117-685-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,409,0,2022-06-01,2022-11-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-686-22_hr1_prof.nc,tu117-686-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,162,0,2022-05-26,2022-08-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-687-22_hr1_prof.nc,tu117-687-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,279,0,2022-05-28,2022-09-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-688-22_hr1_prof.nc,tu117-688-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,205,0,2022-06-01,2022-09-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-689-22_hr1_prof.nc,tu117-689-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,56,0,2022-05-26,2022-06-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu117/tu117-751-22_hr1_prof.nc,tu117-751-22, ,olive ridley turtle,tu117,North Australia,IMOS-CTD_2024,1000,893,0,2023-05-09,2024-02-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-610-22_hr1_prof.nc,tu120-610-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,404,0,2022-10-07,2023-03-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-613-22_hr1_prof.nc,tu120-613-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,257,0,2022-10-10,2023-01-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-615-22_hr1_prof.nc,tu120-615-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,511,0,2022-10-09,2023-08-19
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-619-22_hr1_prof.nc,tu120-619-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,1190,0,2022-10-07,2024-01-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-658-22_hr1_prof.nc,tu120-658-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,702,0,2022-10-13,2023-09-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-660-22_hr1_prof.nc,tu120-660-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,652,0,2022-10-14,2023-07-12
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-661-22_hr1_prof.nc,tu120-661-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,53,0,2022-10-07,2022-11-05
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-663-I2C-22_hr1_prof.nc,tu120-663-I2C-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,51,0,2022-10-14,2022-11-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-665-I2C-22_hr1_prof.nc,tu120-665-I2C-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,533,0,2022-10-09,2023-03-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-666-22_hr1_prof.nc,tu120-666-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,791,0,2022-10-11,2023-11-13
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-667-22_hr1_prof.nc,tu120-667-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,53,0,2022-10-11,2022-11-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-668-22_hr1_prof.nc,tu120-668-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,957,0,2022-10-15,2023-10-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-669-22_hr1_prof.nc,tu120-669-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,676,0,2022-10-14,2023-11-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-680-22_hr1_prof.nc,tu120-680-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,192,0,2022-10-12,2023-03-09
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/tu120/tu120-683-22_hr1_prof.nc,tu120-683-22, ,flatback turtle,tu120,North Australia,IMOS-CTD_2024,1000,20,0,2022-10-13,2022-10-21
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-836-11_prof.nc,wd04-836-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,664,0,2011-03-26,2011-10-04
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-838-11_prof.nc,wd04-838-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,319,0,2011-03-11,2011-07-10
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-839-11_prof.nc,wd04-839-11, ,Weddell seal,wd04,Davies,MEOP-CTD_2017-10-01,28,16,0,2011-03-11,2011-03-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-880-11_prof.nc,wd04-880-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,641,0,2011-03-11,2011-09-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-881-11_prof.nc,wd04-881-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,262,0,2011-03-27,2011-07-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-882-11_prof.nc,wd04-882-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,49,0,2011-03-11,2011-04-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-883-11_prof.nc,wd04-883-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,576,0,2011-03-12,2011-07-25
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-884-11_prof.nc,wd04-884-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,276,0,2011-03-12,2011-09-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-896-11_prof.nc,wd04-896-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,572,0,2011-03-25,2011-08-14
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-897-11_prof.nc,wd04-897-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,634,0,2011-03-13,2011-08-22
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-898-11_prof.nc,wd04-898-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,785,0,2011-03-26,2011-10-28
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-899-11_prof.nc,wd04-899-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,170,0,2011-03-27,2011-05-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-900-11_prof.nc,wd04-900-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,317,0,2011-03-27,2011-09-06
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-906-11_prof.nc,wd04-906-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,336,0,2011-03-25,2011-09-16
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-907-11_prof.nc,wd04-907-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,442,0,2011-03-25,2011-07-30
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-908-11_prof.nc,wd04-908-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,422,0,2011-03-26,2011-12-01
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-909-11_prof.nc,wd04-909-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,480,0,2011-03-25,2011-09-08
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-910-11_prof.nc,wd04-910-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,406,0,2011-03-12,2011-10-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd04/wd04-911-11_prof.nc,wd04-911-11, ,Weddell seal,wd04,Davis,MEOP-CTD_2017-10-01,28,202,0,2011-03-12,2011-05-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd1/wd1-10165-06_prof.nc,wd1-10165-06, ,Weddell seal,wd1,Davis,MEOP-CTD_2017-10-01,12,738,0,2006-02-15,2006-06-02
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd1/wd1-10183-06_prof.nc,wd1-10183-06, ,Weddell seal,wd1,Davis,MEOP-CTD_2017-10-01,12,1189,0,2006-02-17,2006-07-07
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd1/wd1-10213-06_prof.nc,wd1-10213-06, ,Weddell seal,wd1,Davis,MEOP-CTD_2017-10-01,12,2505,0,2006-02-16,2006-10-03
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd1/wd1-10216-06_prof.nc,wd1-10216-06, ,Weddell seal,wd1,Davis,MEOP-CTD_2017-10-01,12,402,0,2006-02-19,2006-04-27
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd1/wd1-10217-06_prof.nc,wd1-10217-06, ,Weddell seal,wd1,Davis,MEOP-CTD_2017-10-01,12,1152,0,2006-02-17,2006-06-15
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd1/wd1-9497-06_prof.nc,wd1-9497-06, ,Weddell seal,wd1,Davis,MEOP-CTD_2017-10-01,12,291,0,2006-02-16,2006-03-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd3/wd3-CTD1-07_prof.nc,wd3-CTD1-07, ,Weddell seal,wd3,Dumont d'Urville,MEOP-CTD_2017-10-01,19,409,0,2007-02-21,2007-10-18
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd3/wd3-CTD2-07_prof.nc,wd3-CTD2-07, ,Weddell seal,wd3,Dumont d'Urville,MEOP-CTD_2017-10-01,19,407,0,2007-02-20,2007-08-20
+IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/wd3/wd3-CTD3-07_prof.nc,wd3-CTD3-07, ,Weddell seal,wd3,Dumont d'Urville,MEOP-CTD_2017-10-01,19,424,0,2007-02-21,2007-09-13

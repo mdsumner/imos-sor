@@ -112,3 +112,13 @@ confirmed.
       They hold 1,366–292,400 finite pixels. The 19 in 1992 lie only south of 36–59°S (1992-03-21: 4,557 pixels at 59–70°S, quality 2–3).
       The others are 1994-10-28, 1994-12-04, 1994-12-06 and 2013-04-06 (2,443 pixels at 50–63°S).
     - Counts from the day logs of `nci/sums.R` (job 184505429) and 27 files read from S3.
+
+23. **Animal CTD Parquet (`animal_ctd_satellite_relay_tagging_delayed_qc`): impossible positions and inconsistent labels.**
+    - 19,484 of 262,849 profiles are north of the equator (`R/13_animal_tracking.R`, `inventory/animal_ctd_by_species_site.csv`).
+    - 15,088 of the 15,119 Weddell seal profiles labelled `Ross Sea` (2019–2020) sit at 32.5–36.6°N, −167.9 … −53.6°E.
+    - 4,396 fur seal profiles (campaigns ct91, ct101 and ct110, 2012–2014, tagged at Montague Island, NSW) sit at
+      18.8–22.2°N, 172.8–176.1°E. The same tags' other profiles are at 34–38°S, 150–152°E.
+    - `species` spells one species two ways: "Southern ellie" (2004–2017) and "Southern elephant seal" (2018–). There
+      is also "Weddel seal" (one tag). `location` holds campaign codes (`ct91`, `ct101`, `ct110`) for most fur seal
+      tags.
+    - The Parquet ends at 2024-02-22, while the location-QC `ctd` tables run to 2025 (delayed) and 2026 (real time).

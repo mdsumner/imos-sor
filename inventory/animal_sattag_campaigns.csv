@@ -1,0 +1,56 @@
+campaign,stream,tags,first_release,last_release,species,sites,country,tag_types
+ct38e,dm,5,2007-12-21,2008-01-22,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_07B
+ct36,dm,9,2008-12-26,2009-02-08,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_07B
+ct23x,dm,6,2009-01-07,2009-02-12,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_07B
+ct61,dm,9,2009-11-05,2009-12-28,Australian sea lion,Cape du Couedic; Liguanea Island; Nicolas Baudin Island; Price Island; Seal Bay; Seal Slide; West Island; West Waldegrave Island,Australia,CTD_AUS_09A
+ct78d,dm,21,2011-02-25,2011-03-09,southern elephant seal,Davis,Australian Antarctic Territory,CTD_GEN_07B CTD_GEN_10A
+ct86,dm,7,2011-11-20,2012-03-22,Australian sea lion,Blefuscu Island; Nuyts Reef; Olive Island; Rocky South Island; Seal Bay; Seal Slide; West Island,Australia,CTD_AUS_09A CTD_AUS_10A
+ct78,dm,21,2012-02-05,2012-04-24,southern elephant seal,Davis,Australian Antarctic Territory,CTD_GEN_07B CTD_GEN_10A
+ct106,dm,6,2013-11-26,2014-04-09,Australian sea lion,Nuyts Reef; Pearson Island; Seal Bay; Seal Slide; Six Mile Island; West Island,Australia,CTD_AUS_12A FTD_AUS_12A FTD_AUS_14A
+ct98,dm,17,2013-12-26,2014-01-29,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_11A
+ct109,dm,24,2014-12-07,2015-01-25,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_13B
+ct115,dm,1,2014-12-08,2014-12-08,Australian sea lion,West Island,Australia,CTD_AUS_14A
+ft19,dm,3,2014-12-10,2014-12-17,Australian sea lion,Liguanea Island; Seal Bay; Seal Slide,Australia,FTD_AUS_14A FTD_AUS_14B
+ct120,dm,13,2015-10-29,2016-01-07,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_CONT_14A CTD_GEN_11A CTD_GEN_15SD FTD_13A
+ct123,dm,8,2015-12-07,2016-02-05,Australian sea lion,Greenly Island; Liguanea Island; Nuyts Reef; Pearson Island; Seal Bay; Seal Slide; South Neptune Island; West Island,Australia,CTD_AUS_09A CTD_AUS_14A FTD_AUS_14A FTD_AUS_14B
+ct116,dm,2,2016-01-17,2016-02-17,southern elephant seal,Davis,Australian Antarctic Territory,CTD_GEN_14A CTD_GEN_15A
+ct121,dm,2,2016-02-15,2016-02-20,southern elephant seal,Davis,Australian Antarctic Territory,CTD_GEN_15A
+ct140,dm,27,2017-01-17,2018-01-23,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_11A CTD_GEN_13B CTD_GEN_15A
+ct133,dm,2,2017-02-07,2017-02-16,southern elephant seal,Davis,Australian Antarctic Territory,CTD_GEN_15A
+ct134,dm,8,2017-02-16,2017-02-26,southern elephant seal,Davis,Australian Antarctic Territory,CTD_GEN_14A CTD_GEN_15A
+ct128a,dm,1,2017-03-03,2017-03-03,Weddell seal,Halley Research Station,British Antarctic Territory,CTD_GEN_11A
+ct128,dm,2,2017-11-18,2017-11-18,Weddell seal,Dumont d'Urville,French Antarctic Territory,CTD_GEN_10A CTD_GEN_11A
+ct144,dm,15,2018-09-27,2019-01-18,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_CONT_16SD CTD_GEN_14A CTD_GEN_16A CTD_GEN_18A FTD_13A FTD_CONT_17SD
+ft22,dm,9,2018-10-19,2018-10-21,southern elephant seal,Iles Kerguelen,French Overseas Territory,FTD_CONT_18SD
+ct148,dm,25,2018-12-21,2019-01-19,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_18C
+ct149,dm,10,2018-12-23,2019-01-18,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_18C
+ft24,dm,5,2018-12-23,2018-12-26,southern elephant seal,Iles Kerguelen,French Overseas Territory,FTD_GEN_18B
+wd11,dm,8,2019-02-02,2019-02-16,Weddell seal,Dumont d'Urville,French Antarctic Territory,CTD_GEN_18C FTD_PCAWED_LT_18A
+ct150,dm,17,2019-02-20,2019-03-09,Weddell seal,Scott Base,New Zealand Antarctic Territory,CTD_GEN_18C
+ct157,dm,38,2019-12-20,2020-01-15,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_18C FTD_GEN_18B
+ct158,dm,10,2019-12-26,2020-02-14,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_CONT_NOACC_19SD CTD_GEN_18C CTD_WIND_19A FTD_CONT_18BSD FTD_CONT_18SD FTD_GEN_19X
+ct155,dm,9,2019-12-31,2020-01-10,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_CONT_18BSD CTD_GEN_13B CTD_GEN_15A
+wd12,dm,7,2020-02-09,2020-02-15,Weddell seal,Dumont d'Urville,French Antarctic Territory,FTD_PCAWED_LT_18A
+ct156,dm,18,2020-02-16,2020-03-07,Weddell seal,Scott Base,New Zealand Antarctic Territory,CTD_GEN_07B CTD_GEN_10A CTD_GEN_18C CTD_GEN_20A
+ct160,dm,34,2020-12-15,2021-02-10,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_14A CTD_GEN_20A FTD_GEN_18B FTD_GEN_20A OXY_CONT_20A
+ct159,dm,1,2020-12-26,2020-12-26,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_18C
+wd15,dm,2,2021-11-19,2021-11-19,Weddell seal,Dumont d'Urville,French Antarctic Territory,CTD_GEN_20A
+ct164,dm,46,2021-12-07,2022-01-28,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_15A CTD_GEN_18C CTD_GEN_20A FTD_GEN_20A
+tu116,dm,9,2022-01-18,2022-01-31,green turtle,Milman Islet,Australia,AUST_CTD_GPS_21A
+tu117,dm,24,2022-05-24,2023-05-10,olive ridley turtle,Melville Island; North West Crocodile Island,Australia,AUST_CTD_GPS_22A
+tu120,dm,15,2022-10-07,2022-10-16,flatback turtle,North West Crocodile Island,Australia,AUST_CTD_GPS_22A
+ct171,dm,2,2022-12-06,2023-02-06,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_16A FTD_GEN_20A
+ct170,dm,24,2023-01-11,2023-02-06,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_21A
+ft33,dm,9,2023-05-17,2023-05-19,southern elephant seal,Macquarie Island,Australia,FTD_GEN_22B
+ft34,dm,7,2023-05-17,2023-05-19,southern elephant seal,Macquarie Island,Australia,FTD_GEN_22B
+ct176,dm,8,2023-12-16,2024-02-11,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_CONT_23BSD
+ct180,dm,23,2023-12-19,2024-02-11,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_QUOT_23A
+wd30,dm,5,2024-02-07,2024-02-08,Weddell seal,Dumont d'Urville,French Antarctic Territory,CTD_CEN_21A
+wd31,dm,1,2024-02-11,2024-02-11,Weddell seal,Dumont d'Urville,French Antarctic Territory,FTD_PCAWED_LT_18A
+ct182,dm,26,2024-12-23,2025-01-20,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_GEN_24A FTD_GEN_24L
+ct185,dm,1,2025-01-07,2025-01-07,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_CONT_NOACC_19SD
+tu123,dm,20,2025-04-23,2025-05-03,olive ridley turtle,Tiwi Islands,Australia,AUST_CTD_GPS_25A
+ct188,dm,8,2025-05-25,2025-05-28,southern elephant seal,Macquarie Island,Australia,CTD_GEN_24A FTD_GEN_24L
+ct190,nrt,15,2025-12-16,2026-02-02,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_CONT_23BSD CTD_GEN_24A CTD_QUOT_23A FTD_CONT_21BSD
+ct189,nrt,18,2025-12-19,2026-01-29,southern elephant seal,Iles Kerguelen,French Overseas Territory,CTD_CONT_25BSD CTD_GEN_24A
+tu126,nrt,26,2026-05-19,2026-05-28,olive ridley turtle,North West Crocodile Island,Australia,AUST_CTD_GPS_25A

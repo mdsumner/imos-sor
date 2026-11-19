@@ -43,6 +43,7 @@ Decisions so far:
 | `R/10_fine_trends.R` | the same on S2 L8 → L5 cells over the STAR South-east region, from `nci/sums_fine.R`; settings and fit shared with R/09 in `R/trend_fns.R` |
 | `R/11_crossover.R`, `notes/crossover.md` | the IMOS L3S products against MUR v4.1 and OISST (trend.sst sums) on the same S2 L5 cells: which product drifts |
 | `R/12_l3s_platforms.R` | platforms, ice/wind/analysis sources, versions and time windows of the single-sensor L3S files (night from S3, day+night from `nci/headers.pbs`) |
+| `R/13_animal_tracking.R`, `notes/animal_tracking.md` | survey of IMOS animal tracking: satellite-relay CTD tags (seals, turtles), seal CTD profiles, acoustic telemetry (164 species) |
 | `trends/` | committed outputs of `R/09`: `region_trends.csv`, `cell_trends_q4.csv`, `region_status.csv`, `region_monthly_q4.csv.gz` |
 | `nci/` | IMOS on NCI: the sh74 IMOS/AODN mirror and BoM's qm43 SST archive (fv01 = IMOS operational, fv02 = BoM reprocessing), projects to join, the Gadi probe and inventory job, and raad.virtualize candidates (`nci/README.md`) |
 | `notes/block_2024-01-04.md` | first 5-day block: IMOS L3S vs OISST/MUR on S2 L5; exact EEZ means vs L5 cell selections |

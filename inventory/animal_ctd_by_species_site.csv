@@ -1,0 +1,21 @@
+species,site,tags,profiles,first,last,with_salinity,with_oxygen,with_chla,with_light,median_max_dbar,median_lat,north_of_equator
+Southern elephant seal,Kerguelen,146,83586,2018,2022,65421,138,3294,3239,1000,-54.7,0
+Southern ellie,Kerguelen,102,49883,2008,2017,49883,0,0,0,530,-54.9,0
+Southern ellie,Davis,55,31083,2011,2017,31083,0,0,0,502,-64,0
+Weddell seal,Davis,27,17350,2006,2011,7553,0,0,0,158,-68.1,0
+Southern ellie,Macquarie,30,16066,2004,2010,13083,0,0,0,552,-63.7,0
+Weddell seal,Ross Sea,35,15119,2019,2020,13146,0,0,0,1000,34.2,15088
+Southern ellie,Casey,25,13115,2012,2012,13115,0,0,0,596,-63.3,0
+Flatback turtle,North Australia,15,7042,2022,2024,948,0,0,0,1000,-11.9,0
+Southern ellie,Campbell,17,5172,2012,2015,5172,0,0,0,492,-52.5,0
+Weddell seal,Dumont d'Urville,28,5159,2007,2015,5124,0,39,0,114,-66.6,0
+Fur seal,ct101,12,5001,2013,2013,3643,0,0,0,1000,-35.1,1046
+Olive ridley turtle,North Australia,24,4981,2022,2024,2151,0,0,0,1000,-9.8,0
+Fur seal,ct91,9,4331,2012,2012,3080,0,0,0,1000,-36.2,1571
+Weddell seal,Scott Base,12,2771,2014,2017,2771,0,0,0,296,-77.7,0
+Fur seal,ct110,9,1863,2014,2014,1231,0,0,0,1000,19,1753
+Weddell seal,Weddell Sea,1,228,2017,2017,228,0,0,0,390,-75.2,0
+Fur seal,Montague Is.Australia,1,32,2014,2014,0,0,0,0,1000,18.9,26
+Fur seal,Australia,1,26,2013,2013,0,0,0,0,1000,-36.2,0
+Southern ellie,Campbell Is,1,25,2014,2014,25,0,0,0,400,-51.8,0
+Weddel seal,Davies,1,16,2011,2011,16,0,0,0,155,-68.3,0

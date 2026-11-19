@@ -183,7 +183,8 @@ Night − single-sensor day+night, both re-centred on 2013–2021 (°C):
   same cells (`notes/crossover.md`, R/11), the drift is mostly single-sensor day+night. It falls 0.09–0.19 °C
   against MUR (2019–2024 less 2012–2016), multi-sensor falls 0.03–0.11, and night has no lasting step (−0.04 …
   +0.11). So single-sensor trends that run past 2017 are low, and for 1993–2024 the night record is the better
-  guide. The night files' platform attributes across 2017–2019 are still worth a look.
+  guide. Night and day+night use the same platforms throughout: NOAA-18 + NOAA-19 until 2018, and NOAA-18 alone
+  from 2019-01-01 (`notes/crossover.md`).
 
 ## Status: 2024 (q4, anomalies first, °C)
 

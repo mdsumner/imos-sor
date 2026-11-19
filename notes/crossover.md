@@ -93,12 +93,48 @@ The drift is OLS on the monthly anomaly of the difference, with R/09's AR(1)-inf
   (night) against MUR, but +0.03, −0.03 and −0.04 against OISST. MUR − OISST itself moves −0.04 between those years,
   so no seam can be read here.
 
+## Platforms and processing (R/12)
+
+These come from the files' global attributes. The night headers are read from S3 by `R/12_l3s_platforms.R`, and the
+day+night ones come from `nci/headers.pbs`. Tables: `inventory/l3s1d_processing_runs.csv` and
+`inventory/l3s1d_time_window_by_year.csv`.
+
+- **Night and day+night use the same platforms.** They match on 12,013 of 12,062 days. The other 49 are scattered
+  days, 32 of them before 2006.
+- **2017–2019, in both products:**
+  - NOAA-18 + NOAA-19 throughout 2017 and 2018, except NOAA-19 alone from 2018-06-05 to 2018-07-03.
+  - From 2019-01-01 (night 2019-01-02), NOAA-18 alone, to the end of the record (2025-06-06).
+  - IMOS still holds NOAA-19 L3C files for 2019–2025: 354–365 day files a year, and 282–353 night files. So NOAA-19
+    was processed but left out of the L3S.
+  - On the same date the ice source changes from NCEP's 5-minute SSMI analysis to OSTIA, through 2022. From 2023
+    (fv01) it is NCEP again. This bears on the ice-flag eras of `notes/issues.md` 21.
+  - The files in 2017–2022 are fv02, apart from 3 day+night and 6 night days of fv01 (2017-06-01..03,
+    2018-10-30, 2018-12-31, 2019-03-13). The wind source (ACCESS-G forecast, since 2009) and the reference analysis
+    (GAMSSA 28 km, since 2008) don't change.
+- **The files' time windows shrink from 2019–2020, with NOAA-18 alone.**
+  - The median stop time is about 21–23 UTC through 2018, 20.7–21.1 in 2019, and 15.6–16.2 from 2020, in both
+    products.
+  - The night files' start moves later: 6–7 UTC in 2013–2018, 9.7 in 2019, 10.7 in 2020 and 12.9 in 2025.
+
+What this says about the drift:
+
+- **The switch to NOAA-18 alone is in both records,** so on its own it doesn't explain why day+night falls and night
+  doesn't.
+- **The fall in single − MUR starts before the switch.** On half-year means of the cell anomalies over the aus window
+  (unweighted, from `data/trends/crossover_cell_monthly.parquet`), single − MUR goes from +0.06 in 2017-H1 to −0.06 in 2018-H2, and −0.01 in 2019-H1. Over the same
+  months night − MUR rises, from +0.05 in 2016-H2 to +0.14 in 2019-H1.
+- **Both records fall by about 0.12 against MUR from 2020 to 2022** (aus window, annual): single −0.06 → −0.18,
+  night +0.05 → −0.07.
+- **So the headers don't pin it down.** Two checks would:
+  - the NOAA-18 and NOAA-19 L3C files against MUR over 2017–2024 (IMOS holds both)
+  - the observation times in the files (`sst_dtime`), year by year, for day+night against night
+
 ## Caveats
 
 - MUR and OISST aren't independent of the L3S: OISST is AVHRR-based, and MUR uses AVHRR among its inputs. Where all three IMOS
   products and both references move together, this can't tell.
-- What changes the single-sensor record after 2017 isn't known. The night record shares its sensors but not its
-  daytime retrievals. The candidates are daytime retrievals, which platforms make up the record, and the platforms'
-  overpass times. The night files' platform attributes across 2017–2019 are still to be checked.
+- What changes the single-sensor record after 2017 isn't known. Night and day+night share their platforms and
+  processing inputs (above), so the cause is more likely in the daytime retrievals, or in NOAA-18 itself as it ages
+  and its passes move.
 - Matching on clear cell-days leaves single-sensor and night with few cells in some months. A year can rest on 3–5
   valid months before about 1995, and night in the Coral Sea on 7–8 in some years (2019, 2024).

@@ -42,6 +42,7 @@ Decisions so far:
 | `R/09_trends.R`, `notes/trends.md` | monthly anomalies (anomalies first, per S2 L5 cell), trends and 2024 status for every region, from the in-situ L3S sums |
 | `R/10_fine_trends.R` | the same on S2 L8 → L5 cells over the STAR South-east region, from `nci/sums_fine.R`; settings and fit shared with R/09 in `R/trend_fns.R` |
 | `R/11_crossover.R`, `notes/crossover.md` | the IMOS L3S products against MUR v4.1 and OISST (trend.sst sums) on the same S2 L5 cells: which product drifts |
+| `R/12_l3s_platforms.R` | platforms, ice/wind/analysis sources, versions and time windows of the single-sensor L3S files (night from S3, day+night from `nci/headers.pbs`) |
 | `trends/` | committed outputs of `R/09`: `region_trends.csv`, `cell_trends_q4.csv`, `region_status.csv`, `region_monthly_q4.csv.gz` |
 | `nci/` | IMOS on NCI: the sh74 IMOS/AODN mirror and BoM's qm43 SST archive (fv01 = IMOS operational, fv02 = BoM reprocessing), projects to join, the Gadi probe and inventory job, and raad.virtualize candidates (`nci/README.md`) |
 | `notes/block_2024-01-04.md` | first 5-day block: IMOS L3S vs OISST/MUR on S2 L5; exact EEZ means vs L5 cell selections |
@@ -241,6 +242,9 @@ approach:
      single-sensor day+night that drifts. It falls 0.15 °C against both references in the aus window (2019–2024 less
      2012–2016), multi-sensor falls 0.05 against MUR, and night has no lasting step (+0.01). Before 2017 single and
      night are steady against MUR (2003–2016).
+   - Both share their platforms: NOAA-18 + NOAA-19 until 2018, then NOAA-18 alone from 2019-01-01, though IMOS holds
+     NOAA-19 L3C to 2025. The ice source changes on the same day. So the switch doesn't explain why only day+night
+     drifts, and single − MUR starts falling in 2017-H2, before it (`notes/crossover.md`, `R/12_l3s_platforms.R`).
 5. Add L3S-SO (with `sea_ice_fraction`) and GAMSSA to the S2 L5 registry
    next to OISST/MUR, joining trend.sst and trend.ice.
 6. **NCI** (`nci/README.md`): join sh74 (IMOS/AODN mirror, `/g/data/sh74/IMOS_AODN`, not on THREDDS) and qm43 (BoM SST).
